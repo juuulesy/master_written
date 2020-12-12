@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.14)  7 DEC 2020 12:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.14)  12 DEC 2020 16:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1115,7 +1115,7 @@ Package hyperref Info: Option `plainpages' set `false' on input line 112.
 Package hyperref Info: Option `colorlinks' set `true' on input line 112.
 \fheight=\skip103
 \fwidth=\skip104
-) (./MAIN.aux (./titelseite.aux) (./danksagung.aux) (./erklaerung.aux) (./abstract.aux) (./symbolverzeichnis.aux) (./introduction.aux) (./Fundamentals.aux) (./Technical_Fundamentals.aux) (./Chapter4.aux) (./Chapter5.aux) (./anhang.aux))
+) (./MAIN.aux (./titelseite.aux) (./danksagung.aux) (./erklaerung.aux) (./abstract.aux) (./symbolverzeichnis.aux) (./introduction.aux) (./Fundamentals.aux) (./Technical_Fundamentals.aux) (./Chapter4.aux) (./Chapter5.aux) (./Conclusion.aux) (./anhang.aux))
 \openout1 = `MAIN.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
@@ -1239,7 +1239,7 @@ Overfull \hbox (74.58597pt too wide) in paragraph at lines 64--74
  (./erklaerung.tex
 
 pdfTeX warning: pdflatex (file ./images/Formular_Eidesstattliche_Versicherung_neu.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<images/Formular_Eidesstattliche_Versicherung_neu.pdf, id=145, 597.45204pt x 845.1575pt>
+<images/Formular_Eidesstattliche_Versicherung_neu.pdf, id=133, 597.45204pt x 845.1575pt>
 File: images/Formular_Eidesstattliche_Versicherung_neu.pdf Graphic file (type pdf)
  <use images/Formular_Eidesstattliche_Versicherung_neu.pdf>
 Package pdftex.def Info: images/Formular_Eidesstattliche_Versicherung_neu.pdf used on input line 16.
@@ -1257,7 +1257,7 @@ pdfTeX warning: pdflatex (file ./images/Formular_Eidesstattliche_Versicherung_ne
 
 
 pdfTeX warning: pdflatex (file ./images/Formular_Eidesstattliche_Versicherung_neu.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<images/Formular_Eidesstattliche_Versicherung_neu.pdf, id=148, page=1, 597.45204pt x 845.1575pt>
+<images/Formular_Eidesstattliche_Versicherung_neu.pdf, id=136, page=1, 597.45204pt x 845.1575pt>
 File: images/Formular_Eidesstattliche_Versicherung_neu.pdf Graphic file (type pdf)
  <use images/Formular_Eidesstattliche_Versicherung_neu.pdf, page 1>
 Package pdftex.def Info: images/Formular_Eidesstattliche_Versicherung_neu.pdf, page1 used on input line 16.
@@ -1381,7 +1381,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  (./Chapter4.tex
 chapter 4.
-<images/sputnik_cross.png, id=308, 515.9275pt x 231.86626pt>
+<images/sputnik_cross.png, id=293, 515.9275pt x 231.86626pt>
 File: images/sputnik_cross.png Graphic file (type png)
  <use images/sputnik_cross.png>
 Package pdftex.def Info: images/sputnik_cross.png used on input line 11.
@@ -1408,7 +1408,17 @@ chapter 5.
 
 
 
-] [12
+]
+\openout2 = `Conclusion.aux'.
+
+ (./Conclusion.tex [12
+
+
+
+
+]
+chapter 6.
+) [13] [14
 
 
 
@@ -1417,20 +1427,21 @@ chapter 5.
 
  (./anhang.tex
 chapter A.
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 4.
-(/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)) [13
+) [15
 
 
 
-] (./MAIN.bbl [14
+] (./MAIN.bbl [16
 
 
 
 ]
 chapter without number
-[15]
+[17]
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 102.
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
 Underfull \hbox (badness 10000) in paragraph at lines 99--104
 []\T1/lmr/m/sc/12 World Health Or-ga-ni-za-tion\T1/lmr/m/n/12 :  \T1/lmr/m/it/12 Car-dio-vas-cu-lar dis-eases
  []
@@ -1440,32 +1451,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 99--104
 \T1/lmr/m/it/12 (CVDs)\T1/lmr/m/n/12 .  [][]$\T1/lmtt/m/n/12 https : / / www . who . int / news-[]room / fact-[]sheets / detail /
  []
 
-) [16]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 175.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 175.
- (./MAIN.aux (./titelseite.aux) (./danksagung.aux) (./erklaerung.aux) (./abstract.aux) (./symbolverzeichnis.aux) (./introduction.aux) (./Fundamentals.aux) (./Technical_Fundamentals.aux) (./Chapter4.aux) (./Chapter5.aux) (./anhang.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 175.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 175.
+) [18]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 176.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 176.
+ (./MAIN.aux (./titelseite.aux) (./danksagung.aux) (./erklaerung.aux) (./abstract.aux) (./symbolverzeichnis.aux) (./introduction.aux) (./Fundamentals.aux) (./Technical_Fundamentals.aux) (./Chapter4.aux) (./Chapter5.aux) (./Conclusion.aux) (./anhang.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 176.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 176.
 Package rerunfilecheck Info: File `MAIN.out' has not changed.
-(rerunfilecheck)             Checksum: 5B9CD4ADEA466DF06CEA0142581CE5C2;2011.
+(rerunfilecheck)             Checksum: 1317B794D21798E717637D980D3390E5;1864.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 30781 strings out of 492995
- 573438 string characters out of 6132703
- 722069 words of memory out of 5000000
+ 30786 strings out of 492995
+ 573544 string characters out of 6132703
+ 722539 words of memory out of 5000000
  33661 multiletter control sequences out of 15000+600000
- 65168 words of font info for 57 fonts, out of 8000000 for 9000
+ 62176 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,18n,66p,10510b,669s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on MAIN.pdf (26 pages, 308168 bytes).
+Output written on MAIN.pdf (28 pages, 305032 bytes).
 PDF statistics:
- 413 PDF objects out of 1000 (max. 8388607)
- 363 compressed objects within 4 object streams
- 77 named destinations out of 1000 (max. 500000)
- 294 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 402 PDF objects out of 1000 (max. 8388607)
+ 350 compressed objects within 4 object streams
+ 76 named destinations out of 1000 (max. 500000)
+ 270 words of extra memory for PDF output out of 10000 (max. 10000000)
 

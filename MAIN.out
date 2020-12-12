@@ -5,28 +5,25 @@
 \BOOKMARK [1][-]{section.1.1}{Motivation and goal}{chapter.1}% 5
 \BOOKMARK [1][-]{section.1.2}{Struture of the thesis}{chapter.1}% 6
 \BOOKMARK [0][-]{chapter.2}{Medical Fundamentals}{}% 7
-\BOOKMARK [1][-]{section.2.1}{Anatomy of the Heart}{chapter.2}% 8
-\BOOKMARK [1][-]{section.2.2}{Cardiovascular System}{chapter.2}% 9
-\BOOKMARK [1][-]{section.2.3}{Heartinsufficency}{chapter.2}% 10
-\BOOKMARK [0][-]{chapter.3}{Technical Fundamentals}{}% 11
-\BOOKMARK [1][-]{section.3.1}{Ventricular Assist Devices}{chapter.3}% 12
-\BOOKMARK [2][-]{subsection.3.1.1}{Technology}{section.3.1}% 13
-\BOOKMARK [2][-]{subsection.3.1.2}{Therapeutic objective}{section.3.1}% 14
-\BOOKMARK [1][-]{section.3.2}{System Identification}{chapter.3}% 15
-\BOOKMARK [1][-]{section.3.3}{Control Theory}{chapter.3}% 16
-\BOOKMARK [2][-]{subsection.3.3.1}{Robust Control}{section.3.3}% 17
-\BOOKMARK [2][-]{subsection.3.3.2}{Iterative Learning Control}{section.3.3}% 18
-\BOOKMARK [0][-]{chapter.4}{Modeling and Identification}{}% 19
-\BOOKMARK [1][-]{section.4.1}{Sputnik VAD}{chapter.4}% 20
-\BOOKMARK [1][-]{section.4.2}{Mock-Loop}{chapter.4}% 21
-\BOOKMARK [1][-]{section.4.3}{Static System Identification}{chapter.4}% 22
-\BOOKMARK [1][-]{section.4.4}{Dynamic System Identification}{chapter.4}% 23
-\BOOKMARK [0][-]{chapter.5}{Flow Control}{}% 24
-\BOOKMARK [1][-]{section.5.1}{Controller Design}{chapter.5}% 25
-\BOOKMARK [2][-]{subsection.5.1.1}{PI Controller}{section.5.1}% 26
-\BOOKMARK [2][-]{subsection.5.1.2}{Iterative Learning Control}{section.5.1}% 27
-\BOOKMARK [1][-]{section.5.2}{Evaluation of Controllers}{chapter.5}% 28
-\BOOKMARK [0][-]{appendix.A}{Latex Nutzung}{}% 29
-\BOOKMARK [1][-]{section.A.1}{Latex DO's \046 DON'Ts}{appendix.A}% 30
-\BOOKMARK [1][-]{section.A.2}{Matlab-Einbindung}{appendix.A}% 31
-\BOOKMARK [0][-]{chapter*.7}{Bibliography}{}% 32
+\BOOKMARK [1][-]{section.2.1}{Cardiovascular System}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.2}{Heartinsufficency}{chapter.2}% 9
+\BOOKMARK [0][-]{chapter.3}{Technical Fundamentals}{}% 10
+\BOOKMARK [1][-]{section.3.1}{Ventricular Assist Devices}{chapter.3}% 11
+\BOOKMARK [2][-]{subsection.3.1.1}{Technology}{section.3.1}% 12
+\BOOKMARK [2][-]{subsection.3.1.2}{Therapeutic objective}{section.3.1}% 13
+\BOOKMARK [1][-]{section.3.2}{Control Theory}{chapter.3}% 14
+\BOOKMARK [2][-]{subsection.3.2.1}{PI Controller}{section.3.2}% 15
+\BOOKMARK [2][-]{subsection.3.2.2}{Iterative Learning Control}{section.3.2}% 16
+\BOOKMARK [0][-]{chapter.4}{Modeling and Identification}{}% 17
+\BOOKMARK [1][-]{section.4.1}{Sputnik VAD}{chapter.4}% 18
+\BOOKMARK [1][-]{section.4.2}{Hardware in the Loop Test Bench}{chapter.4}% 19
+\BOOKMARK [1][-]{section.4.3}{System Identification}{chapter.4}% 20
+\BOOKMARK [0][-]{chapter.5}{Implementation of Flow Control}{}% 21
+\BOOKMARK [1][-]{section.5.1}{Controller Design}{chapter.5}% 22
+\BOOKMARK [2][-]{subsection.5.1.1}{PI Controller}{section.5.1}% 23
+\BOOKMARK [2][-]{subsection.5.1.2}{Iterative Learning Control}{section.5.1}% 24
+\BOOKMARK [2][-]{subsection.5.1.3}{Iterative Learning Control with varying iteration length}{section.5.1}% 25
+\BOOKMARK [1][-]{section.5.2}{Evaluation of Controllers}{chapter.5}% 26
+\BOOKMARK [0][-]{chapter.6}{Conclusion and future work}{}% 27
+\BOOKMARK [0][-]{appendix.A}{Appendix}{}% 28
+\BOOKMARK [0][-]{chapter*.7}{Bibliography}{}% 29

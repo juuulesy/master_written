@@ -11,6 +11,7 @@ A level-1 auxiliary file: Fundamentals.aux
 A level-1 auxiliary file: Technical_Fundamentals.aux
 A level-1 auxiliary file: Chapter4.aux
 A level-1 auxiliary file: Chapter5.aux
+A level-1 auxiliary file: Conclusion.aux
 A level-1 auxiliary file: anhang.aux
 The style file: alphadin.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -22,7 +23,7 @@ Database file #1: literatur.bib
 Warning--I didn't find a database entry for "Sputnik6"
 You've used 12 entries,
             4793 wiz_defined-function locations,
-            1005 strings with 9340 characters,
+            1006 strings with 9354 characters,
 and the built_in function-call counts, 10155 in all, are:
 = -- 1042
 > -- 326

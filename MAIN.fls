@@ -1,4 +1,4 @@
-PWD /Users/juliaribbrock/Documents/RWTH/SS20/MA! /Schriftlich/Schriftliche Arbeit
+PWD /Users/juliaribbrock/Documents/RWTH/SS20/MA! /master_written
 INPUT /usr/local/texlive/2017/texmf.cnf
 INPUT /usr/local/texlive/2017/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt
@@ -291,6 +291,8 @@ INPUT Chapter4.aux
 INPUT Chapter4.aux
 INPUT Chapter5.aux
 INPUT Chapter5.aux
+INPUT Conclusion.aux
+INPUT Conclusion.aux
 INPUT anhang.aux
 INPUT anhang.aux
 OUTPUT MAIN.aux
@@ -436,16 +438,18 @@ INPUT ./images/sputnik_cross.png
 OUTPUT Chapter5.aux
 INPUT Chapter5.tex
 INPUT Chapter5.tex
+OUTPUT Conclusion.aux
+INPUT Conclusion.tex
+INPUT Conclusion.tex
 OUTPUT anhang.aux
 INPUT anhang.tex
 INPUT anhang.tex
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/lm/ec-lmr8.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmtt.fd
-INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmtt.fd
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/lm/ec-lmtt12.tfm
 INPUT MAIN.bbl
 INPUT MAIN.bbl
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/lm/ec-lmcsc10.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmtt.fd
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmtt.fd
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/lm/ec-lmtt12.tfm
 INPUT MAIN.aux
 INPUT titelseite.aux
 INPUT titelseite.aux
@@ -467,6 +471,8 @@ INPUT Chapter4.aux
 INPUT Chapter4.aux
 INPUT Chapter5.aux
 INPUT Chapter5.aux
+INPUT Conclusion.aux
+INPUT Conclusion.aux
 INPUT anhang.aux
 INPUT anhang.aux
 INPUT ./MAIN.out
