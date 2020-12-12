@@ -1,0 +1,64 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: MAIN.aux
+A level-1 auxiliary file: titelseite.aux
+A level-1 auxiliary file: danksagung.aux
+A level-1 auxiliary file: erklaerung.aux
+A level-1 auxiliary file: abstract.aux
+A level-1 auxiliary file: symbolverzeichnis.aux
+A level-1 auxiliary file: introduction.aux
+A level-1 auxiliary file: Fundamentals.aux
+A level-1 auxiliary file: Technical_Fundamentals.aux
+A level-1 auxiliary file: Chapter4.aux
+A level-1 auxiliary file: Chapter5.aux
+A level-1 auxiliary file: anhang.aux
+The style file: alphadin.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: literatur.bib
+Warning--I didn't find a database entry for "Sputnik6"
+You've used 12 entries,
+            4793 wiz_defined-function locations,
+            1005 strings with 9340 characters,
+and the built_in function-call counts, 10155 in all, are:
+= -- 1042
+> -- 326
+< -- 353
++ -- 407
+- -- 131
+* -- 799
+:= -- 1751
+add.period$ -- 13
+call.type$ -- 12
+change.case$ -- 82
+chr.to.int$ -- 12
+cite$ -- 12
+duplicate$ -- 249
+empty$ -- 600
+format.name$ -- 219
+if$ -- 1894
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 65
+newline$ -- 75
+num.names$ -- 36
+pop$ -- 108
+preamble$ -- 1
+purify$ -- 106
+quote$ -- 0
+skip$ -- 528
+stack$ -- 0
+substring$ -- 794
+swap$ -- 84
+text.length$ -- 63
+text.prefix$ -- 3
+top$ -- 0
+type$ -- 116
+warning$ -- 0
+while$ -- 100
+width$ -- 14
+write$ -- 159
+(There was 1 warning)

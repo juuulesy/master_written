@@ -1,0 +1,175 @@
+%***********************************************************************
+%* File            :    MAIN.tex
+%*
+%* HAUPTDOKUMENT
+%*
+%* Dieses Dokument bindet alle untergeordneten Dokumente
+%* ein. Es wird beim Aufruf von pdflatex als Quelle angegeben.
+%*
+%* Autoren         :    Daniel Hering, Tobias Wartzek
+%*
+%* Datum           :    05.12.2009
+%***********************************************************************
+
+
+
+\documentclass[12pt,a4paper,twoside,openright,index=totoc,listof=totoc,DIV15,BCOR=8.25mm,headinclude,footinclude=false,headsepline,notitlepage,numbers=noenddot,bibliography=totoc,headings=normal,parskip=full]{scrbook}
+
+%************************************************************************
+% Das Package muss leider hier eingebunden werden da sonst in den
+% Befehlen f�r hypersetup keinerlei Umlaute zur Verf�gung stehen
+%************************************************************************
+
+\usepackage[latin1]{inputenc}            % erlaubt direkte Eingabe Deutscher
+                                         % Sonderzeichen in .tex Dateien
+                                         %(latin1=iso8859-1 fuer Unix Editoren
+                                         % oder Windows Editoren die auch latin1
+                                         % beherrschen)
+
+%\usepackage[ngerman, english]{babel}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{booktabs}
+%************************************************************************
+% Dateiinfos eintragen (u.a. von hypersetup und f�r die Titelseite verwendet)
+%************************************************************************
+\usepackage{pdfpages}
+% Titel der Arbeit
+\newcommand*{\doclongtitle}{Modeling and flow control for a left ventricular assist device}
+
+% Art der Arbeit (Diplomarbeit, Studienarbeit, Bachelorarbeit, etc.)
+\newcommand*{\docsubject}{Master Thesis}
+
+% Name des Autors
+\newcommand*{\docauthor}{Julia Ribbrock}
+
+% E-Mail Adresse des Autors
+\newcommand*{\docauthoremail}{julia.ribbrock@rwth-aachen.de}
+
+% Schl�sselworte der Arbeit
+\newcommand*{\dockeywords}{MedIT Latex Studienarbeit Diplomarbeit Vorlage}
+
+% Name des Betreuers
+\newcommand*{\docsupervisor}{Patrick Borchers, M.Sc.}
+
+\newcommand*{\docauthorfax}{+49 241 80-6-23211}
+\newcommand*{\docauthorphone}{+49 241 80-23211}
+
+% Bild auf der Titelseite
+\newcommand*{\doctitlepic}{images/beispiel1}
+
+% folgende Befehle nicht �ndern!!
+\newcommand*{\dochomepage}{www.medit.hia.rwth-aachen.de}
+\newcommand*{\docshorttitle}{\doclongtitle}
+
+%**********************************************
+%* Pakete (HEADER)                           *
+%**********************************************
+
+\include{HEADER}
+
+
+%*************************************************************
+%*************************************************************
+%*																													**
+%* 					Beginn des Dokuments 						  							**
+%*																													**
+%*************************************************************
+%*************************************************************
+
+\begin{document}
+\begin{sloppypar}                       % sch�ner Blocksatz trotz langer Worte
+
+
+
+%*************************************************************
+%																														 *
+%										 ENDE ALLER DEFINITIONEN 								 *
+%																														 *
+%*************************************************************
+
+
+\frontmatter    												%r�mische Nummerierung aktivieren
+\include{titelseite}
+%\include{titelseite_alt}
+\cleardoubleemptypage
+
+
+%**************
+%* Danksagung *
+%**************
+
+\include{danksagung}
+\cleardoubleemptypage
+
+%************************************************
+%* Erkl�rung (hier muss nichts ge�ndert werden) *
+%************************************************
+
+\include{erklaerung}
+\cleardoubleemptypage
+
+%************
+%* Abstract *
+%************
+
+\include{abstract}
+\cleardoubleemptypage
+
+%**********************
+%* Inhaltsverzeichnis *
+%**********************
+
+
+\addcontentsline{toc}{chapter}{Contents} % Eintrag im Inhaltsverzeichnis erstellen
+\tableofcontents                        % Inhaltsverzeichnis anlegen√
+\cleardoubleemptypage
+
+
+
+%*********************
+%* Symbolverzeichnis *
+%********************
+
+\include{symbolverzeichnis}
+\cleardoubleemptypage
+
+\mainmatter							% Arabische Nummerierung, Beginn des Hauptteils
+
+%**************
+%* Einleitung *
+%**************
+
+\include{introduction}
+
+%*************
+%* Hauptteil *
+%*************
+
+\include{Fundamentals}
+\include{Technical_Fundamentals}
+\include{Chapter4}
+\include{Chapter5}
+
+
+%**********
+%* Anhang *
+%**********
+
+\cleardoublepage
+\appendix
+\include{anhang}
+
+
+%**********************************************************
+% Literaturverzeichnis (hier muss nichts ge�ndert werden) *
+%**********************************************************
+
+\bibliographystyle{alphadin}    %\bibliographystyle{} plain dinat
+\bibliography{literatur}%
+
+
+\end{sloppypar}
+\end{document}
