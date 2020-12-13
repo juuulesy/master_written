@@ -427,6 +427,9 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/lm/ec-lmbx10.tfm
 INPUT images/heart_1.jpg
 INPUT ./images/heart_1.jpg
 INPUT ./images/heart_1.jpg
+INPUT images/cardiac_cycle.jpg
+INPUT ./images/cardiac_cycle.jpg
+INPUT ./images/cardiac_cycle.jpg
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/lm/ec-lmro12.tfm
 OUTPUT Technical_Fundamentals.aux
 INPUT Technical_Fundamentals.tex
