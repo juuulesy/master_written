@@ -1,6 +1,0 @@
-PWD /Users/juliaribbrock/Documents/RWTH/SS20/MA! /Schriftliche Arbeit
-INPUT /usr/local/texlive/2017/texmf.cnf
-INPUT /usr/local/texlive/2017/texmf-dist/web2c/texmf.cnf
-INPUT /usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT introduction.tex
-OUTPUT introduction.log
