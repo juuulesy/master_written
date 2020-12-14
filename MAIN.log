@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.14)  14 DEC 2020 00:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.14)  14 DEC 2020 11:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1333,12 +1333,25 @@ chapter without number
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 7.
 
-Overfull \hbox (0.98903pt too wide) in paragraph at lines 57--57
+
+Package acronym Warning: Acronym `A-V' is not defined on input line 59.
+
+
+Package acronym Warning: Acronym `A-V' is not defined on input line 59.
+
+
+Overfull \hbox (0.98903pt too wide) in paragraph at lines 59--59
 []|[][]| 
  []
 
+
+Package acronym Warning: Acronym `SL' is not defined on input line 59.
+
+
+Package acronym Warning: Acronym `SL' is not defined on input line 59.
+
 )
-Overfull \hbox (11.74983pt too wide) in paragraph at lines 57--137
+Overfull \hbox (11.74983pt too wide) in paragraph at lines 59--137
 [] 
  []
 
@@ -1371,27 +1384,30 @@ chapter 1.
 
 ]
 chapter 2.
-<images/circulation.jpg, id=219, 521.95pt x 721.69624pt>
+<images/circulation.jpg, id=220, 521.95pt x 721.69624pt>
 File: images/circulation.jpg Graphic file (type jpg)
  <use images/circulation.jpg>
 Package pdftex.def Info: images/circulation.jpg used on input line 8.
 (pdftex.def)             Requested size: 172.20421pt x 258.31279pt.
- [3 <./images/circulation.jpg>] <images/heart_1.jpg, id=236, 513.92pt x 490.83376pt>
+ [3 <./images/circulation.jpg>] <images/heart_1.jpg, id=237, 513.92pt x 490.83376pt>
 File: images/heart_1.jpg Graphic file (type jpg)
  <use images/heart_1.jpg>
 Package pdftex.def Info: images/heart_1.jpg used on input line 16.
 (pdftex.def)             Requested size: 258.31812pt x 246.71944pt.
- [4 <./images/heart_1.jpg>] <images/cardiac_cycle.jpg, id=255, 1467.4825pt x 1118.1775pt>
+
+Underfull \vbox (badness 1721) has occurred while \output is active []
+
+ [4 <./images/heart_1.jpg>] <images/cardiac_cycle.jpg, id=250, 1467.4825pt x 1118.1775pt>
 File: images/cardiac_cycle.jpg Graphic file (type jpg)
  <use images/cardiac_cycle.jpg>
 Package pdftex.def Info: images/cardiac_cycle.jpg used on input line 31.
 (pdftex.def)             Requested size: 344.42197pt x 262.43051pt.
- [5 <./images/cardiac_cycle.jpg>] <images/pv_1.jpg, id=270, 374.58253pt x 312.49141pt>
+ [5 <./images/cardiac_cycle.jpg>] <images/pv_1.jpg, id=271, 374.58253pt x 312.49141pt>
 File: images/pv_1.jpg Graphic file (type jpg)
  <use images/pv_1.jpg>
 Package pdftex.def Info: images/pv_1.jpg used on input line 41.
 (pdftex.def)             Requested size: 215.26291pt x 179.58102pt.
- <images/pv_2_.jpg, id=271, 1092.08pt x 915.42pt>
+ <images/pv_2_.jpg, id=272, 1092.08pt x 915.42pt>
 File: images/pv_2_.jpg Graphic file (type jpg)
  <use images/pv_2_.jpg>
 Package pdftex.def Info: images/pv_2_.jpg used on input line 43.
@@ -1418,17 +1434,11 @@ Overfull \hbox (12.06401pt too wide) in alignment at lines 38--38
 
  (./Chapter4.tex
 chapter 4.
-<images/sputnik_cross.png, id=366, 515.9275pt x 231.86626pt>
+<images/sputnik_cross.png, id=367, 515.9275pt x 231.86626pt>
 File: images/sputnik_cross.png Graphic file (type png)
  <use images/sputnik_cross.png>
 Package pdftex.def Info: images/sputnik_cross.png used on input line 25.
 (pdftex.def)             Requested size: 258.31812pt x 116.09558pt.
-
-
-LaTeX Warning: Citation `Sputnik6' on page 13 undefined on input line 26.
-
-
-LaTeX Warning: Citation `Sputnik6' on page 13 undefined on input line 26.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1478,16 +1488,16 @@ chapter A.
 ]
 chapter without number
 [21]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 120.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 121.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Underfull \hbox (badness 10000) in paragraph at lines 117--122
+Underfull \hbox (badness 10000) in paragraph at lines 125--130
 []\T1/lmr/m/sc/12 World Health Or-ga-ni-za-tion\T1/lmr/m/n/12 :  \T1/lmr/m/it/12 Car-dio-vas-cu-lar dis-eases
  []
 
 
-Underfull \hbox (badness 4366) in paragraph at lines 117--122
+Underfull \hbox (badness 4366) in paragraph at lines 125--130
 \T1/lmr/m/it/12 (CVDs)\T1/lmr/m/n/12 .  [][]$\T1/lmtt/m/n/12 https : / / www . who . int / news-[]room / fact-[]sheets / detail /
  []
 
@@ -1499,25 +1509,21 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 177.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 177.
 Package rerunfilecheck Info: File `MAIN.out' has not changed.
 (rerunfilecheck)             Checksum: B9D71C04690D0DB06C4CE117287C810A;1861.
-
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 31907 strings out of 492995
- 594452 string characters out of 6132703
- 742599 words of memory out of 5000000
- 34755 multiletter control sequences out of 15000+600000
- 65166 words of font info for 57 fonts, out of 8000000 for 9000
+ 31915 strings out of 492995
+ 594537 string characters out of 6132703
+ 742685 words of memory out of 5000000
+ 34761 multiletter control sequences out of 15000+600000
+ 68164 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,18n,66p,10510b,669s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/p
-ublic/lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on MAIN.pdf (32 pages, 1750693 bytes).
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/p
+ublic/lm/lmro12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on MAIN.pdf (32 pages, 1771675 bytes).
 PDF statistics:
- 494 PDF objects out of 1000 (max. 8388607)
- 424 compressed objects within 5 object streams
- 91 named destinations out of 1000 (max. 500000)
+ 502 PDF objects out of 1000 (max. 8388607)
+ 430 compressed objects within 5 object streams
+ 92 named destinations out of 1000 (max. 500000)
  295 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -20,46 +20,44 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: literatur.bib
-Warning--I didn't find a database entry for "Sputnik6"
-You've used 15 entries,
+You've used 16 entries,
             4793 wiz_defined-function locations,
-            1021 strings with 9730 characters,
-and the built_in function-call counts, 11813 in all, are:
-= -- 1199
-> -- 378
-< -- 410
-+ -- 474
-- -- 151
-* -- 895
-:= -- 2046
-add.period$ -- 16
-call.type$ -- 15
-change.case$ -- 97
-chr.to.int$ -- 15
-cite$ -- 15
-duplicate$ -- 301
-empty$ -- 720
-format.name$ -- 252
-if$ -- 2211
+            1026 strings with 9838 characters,
+and the built_in function-call counts, 12594 in all, are:
+= -- 1285
+> -- 397
+< -- 427
++ -- 494
+- -- 157
+* -- 954
+:= -- 2169
+add.period$ -- 18
+call.type$ -- 16
+change.case$ -- 102
+chr.to.int$ -- 16
+cite$ -- 16
+duplicate$ -- 320
+empty$ -- 779
+format.name$ -- 263
+if$ -- 2372
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 77
-newline$ -- 90
-num.names$ -- 45
-pop$ -- 133
+missing$ -- 82
+newline$ -- 97
+num.names$ -- 48
+pop$ -- 140
 preamble$ -- 1
-purify$ -- 127
+purify$ -- 134
 quote$ -- 0
-skip$ -- 634
+skip$ -- 669
 stack$ -- 0
-substring$ -- 886
-swap$ -- 93
-text.length$ -- 70
+substring$ -- 972
+swap$ -- 98
+text.length$ -- 73
 text.prefix$ -- 4
 top$ -- 0
-type$ -- 134
+type$ -- 144
 warning$ -- 0
-while$ -- 114
-width$ -- 17
-write$ -- 192
-(There was 1 warning)
+while$ -- 120
+width$ -- 18
+write$ -- 208
