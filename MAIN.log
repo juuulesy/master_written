@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.14)  14 DEC 2020 15:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.14)  15 DEC 2020 15:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1330,22 +1330,9 @@ chapter without number
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 7.
 
-
-Package acronym Warning: Acronym `A-V' is not defined on input line 59.
-
-
-Package acronym Warning: Acronym `A-V' is not defined on input line 59.
-
-
 Overfull \hbox (0.98903pt too wide) in paragraph at lines 59--59
 []|[][]| 
  []
-
-
-Package acronym Warning: Acronym `SL' is not defined on input line 59.
-
-
-Package acronym Warning: Acronym `SL' is not defined on input line 59.
 
 )
 Overfull \hbox (11.74983pt too wide) in paragraph at lines 59--137
@@ -1383,12 +1370,12 @@ chapter 1.
 
 ]
 chapter 2.
-<images/circulation.jpg, id=236, 521.95pt x 721.69624pt>
+<images/circulation.jpg, id=235, 521.95pt x 721.69624pt>
 File: images/circulation.jpg Graphic file (type jpg)
  <use images/circulation.jpg>
 Package pdftex.def Info: images/circulation.jpg used on input line 8.
 (pdftex.def)             Requested size: 172.20421pt x 258.31279pt.
- [3 <./images/circulation.jpg>] <images/heart_1.jpg, id=253, 513.92pt x 490.83376pt>
+ [3 <./images/circulation.jpg>] <images/heart_1.jpg, id=252, 513.92pt x 490.83376pt>
 File: images/heart_1.jpg Graphic file (type jpg)
  <use images/heart_1.jpg>
 Package pdftex.def Info: images/heart_1.jpg used on input line 16.
@@ -1396,44 +1383,67 @@ Package pdftex.def Info: images/heart_1.jpg used on input line 16.
 
 Underfull \vbox (badness 1721) has occurred while \output is active []
 
- [4 <./images/heart_1.jpg>] <images/cardiac_cycle.jpg, id=265, 1467.4825pt x 1118.1775pt>
+ [4 <./images/heart_1.jpg>] <images/cardiac_cycle.jpg, id=264, 1467.4825pt x 1118.1775pt>
 File: images/cardiac_cycle.jpg Graphic file (type jpg)
  <use images/cardiac_cycle.jpg>
 Package pdftex.def Info: images/cardiac_cycle.jpg used on input line 31.
 (pdftex.def)             Requested size: 344.42197pt x 262.43051pt.
- [5 <./images/cardiac_cycle.jpg>] <images/pv_1.jpg, id=286, 374.58253pt x 312.49141pt>
+ [5 <./images/cardiac_cycle.jpg>] <images/pv_1.jpg, id=285, 374.58253pt x 312.49141pt>
 File: images/pv_1.jpg Graphic file (type jpg)
  <use images/pv_1.jpg>
-Package pdftex.def Info: images/pv_1.jpg used on input line 41.
+Package pdftex.def Info: images/pv_1.jpg used on input line 42.
 (pdftex.def)             Requested size: 215.26291pt x 179.58102pt.
- <images/pv_2_.jpg, id=287, 1092.08pt x 915.42pt>
+ <images/pv_2_.jpg, id=286, 1092.08pt x 915.42pt>
 File: images/pv_2_.jpg Graphic file (type jpg)
  <use images/pv_2_.jpg>
-Package pdftex.def Info: images/pv_2_.jpg used on input line 43.
+Package pdftex.def Info: images/pv_2_.jpg used on input line 44.
 (pdftex.def)             Requested size: 215.26291pt x 180.44077pt.
- [6 <./images/pv_1.jpg> <./images/pv_2_.jpg>]) [7]
+ [6 <./images/pv_1.jpg> <./images/pv_2_.jpg>] <images/sys_dys.jpg, id=310, 387.4475pt x 323.2075pt>
+File: images/sys_dys.jpg Graphic file (type jpg)
+ <use images/sys_dys.jpg>
+Package pdftex.def Info: images/sys_dys.jpg used on input line 58.
+(pdftex.def)             Requested size: 215.26291pt x 179.57462pt.
+ <images/dias_dys.jpg, id=311, 383.4325pt x 332.24126pt>
+File: images/dias_dys.jpg Graphic file (type jpg)
+ <use images/dias_dys.jpg>
+Package pdftex.def Info: images/dias_dys.jpg used on input line 60.
+(pdftex.def)             Requested size: 215.26291pt x 186.5253pt.
+)
+Underfull \vbox (badness 1147) has occurred while \output is active []
+
+ [7] [8 <./images/sys_dys.jpg> <./images/dias_dys.jpg>]
 \openout2 = `Technical_Fundamentals.aux'.
 
- (./Technical_Fundamentals.tex [8
+ (./Technical_Fundamentals.tex
+chapter 3.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 8.
+[9
 
 
 
 
 ]
-chapter 3.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 8.
-[9]
 Overfull \hbox (12.06401pt too wide) in alignment at lines 38--38
 [][][][] 
  []
 
-[10] [11]) [12]
+[10] [11] [12] <images/control_loop.jpg, id=391, 685.8122pt x 173.89969pt>
+File: images/control_loop.jpg Graphic file (type jpg)
+ <use images/control_loop.jpg>
+Package pdftex.def Info: images/control_loop.jpg used on input line 87.
+(pdftex.def)             Requested size: 387.47061pt x 98.2535pt.
+) [13 <./images/control_loop.jpg>]
 \openout2 = `Chapter4.aux'.
 
- (./Chapter4.tex
+ (./Chapter4.tex [14
+
+
+
+
+]
 chapter 4.
-<images/sputnik_cross.png, id=382, 515.9275pt x 231.86626pt>
+<images/sputnik_cross.png, id=406, 515.9275pt x 231.86626pt>
 File: images/sputnik_cross.png Graphic file (type png)
  <use images/sputnik_cross.png>
 Package pdftex.def Info: images/sputnik_cross.png used on input line 25.
@@ -1442,17 +1452,12 @@ Package pdftex.def Info: images/sputnik_cross.png used on input line 25.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[13
-
-
-
-
-]) [14 <./images/sputnik_cross.png>]
+[15]) [16 <./images/sputnik_cross.png>]
 \openout2 = `Chapter5.aux'.
 
  (./Chapter5.tex
 chapter 5.
-) [15
+) [17
 
 
 
@@ -1460,14 +1465,14 @@ chapter 5.
 ]
 \openout2 = `Conclusion.aux'.
 
- (./Conclusion.tex [16
+ (./Conclusion.tex [18
 
 
 
 
 ]
 chapter 6.
-) [17] [18
+) [19] [20
 
 
 
@@ -1476,53 +1481,52 @@ chapter 6.
 
  (./anhang.tex
 chapter A.
-) [19
+) [21
 
 
 
-] (./MAIN.bbl [20
+] (./MAIN.bbl [22
 
 
 
 ]
 chapter without number
-[21]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 121.
- (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmtt.fd
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 51.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Underfull \hbox (badness 10000) in paragraph at lines 125--130
+) [23]
+Underfull \hbox (badness 10000) in paragraph at lines 133--138
 []\T1/lmr/m/sc/12 World Health Or-ga-ni-za-tion\T1/lmr/m/n/12 :  \T1/lmr/m/it/12 Car-dio-vas-cu-lar dis-eases
  []
 
 
-Underfull \hbox (badness 4366) in paragraph at lines 125--130
+Underfull \hbox (badness 4366) in paragraph at lines 133--138
 \T1/lmr/m/it/12 (CVDs)\T1/lmr/m/n/12 .  [][]$\T1/lmtt/m/n/12 https : / / www . who . int / news-[]room / fact-[]sheets / detail /
  []
 
-) [22]
+[24]) [25]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 177.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 177.
  (./MAIN.aux (./titelseite.aux) (./danksagung.aux) (./erklaerung.aux) (./abstract.aux) (./symbolverzeichnis.aux) (./introduction.aux) (./Fundamentals.aux) (./Technical_Fundamentals.aux) (./Chapter4.aux) (./Chapter5.aux) (./Conclusion.aux) (./anhang.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 177.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 177.
 Package rerunfilecheck Info: File `MAIN.out' has not changed.
-(rerunfilecheck)             Checksum: 32E5F17C50892F1BB7F367761C193704;2066.
+(rerunfilecheck)             Checksum: BA1CB28FEC27BA375709BFA2EFA12250;2066.
  ) 
 Here is how much of TeX's memory you used:
- 31922 strings out of 492995
- 594650 string characters out of 6132703
- 743685 words of memory out of 5000000
- 34764 multiletter control sequences out of 15000+600000
- 68164 words of font info for 58 fonts, out of 8000000 for 9000
+ 31964 strings out of 492995
+ 595373 string characters out of 6132703
+ 743271 words of memory out of 5000000
+ 34793 multiletter control sequences out of 15000+600000
+ 65166 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,18n,66p,10510b,669s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/p
-ublic/lm/lmro12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on MAIN.pdf (32 pages, 1772069 bytes).
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/p
+ublic/lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on MAIN.pdf (35 pages, 1909055 bytes).
 PDF statistics:
- 518 PDF objects out of 1000 (max. 8388607)
- 446 compressed objects within 5 object streams
- 96 named destinations out of 1000 (max. 500000)
- 319 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 550 PDF objects out of 1000 (max. 8388607)
+ 472 compressed objects within 5 object streams
+ 107 named destinations out of 1000 (max. 500000)
+ 334 words of extra memory for PDF output out of 10000 (max. 10000000)
 

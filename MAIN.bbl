@@ -44,6 +44,14 @@
 \newblock {In: }\emph{The Journal of Heart and Lung Transplantation} 36 (2017),
   2020/08/05, Nr. 10, S. 1080--1086
 
+\bibitem[KR15]{HKS_pv}
+\textsc{Katz}, Arnold~M. ; \textsc{Rolett}, Ellis~L.:
+\newblock {Heart failure: when form fails to follow function}.
+\newblock {In: }\emph{European Heart Journal} 37 (2015), 10, Nr. 5, 449-454.
+\newblock \url{http://dx.doi.org/10.1093/eurheartj/ehv548}. --
+\newblock DOI 10.1093/eurheartj/ehv548. --
+\newblock ISSN 0195--668X
+
 \bibitem[KSS{\etalchar{+}}11]{VAD6}
 \textsc{Krabatsch}, T ; \textsc{Schweiger}, M ; \textsc{Stepanenko}, A ;
   \textsc{Drews}, T ; \textsc{Potapov}, E ; \textsc{Pasic}, M ; \textsc{Weng},
@@ -127,5 +135,14 @@
 \newblock
   \url{https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds)},
   Zuletzt besucht am 06.08.2020
+
+\bibitem[ZR17]{Reg_17}
+\textsc{Zacher}, Serge ; \textsc{Reuter}, Manfred:
+\newblock \emph{Regelungstechnik f{\"u}r Ingenieure: Analyse, Simulation und
+  Entwurf von Regelkreisen}.
+\newblock Wiesbaden : Springer Fachmedien Wiesbaden, 2017.
+\newblock \url{http://dx.doi.org/10.1007/978-3-658-17632-7_3}.
+\newblock \url{http://dx.doi.org/10.1007/978-3-658-17632-7_3}. --
+\newblock ISBN 978--3--658--17632--7
 
 \end{thebibliography}

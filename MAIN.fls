@@ -416,7 +416,6 @@ OUTPUT symbolverzeichnis.aux
 INPUT symbolverzeichnis.tex
 INPUT symbolverzeichnis.tex
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/helvetic/phvb8t.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/helvetic/phvb8t.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm
 OUTPUT introduction.aux
@@ -444,12 +443,21 @@ INPUT images/pv_2_.jpg
 INPUT ./images/pv_2_.jpg
 INPUT ./images/pv_2_.jpg
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/lm/ec-lmri12.tfm
+INPUT images/sys_dys.jpg
+INPUT ./images/sys_dys.jpg
+INPUT ./images/sys_dys.jpg
+INPUT images/dias_dys.jpg
+INPUT ./images/dias_dys.jpg
+INPUT ./images/dias_dys.jpg
 OUTPUT Technical_Fundamentals.aux
 INPUT Technical_Fundamentals.tex
 INPUT Technical_Fundamentals.tex
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/helvetic/phvb8t.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/helvetic/phvb8t.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm
+INPUT images/control_loop.jpg
+INPUT ./images/control_loop.jpg
+INPUT ./images/control_loop.jpg
 OUTPUT Chapter4.aux
 INPUT Chapter4.tex
 INPUT Chapter4.tex
@@ -504,7 +512,6 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx10.pfb
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi12.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi8.pfb
