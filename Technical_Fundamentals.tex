@@ -24,9 +24,68 @@ The controller $G_{c}(s)$ then transfers the control error to the actuating vari
  \label{eq:lim_e}
 \end{equation}
 Another requirement is that the dynamic relationship between the reference variable w(t) and the controlled variable y(t) must satisfy specified quality requirements.  The last requirement states that the first three requirements must be statisfied despite uncertainties in the plant. This requirement is called the Robustness requirement. More detailed information on these requirements can be found in \cite{Reg_10}.
-\\The plant corresponds to the part of the system in which the physical quantity to be controlled is influenced by the controller. The calculation of the controlled system is only possible in a few cases by setting up and solving differential equations. Due to this, the determination of the characteristic values of the controlled system is usually carried out experimentally. There are several basic types of plants. These are classified according to their dynamic behavior. As only the PT1 element is used in the practical part of this thesis, all other variations will not be discussed at this point. Detailed information on this topic can be found in \cite{Reg_10}. The $PT_{1}$-element is the plant type which is most common in technical equipment.\cite{Reg_10} A $PT_{n}$-element, in it's static state, reacts proportionally to the input value and has a distinct transition behavior. The index n describes the system order.  A PT1 element therefore is a proportional delay element of first order. The time constant T enables an impression of the speed with which the system can react to changes at the input. 
+
+The plant $G(s)$ corresponds to the part of the system in which the physical quantity to be controlled is influenced by the controller. The calculation of the plant by setting up and solving differential equations is only possible in a few cases. Due to this, the determination of the plant's characteristic values is usually carried out experimentally. There are several basic types of plants. These are classified according to their dynamic behavior. As only the PT$_{1}$-element is used in the practical part of this thesis, all other variations will not be discussed at this point. Detailed information on this topic can be found in \cite{Reg_10}.
+\\The PT$_{1}$-element is the plant type which is most common in technical equipment. A PT$_{n}$-element, in it's static state, reacts proportionally to the input value and has a distinct transition behavior. The index n describes the system order. A PT$_{1}$-element therefore is a proportional delay element of first order. The mathematical formulation of the transfer function of a PT$_{1}$-element is
+\begin{equation}
+    G(s) = \frac{k_{s}}{1+sT}
+ \label{eq:tf_pt1}
+\end{equation}
+
+\begin{figure}[h]
+   \centering
+   \includegraphics[width=0.9\textwidth]{images/tf_pt1.jpg}
+   \caption[Tranfer function of a PT$_{1}$-element]{Transfer function of a PT$_{1}$-element \cite{Reg_10}.}
+   \label{fig:tf_pt1}
+ \end{figure}
+The value $k_{s}$ describes the static gain, which equals the final value of the transfer function, in case $u(0)=0$. The time constant T enables an impression of the speed with which the system can react to changes at the input. It is defined as the time at which the transfer function reaches 63\% of the static gain. \cite{Reg_10}
+\figurename~\ref{fig:tf_pt1} shows the tranfer function of a PT$_{1}$-element.
 
 
-\subsection{PI Controller}
-\subsubsection{Chien Hrones Reswick}
+\subsection{PI-controller}
+A PI-controller is a control structure commonly used for linear systems. This structure consists of both a propotional and an integral control element.
+The output value of a P-controller is proportional to it's input value. In relation to the control loop in \figurename~\ref{fig:control_loop} this leads to
+\begin{equation}
+    u(t) = K_{P}e(t).
+ \label{eq:p_contr_1}
+\end{equation}
+Using Laplacetransformation the transfer function for a P controller can be determined as
+\begin{equation}
+    G(s) = \frac{u(s)}{e(s)} = K_{P}
+ \label{eq:p_contr_2}
+\end{equation}
+Therefore, the step response of this controller equals a step weighted with the Parameter $K_{P}$.
+The relationship between input and output value of an I-controller is described through
+\begin{equation}
+    u(t) = K_{I}\int e(t) dt.
+ \label{eq:i_contr_1}
+\end{equation}
+Equal to the P-controller, Laplacetransformation can be used to determine the transfer function of the I-controller.
+This leads to
+\begin{equation}
+    G(s) = \frac{u(s)}{e(s)} = \frac{K_{I}}{s},
+ \label{eq:i_contr_2}
+\end{equation}
+which indicates a step response in form of a ramp with slope $K_{I}$.
+In order to generate a PI-controller from these elements the elements can be added, which leads to
+\begin{equation}
+    u(t) = K_{P}e(t) + K_{I}\int e(t) dt.
+ \label{eq:pi_contr_1}
+\end{equation}
+The Laplacetransformation can be used again to formulate the transfer function
+\begin{equation}
+    G(s) = \frac{u(s)}{e(s)} =  K_{P} + \frac{K_{I}}{s}.
+ \label{eq:pi_contr_2}
+\end{equation}
+The step response of the PI-controller, illustrated in \figurename~\ref{fig:step_resp_pi}, shows both the weigthed step from the P-controller and the ramp from the I-controller.
+
+\begin{figure}[h]
+   \centering
+   \includegraphics[width=0.4\textwidth]{images/step_resp_pi.jpg}
+   \caption[Step response of a PI-Controller]{Step response of a PI-Controller}
+   \label{fig:step_resp_pi}
+ \end{figure}
+
+\subsubsection{Controller design according to Chien Hrones Reswick}
+
 \subsection{Iterative Learning Control}

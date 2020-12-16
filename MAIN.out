@@ -14,7 +14,7 @@
 \BOOKMARK [2][-]{subsection.2.3.2}{Technology}{section.2.3}% 14
 \BOOKMARK [0][-]{chapter.3}{Technical Fundamentals}{}% 15
 \BOOKMARK [1][-]{section.3.1}{Control Theory}{chapter.3}% 16
-\BOOKMARK [2][-]{subsection.3.1.1}{PI Controller}{section.3.1}% 17
+\BOOKMARK [2][-]{subsection.3.1.1}{PI-controller}{section.3.1}% 17
 \BOOKMARK [2][-]{subsection.3.1.2}{Iterative Learning Control}{section.3.1}% 18
 \BOOKMARK [0][-]{chapter.4}{Identification}{}% 19
 \BOOKMARK [1][-]{section.4.1}{Sputnik VAD}{chapter.4}% 20
@@ -31,4 +31,4 @@
 \BOOKMARK [2][-]{subsection.5.2.3}{Iterative Learning Control with varying iteration length}{section.5.2}% 31
 \BOOKMARK [0][-]{chapter.6}{Conclusion and future work}{}% 32
 \BOOKMARK [0][-]{appendix.A}{Appendix}{}% 33
-\BOOKMARK [0][-]{chapter*.20}{Bibliography}{}% 34
+\BOOKMARK [0][-]{chapter*.22}{Bibliography}{}% 34

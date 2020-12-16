@@ -15,24 +15,24 @@
 \contentsline {subsection}{\numberline {2.3.2}Technology}{10}{subsection.2.3.2}
 \contentsline {chapter}{\numberline {3}Technical Fundamentals}{13}{chapter.3}
 \contentsline {section}{\numberline {3.1}Control Theory}{13}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}PI Controller}{14}{subsection.3.1.1}
-\contentsline {subsubsection}{\nonumberline Chien Hrones Reswick}{14}{section*.15}
-\contentsline {subsection}{\numberline {3.1.2}Iterative Learning Control}{14}{subsection.3.1.2}
-\contentsline {chapter}{\numberline {4}Identification}{15}{chapter.4}
-\contentsline {section}{\numberline {4.1}Sputnik VAD}{15}{section.4.1}
-\contentsline {section}{\numberline {4.2}Hardware in the Loop Test Bench}{16}{section.4.2}
-\contentsline {section}{\numberline {4.3}System Identification}{16}{section.4.3}
-\contentsline {chapter}{\numberline {5}Flow Control}{17}{chapter.5}
-\contentsline {section}{\numberline {5.1}Controller Design}{17}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}PI Controller}{17}{subsection.5.1.1}
-\contentsline {subsubsection}{\nonumberline Chien Hrones Reswick}{17}{section*.18}
-\contentsline {subsection}{\numberline {5.1.2}Iterative Learning Control}{17}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Iterative Learning Control with varying iteration length}{17}{subsection.5.1.3}
-\contentsline {section}{\numberline {5.2}Evaluation}{17}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}PI Controller}{17}{subsection.5.2.1}
-\contentsline {subsubsection}{\nonumberline Chien Hrones Reswick}{17}{section*.19}
-\contentsline {subsection}{\numberline {5.2.2}Iterative Learning Control}{17}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Iterative Learning Control with varying iteration length}{17}{subsection.5.2.3}
-\contentsline {chapter}{\numberline {6}Conclusion and future work}{19}{chapter.6}
-\contentsline {chapter}{\numberline {A}Appendix}{21}{appendix.A}
-\contentsline {chapter}{\nonumberline Bibliography}{23}{chapter*.20}
+\contentsline {subsection}{\numberline {3.1.1}PI-controller}{15}{subsection.3.1.1}
+\contentsline {subsubsection}{\nonumberline Controller design according to Chien Hrones Reswick}{16}{section*.17}
+\contentsline {subsection}{\numberline {3.1.2}Iterative Learning Control}{16}{subsection.3.1.2}
+\contentsline {chapter}{\numberline {4}Identification}{17}{chapter.4}
+\contentsline {section}{\numberline {4.1}Sputnik VAD}{17}{section.4.1}
+\contentsline {section}{\numberline {4.2}Hardware in the Loop Test Bench}{18}{section.4.2}
+\contentsline {section}{\numberline {4.3}System Identification}{18}{section.4.3}
+\contentsline {chapter}{\numberline {5}Flow Control}{19}{chapter.5}
+\contentsline {section}{\numberline {5.1}Controller Design}{19}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}PI Controller}{19}{subsection.5.1.1}
+\contentsline {subsubsection}{\nonumberline Chien Hrones Reswick}{19}{section*.20}
+\contentsline {subsection}{\numberline {5.1.2}Iterative Learning Control}{19}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Iterative Learning Control with varying iteration length}{19}{subsection.5.1.3}
+\contentsline {section}{\numberline {5.2}Evaluation}{19}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}PI Controller}{19}{subsection.5.2.1}
+\contentsline {subsubsection}{\nonumberline Chien Hrones Reswick}{19}{section*.21}
+\contentsline {subsection}{\numberline {5.2.2}Iterative Learning Control}{19}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Iterative Learning Control with varying iteration length}{19}{subsection.5.2.3}
+\contentsline {chapter}{\numberline {6}Conclusion and future work}{21}{chapter.6}
+\contentsline {chapter}{\numberline {A}Appendix}{23}{appendix.A}
+\contentsline {chapter}{\nonumberline Bibliography}{25}{chapter*.22}
