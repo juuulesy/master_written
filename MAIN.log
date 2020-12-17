@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.14)  17 DEC 2020 01:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.14)  17 DEC 2020 02:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1390,12 +1390,12 @@ chapter 1.
 
 ]
 chapter 2.
-<images/circulation.jpg, id=296, 521.95pt x 721.69624pt>
+<images/circulation.jpg, id=298, 521.95pt x 721.69624pt>
 File: images/circulation.jpg Graphic file (type jpg)
  <use images/circulation.jpg>
 Package pdftex.def Info: images/circulation.jpg used on input line 8.
 (pdftex.def)             Requested size: 172.20421pt x 258.31279pt.
- [3 <./images/circulation.jpg>] <images/heart_1.jpg, id=311, 513.92pt x 490.83376pt>
+ [3 <./images/circulation.jpg>] <images/heart_1.jpg, id=313, 513.92pt x 490.83376pt>
 File: images/heart_1.jpg Graphic file (type jpg)
  <use images/heart_1.jpg>
 Package pdftex.def Info: images/heart_1.jpg used on input line 16.
@@ -1403,27 +1403,27 @@ Package pdftex.def Info: images/heart_1.jpg used on input line 16.
 
 Underfull \vbox (badness 1721) has occurred while \output is active []
 
- [4 <./images/heart_1.jpg>] <images/cardiac_cycle.jpg, id=323, 1467.4825pt x 1118.1775pt>
+ [4 <./images/heart_1.jpg>] <images/cardiac_cycle.jpg, id=325, 1467.4825pt x 1118.1775pt>
 File: images/cardiac_cycle.jpg Graphic file (type jpg)
  <use images/cardiac_cycle.jpg>
 Package pdftex.def Info: images/cardiac_cycle.jpg used on input line 31.
 (pdftex.def)             Requested size: 344.42197pt x 262.43051pt.
- [5 <./images/cardiac_cycle.jpg>] <images/pv_1.jpg, id=343, 374.58253pt x 312.49141pt>
+ [5 <./images/cardiac_cycle.jpg>] <images/pv_1.jpg, id=345, 374.58253pt x 312.49141pt>
 File: images/pv_1.jpg Graphic file (type jpg)
  <use images/pv_1.jpg>
 Package pdftex.def Info: images/pv_1.jpg used on input line 42.
 (pdftex.def)             Requested size: 215.26291pt x 179.58102pt.
- <images/pv_2_.jpg, id=344, 1092.08pt x 915.42pt>
+ <images/pv_2_.jpg, id=346, 1092.08pt x 915.42pt>
 File: images/pv_2_.jpg Graphic file (type jpg)
  <use images/pv_2_.jpg>
 Package pdftex.def Info: images/pv_2_.jpg used on input line 44.
 (pdftex.def)             Requested size: 215.26291pt x 180.44077pt.
- [6 <./images/pv_1.jpg> <./images/pv_2_.jpg>] <images/sys_dys.jpg, id=367, 387.4475pt x 323.2075pt>
+ [6 <./images/pv_1.jpg> <./images/pv_2_.jpg>] <images/sys_dys.jpg, id=369, 387.4475pt x 323.2075pt>
 File: images/sys_dys.jpg Graphic file (type jpg)
  <use images/sys_dys.jpg>
 Package pdftex.def Info: images/sys_dys.jpg used on input line 58.
 (pdftex.def)             Requested size: 215.26291pt x 179.57462pt.
- <images/dias_dys.jpg, id=368, 383.4325pt x 332.24126pt>
+ <images/dias_dys.jpg, id=370, 383.4325pt x 332.24126pt>
 File: images/dias_dys.jpg Graphic file (type jpg)
  <use images/dias_dys.jpg>
 Package pdftex.def Info: images/dias_dys.jpg used on input line 60.
@@ -1449,12 +1449,12 @@ Overfull \hbox (12.06401pt too wide) in alignment at lines 90--90
 
 ]
 chapter 3.
-<images/control_loop.jpg, id=440, 688.82344pt x 172.39406pt>
+<images/control_loop.jpg, id=442, 688.82344pt x 172.39406pt>
 File: images/control_loop.jpg Graphic file (type jpg)
  <use images/control_loop.jpg>
 Package pdftex.def Info: images/control_loop.jpg used on input line 11.
 (pdftex.def)             Requested size: 387.47061pt x 96.97404pt.
- [13 <./images/control_loop.jpg>] <images/tf_pt1.jpg, id=451, 853.1875pt x 439.6425pt>
+ [13 <./images/control_loop.jpg>] <images/tf_pt1.jpg, id=453, 853.1875pt x 439.6425pt>
 File: images/tf_pt1.jpg Graphic file (type jpg)
  <use images/tf_pt1.jpg>
 Package pdftex.def Info: images/tf_pt1.jpg used on input line 37.
@@ -1465,7 +1465,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[14] <images/step_resp_pi.jpg, id=465, 309.40594pt x 257.46187pt>
+[14] <images/step_resp_pi.jpg, id=467, 309.40594pt x 257.46187pt>
 File: images/step_resp_pi.jpg Graphic file (type jpg)
  <use images/step_resp_pi.jpg>
 Package pdftex.def Info: images/step_resp_pi.jpg used on input line 84.
@@ -1474,7 +1474,7 @@ Package pdftex.def Info: images/step_resp_pi.jpg used on input line 84.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[15 <./images/tf_pt1.jpg>] <images/param_zn.jpg, id=481, 630.355pt x 395.4775pt>
+[15 <./images/tf_pt1.jpg>] <images/param_zn.jpg, id=483, 630.355pt x 395.4775pt>
 File: images/param_zn.jpg Graphic file (type jpg)
  <use images/param_zn.jpg>
 Package pdftex.def Info: images/param_zn.jpg used on input line 97.
@@ -1484,17 +1484,12 @@ Underfull \hbox (badness 10000) in alignment at lines 119--119
 [][][][] 
  []
 
-[16 <./images/step_resp_pi.jpg>]) [17 <./images/param_zn.jpg>]
+[16 <./images/step_resp_pi.jpg>]) [17 <./images/param_zn.jpg>] [18]
 \openout2 = `Chapter4.aux'.
 
- (./Chapter4.tex [18
-
-
-
-
-]
+ (./Chapter4.tex
 chapter 4.
-<images/sputnik_cross.png, id=506, 515.9275pt x 231.86626pt>
+<images/sputnik_cross.png, id=511, 515.9275pt x 231.86626pt>
 File: images/sputnik_cross.png Graphic file (type png)
  <use images/sputnik_cross.png>
 Package pdftex.def Info: images/sputnik_cross.png used on input line 25.
@@ -1503,7 +1498,12 @@ Package pdftex.def Info: images/sputnik_cross.png used on input line 25.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[19]) [20 <./images/sputnik_cross.png>]
+[19
+
+
+
+
+]) [20 <./images/sputnik_cross.png>]
 \openout2 = `Chapter5.aux'.
 
  (./Chapter5.tex
@@ -1523,9 +1523,34 @@ chapter 5.
 
 ]
 chapter 6.
-) [23] [24
+) [23]
+
+./MAIN.tex:162: Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.162 \include{Conclusion}âˆ
+                            š
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
 
 
+./MAIN.tex:162: Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.162 \include{Conclusion}âˆš
+                             
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+[24
 
 ]
 \openout2 = `anhang.aux'.
@@ -1533,6 +1558,8 @@ chapter 6.
  (./anhang.tex
 chapter A.
 ) [25
+
+
 
 
 
@@ -1562,22 +1589,22 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 183.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 183.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 183.
 Package rerunfilecheck Info: File `MAIN.out' has not changed.
-(rerunfilecheck)             Checksum: AC1F2802C223C59DDB3C0F1FDFE616D1;2211.
+(rerunfilecheck)             Checksum: 0145222A05028E7920F50FDB950CB075;2211.
  ) 
 Here is how much of TeX's memory you used:
- 32064 strings out of 492995
- 596870 string characters out of 6132703
- 741678 words of memory out of 5000000
- 34856 multiletter control sequences out of 15000+600000
+ 32067 strings out of 492995
+ 596916 string characters out of 6132703
+ 741750 words of memory out of 5000000
+ 34858 multiletter control sequences out of 15000+600000
  69179 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,18n,66p,10510b,669s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/
 public/lm/lmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on MAIN.pdf (43 pages, 2052548 bytes).
+Output written on MAIN.pdf (43 pages, 2055175 bytes).
 PDF statistics:
- 667 PDF objects out of 1000 (max. 8388607)
- 574 compressed objects within 6 object streams
- 133 named destinations out of 1000 (max. 500000)
+ 672 PDF objects out of 1000 (max. 8388607)
+ 579 compressed objects within 6 object streams
+ 134 named destinations out of 1000 (max. 500000)
  373 words of extra memory for PDF output out of 10000 (max. 10000000)
 

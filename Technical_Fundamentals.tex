@@ -108,11 +108,11 @@ The calculation of the controller parameters is performed according to the data 
   \centering
   \begin{tabularx}{0.6\textwidth}{c|c|c|c}
     \toprule
-    Controller Type & $K_{P}$ &  $T_{N}$ & $T_{V}$   \\
+    Controller type & $K_{P}$ &  $T_{N}$ & $T_{D}$   \\
     \midrule
-    P-Controller &  $\frac{T_{G}}{K_{S}T_{v}}$ & $\infty$ & 0 \\
+    P-Controller &  $\frac{T_{G}}{K_{S}T_{v}}$ & - & - \\
     & & & \\
-    PI-Controller & $0.9\frac{T_{G}}{K_{S}T_{v}}$ & $3.33T_{v}$ & 0 \\
+    PI-Controller & $0.9\frac{T_{G}}{K_{S}T_{v}}$ & $3.33T_{v}$ & - \\
     & & & \\
     PID-Controller & $0.9\frac{T_{G}}{K_{S}T_{v}}$ & $2T_{v}$ & $0.5T_{v}$ \\
      \bottomrule
@@ -122,5 +122,27 @@ The calculation of the controller parameters is performed according to the data 
 \end{table}
 
 \subsubsection{Tuning rules according to Chien Hrones Reswick}
+The tuning method accoring to Chien Hrones Reswick is a very similar one to the one by Ziegler Nichols. However, this method provides the ability to adjust the transient response of the control loop. The tuning parameters can either be chosen in a way to probide an over damped behavior or a course providing 20\% overshoot.
+For both options the step response and it's inflection tangent is graphically displayed, as for the Ziegler Nichols approach in \figurename~\ref{fig:param_zn}.
+The values for $K_{P}$, $T_{v}$ and $T_{g}$ are read from the plot. The parameter value $K_{I}$ again is calculated following (\ref{eq:K_I}). \tablename~\ref{tab:param_chr} gives the formulas for calculation of $K_{P}$,  $T_{N}$ and $T_{D}$.
+
+\begin{table}
+  \centering
+  \begin{tabular}{c|ccc|ccc}
+    \toprule
+     & \multicolumn{3}{c|}{over damped} & \multicolumn{3}{c}{20\% overshoot} \\
+    \midrule
+    Controller type & $K_{P}$ &  $T_{N}$ & $T_{D}$ & $K_{P}$ &  $T_{N}$ & $T_{D}$ \\
+    \midrule
+    P-Controller & $0.3\frac{T_{G}}{K_{S}T_{v}}$ & - & - & $0.7\frac{T_{G}}{K_{S}T_{v}}$ & - & - \\
+    & & & & & & \\
+    PI-Controller & $0.35\frac{T_{G}}{K_{S}T_{v}}$ & $1.2T_{g}$ & - & $0.6\frac{T_{G}}{K_{S}T_{v}}$ & $T_{g}$ & - \\
+        & & & & & & \\
+    PID-Controller & $0.6\frac{T_{G}}{K_{S}T_{v}}$ & $T_{g}$ & $0.5T_{v}$ & $0.95\frac{T_{G}}{K_{S}T_{v}}$ & $1.35T_{g}$ & $0.47T_{v}$\\
+    \bottomrule
+\end{tabular}
+  \caption[Tuning parameters Chien Hrones Reswick]{Tuning parameters according to Chien Hrones Reswick}
+  \label{tab:param_chr}
+\end{table}
 
 \section{Iterative Learning Control}
