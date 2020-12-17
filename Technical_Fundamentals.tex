@@ -2,7 +2,7 @@
 % Since the main part of this thesis addresses the implementation of flow control algorithms for a left ventricular assist device, the basics of control theory and a introduction on iterative learning control will be presented here as well.
 
 \chapter{Control Theory}
-Since the field of control theory is very extensive, this section will only deal with the notation and structure of a standard control loop in general. Furthermore, the basic principles of a PI controller and an iterative learning control are discussed, since these are used within pratical part of the thesis.
+Since the field of control theory is a very extensiveone, this section will only deal with the fundamentals of notation and structure of a standard control loop. Furthermore, the basic principles of PI-controllers and  iterative learning control (ILC) are discussed, since these are used within the pratical part of the thesis.
 \section{Fundamentals}
 The basic task of control engineering is to influence a time-varying process from the outside with the goal that the process is executed in a predetermined manner. A control system is characterized in particular by the feedback of the controlled variable to the reference variable. The reference variable represents the state to be achieved.
 In theory, this is represented by a control loop with the components shown in \figurename~{\ref{fig:control_loop}}.
@@ -12,23 +12,23 @@ In theory, this is represented by a control loop with the components shown in \f
   \caption[General structure of a control loop]{General structure of a control loop}
   \label{fig:control_loop}
 \end{figure}
-The plant $G(s)$ transfers the actuating variable $u(t)$, as well as the influence of the the disturbance $d(t)$, to the controlled variable $y(t)$. This variable is permanently compared with the reference variable $w(t)$ by means of a feedback. Which results in the control error
+The plant $G(s)$ transfers the actuating variable $u(t)$, as well as the influence of the the disturbance $d(t)$, to the controlled variable $y(t)$. This variable is permanently compared with the reference variable $w(t)$ by means of a feedback. This feedback provides the control error
 \begin{equation}
-  e(t) = w(t) - y(t)
+  e(t) = w(t) - y(t).
  \label{eq:e_t}
 \end{equation}
 The controller $G_{c}(s)$ then transfers the control error to the actuating variable again. The aim of the control loop is to achieve the smallest possible control error with the greatest possible damping. Since these goals contradict each other, a trade off must always be accepted here.\cite{Reg_17}
-\\However, there are some general requirements for the closed control loop, which have to be fulfilled. The first of which states that the closed loop needs to be stable. This is the case when the control loop responds to a finite excitation with a finite output signal. The second one is the requirement for disturbance rejection, stating that the controlled variable needs to follow the reference variable asymptotically, so that
+\\However, there are some general requirements for the closed control loop, which have to be fulfilled. The first of which states that the closed loop needs to be stable. This requirement is met if the control loop responds to a finite excitation with a finite output signal. The second condition is the requirement for disturbance rejection, stating that the controlled variable needs to follow the reference variable asymptotically, so that
 \begin{equation}
-    \lim\limits_{t \rightarrow \infty}{e(t)} = 0
+    \lim\limits_{t \rightarrow \infty}{e(t)} = 0.
  \label{eq:lim_e}
 \end{equation}
-Another requirement is that the dynamic relationship between the reference variable w(t) and the controlled variable y(t) must satisfy specified quality requirements.  The last requirement states that the first three requirements must be statisfied despite uncertainties in the plant. This requirement is called the Robustness requirement. More detailed information on these requirements can be found in \cite{Reg_10}.
+Another requirement is that the dynamic relationship between the reference variable $w(t)$ and the controlled variable $y(t)$ must satisfy specified quality requirements.  The last requirement states that the first three requirements must be statisfied despite uncertainties in the plant. This requirement is called the robustness requirement. More detailed information on these requirements can be found in \cite{Reg_10}.
 
-The plant $G(s)$ corresponds to the part of the system in which the physical quantity to be controlled is influenced by the controller. The calculation of the plant by setting up and solving differential equations is only possible in a few cases. Due to this, the determination of the plant's characteristic values is usually carried out experimentally. There are several basic types of plants. These are classified according to their dynamic behavior. As only the PT$_{1}$-element is used in the practical part of this thesis, all other variations will not be discussed at this point. Detailed information on this topic can be found in \cite{Reg_10}.
+The plant $G(s)$ corresponds to the part of the system in which the physical quantity to be controlled is influenced by the controller. The calculation of the plant, by setting up and solving differential equations, is only possible in a few cases. Due to this, the determination of the plant's characteristic values is usually carried out experimentally. There are several basic types of plants. These are classified according to their dynamic behavior. As only the PT$_{1}$-element is used in the practical part of this thesis, all other variations will not be discussed at this point. Detailed information on this topic can, once more, be found in \cite{Reg_10}.
 \\The PT$_{1}$-element is the plant type which is most common in technical equipment. A PT$_{n}$-element, in it's static state, reacts proportionally to the input value and has a distinct transition behavior. The index n describes the system order. A PT$_{1}$-element therefore is a proportional delay element of first order. The mathematical formulation of the transfer function of a PT$_{1}$-element is
 \begin{equation}
-    G(s) = \frac{k_{s}}{1+sT}
+    G(s) = \frac{k_{s}}{1+sT}.
  \label{eq:tf_pt1}
 \end{equation}
 
@@ -38,8 +38,8 @@ The plant $G(s)$ corresponds to the part of the system in which the physical qua
    \caption[Tranfer function of a PT$_{1}$-element]{Transfer function of a PT$_{1}$-element \cite{Reg_10}.}
    \label{fig:tf_pt1}
  \end{figure}
-The value $k_{s}$ describes the static gain, which equals the final value of the transfer function, in case $u(0)=0$. The time constant T enables an impression of the speed with which the system can react to changes at the input. It is defined as the time at which the transfer function reaches 63\% of the static gain. \cite{Reg_10}
-\figurename~\ref{fig:tf_pt1} shows the tranfer function of a PT$_{1}$-element.
+The value $k_{s}$ describes the static gain, which equals the final value of the transfer function. The time constant T enables an impression of the speed with which the system can react to changes at the input. It is defined as the time at which the transfer function reaches 63\% of it's static gain.\cite{Reg_10}
+\figurename~\ref{fig:tf_pt1} shows the tranfer function of a PT$_{1}$-element and it's significant parameters.
 
 
 \section{PI-controller}
@@ -60,14 +60,14 @@ The relationship between input and output value of an I-controller is described 
     u(t) = K_{I}\int e(t) dt.
  \label{eq:i_contr_1}
 \end{equation}
-Equal to the P-controller, Laplacetransformation can be used to determine the transfer function of the I-controller.
+Just as with the P-controller, Laplacetransformation can be used to determine the transfer function of the I-controller.
 This leads to
 \begin{equation}
     G(s) = \frac{u(s)}{e(s)} = \frac{K_{I}}{s},
  \label{eq:i_contr_2}
 \end{equation}
 which indicates a step response in form of a ramp with slope $K_{I}$.
-In order to generate a PI-controller from these elements the elements can be added, which leads to
+In order to generate a PI-controller from these elements they can be added, which leads to
 \begin{equation}
     u(t) = K_{P}e(t) + K_{I}\int e(t) dt.
  \label{eq:pi_contr_1}
@@ -87,14 +87,14 @@ The step response of the PI-controller, illustrated in \figurename~\ref{fig:step
  \end{figure}
 
 \subsection{Tuning rules}
-In regards to the controller parameters, tuning is of great importance. If the parameters are chosen incorrectly it can lead to poor performance. There are many different approach to tuning a PI-Controller in order to achieve the best system performance. These are reaching from heuristic methods, over analysis of pole-zero plots, to computer-aided numerical parameter optimization \cite{Reg_10} At this point only the tuning rules according to Ziegler Nichols (ZN) and the rules according to Chien Hrones Reswick (CHR) will be discussed, as these have been used for the implementation of flow control in the practical work.  Information on other approaches can be found in \cite{Reg_11}.
+In regards to the controller parameters, tuning is of great importance. If the parameters are chosen incorrectly it can lead to unstable system behavior, which may result in system damage. There are many different approaches to tuning a PI-Controller in order to achieve the best system performance. These are reaching from heuristic methods, over analysis of pole-zero plots, to computer-aided numerical parameter optimization.\cite{Reg_10} At this point only the tuning rules according to Ziegler Nichols (ZN) and the rules according to Chien Hrones Reswick (CHR) will be discussed, as these have been used for the implementation of flow control in the practical work.  Information on other approaches can be found in \cite{Reg_11}.
 
 \subsubsection{Tuning rules according to Ziegler Nichols}
-The tuning rules according to Ziegler Nichols are on of the most commoly used heuristic methods in tuning controller parameters for PID-Controllers. They are used especially, if a mathematical model of the plant is not available, but the plant can be approximated as a PT$_{n}$-element. \cite{Reg_17}
-A necessary condition is that the step response of the plant needs to be experimentally identifiable without risk of damage to the system. After the step response has been determined, it is displayed graphically. Then the inflection tangent is drawn into the step response as shown in the \figurename~\ref{fig:param_zn}.
+The tuning rules according to Ziegler Nichols are one of the most commoly used heuristic methods in tuning controller parameters for PID-Controllers. They are used especially, if a mathematical model of the plant is not available, but the plant can be approximated as a PT$_{n}$-element.\cite{Reg_17}
+A necessary condition for this is that the step response of the plant needs to be experimentally identifiable without risk of damage to the system. After the step response has been determined it is displayed graphically. Then the inflection tangent is drawn into the step response as shown in \figurename~\ref{fig:param_zn}.
 \begin{figure}
    \centering
-   \includegraphics[width=0.8\textwidth]{images/param_zn.jpg}
+   \includegraphics[width=0.7\textwidth]{images/param_zn.jpg}
    \caption[Inflection tangent method Ziegler Nichols]{Inflection tangent method Ziegler Nichols}
    \label{fig:param_zn}
  \end{figure}
@@ -110,11 +110,11 @@ The calculation of the controller parameters is performed according to the data 
     \toprule
     Controller type & $K_{P}$ &  $T_{N}$ & $T_{D}$   \\
     \midrule
-    P-Controller &  $\frac{T_{G}}{K_{S}T_{v}}$ & - & - \\
+    P-Controller &  $\frac{T_{g}}{K_{S}T_{v}}$ & - & - \\
     & & & \\
-    PI-Controller & $0.9\frac{T_{G}}{K_{S}T_{v}}$ & $3.33T_{v}$ & - \\
+    PI-Controller & $0.9\frac{T_{g}}{K_{S}T_{v}}$ & $3.33T_{v}$ & - \\
     & & & \\
-    PID-Controller & $0.9\frac{T_{G}}{K_{S}T_{v}}$ & $2T_{v}$ & $0.5T_{v}$ \\
+    PID-Controller & $0.9\frac{T_{g}}{K_{S}T_{v}}$ & $2T_{v}$ & $0.5T_{v}$ \\
      \bottomrule
   \end{tabularx}
   \caption[Tuning parameters Ziegler Nichols]{Tuning parameters according to Ziegler Nichols}
@@ -122,7 +122,7 @@ The calculation of the controller parameters is performed according to the data 
 \end{table}
 
 \subsubsection{Tuning rules according to Chien Hrones Reswick}
-The tuning method accoring to Chien Hrones Reswick is a very similar one to the one by Ziegler Nichols. However, this method provides the ability to adjust the transient response of the control loop. The tuning parameters can either be chosen in a way to probide an over damped behavior or a course providing 20\% overshoot.\cite{Reg_11}
+The tuning method accoring to Chien Hrones Reswick is a very similar one to the one by Ziegler Nichols. However, this method provides the ability to adjust the transient response of the control loop. The tuning parameters can either be chosen in a way to provide an over damped behavior or a course providing 20\% overshoot.\cite{Reg_11}
 For both options the step response and it's inflection tangent is graphically displayed, as for the Ziegler Nichols approach in \figurename~\ref{fig:param_zn}.
 The values for $K_{P}$, $T_{v}$ and $T_{g}$ are read from the plot. The parameter value $K_{I}$ again is calculated following (\ref{eq:K_I}). \tablename~\ref{tab:param_chr} gives the formulas for calculation of $K_{P}$,  $T_{N}$ and $T_{D}$.
 
@@ -134,11 +134,11 @@ The values for $K_{P}$, $T_{v}$ and $T_{g}$ are read from the plot. The paramete
     \midrule
     Controller type & $K_{P}$ &  $T_{N}$ & $T_{D}$ & $K_{P}$ &  $T_{N}$ & $T_{D}$ \\
     \midrule
-    P-Controller & $0.3\frac{T_{G}}{K_{S}T_{v}}$ & - & - & $0.7\frac{T_{G}}{K_{S}T_{v}}$ & - & - \\
+    P-Controller & $0.3\frac{T_{g}}{K_{S}T_{v}}$ & - & - & $0.7\frac{T_{g}}{K_{S}T_{v}}$ & - & - \\
     & & & & & & \\
-    PI-Controller & $0.35\frac{T_{G}}{K_{S}T_{v}}$ & $1.2T_{g}$ & - & $0.6\frac{T_{G}}{K_{S}T_{v}}$ & $T_{g}$ & - \\
+    PI-Controller & $0.35\frac{T_{g}}{K_{S}T_{v}}$ & $1.2T_{v}$ & - & $0.6\frac{T_{g}}{K_{S}T_{v}}$ & $T_{v}$ & - \\
         & & & & & & \\
-    PID-Controller & $0.6\frac{T_{G}}{K_{S}T_{v}}$ & $T_{g}$ & $0.5T_{v}$ & $0.95\frac{T_{G}}{K_{S}T_{v}}$ & $1.35T_{g}$ & $0.47T_{v}$\\
+    PID-Controller & $0.6\frac{T_{g}}{K_{S}T_{v}}$ & $T_{v}$ & $0.5T_{v}$ & $0.95\frac{T_{g}}{K_{S}T_{v}}$ & $1.35T_{v}$ & $0.47T_{v}$\\
     \bottomrule
 \end{tabular}
   \caption[Tuning parameters Chien Hrones Reswick]{Tuning parameters according to Chien Hrones Reswick}
@@ -146,3 +146,4 @@ The values for $K_{P}$, $T_{v}$ and $T_{g}$ are read from the plot. The paramete
 \end{table}
 
 \section{Iterative Learning Control}
+The use of iterative learning control aims to improve control performance for systems which execute the same task repeatedly under constant operation conditions. This improvement is based on the idea that it is possible to include error information from previous iterations into the adjustment of the actuation variable during the current iteration. In contrast to this, feedback controllers, such as a PI-controllers, are only able to include the current changes in control error. By taking into account the information from previous iterations low tracking errors are achievable. This results in very high performance, with convergence during the first few iterations, even for systems prone to repeating disturbances and model uncertainties. While feeback control has a lag in transient tracking, due to reacting to inputs and disturbances, ILC as a feedforward controller does not. Another advantage of ILC use is that there is kno need for disturbances to be known or measured, as long as these signals show repeating behavior during each iteration. Furthermore, through storing signal information during each iteration ILC enables advanced filtering and signal processing of the control error. However, ILC utilization holds some issues in regards to non-repeating disturbances or noise influences. In these cases it may be useful to combine ILC approaches with a feeback controller. \cite{ILC2}

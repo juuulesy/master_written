@@ -16,6 +16,13 @@
 \newblock Berlin, Heidelberg : Springer Berlin Heidelberg, 2011. --
 \newblock ISBN 978--3--642--19263--0, S. 19--26
 
+\bibitem[BTA06]{ILC2}
+\textsc{Bristow}, D.A. ; \textsc{Tharayil}, M  ; \textsc{Alleyne}, A.G.:
+\newblock A survey of iterative learning.
+\newblock {In: }\emph{Control Systems, IEEE} 26 (2006), 07, S. 96 -- 114.
+\newblock \url{http://dx.doi.org/10.1109/MCS.2006.1636313}. --
+\newblock DOI 10.1109/MCS.2006.1636313
+
 \bibitem[DMH19]{VAD7}
 \textsc{Dashkevich}, A ; \textsc{Michel}, S  ; \textsc{Hagl}, C:
 \newblock Indikationsstellung und Therapieziele der mechanischen

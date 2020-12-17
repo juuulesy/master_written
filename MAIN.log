@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.14)  17 DEC 2020 02:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.14)  17 DEC 2020 19:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1352,12 +1352,12 @@ chapter without number
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 7.
 
-Overfull \hbox (0.98903pt too wide) in paragraph at lines 63--63
+Overfull \hbox (0.98903pt too wide) in paragraph at lines 65--65
 []|[][]| 
  []
 
 )
-Overfull \hbox (11.74983pt too wide) in paragraph at lines 63--143
+Overfull \hbox (11.74983pt too wide) in paragraph at lines 65--143
 [] 
  []
 
@@ -1465,7 +1465,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[14] <images/step_resp_pi.jpg, id=467, 309.40594pt x 257.46187pt>
+[14] <images/step_resp_pi.jpg, id=468, 309.40594pt x 257.46187pt>
 File: images/step_resp_pi.jpg Graphic file (type jpg)
  <use images/step_resp_pi.jpg>
 Package pdftex.def Info: images/step_resp_pi.jpg used on input line 84.
@@ -1478,18 +1478,21 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: images/param_zn.jpg Graphic file (type jpg)
  <use images/param_zn.jpg>
 Package pdftex.def Info: images/param_zn.jpg used on input line 97.
-(pdftex.def)             Requested size: 344.42197pt x 216.08916pt.
+(pdftex.def)             Requested size: 301.36676pt x 189.07272pt.
 
 Underfull \hbox (badness 10000) in alignment at lines 119--119
 [][][][] 
  []
 
-[16 <./images/step_resp_pi.jpg>]) [17 <./images/param_zn.jpg>] [18]
+[16 <./images/step_resp_pi.jpg>])
+Underfull \vbox (badness 1939) has occurred while \output is active []
+
+ [17 <./images/param_zn.jpg>] [18]
 \openout2 = `Chapter4.aux'.
 
  (./Chapter4.tex
 chapter 4.
-<images/sputnik_cross.png, id=512, 515.9275pt x 231.86626pt>
+<images/sputnik_cross.png, id=514, 515.9275pt x 231.86626pt>
 File: images/sputnik_cross.png Graphic file (type png)
  <use images/sputnik_cross.png>
 Package pdftex.def Info: images/sputnik_cross.png used on input line 25.
@@ -1523,34 +1526,9 @@ chapter 5.
 
 ]
 chapter 6.
-) [23]
-
-./MAIN.tex:162: Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin1'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.162 \include{Conclusion}âˆ
-                            š
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
+) [23] [24
 
 
-./MAIN.tex:162: Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin1'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.162 \include{Conclusion}âˆš
-                             
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-[24
 
 ]
 \openout2 = `anhang.aux'.
@@ -1561,24 +1539,22 @@ chapter A.
 
 
 
-
-
 ] (./MAIN.bbl [26
 
 
 
 ]
 chapter without number
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 59.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 23.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [27] [28]
-Underfull \hbox (badness 10000) in paragraph at lines 148--153
+Underfull \hbox (badness 10000) in paragraph at lines 155--160
 []\T1/lmr/m/sc/12 World Health Or-ga-ni-za-tion\T1/lmr/m/n/12 :  \T1/lmr/m/it/12 Car-dio-vas-cu-lar dis-eases
  []
 
 
-Underfull \hbox (badness 4366) in paragraph at lines 148--153
+Underfull \hbox (badness 4366) in paragraph at lines 155--160
 \T1/lmr/m/it/12 (CVDs)\T1/lmr/m/n/12 .  [][]$\T1/lmtt/m/n/12 https : / / www . who . int / news-[]room / fact-[]sheets / detail /
  []
 
@@ -1592,19 +1568,19 @@ Package rerunfilecheck Info: File `MAIN.out' has not changed.
 (rerunfilecheck)             Checksum: 0145222A05028E7920F50FDB950CB075;2211.
  ) 
 Here is how much of TeX's memory you used:
- 32067 strings out of 492995
- 596916 string characters out of 6132703
- 741750 words of memory out of 5000000
- 34858 multiletter control sequences out of 15000+600000
+ 32072 strings out of 492995
+ 596953 string characters out of 6132703
+ 741816 words of memory out of 5000000
+ 34862 multiletter control sequences out of 15000+600000
  69179 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,18n,66p,10510b,669s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/
 public/lm/lmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on MAIN.pdf (43 pages, 2055233 bytes).
+Output written on MAIN.pdf (43 pages, 2056635 bytes).
 PDF statistics:
- 673 PDF objects out of 1000 (max. 8388607)
- 580 compressed objects within 6 object streams
- 134 named destinations out of 1000 (max. 500000)
+ 676 PDF objects out of 1000 (max. 8388607)
+ 583 compressed objects within 6 object streams
+ 135 named destinations out of 1000 (max. 500000)
  373 words of extra memory for PDF output out of 10000 (max. 10000000)
 
