@@ -8,6 +8,14 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
+\bibitem[AHR11]{Reg_11}
+\textsc{Arora}, Ashish ; \textsc{Hote}, Yogesh~V.  ; \textsc{Rastogi}, Mahima:
+\newblock Design of PID Controller for Unstable System.
+\newblock {In: }\textsc{Balasubramaniam}, P. (Hrsg.): \emph{Control,
+  Computation and Information Systems}.
+\newblock Berlin, Heidelberg : Springer Berlin Heidelberg, 2011. --
+\newblock ISBN 978--3--642--19263--0, S. 19--26
+
 \bibitem[DMH19]{VAD7}
 \textsc{Dashkevich}, A ; \textsc{Michel}, S  ; \textsc{Hagl}, C:
 \newblock Indikationsstellung und Therapieziele der mechanischen

@@ -7,7 +7,7 @@ A level-1 auxiliary file: erklaerung.aux
 A level-1 auxiliary file: abstract.aux
 A level-1 auxiliary file: symbolverzeichnis.aux
 A level-1 auxiliary file: introduction.aux
-A level-1 auxiliary file: Fundamentals.aux
+A level-1 auxiliary file: Medical_Fundamentals.aux
 A level-1 auxiliary file: Technical_Fundamentals.aux
 A level-1 auxiliary file: Chapter4.aux
 A level-1 auxiliary file: Chapter5.aux
@@ -21,45 +21,45 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: literatur.bib
 Warning--empty title in Reg_10
-You've used 19 entries,
+You've used 20 entries,
             4793 wiz_defined-function locations,
-            1052 strings with 10501 characters,
-and the built_in function-call counts, 14920 in all, are:
-= -- 1538
-> -- 443
-< -- 474
-+ -- 545
-- -- 173
-* -- 1140
-:= -- 2529
-add.period$ -- 25
-call.type$ -- 19
-change.case$ -- 116
-chr.to.int$ -- 19
-cite$ -- 20
-duplicate$ -- 377
-empty$ -- 968
-format.name$ -- 291
-if$ -- 2866
+            1060 strings with 10704 characters,
+and the built_in function-call counts, 15940 in all, are:
+= -- 1652
+> -- 471
+< -- 507
++ -- 582
+- -- 184
+* -- 1220
+:= -- 2707
+add.period$ -- 27
+call.type$ -- 20
+change.case$ -- 122
+chr.to.int$ -- 20
+cite$ -- 21
+duplicate$ -- 397
+empty$ -- 1030
+format.name$ -- 310
+if$ -- 3061
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 96
-newline$ -- 120
-num.names$ -- 57
-pop$ -- 159
+missing$ -- 97
+newline$ -- 127
+num.names$ -- 61
+pop$ -- 163
 preamble$ -- 1
-purify$ -- 154
+purify$ -- 162
 quote$ -- 0
-skip$ -- 757
+skip$ -- 803
 stack$ -- 0
-substring$ -- 1250
-swap$ -- 110
-text.length$ -- 83
+substring$ -- 1361
+swap$ -- 117
+text.length$ -- 89
 text.prefix$ -- 5
 top$ -- 0
-type$ -- 166
+type$ -- 176
 warning$ -- 1
-while$ -- 137
-width$ -- 22
-write$ -- 258
+while$ -- 148
+width$ -- 23
+write$ -- 274
 (There was 1 warning)

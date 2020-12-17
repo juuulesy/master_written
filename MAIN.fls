@@ -285,8 +285,8 @@ INPUT symbolverzeichnis.aux
 INPUT symbolverzeichnis.aux
 INPUT introduction.aux
 INPUT introduction.aux
-INPUT Fundamentals.aux
-INPUT Fundamentals.aux
+INPUT Medical_Fundamentals.aux
+INPUT Medical_Fundamentals.aux
 INPUT Technical_Fundamentals.aux
 INPUT Technical_Fundamentals.aux
 INPUT Chapter4.aux
@@ -427,9 +427,9 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm
 OUTPUT introduction.aux
 INPUT introduction.tex
 INPUT introduction.tex
-OUTPUT Fundamentals.aux
-INPUT Fundamentals.tex
-INPUT Fundamentals.tex
+OUTPUT Medical_Fundamentals.aux
+INPUT Medical_Fundamentals.tex
+INPUT Medical_Fundamentals.tex
 INPUT images/circulation.jpg
 INPUT ./images/circulation.jpg
 INPUT ./images/circulation.jpg
@@ -475,6 +475,9 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm1
 INPUT images/step_resp_pi.jpg
 INPUT ./images/step_resp_pi.jpg
 INPUT ./images/step_resp_pi.jpg
+INPUT images/param_zn.jpg
+INPUT ./images/param_zn.jpg
+INPUT ./images/param_zn.jpg
 OUTPUT Chapter4.aux
 INPUT Chapter4.tex
 INPUT Chapter4.tex
@@ -509,8 +512,8 @@ INPUT symbolverzeichnis.aux
 INPUT symbolverzeichnis.aux
 INPUT introduction.aux
 INPUT introduction.aux
-INPUT Fundamentals.aux
-INPUT Fundamentals.aux
+INPUT Medical_Fundamentals.aux
+INPUT Medical_Fundamentals.aux
 INPUT Technical_Fundamentals.aux
 INPUT Technical_Fundamentals.aux
 INPUT Chapter4.aux
@@ -524,8 +527,8 @@ INPUT anhang.aux
 INPUT ./MAIN.out
 INPUT ./MAIN.out
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc
@@ -533,6 +536,7 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx10.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmex10.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi12.pfb
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi6.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi8.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr10.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr12.pfb

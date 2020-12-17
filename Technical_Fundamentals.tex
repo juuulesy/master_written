@@ -1,9 +1,9 @@
-\chapter{Technical Fundamentals}
-Since the main part of this thesis addresses the implementation of flow control algorithms for a left ventricular assist device, the basics of control theory and a introduction on iterative learning control will be presented here as well.
+% \chapter{Technical Fundamentals}
+% Since the main part of this thesis addresses the implementation of flow control algorithms for a left ventricular assist device, the basics of control theory and a introduction on iterative learning control will be presented here as well.
 
-\section{Control Theory}
+\chapter{Control Theory}
 Since the field of control theory is very extensive, this section will only deal with the notation and structure of a standard control loop in general. Furthermore, the basic principles of a PI controller and an iterative learning control are discussed, since these are used within pratical part of the thesis.
-
+\section{Fundamentals}
 The basic task of control engineering is to influence a time-varying process from the outside with the goal that the process is executed in a predetermined manner. A control system is characterized in particular by the feedback of the controlled variable to the reference variable. The reference variable represents the state to be achieved.
 In theory, this is represented by a control loop with the components shown in \figurename~{\ref{fig:control_loop}}.
 \begin{figure}
@@ -42,7 +42,7 @@ The value $k_{s}$ describes the static gain, which equals the final value of the
 \figurename~\ref{fig:tf_pt1} shows the tranfer function of a PT$_{1}$-element.
 
 
-\subsection{PI-controller}
+\section{PI-controller}
 A PI-controller is a control structure commonly used for linear systems. This structure consists of both a propotional and an integral control element.
 The output value of a P-controller is proportional to it's input value. In relation to the control loop in \figurename~\ref{fig:control_loop} this leads to
 \begin{equation}
@@ -86,6 +86,41 @@ The step response of the PI-controller, illustrated in \figurename~\ref{fig:step
    \label{fig:step_resp_pi}
  \end{figure}
 
-\subsubsection{Controller design according to Chien Hrones Reswick}
+\subsection{Tuning rules}
+In regards to the controller parameters, tuning is of great importance. If the parameters are chosen incorrectly it can lead to poor performance. There are many different approach to tuning a PI-Controller in order to achieve the best system performance. These are reaching from heuristic methods, over analysis of pole-zero plots, to computer-aided numerical parameter optimization \cite{Reg_10} At this point only the tuning rules according to Ziegler Nichols (ZN) and the rules according to Chien Hrones Reswick (CHR) will be discussed, as these have been used for the implementation of flow control in the practical work.  Information on other approaches can be found in \cite{Reg_11}.
 
-\subsection{Iterative Learning Control}
+\subsubsection{Tuning rules according to Ziegler Nichols}
+The tuning rules according to Ziegler Nichols are on of the most commoly used heuristic methods in tuning controller parameters for PID-Controllers. They are used especially, if a mathematical model of the plant is not available, but the plant can be approximated as a PT$_{n}$-element. \cite{Reg_17}
+A necessary condition is that the step response of the plant needs to be experimentally identifiable without risk of damage to the system. After the step response has been determined, it is displayed graphically. Then the inflection tangent is drawn into the step response as shown in the \figurename~\ref{fig:param_zn}.
+\begin{figure}
+   \centering
+   \includegraphics[width=0.8\textwidth]{images/param_zn.jpg}
+   \caption[Inflection tangent method Ziegler Nichols]{Inflection tangent method Ziegler Nichols}
+   \label{fig:param_zn}
+ \end{figure}
+The gain $K_{P}$, the delay time $T_{v}$ and the settling time $T_{g}$ can be read from the graph.
+The calculation of the controller parameters is performed according to the data in \tablename~\ref{tab:param_zn}. The factor $K_{p}$ from the table equals the term $K_{p}$ in (\ref{eq:pi_contr_2}), while the factor $K_{I}$ is calculated to:
+\begin{equation}
+    K_{I}  = \frac{K_{P}}{T_{N}}.
+ \label{eq:K_I}
+\end{equation}
+\begin{table}
+  \centering
+  \begin{tabularx}{0.6\textwidth}{c|c|c|c}
+    \toprule
+    Controller Type & $K_{P}$ &  $T_{N}$ & $T_{V}$   \\
+    \midrule
+    P-Controller &  $\frac{T_{G}}{K_{S}T_{v}}$ & $\infty$ & 0 \\
+    & & & \\
+    PI-Controller & $0.9\frac{T_{G}}{K_{S}T_{v}}$ & $3.33T_{v}$ & 0 \\
+    & & & \\
+    PID-Controller & $0.9\frac{T_{G}}{K_{S}T_{v}}$ & $2T_{v}$ & $0.5T_{v}$ \\
+     \bottomrule
+  \end{tabularx}
+  \caption[Tuning parameters Ziegler Nichols]{Tuning parameters according to Ziegler Nichols}
+  \label{tab:param_zn}
+\end{table}
+
+\subsubsection{Tuning rules according to Chien Hrones Reswick}
+
+\section{Iterative Learning Control}
