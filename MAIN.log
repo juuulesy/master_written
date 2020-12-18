@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.14)  18 DEC 2020 14:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.14)  18 DEC 2020 15:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1116,7 +1116,11 @@ Package hyperref Info: Option `plainpages' set `false' on input line 112.
 Package hyperref Info: Option `colorlinks' set `true' on input line 112.
 \fheight=\skip102
 \fwidth=\skip103
-) (./MAIN.aux (./titelseite.aux) (./danksagung.aux) (./erklaerung.aux) (./abstract.aux) (./symbolverzeichnis.aux) (./introduction.aux) (./Medical_Fundamentals.aux) (./Technical_Fundamentals.aux
+) (./MAIN.aux (./titelseite.aux) (./danksagung.aux) (./erklaerung.aux) (./abstract.aux) (./symbolverzeichnis.aux) (./introduction.aux) (./Medical_Fundamentals.aux
+
+LaTeX Warning: Label `eq:CO' multiply defined.
+
+) (./Technical_Fundamentals.aux
 
 LaTeX Warning: Label `eq:PD_type' multiply defined.
 
@@ -1431,49 +1435,46 @@ Package pdftex.def Info: images/pv_2_.jpg used on input line 44.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/sys_dys.jpg, id=366, 387.4475pt x 323.2075pt>
-File: images/sys_dys.jpg Graphic file (type jpg)
- <use images/sys_dys.jpg>
-Package pdftex.def Info: images/sys_dys.jpg used on input line 58.
-(pdftex.def)             Requested size: 215.26291pt x 179.57462pt.
- <images/dias_dys.jpg, id=367, 383.4325pt x 332.24126pt>
-File: images/dias_dys.jpg Graphic file (type jpg)
- <use images/dias_dys.jpg>
-Package pdftex.def Info: images/dias_dys.jpg used on input line 60.
-(pdftex.def)             Requested size: 215.26291pt x 186.5253pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6 <./images/cardiac_cycle.jpg>]
-Underfull \vbox (badness 2951) has occurred while \output is active []
-
+ [6 <./images/cardiac_cycle.jpg>] <images/sys_dys.jpg, id=375, 387.4475pt x 323.2075pt>
+File: images/sys_dys.jpg Graphic file (type jpg)
+ <use images/sys_dys.jpg>
+Package pdftex.def Info: images/sys_dys.jpg used on input line 65.
+(pdftex.def)             Requested size: 215.26291pt x 179.57462pt.
+ <images/dias_dys.jpg, id=376, 383.4325pt x 332.24126pt>
+File: images/dias_dys.jpg Graphic file (type jpg)
+ <use images/dias_dys.jpg>
+Package pdftex.def Info: images/dias_dys.jpg used on input line 67.
+(pdftex.def)             Requested size: 215.26291pt x 186.5253pt.
  [7 <./images/pv_1.jpg> <./images/pv_2_.jpg>]
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 70.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Overfull \hbox (12.06401pt too wide) in alignment at lines 87--87
+ [8 <./images/sys_dys.jpg> <./images/dias_dys.jpg>]
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 77.
+
+Overfull \hbox (12.06401pt too wide) in alignment at lines 94--94
 [][][][] 
  []
 
-
-Underfull \vbox (badness 3428) has occurred while \output is active []
-
- [8 <./images/sys_dys.jpg> <./images/dias_dys.jpg>] [9]) [10] [11]
+[9]) [10] [11] [12]
 \openout2 = `Technical_Fundamentals.aux'.
 
- (./Technical_Fundamentals.tex [12
-
-
-
-
-]
+ (./Technical_Fundamentals.tex
 chapter 3.
-<images/control_loop.jpg, id=446, 797.98125pt x 176.15813pt>
+<images/control_loop.jpg, id=449, 797.98125pt x 176.15813pt>
 File: images/control_loop.jpg Graphic file (type jpg)
  <use images/control_loop.jpg>
 Package pdftex.def Info: images/control_loop.jpg used on input line 11.
 (pdftex.def)             Requested size: 387.47061pt x 85.53603pt.
- [13 <./images/control_loop.jpg>] <images/tf_pt1.jpg, id=457, 853.1875pt x 439.6425pt>
+ [13
+
+
+
+
+ <./images/control_loop.jpg>] <images/tf_pt1.jpg, id=460, 853.1875pt x 439.6425pt>
 File: images/tf_pt1.jpg Graphic file (type jpg)
  <use images/tf_pt1.jpg>
 Package pdftex.def Info: images/tf_pt1.jpg used on input line 37.
@@ -1484,7 +1485,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[14] <images/step_resp_pi.jpg, id=472, 344.78813pt x 263.48438pt>
+[14] <images/step_resp_pi.jpg, id=475, 344.78813pt x 263.48438pt>
 File: images/step_resp_pi.jpg Graphic file (type jpg)
  <use images/step_resp_pi.jpg>
 Package pdftex.def Info: images/step_resp_pi.jpg used on input line 84.
@@ -1493,7 +1494,7 @@ Package pdftex.def Info: images/step_resp_pi.jpg used on input line 84.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[15 <./images/tf_pt1.jpg>] <images/param_zn.jpg, id=487, 630.355pt x 395.4775pt>
+[15 <./images/tf_pt1.jpg>] <images/param_zn.jpg, id=490, 630.355pt x 395.4775pt>
 File: images/param_zn.jpg Graphic file (type jpg)
  <use images/param_zn.jpg>
 Package pdftex.def Info: images/param_zn.jpg used on input line 97.
@@ -1503,7 +1504,7 @@ Underfull \hbox (badness 10000) in alignment at lines 119--119
 [][][][] 
  []
 
-[16 <./images/step_resp_pi.jpg>] <images/ILC_only.jpg, id=502, 874.01532pt x 335.75438pt>
+[16 <./images/step_resp_pi.jpg>] <images/ILC_only.jpg, id=505, 874.01532pt x 335.75438pt>
 File: images/ILC_only.jpg Graphic file (type jpg)
  <use images/ILC_only.jpg>
 Package pdftex.def Info: images/ILC_only.jpg used on input line 153.
@@ -1511,7 +1512,7 @@ Package pdftex.def Info: images/ILC_only.jpg used on input line 153.
 
 Underfull \vbox (badness 1939) has occurred while \output is active []
 
- [17 <./images/param_zn.jpg>] <images/ILC_parallel.jpg, id=512, 874.01532pt x 335.75438pt>
+ [17 <./images/param_zn.jpg>] <images/ILC_parallel.jpg, id=515, 874.01532pt x 335.75438pt>
 File: images/ILC_parallel.jpg Graphic file (type jpg)
  <use images/ILC_parallel.jpg>
 Package pdftex.def Info: images/ILC_parallel.jpg used on input line 171.
@@ -1521,7 +1522,7 @@ Package pdftex.def Info: images/ILC_parallel.jpg used on input line 171.
 
  (./Chapter4.tex
 chapter 4.
-<images/sputnik_cross.png, id=535, 515.9275pt x 231.86626pt>
+<images/sputnik_cross.png, id=538, 515.9275pt x 231.86626pt>
 File: images/sputnik_cross.png Graphic file (type png)
  <use images/sputnik_cross.png>
 Package pdftex.def Info: images/sputnik_cross.png used on input line 25.
@@ -1601,19 +1602,19 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 32100 strings out of 492995
- 597447 string characters out of 6132703
- 742183 words of memory out of 5000000
+ 32101 strings out of 492995
+ 597461 string characters out of 6132703
+ 743183 words of memory out of 5000000
  34880 multiletter control sequences out of 15000+600000
  69179 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,18n,66p,10510b,669s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/
 public/lm/lmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on MAIN.pdf (45 pages, 2212867 bytes).
+Output written on MAIN.pdf (45 pages, 2214899 bytes).
 PDF statistics:
- 699 PDF objects out of 1000 (max. 8388607)
- 601 compressed objects within 7 object streams
- 143 named destinations out of 1000 (max. 500000)
+ 702 PDF objects out of 1000 (max. 8388607)
+ 604 compressed objects within 7 object streams
+ 144 named destinations out of 1000 (max. 500000)
  383 words of extra memory for PDF output out of 10000 (max. 10000000)
 
