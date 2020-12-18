@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.14)  18 DEC 2020 14:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.14)  18 DEC 2020 14:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1398,52 +1398,67 @@ chapter 2.
 File: images/circulation.jpg Graphic file (type jpg)
  <use images/circulation.jpg>
 Package pdftex.def Info: images/circulation.jpg used on input line 8.
-(pdftex.def)             Requested size: 172.20421pt x 258.31279pt.
+(pdftex.def)             Requested size: 215.2672pt x 301.35942pt.
  [3 <./images/circulation.jpg>] <images/heart_1.jpg, id=317, 513.92pt x 490.83376pt>
 File: images/heart_1.jpg Graphic file (type jpg)
  <use images/heart_1.jpg>
 Package pdftex.def Info: images/heart_1.jpg used on input line 16.
-(pdftex.def)             Requested size: 258.31812pt x 246.71944pt.
+(pdftex.def)             Requested size: 301.36676pt x 287.82936pt.
 
-Underfull \vbox (badness 1721) has occurred while \output is active []
 
- [4 <./images/heart_1.jpg>] <images/cardiac_cycle.jpg, id=329, 1467.4825pt x 1118.1775pt>
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/cardiac_cycle.jpg, id=322, 1467.4825pt x 1118.1775pt>
 File: images/cardiac_cycle.jpg Graphic file (type jpg)
  <use images/cardiac_cycle.jpg>
 Package pdftex.def Info: images/cardiac_cycle.jpg used on input line 31.
 (pdftex.def)             Requested size: 344.42197pt x 262.43051pt.
- [5 <./images/cardiac_cycle.jpg>] <images/pv_1.jpg, id=349, 374.58253pt x 312.49141pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[4] <images/pv_1.jpg, id=344, 374.58253pt x 312.49141pt>
 File: images/pv_1.jpg Graphic file (type jpg)
  <use images/pv_1.jpg>
 Package pdftex.def Info: images/pv_1.jpg used on input line 42.
 (pdftex.def)             Requested size: 215.26291pt x 179.58102pt.
- <images/pv_2_.jpg, id=350, 1092.08pt x 915.42pt>
+ <images/pv_2_.jpg, id=345, 1092.08pt x 915.42pt>
 File: images/pv_2_.jpg Graphic file (type jpg)
  <use images/pv_2_.jpg>
 Package pdftex.def Info: images/pv_2_.jpg used on input line 44.
 (pdftex.def)             Requested size: 215.26291pt x 180.44077pt.
- [6 <./images/pv_1.jpg> <./images/pv_2_.jpg>] <images/sys_dys.jpg, id=373, 387.4475pt x 323.2075pt>
+ [5 <./images/heart_1.jpg>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/sys_dys.jpg, id=366, 387.4475pt x 323.2075pt>
 File: images/sys_dys.jpg Graphic file (type jpg)
  <use images/sys_dys.jpg>
 Package pdftex.def Info: images/sys_dys.jpg used on input line 58.
 (pdftex.def)             Requested size: 215.26291pt x 179.57462pt.
- <images/dias_dys.jpg, id=374, 383.4325pt x 332.24126pt>
+ <images/dias_dys.jpg, id=367, 383.4325pt x 332.24126pt>
 File: images/dias_dys.jpg Graphic file (type jpg)
  <use images/dias_dys.jpg>
 Package pdftex.def Info: images/dias_dys.jpg used on input line 60.
 (pdftex.def)             Requested size: 215.26291pt x 186.5253pt.
 
-Underfull \vbox (badness 1147) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7]
+ [6 <./images/cardiac_cycle.jpg>]
+Underfull \vbox (badness 2951) has occurred while \output is active []
+
+ [7 <./images/pv_1.jpg> <./images/pv_2_.jpg>]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 70.
 
-Overfull \hbox (12.06401pt too wide) in alignment at lines 90--90
+Overfull \hbox (12.06401pt too wide) in alignment at lines 87--87
 [][][][] 
  []
 
-[8 <./images/sys_dys.jpg> <./images/dias_dys.jpg>] [9]) [10] [11]
+
+Underfull \vbox (badness 3428) has occurred while \output is active []
+
+ [8 <./images/sys_dys.jpg> <./images/dias_dys.jpg>] [9]) [10] [11]
 \openout2 = `Technical_Fundamentals.aux'.
 
  (./Technical_Fundamentals.tex [12
@@ -1595,7 +1610,7 @@ Here is how much of TeX's memory you used:
  69i,18n,66p,10510b,669s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/
 public/lm/lmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on MAIN.pdf (45 pages, 2212535 bytes).
+Output written on MAIN.pdf (45 pages, 2212867 bytes).
 PDF statistics:
  699 PDF objects out of 1000 (max. 8388607)
  601 compressed objects within 7 object streams
