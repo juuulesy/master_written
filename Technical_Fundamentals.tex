@@ -147,7 +147,13 @@ The values for $K_{P}$, $T_{v}$ and $T_{g}$ are read from the plot. The paramete
 
 \section{Iterative Learning Control}
 The use of iterative learning control aims to improve control performance for systems which execute the same task repeatedly under constant operation conditions. This improvement is based on the idea that it is possible to include error information from previous iterations into the adjustment of the actuation variable during the current iteration.
-The standard control structure of an ILC algorithm is presented in %\figurename~\ref{fig:ILC_standard}.
+The standard control structure of an ILC algorithm is presented in \figurename~\ref{fig:ILC_only}.
+\begin{figure}[h]
+   \centering
+   \includegraphics[width=0.9\textwidth]{images/ILC_only.jpg}
+   \caption[Standard ILC control loop]{Standard ILC control loop}
+   \label{fig:ILC_only}
+ \end{figure}
 Considering a linear-time-invariant single-input-single-output system, the ILC learning algorithm would be as follows:
 \begin{equation}
     u_{j+1}  = Q(q)[u_{j}(k)+L(q)e_{j}(k+1)]
@@ -159,8 +165,13 @@ where $k$ is the time index, $j$ is the iteration index, $Q(q)$ is defined as th
  \label{eq:perf_error}
 \end{equation}
 
- Feedback controllers, such as a PI-controllers, are only able to include the current changes in control error. By taking into account the information from previous iterations low tracking errors are achievable through an ILC. This results in very high performance, with convergence during the first few iterations. This can be achieved even for systems prone to repeating disturbances and model uncertainties. While feedback control has a lag in transient tracking, due to reacting to inputs and disturbances, ILC, as a feedforward controller, does not. Another advantage of ILC use is that there is no need for disturbances to be known or measured, as long as these signals show repeating behavior during each iteration. Furthermore, through storing signal information during each iteration ILC enables advanced filtering and signal processing of the control error. However, ILC utilization holds some issues in regards to non-repeating disturbances or noise influences. In these cases it may be useful to combine ILC approaches with a feeback controller. A combination of the systems also is recommended if the plant's behavior is not stable. \cite{ILC2} A parallel architecture of a feedback controller in combination with an ILC is illustrated in \figurename~\ref{fig:parallel_arch_ILC}
-
+ Feedback controllers, such as a PI-controllers, are only able to include the current changes in control error. By taking into account the information from previous iterations low tracking errors are achievable through an ILC. This results in very high performance, with convergence during the first few iterations. This can be achieved even for systems prone to repeating disturbances and model uncertainties. While feedback control has a lag in transient tracking, due to reacting to inputs and disturbances, ILC, as a feedforward controller, does not. Another advantage of ILC use is that there is no need for disturbances to be known or measured, as long as these signals show repeating behavior during each iteration. Furthermore, through storing signal information during each iteration ILC enables advanced filtering and signal processing of the control error. However, ILC utilization holds some issues in regards to non-repeating disturbances or noise influences. In these cases it may be useful to combine ILC approaches with a feeback controller. A combination of the systems also is recommended if the plant's behavior is not stable. \cite{ILC2} A parallel architecture of a feedback controller in combination with an ILC is illustrated in \figurename~\ref{fig:ILC_parallel}
+ \begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\textwidth]{images/ILC_parallel.jpg}
+    \caption[Parallel architecture of ILC with feedback controller]{Parallel architecture of ILC with feedback controller}
+    \label{fig:ILC_parallel}
+  \end{figure}
 There are different approaches to designing an ILC. In general, an ILC ideally only learns the repeating disturbance patterns without being influenced by noise. The most common types of ILC learning functions are the P-, D- and PD-type learning functions. As an ILC does have an natural integrator action from one iteration to the next, I-type learning functions are not used that frequently.
 \\The discrete time learning function for a standard PD-type ILC is given as either
 \begin{equation}
@@ -174,4 +185,4 @@ There are different approaches to designing an ILC. In general, an ILC ideally o
   \end{equation}
 $k_{p}$ represents the proportional gain, while $k_{d}$ is the derivative gain. In case a P-type learning function is implemented the derivation gain is set to $k_{d}=0$. For a D-type learning function $k_{p}=0$ is used, respectively.
 \\The performance of these ILC types depends mainly on accurate parameter tuning and does not require an acurate mathematical model of the plant. Despite these approaches being frequently used, there are no tuning guidelines similar to the once mentioned for PI-controller tuning. However, a commonly used way to tune influence the process behavior is to modify the learning algorithm to include a Q-Filter. This filter can be used to disable learning at high frequiencies, to filter high-frequency noise. It furthermore increases robustness. First a filter type, such as Butterworth or Chebyshev, is specified. The bandwith can then be interpreted as a tuning parameter, in addition to the proportional gain $k_{p}$. Initially learning gain and filter bandwidth are set to low values. When a steady baseline behaviod and error performance is achieved, the parameter values can be increased to improve performance. The learning gain influences the rate of error convergence, while the Q-Filter influences the error performance. The higher the filter bandwidth, the more increased is the performance. However, this includes a trade-off in robustness. For lower filter bandwidth high robustness can be achieved in a trade-off in performance.
-\\Besides the P-,D- and PD-type ILC there are other design approaches. The $H_{\infty}$ method can be used to design a robustly convergent ILC controller, with a trade-off in performance. A quickly converging ILC approach can be achieved by using the Plant inversion method. This however, depends greatly on an accurate modeling of the plant. The quadratically optimal ILC approach uses quadratic performance criteria to design an optimal ILC. Further information on these alternative design methods is provided in \cite{ILC2}.  
+\\Besides the P-,D- and PD-type ILC there are other design approaches. The $H_{\infty}$ method can be used to design a robustly convergent ILC controller, with a trade-off in performance. A quickly converging ILC approach can be achieved by using the Plant inversion method. This however, depends greatly on an accurate modeling of the plant. The quadratically optimal ILC approach uses quadratic performance criteria to design an optimal ILC. Further information on these alternative design methods is provided in \cite{ILC2}.

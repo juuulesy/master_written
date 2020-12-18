@@ -478,7 +478,12 @@ INPUT ./images/step_resp_pi.jpg
 INPUT images/param_zn.jpg
 INPUT ./images/param_zn.jpg
 INPUT ./images/param_zn.jpg
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
+INPUT images/ILC_only.jpg
+INPUT ./images/ILC_only.jpg
+INPUT ./images/ILC_only.jpg
+INPUT images/ILC_parallel.jpg
+INPUT ./images/ILC_parallel.jpg
+INPUT ./images/ILC_parallel.jpg
 OUTPUT Chapter4.aux
 INPUT Chapter4.tex
 INPUT Chapter4.tex
@@ -534,7 +539,6 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx10.pfb
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmex10.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi12.pfb
