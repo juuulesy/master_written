@@ -31,6 +31,11 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/babel/babel.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/babel-english/english.ldf
 INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/babel-english/english.ldf
 INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/babel/babel.def
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/fontenc.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/fontenc.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/t1enc.def
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/t1enc.def
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/tools/tabularx.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/tools/tabularx.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/tools/array.sty
@@ -85,7 +90,6 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/fontenc.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/fontenc.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/t1enc.def
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/t1enc.def
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/lm/lmodern.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/lm/lmodern.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/helvet.sty
@@ -449,7 +453,6 @@ INPUT images/pv_2_.jpg
 INPUT ./images/pv_2_.jpg
 INPUT ./images/pv_2_.jpg
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/lm/ec-lmri12.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT images/sys_dys.jpg
 INPUT ./images/sys_dys.jpg
 INPUT ./images/sys_dys.jpg
@@ -540,7 +543,6 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx10.pfb
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmex10.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi12.pfb
