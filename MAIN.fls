@@ -494,6 +494,9 @@ INPUT Chapter4.tex
 INPUT images/sputnik_cross.png
 INPUT ./images/sputnik_cross.png
 INPUT ./images/sputnik_cross.png
+INPUT images/mock_loop.jpg
+INPUT ./images/mock_loop.jpg
+INPUT ./images/mock_loop.jpg
 OUTPUT Chapter5.aux
 INPUT Chapter5.tex
 INPUT Chapter5.tex

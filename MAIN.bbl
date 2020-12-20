@@ -103,6 +103,19 @@
 \newblock Berlin, Heidelberg : Springer Berlin Heidelberg, 2016. --
 \newblock ISBN 978--3--642--41239--4, S. 107--144
 
+\bibitem[MRS{\etalchar{+}}15]{MCL}
+\textsc{Misgeld}, Berno~J. ; \textsc{Rüschen}, Daniel ; \textsc{Schwandtner},
+  Sebastian ; \textsc{Heinke}, Stefanie ; \textsc{Walter}, Marian  ;
+  \textsc{Leonhardt}, Steffen:
+\newblock Robust decentralised control of a hydrodynamic human circulatory
+  system simulator.
+\newblock {In: }\emph{Biomedical Signal Processing and Control} 20 (2015), 35 -
+  44.
+\newblock \url{http://dx.doi.org/https://doi.org/10.1016/j.bspc.2015.04.004}.
+  --
+\newblock DOI https://doi.org/10.1016/j.bspc.2015.04.004. --
+\newblock ISSN 1746--8094
+
 \bibitem[SBL19]{VAD10}
 \textsc{Sponga}, Sandro ; \textsc{Benedetti}, Giovanni  ; \textsc{Livi},
   Ugolino:

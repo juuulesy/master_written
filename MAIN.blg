@@ -21,45 +21,45 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: literatur.bib
 Warning--empty title in Reg_10
-You've used 21 entries,
+You've used 22 entries,
             4793 wiz_defined-function locations,
-            1070 strings with 10850 characters,
-and the built_in function-call counts, 16904 in all, are:
-= -- 1753
-> -- 496
-< -- 524
-+ -- 604
-- -- 193
-* -- 1305
-:= -- 2857
-add.period$ -- 29
-call.type$ -- 21
-change.case$ -- 128
-chr.to.int$ -- 21
-cite$ -- 22
-duplicate$ -- 419
-empty$ -- 1106
-format.name$ -- 326
-if$ -- 3260
+            1080 strings with 11227 characters,
+and the built_in function-call counts, 18502 in all, are:
+= -- 1927
+> -- 536
+< -- 584
++ -- 671
+- -- 209
+* -- 1436
+:= -- 3115
+add.period$ -- 31
+call.type$ -- 22
+change.case$ -- 137
+chr.to.int$ -- 22
+cite$ -- 23
+duplicate$ -- 444
+empty$ -- 1204
+format.name$ -- 353
+if$ -- 3563
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 103
-newline$ -- 134
-num.names$ -- 64
-pop$ -- 171
+missing$ -- 109
+newline$ -- 142
+num.names$ -- 67
+pop$ -- 181
 preamble$ -- 1
-purify$ -- 170
+purify$ -- 181
 quote$ -- 0
-skip$ -- 834
+skip$ -- 903
 stack$ -- 0
-substring$ -- 1482
-swap$ -- 124
-text.length$ -- 94
+substring$ -- 1701
+swap$ -- 134
+text.length$ -- 102
 text.prefix$ -- 5
 top$ -- 0
-type$ -- 186
+type$ -- 196
 warning$ -- 1
-while$ -- 156
-width$ -- 24
-write$ -- 290
+while$ -- 167
+width$ -- 26
+write$ -- 308
 (There was 1 warning)
