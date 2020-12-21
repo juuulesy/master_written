@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.14)  21 DEC 2020 00:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.14)  21 DEC 2020 18:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -135,7 +135,9 @@ Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
  (/usr/local/texlive/2017/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
-)) (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/tabularx.sty
+)) (/usr/local/texlive/2017/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
  (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/array.sty
 Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
@@ -158,10 +160,10 @@ Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 \multirow@cntb=\count91
 \multirow@dima=\skip59
 \bigstrutjot=\dimen111
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
  (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
@@ -246,10 +248,10 @@ LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count107
 \calc@Cskip=\skip67
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
-
-(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+ (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/atbegshi.sty
 Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
  (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
@@ -961,6 +963,10 @@ Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
 . 
 . Defining command \xshowbibdriver with sig. 'm' on line 193.
 .................................................
+)
+Package scrhack Info: loading setspace hack on input line 193.
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/koma-script/setspace.hak
+File: setspace.hak 2017/04/13 v3.23 KOMA-Script package (hacking package setspace)
 )) (/usr/local/texlive/2017/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count198
 \lst@gtempboxa=\box90
@@ -1000,7 +1006,8 @@ Package scrhack Info: hyperref hack deactivated because of
 Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
  (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
- (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -1036,8 +1043,7 @@ Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
 Package hobsub Info: Skipping package `atbegshi' (already loaded).
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
-)
-(/usr/local/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
@@ -1124,21 +1130,21 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 112.
 ) (./MAIN.aux (./titelseite.aux) (./danksagung.aux) (./erklaerung.aux) (./abstract.aux) (./symbolverzeichnis.aux) (./introduction.aux) (./Medical_Fundamentals.aux) (./Technical_Fundamentals.aux) (./Chapter4.aux) (./Chapter5.aux) (./Conclusion.aux) (./anhang.aux))
 \openout1 = `MAIN.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 84.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 85.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -1190,8 +1196,8 @@ Package scrhack Info: \landscape patched to make \textheight change optional on 
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ) ABD: EveryShipout initializing macros
 \c@lstlisting=\count288
-Package scrhack Info: undefining \float@addtolists on input line 84.
-Package hyperref Info: Link coloring ON on input line 84.
+Package scrhack Info: undefining \float@addtolists on input line 85.
+Package hyperref Info: Link coloring ON on input line 85.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -1199,15 +1205,15 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count289
 )
-LaTeX Info: Redefining \ref on input line 84.
-LaTeX Info: Redefining \pageref on input line 84.
-LaTeX Info: Redefining \nameref on input line 84.
+LaTeX Info: Redefining \ref on input line 85.
+LaTeX Info: Redefining \pageref on input line 85.
+LaTeX Info: Redefining \nameref on input line 85.
  (./MAIN.out) (./MAIN.out)
 \@outlinefile=\write5
 \openout5 = `MAIN.out'.
 
  ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 84.
+LaTeX Info: Redefining \selectfont on input line 85.
 \openout2 = `titelseite.aux'.
 
  (./titelseite.tex (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/ot1lmr.fd) (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omllmm.fd) (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omslmsy.fd)
@@ -1233,7 +1239,12 @@ Overfull \hbox (103.2877pt too wide) in paragraph at lines 64--74
 []|  [] 
  []
 
-[1
+<images/Teststand_I.pdf, id=146, 4047.12pt x 2803.47375pt>
+File: images/Teststand_I.pdf Graphic file (type pdf)
+ <use images/Teststand_I.pdf>
+Package pdftex.def Info: images/Teststand_I.pdf used on input line 76.
+(pdftex.def)             Requested size: 341.37611pt x 236.47408pt.
+ [1
 
 
 
@@ -1242,7 +1253,7 @@ Overfull \hbox (103.2877pt too wide) in paragraph at lines 64--74
 
 
 
-{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
+{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./images/Teststand_I.pdf>] [2
 
 
 ])
@@ -1254,7 +1265,7 @@ Overfull \hbox (103.2877pt too wide) in paragraph at lines 64--74
  (./erklaerung.tex
 
 pdfTeX warning: pdflatex (file ./images/Formular_Eidesstattliche_Versicherung_neu.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<images/Formular_Eidesstattliche_Versicherung_neu.pdf, id=157, 597.45204pt x 845.1575pt>
+<images/Formular_Eidesstattliche_Versicherung_neu.pdf, id=170, 597.45204pt x 845.1575pt>
 File: images/Formular_Eidesstattliche_Versicherung_neu.pdf Graphic file (type pdf)
  <use images/Formular_Eidesstattliche_Versicherung_neu.pdf>
 Package pdftex.def Info: images/Formular_Eidesstattliche_Versicherung_neu.pdf used on input line 16.
@@ -1272,7 +1283,7 @@ pdfTeX warning: pdflatex (file ./images/Formular_Eidesstattliche_Versicherung_ne
 
 
 pdfTeX warning: pdflatex (file ./images/Formular_Eidesstattliche_Versicherung_neu.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<images/Formular_Eidesstattliche_Versicherung_neu.pdf, id=160, page=1, 597.45204pt x 845.1575pt>
+<images/Formular_Eidesstattliche_Versicherung_neu.pdf, id=173, page=1, 597.45204pt x 845.1575pt>
 File: images/Formular_Eidesstattliche_Versicherung_neu.pdf Graphic file (type pdf)
  <use images/Formular_Eidesstattliche_Versicherung_neu.pdf, page 1>
 Package pdftex.def Info: images/Formular_Eidesstattliche_Versicherung_neu.pdf, page1 used on input line 16.
@@ -1356,13 +1367,8 @@ chapter without number
  (./symbolverzeichnis.tex
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 7.
-
-Overfull \hbox (0.98903pt too wide) in paragraph at lines 71--71
-[]|[][]| 
- []
-
 )
-Overfull \hbox (11.74983pt too wide) in paragraph at lines 71--144
+Overfull \hbox (11.74983pt too wide) in paragraph at lines 71--145
 [] 
  []
 
@@ -1395,78 +1401,92 @@ chapter 1.
 
 ]
 chapter 2.
-<images/circulation.jpg, id=310, 521.95pt x 721.69624pt>
+<images/circulation.jpg, id=323, 521.95pt x 721.69624pt>
 File: images/circulation.jpg Graphic file (type jpg)
  <use images/circulation.jpg>
 Package pdftex.def Info: images/circulation.jpg used on input line 8.
 (pdftex.def)             Requested size: 172.20421pt x 258.31279pt.
- <images/heart_1.jpg, id=318, 513.92pt x 490.83376pt>
+ <images/heart_1.jpg, id=331, 513.92pt x 490.83376pt>
 File: images/heart_1.jpg Graphic file (type jpg)
  <use images/heart_1.jpg>
 Package pdftex.def Info: images/heart_1.jpg used on input line 15.
-(pdftex.def)             Requested size: 301.36676pt x 287.82936pt.
- [3 <./images/circulation.jpg>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4 <./images/heart_1.jpg>] <images/cardiac_cycle.jpg, id=337, 1467.4825pt x 1118.1775pt>
+(pdftex.def)             Requested size: 258.31812pt x 246.71944pt.
+ [3 <./images/circulation.jpg>] <images/cardiac_cycle.jpg, id=343, 1467.4825pt x 1118.1775pt>
 File: images/cardiac_cycle.jpg Graphic file (type jpg)
  <use images/cardiac_cycle.jpg>
 Package pdftex.def Info: images/cardiac_cycle.jpg used on input line 30.
 (pdftex.def)             Requested size: 344.42197pt x 262.43051pt.
- [5 <./images/cardiac_cycle.jpg>] <images/pv_1.jpg, id=357, 374.58253pt x 312.49141pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 6641) has occurred while \output is active []
+
+ [4]
+Underfull \vbox (badness 4479) has occurred while \output is active []
+
+ [5 <./images/heart_1.jpg>] <images/pv_1.jpg, id=369, 374.58253pt x 312.49141pt>
 File: images/pv_1.jpg Graphic file (type jpg)
  <use images/pv_1.jpg>
 Package pdftex.def Info: images/pv_1.jpg used on input line 41.
 (pdftex.def)             Requested size: 215.26291pt x 179.58102pt.
- <images/pv_2_.jpg, id=358, 1092.08pt x 915.42pt>
+ <images/pv_2_.jpg, id=370, 1092.08pt x 915.42pt>
 File: images/pv_2_.jpg Graphic file (type jpg)
  <use images/pv_2_.jpg>
 Package pdftex.def Info: images/pv_2_.jpg used on input line 43.
 (pdftex.def)             Requested size: 215.26291pt x 180.44077pt.
 
-Underfull \vbox (badness 2310) has occurred while \output is active []
 
- [6 <./images/pv_1.jpg> <./images/pv_2_.jpg>] <images/sys_dys.jpg, id=383, 387.4475pt x 323.2075pt>
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 1062) has occurred while \output is active []
+
+ [6 <./images/cardiac_cycle.jpg>] <images/sys_dys.jpg, id=395, 387.4475pt x 323.2075pt>
 File: images/sys_dys.jpg Graphic file (type jpg)
  <use images/sys_dys.jpg>
 Package pdftex.def Info: images/sys_dys.jpg used on input line 63.
 (pdftex.def)             Requested size: 215.26291pt x 179.57462pt.
- <images/dias_dys.jpg, id=384, 383.4325pt x 332.24126pt>
+ <images/dias_dys.jpg, id=396, 383.4325pt x 332.24126pt>
 File: images/dias_dys.jpg Graphic file (type jpg)
  <use images/dias_dys.jpg>
 Package pdftex.def Info: images/dias_dys.jpg used on input line 65.
 (pdftex.def)             Requested size: 215.26291pt x 186.5253pt.
- [7]
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8 <./images/sys_dys.jpg> <./images/dias_dys.jpg>]
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 75.
-
-Overfull \hbox (12.06401pt too wide) in alignment at lines 92--92
-[][][][] 
- []
-
-[9]) [10]
+ [7 <./images/pv_1.jpg> <./images/pv_2_.jpg>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[11] [12]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8]
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 75.
+
+Overfull \hbox (12.06401pt too wide) in alignment at lines 93--93
+[][][][] 
+ []
+
+[9 <./images/sys_dys.jpg> <./images/dias_dys.jpg>] [10]) [11] [12] [13]
 \openout2 = `Technical_Fundamentals.aux'.
 
- (./Technical_Fundamentals.tex
+ (./Technical_Fundamentals.tex [14
+
+
+
+
+]
 chapter 3.
-<images/control_loop.jpg, id=460, 797.98125pt x 176.15813pt>
-File: images/control_loop.jpg Graphic file (type jpg)
- <use images/control_loop.jpg>
-Package pdftex.def Info: images/control_loop.jpg used on input line 11.
-(pdftex.def)             Requested size: 387.47061pt x 85.53603pt.
- [13
-
-
-
-
- <./images/control_loop.jpg>] <images/tf_pt1.jpg, id=470, 853.1875pt x 439.6425pt>
+<images/control_loop.pdf, id=480, 801.52586pt x 170.42122pt>
+File: images/control_loop.pdf Graphic file (type pdf)
+ <use images/control_loop.pdf>
+Package pdftex.def Info: images/control_loop.pdf used on input line 11.
+(pdftex.def)             Requested size: 387.47061pt x 82.38634pt.
+ [15 <./images/control_loop.pdf>] <images/tf_pt1.jpg, id=504, 853.1875pt x 439.6425pt>
 File: images/tf_pt1.jpg Graphic file (type jpg)
  <use images/tf_pt1.jpg>
 Package pdftex.def Info: images/tf_pt1.jpg used on input line 37.
@@ -1477,54 +1497,55 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[14] <images/step_resp_pi.jpg, id=487, 344.78813pt x 263.48438pt>
-File: images/step_resp_pi.jpg Graphic file (type jpg)
- <use images/step_resp_pi.jpg>
-Package pdftex.def Info: images/step_resp_pi.jpg used on input line 84.
-(pdftex.def)             Requested size: 172.2077pt x 131.60114pt.
+[16]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17 <./images/tf_pt1.jpg>] <images/step_resp_pi.pdf, id=529, 374.1544pt x 252.40117pt>
+File: images/step_resp_pi.pdf Graphic file (type pdf)
+ <use images/step_resp_pi.pdf>
+Package pdftex.def Info: images/step_resp_pi.pdf used on input line 84.
+(pdftex.def)             Requested size: 172.2077pt x 116.1714pt.
+ [18 <./images/step_resp_pi.pdf>] <images/param_zn.pdf, id=551, 626.34pt x 370.38374pt>
+File: images/param_zn.pdf Graphic file (type pdf)
+ <use images/param_zn.pdf>
+Package pdftex.def Info: images/param_zn.pdf used on input line 97.
+(pdftex.def)             Requested size: 301.36676pt x 178.21735pt.
+
+Underfull \vbox (badness 6445) has occurred while \output is active []
+
+ [19 <./images/param_zn.pdf>] <images/ILC_only.pdf, id=586, 876.08623pt x 337.28043pt>
+File: images/ILC_only.pdf Graphic file (type pdf)
+ <use images/ILC_only.pdf>
+Package pdftex.def Info: images/ILC_only.pdf used on input line 161.
+(pdftex.def)             Requested size: 387.47061pt x 149.17067pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[15 <./images/tf_pt1.jpg>] <images/param_zn.jpg, id=502, 630.355pt x 395.4775pt>
-File: images/param_zn.jpg Graphic file (type jpg)
- <use images/param_zn.jpg>
-Package pdftex.def Info: images/param_zn.jpg used on input line 97.
-(pdftex.def)             Requested size: 301.36676pt x 189.07272pt.
- [16 <./images/step_resp_pi.jpg>]
+[20] <images/ILC_parallel.pdf, id=600, 876.08623pt x 337.28043pt>
+File: images/ILC_parallel.pdf Graphic file (type pdf)
+ <use images/ILC_parallel.pdf>
+Package pdftex.def Info: images/ILC_parallel.pdf used on input line 179.
+(pdftex.def)             Requested size: 387.47061pt x 149.17067pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<images/ILC_only.jpg, id=515, 874.01532pt x 335.75438pt>
-File: images/ILC_only.jpg Graphic file (type jpg)
- <use images/ILC_only.jpg>
-Package pdftex.def Info: images/ILC_only.jpg used on input line 165.
-(pdftex.def)             Requested size: 387.47061pt x 148.84923pt.
- [17 <./images/param_zn.jpg>] <images/ILC_parallel.jpg, id=526, 874.01532pt x 335.75438pt>
-File: images/ILC_parallel.jpg Graphic file (type jpg)
- <use images/ILC_parallel.jpg>
-Package pdftex.def Info: images/ILC_parallel.jpg used on input line 183.
-(pdftex.def)             Requested size: 387.47061pt x 148.84923pt.
- [18 <./images/ILC_only.jpg>]) [19 <./images/ILC_parallel.jpg>] [20]
+ [21 <./images/ILC_only.pdf>]) [22 <./images/ILC_parallel.pdf>] [23]
 \openout2 = `Chapter4.aux'.
 
- (./Chapter4.tex
+ (./Chapter4.tex [24
+
+
+
+
+]
 chapter 4.
-<images/sputnik_cross.png, id=550, 515.9275pt x 231.86626pt>
+<images/sputnik_cross.png, id=658, 515.9275pt x 231.86626pt>
 File: images/sputnik_cross.png Graphic file (type png)
  <use images/sputnik_cross.png>
 Package pdftex.def Info: images/sputnik_cross.png used on input line 25.
 (pdftex.def)             Requested size: 258.31812pt x 116.09558pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[21
-
-
-
-
-] <images/mock_loop.jpg, id=559, 630.355pt x 395.4775pt>
+ [25] <images/mock_loop.jpg, id=667, 630.355pt x 395.4775pt>
 File: images/mock_loop.jpg Graphic file (type jpg)
  <use images/mock_loop.jpg>
 Package pdftex.def Info: images/mock_loop.jpg used on input line 39.
@@ -1533,15 +1554,15 @@ Package pdftex.def Info: images/mock_loop.jpg used on input line 39.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[22 <./images/sputnik_cross.png>])
+[26 <./images/sputnik_cross.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23 <./images/mock_loop.jpg>] [24]
+ [27 <./images/mock_loop.jpg>]) [28]
 \openout2 = `Chapter5.aux'.
 
  (./Chapter5.tex
 chapter 5.
-) [25
+) [29
 
 
 
@@ -1549,14 +1570,14 @@ chapter 5.
 ]
 \openout2 = `Conclusion.aux'.
 
- (./Conclusion.tex [26
+ (./Conclusion.tex [30
 
 
 
 
 ]
 chapter 6.
-) [27] [28
+) [31] [32
 
 
 
@@ -1565,11 +1586,11 @@ chapter 6.
 
  (./anhang.tex
 chapter A.
-) [29
+) [33
 
 
 
-] (./MAIN.bbl [30
+] (./MAIN.bbl [34
 
 
 
@@ -1578,39 +1599,54 @@ chapter without number
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 23.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [31] [32]
-Underfull \hbox (badness 10000) in paragraph at lines 168--173
+) [35]
+Underfull \hbox (badness 2486) in paragraph at lines 92--99
+[]\T1/lmr/m/sc/12 Lunze\T1/lmr/m/n/12 , Jan:  \T1/lmr/m/it/12 Regelung-stech-nik 1: Sys-temthe-o-retis-che Grund-la-
+ []
+
+
+Underfull \hbox (badness 1173) in paragraph at lines 92--99
+\T1/lmr/m/it/12 gen, Anal-yse und En-twurf ein-schleifiger Regelun-gen\T1/lmr/m/n/12 .  Berlin, Hei-
+ []
+
+
+Underfull \hbox (badness 3746) in paragraph at lines 92--99
+\T1/lmr/m/n/12 del-berg : Springer Berlin Hei-del-berg, 2010.  [][]$\T1/lmtt/m/n/12 http : / / dx . doi .
+ []
+
+[36]
+Underfull \hbox (badness 10000) in paragraph at lines 170--175
 []\T1/lmr/m/sc/12 World Health Or-ga-ni-za-tion\T1/lmr/m/n/12 :  \T1/lmr/m/it/12 Car-dio-vas-cu-lar dis-eases
  []
 
 
-Underfull \hbox (badness 4366) in paragraph at lines 168--173
+Underfull \hbox (badness 4366) in paragraph at lines 170--175
 \T1/lmr/m/it/12 (CVDs)\T1/lmr/m/n/12 .  [][]$\T1/lmtt/m/n/12 https : / / www . who . int / news-[]room / fact-[]sheets / detail /
  []
 
-) [33]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 184.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 184.
+[37]) [38]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 185.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 185.
  (./MAIN.aux (./titelseite.aux) (./danksagung.aux) (./erklaerung.aux) (./abstract.aux) (./symbolverzeichnis.aux) (./introduction.aux) (./Medical_Fundamentals.aux) (./Technical_Fundamentals.aux) (./Chapter4.aux) (./Chapter5.aux) (./Conclusion.aux) (./anhang.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 184.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 184.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 185.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 185.
 Package rerunfilecheck Info: File `MAIN.out' has not changed.
 (rerunfilecheck)             Checksum: 297A054B620B7372E564F5ECDAD1E510;2211.
  ) 
 Here is how much of TeX's memory you used:
- 32132 strings out of 492995
- 598017 string characters out of 6132703
- 744627 words of memory out of 5000000
- 34901 multiletter control sequences out of 15000+600000
+ 32215 strings out of 492995
+ 599894 string characters out of 6132703
+ 744874 words of memory out of 5000000
+ 34972 multiletter control sequences out of 15000+600000
  69179 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,18n,66p,10510b,671s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,18n,66p,10510b,760s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/
 public/lm/lmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on MAIN.pdf (47 pages, 2342777 bytes).
+Output written on MAIN.pdf (52 pages, 25029825 bytes).
 PDF statistics:
- 732 PDF objects out of 1000 (max. 8388607)
- 630 compressed objects within 7 object streams
- 149 named destinations out of 1000 (max. 500000)
- 388 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 849 PDF objects out of 1000 (max. 8388607)
+ 708 compressed objects within 8 object streams
+ 154 named destinations out of 1000 (max. 500000)
+ 393 words of extra memory for PDF output out of 10000 (max. 10000000)
 
