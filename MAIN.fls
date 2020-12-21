@@ -475,9 +475,9 @@ INPUT Technical_Fundamentals.tex
 INPUT images/control_loop.pdf
 INPUT ./images/control_loop.pdf
 INPUT ./images/control_loop.pdf
-INPUT images/tf_pt1.jpg
-INPUT ./images/tf_pt1.jpg
-INPUT ./images/tf_pt1.jpg
+INPUT images/tf_pt1.pdf
+INPUT ./images/tf_pt1.pdf
+INPUT ./images/tf_pt1.pdf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/lm/rm-lmr10.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/lm/lmmi10.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/lm/lmsy10.tfm
@@ -504,6 +504,9 @@ INPUT ./images/sputnik_cross.png
 INPUT images/mock_loop.jpg
 INPUT ./images/mock_loop.jpg
 INPUT ./images/mock_loop.jpg
+INPUT images/flow_meter.pdf
+INPUT ./images/flow_meter.pdf
+INPUT ./images/flow_meter.pdf
 OUTPUT Chapter5.aux
 INPUT Chapter5.tex
 INPUT Chapter5.tex
