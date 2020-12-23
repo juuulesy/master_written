@@ -51,23 +51,31 @@ For all measurements and tests performed during this thesis, a hardware in the l
 \\The dSpace system itself is controlled with the use of the program ControlDesk. This software provides the opportunity to include Matlab and Simulink source code. By this controllers designed under use of Simulink can directly be tested at the HiL test bench.
 
 \section{System Identification}
-%Vergleich Flüssigkeiten
-%Vergleich Schlauchlängen
-%Kennel
+For the implementation of flow control algorithms for the Sputnik VAD, knowledge of the system behavior is required. In order to gain this, various tests have been performed to determine a static map for the system. For this purpose, a multiple-input-single-output (MISO) system with input variables differential pressure $\Delta{p}$ in $mmHg$  and rotational speed $v$ in $rpm$ and output variable blood flow $q$ in $L/min$ is assumed. The differential pressure is defined as
+\begin{equation}
+  \Delta{p} = p_{ao} - p_{lv} = p_2 - p_1,
+\end{equation}
+with $p_{ao}$ depicting the pressure of the aorta and $p_{lv}$ the left ventricular pressure.
+\\Using the HiL test rig, the differential pressure was increased in steps of $20\, mmHg$ starting at $0\,mmHg$ and ending at $140\,mmHg$. For each differential pressure step, the reference speed of the pump was increased from $4000\, rpm$ in steps of $1000\, rpm$ to $9000\, rpm$. Flow for each reference speed was measured for $5\, seconds$. In order to not include inaccuracies due to transient processes, solely the last quarter of the measurement of each stage was considered for the evaluation using Matlab. \figurename~\ref{fig:test_60w40g_long} depicts the signal curves for the measurement described above. The upper graph shows the course of the reference differential pressure and the differential pressure measured at the HiL test stand. In the middle, the curves of the reference velocity and the measured velocity of the Sputnik VAD are shown. The lower graph shows the resulting flow through the blood pump. 
 
-\begin{figure}
+
+\begin{figure}[ht]
   \includegraphics[width=\textwidth]{images/plots_syst_ident/Test_60w40g_long.pdf}
-  \caption[Testprocedure system identification]{Testprocedure system identification}
+  \caption[Signal curves for creation of the static map.]{Signal curves for creation of the static map. Top: differential pressure, middle: rotational speed, bottom: flow through VAD.}
   \label{fig:test_60w40g_long}
 \end{figure}
 
-\begin{figure}
+% \\
+At the beginning of the practical work, the Sputnik VAD was connected to the test stand via tubes of about $30\, cm$ length on both sides. Since in clinical use the pump is implemented in the patient's body and connected to the left ventricle and aorta, the tube length was not representative of a real application. To test the effect of the tube length on the working range of the pump, three different tube lengths for attachment to the test stand are compared. The measurements have been performed with tubes of approximately $5\, cm$, $10\, cm$ and $15\, cm$ length.
+
+
+\begin{figure}[ht]
   \includegraphics[width=\textwidth]{images/plots_syst_ident/60w40g_tube_length.pdf}
   \caption[Static map for different tube length in 60 \% water, 40 \% glycerin mixture]{Static map for varying tube length in 60 \% water, 40 \% glycerin mixture}
   \label{fig:60w_40g}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[ht]
   \includegraphics[width=\textwidth]{images/plots_syst_ident/long_liquid_change.pdf}
   \caption[Static map for varying liquid mixtures with long tubes]{Static map for varying liquid mixtures with long tubes}
   \label{fig:long_tubes}

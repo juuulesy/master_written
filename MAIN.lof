@@ -22,8 +22,8 @@
 \contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Cross-section of Sputnik VAD \cite {Sputnik6}}}{26}{figure.caption.24}
 \contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces HiL test bench}}{27}{figure.caption.25}
 \contentsline {figure}{\numberline {\relax 4.3}{\ignorespaces Sputnik VAD and flow-meter in HiL setup}}{28}{figure.caption.26}
-\contentsline {figure}{\numberline {\relax 4.4}{\ignorespaces Testprocedure system identification}}{29}{figure.caption.27}
-\contentsline {figure}{\numberline {\relax 4.5}{\ignorespaces Static map for different tube length in 60 \% water, 40 \% glycerin mixture}}{29}{figure.caption.28}
+\contentsline {figure}{\numberline {\relax 4.4}{\ignorespaces Signal curves for creation of the static map.}}{29}{figure.caption.27}
+\contentsline {figure}{\numberline {\relax 4.5}{\ignorespaces Static map for different tube length in 60 \% water, 40 \% glycerin mixture}}{30}{figure.caption.28}
 \contentsline {figure}{\numberline {\relax 4.6}{\ignorespaces Static map for varying liquid mixtures with long tubes}}{30}{figure.caption.29}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
@@ -31,6 +31,6 @@
 \contentsline {figure}{\numberline {\relax A.1}{\ignorespaces Static map for varying liquid mixtures with medium tubes}}{35}{figure.caption.32}
 \contentsline {figure}{\numberline {\relax A.2}{\ignorespaces Static map for varying liquid mixtures with short tubes}}{35}{figure.caption.33}
 \contentsline {figure}{\numberline {\relax A.3}{\ignorespaces Static map for different tube length in 100 \% water}}{36}{figure.caption.34}
-\contentsline {figure}{\numberline {\relax A.4}{\ignorespaces Static map for different tube length in 80 \% water, 20 \% glycerin mixture}}{36}{figure.caption.35}
-\contentsline {figure}{\numberline {\relax A.5}{\ignorespaces Static map for different tube length in 40 \% water, 60 \% glycerin mixture}}{37}{figure.caption.36}
+\contentsline {figure}{\numberline {\relax A.4}{\ignorespaces Static map for different tube length in 80 \% water 20 \% glycerin mixture}}{36}{figure.caption.35}
+\contentsline {figure}{\numberline {\relax A.5}{\ignorespaces Static map for different tube length in 40 \% water 60 \% glycerin mixture}}{37}{figure.caption.36}
 \addvspace {10\p@ }

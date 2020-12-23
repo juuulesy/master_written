@@ -32,7 +32,7 @@ The plant $G(s)$ corresponds to the part of the system in which the physical qua
  \label{eq:tf_pt1}
 \end{equation}
 
-\begin{figure}[h]
+\begin{figure}[ht]
    \centering
    \includegraphics[width=\textwidth]{images/tf_pt1.pdf}
    \caption[Transfer function of a PT$_{1}$-element]{Transfer function of a PT$_{1}$-element \cite{Reg_10}.}
@@ -162,7 +162,7 @@ The standard control structure of an ILC algorithm is presented in \figurename~\
    \caption[Standard ILC control loop]{Standard ILC control loop based on \cite{ILC2}.}
    \label{fig:ILC_only}
  \end{figure}
-\\Considering a linear-time-invariant single-input-single-output system, the ILC learning algorithm is as follows:
+\\Considering a linear-time-invariant single-input-single-output (SISO) system, the ILC learning algorithm is as follows:
 \begin{equation}
     u_{j+1}  = Q(q)[u_{j}(k)+L(q)e_{j}(k+1)]
  \label{eq:ILC_standard}
