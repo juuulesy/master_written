@@ -24,18 +24,18 @@
 \contentsline {section}{\numberline {4.1}Sputnik VAD}{25}{section.4.1}
 \contentsline {section}{\numberline {4.2}Hardware in the Loop Test Bench}{26}{section.4.2}
 \contentsline {section}{\numberline {4.3}System Identification}{28}{section.4.3}
-\contentsline {chapter}{\numberline {5}Flow Control}{33}{chapter.5}
-\contentsline {section}{\numberline {5.1}Controller Design}{33}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}PI Controller}{33}{subsection.5.1.1}
-\contentsline {subsubsection}{\nonumberline Chien Hrones Reswick}{33}{section*.31}
-\contentsline {subsection}{\numberline {5.1.2}Iterative Learning Control}{33}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Iterative Learning Control with varying iteration length}{33}{subsection.5.1.3}
-\contentsline {section}{\numberline {5.2}Evaluation}{33}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}PI Controller}{33}{subsection.5.2.1}
-\contentsline {subsubsection}{\nonumberline Chien Hrones Reswick}{33}{section*.32}
-\contentsline {subsection}{\numberline {5.2.2}Iterative Learning Control}{33}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Iterative Learning Control with varying iteration length}{33}{subsection.5.2.3}
-\contentsline {chapter}{\numberline {6}Conclusion and future work}{35}{chapter.6}
-\contentsline {chapter}{\numberline {A}Appendix}{37}{appendix.A}
-\contentsline {section}{\numberline {A.1}System Identification}{37}{section.A.1}
-\contentsline {chapter}{\nonumberline Bibliography}{41}{chapter*.38}
+\contentsline {chapter}{\numberline {5}Flow Control}{35}{chapter.5}
+\contentsline {section}{\numberline {5.1}Controller Design}{35}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}PI Controller}{35}{subsection.5.1.1}
+\contentsline {subsubsection}{\nonumberline Chien Hrones Reswick}{35}{section*.32}
+\contentsline {subsection}{\numberline {5.1.2}Iterative Learning Control}{35}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Iterative Learning Control with varying iteration length}{35}{subsection.5.1.3}
+\contentsline {section}{\numberline {5.2}Evaluation}{35}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}PI Controller}{35}{subsection.5.2.1}
+\contentsline {subsubsection}{\nonumberline Chien Hrones Reswick}{35}{section*.33}
+\contentsline {subsection}{\numberline {5.2.2}Iterative Learning Control}{35}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Iterative Learning Control with varying iteration length}{35}{subsection.5.2.3}
+\contentsline {chapter}{\numberline {6}Conclusion and future work}{37}{chapter.6}
+\contentsline {chapter}{\numberline {A}Appendix}{39}{appendix.A}
+\contentsline {section}{\numberline {A.1}System Identification}{39}{section.A.1}
+\contentsline {chapter}{\nonumberline Bibliography}{43}{chapter*.39}
