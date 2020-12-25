@@ -8,7 +8,7 @@ The basic task of control engineering is to externally influence a time-varying 
 In theory, this is represented by a control loop with the components shown in \figurename~{\ref{fig:control_loop}}.
 \begin{figure}
   \centering
-  \includegraphics[width=0.9\textwidth]{images/control_loop.pdf}
+  \includegraphics[width=0.9\textwidth]{images/chapt_3/control_loop.pdf}
   \caption[General structure of a control loop]{General structure of a control loop}
   \label{fig:control_loop}
 \end{figure}
@@ -34,11 +34,15 @@ The plant $G(s)$ corresponds to the part of the system in which the physical qua
 
 \begin{figure}[ht]
    \centering
-   \includegraphics[width=\textwidth]{images/tf_pt1.pdf}
+   \includegraphics[width=\textwidth]{images/chapt_3/tf_pt1.pdf}
    \caption[Transfer function of a PT$_{1}$-element]{Transfer function of a PT$_{1}$-element \cite{Reg_10}.}
    \label{fig:tf_pt1}
  \end{figure}
-The value $k_{s}$ describes the static gain, which equals the final value of the transfer function. The time constant T enables an impression of the speed with which the system can react to changes at the input. It is defined as the time at which the transfer function reaches $63\, \%$ of its static gain. \cite{Reg_10}
+The value $k_{s}$ describes the static gain, which for a unit step and $h(t=0)=0$ is defined as
+\begin{equation}
+  k_s = h(t\rightarrow \infty).
+\end{equation}
+ The time constant T enables an impression of the speed with which the system can react to changes at the input. It is defined as the time at which the transfer function reaches $63\, \%$ of its static gain. \cite{Reg_10}
 \figurename~\ref{fig:tf_pt1} shows the transfer function of a PT$_{1}$-element (blue curve) and its significant parameters.
 
 
@@ -81,7 +85,7 @@ The step response of the PI-controller, illustrated in \figurename~\ref{fig:step
 
 \begin{figure}[h]
    \centering
-   \includegraphics[width=0.6\textwidth]{images/step_resp_pi.pdf}
+   \includegraphics[width=0.6\textwidth]{images/chapt_3/step_resp_pi.pdf}
    \caption[Step response of a PI-Controller]{Step response of a PI-Controller based on \cite{Reg_17}.}
    \label{fig:step_resp_pi}
  \end{figure}
@@ -94,7 +98,7 @@ The tuning rules according to Ziegler Nichols are one of the most commonly used 
 A necessary condition is the possibility to experimentally identify the step response of the plant without risk of damage to the system. After the step response has been determined, it is displayed graphically. Then the inflection tangent is drawn into the step response as shown in \figurename~\ref{fig:param_zn}. The blue line represents the step response, the red line the inflection tangent, respectively.
 \begin{figure}
    \centering
-   \includegraphics[width=0.8\textwidth]{images/param_zn.pdf}
+   \includegraphics[width=0.8\textwidth]{images/chapt_3/param_zn.pdf}
    \caption[Inflection tangent method for Ziegler Nichols and Chien Hrones Reswick]{Inflection tangent method for Ziegler Nichols and Chien Hrones Reswick based on \cite{Reg_17}.}
    \label{fig:param_zn}
  \end{figure}
@@ -158,7 +162,7 @@ The use of iterative learning control aims to improve control performance for sy
 The standard control structure of an ILC algorithm is presented in \figurename~\ref{fig:ILC_only}.
 \begin{figure}[h]
    \centering
-   \includegraphics[width=0.9\textwidth]{images/ILC_only.pdf}
+   \includegraphics[width=0.9\textwidth]{images/chapt_3/ILC_only.pdf}
    \caption[Standard ILC control loop]{Standard ILC control loop based on \cite{ILC2}.}
    \label{fig:ILC_only}
  \end{figure}
@@ -176,7 +180,7 @@ where $k$ is the time index, $j$ is the iteration index, $Q(q)$ is defined as th
  Feedback controllers such as PI-controllers are only able to consider the current changes in control error. By taking into account the information from previous iterations, low tracking errors are achievable through an ILC. This results in excenptional performance with convergence during the first few iterations. This can be achieved even for systems prone to repeating disturbances and model uncertainties. While feedback control shows a lag in transient tracking due to reacting to inputs and disturbances, ILC, as a feedforward controller, does not. Another advantage of ILC use is that there is no need for disturbances to be known or measured, as long as these signals show repeating behavior during each iteration. Furthermore, by storing signal information during each iteration, ILC enables advanced filtering and signal processing of the control error. However, ILC utilization holds some issues in regard to non-repeating disturbances or noise influences. In these cases it may be useful to combine ILC approaches with a feeback controller. A combination of the systems is also recommended if the behavior of the plant is not stable. \cite{ILC2} A parallel architecture of a feedback controller in combination with an ILC is illustrated in \figurename~\ref{fig:ILC_parallel}.
  \begin{figure}[h]
     \centering
-    \includegraphics[width=0.9\textwidth]{images/ILC_parallel.pdf}
+    \includegraphics[width=0.9\textwidth]{images/chapt_3/ILC_parallel.pdf}
     \caption[Parallel architecture of ILC with feedback controller]{Parallel architecture of ILC with feedback controller based on \cite{ILC2}.}
     \label{fig:ILC_parallel}
   \end{figure}
