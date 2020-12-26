@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.14)  26 DEC 2020 02:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.14)  26 DEC 2020 14:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1501,7 +1501,7 @@ Package pdftex.def Info: images/chapt_3/param_zn.pdf used on input line 101.
  [19] <images/chapt_3/ILC_only.pdf, id=627, 876.08623pt x 337.28043pt>
 File: images/chapt_3/ILC_only.pdf Graphic file (type pdf)
  <use images/chapt_3/ILC_only.pdf>
-Package pdftex.def Info: images/chapt_3/ILC_only.pdf used on input line 165.
+Package pdftex.def Info: images/chapt_3/ILC_only.pdf used on input line 166.
 (pdftex.def)             Requested size: 387.47061pt x 149.17067pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1509,7 +1509,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [20 <./images/chapt_3/param_zn.pdf>] <images/chapt_3/ILC_parallel.pdf, id=655, 876.08623pt x 337.28043pt>
 File: images/chapt_3/ILC_parallel.pdf Graphic file (type pdf)
  <use images/chapt_3/ILC_parallel.pdf>
-Package pdftex.def Info: images/chapt_3/ILC_parallel.pdf used on input line 183.
+Package pdftex.def Info: images/chapt_3/ILC_parallel.pdf used on input line 184.
 (pdftex.def)             Requested size: 387.47061pt x 149.17067pt.
  [21 <./images/chapt_3/ILC_only.pdf>]) [22 <./images/chapt_3/ILC_parallel.pdf>] [23]
 \openout2 = `Chapter4.aux'.
@@ -1565,7 +1565,7 @@ Underfull \vbox (badness 3158) has occurred while \output is active []
  [31 <./images/chapt_4/long_liquid_change_new.pdf>] <images/chapt_4/plant_generation.pdf, id=805, 1264.725pt x 679.78969pt>
 File: images/chapt_4/plant_generation.pdf Graphic file (type pdf)
  <use images/chapt_4/plant_generation.pdf>
-Package pdftex.def Info: images/chapt_4/plant_generation.pdf used on input line 114.
+Package pdftex.def Info: images/chapt_4/plant_generation.pdf used on input line 115.
 (pdftex.def)             Requested size: 430.52583pt x 231.4055pt.
 ) [32 <./images/chapt_4/60w40g_long.pdf>] [33 <./images/chapt_4/plant_generation.pdf>]
 \openout2 = `Chapter5.aux'.
@@ -1587,28 +1587,26 @@ File: images/chapt_5/dyn_meas_40.pdf Graphic file (type pdf)
  <use images/chapt_5/dyn_meas_40.pdf>
 Package pdftex.def Info: images/chapt_5/dyn_meas_40.pdf used on input line 20.
 (pdftex.def)             Requested size: 430.52583pt x 231.4055pt.
- <images/chapt_5/param_calc_PI.pdf, id=842, 1264.725pt x 679.78969pt>
+ <images/chapt_5/param_calc_PI.pdf, id=841, 1264.725pt x 679.78969pt>
 File: images/chapt_5/param_calc_PI.pdf Graphic file (type pdf)
  <use images/chapt_5/param_calc_PI.pdf>
-Package pdftex.def Info: images/chapt_5/param_calc_PI.pdf used on input line 30.
+Package pdftex.def Info: images/chapt_5/param_calc_PI.pdf used on input line 29.
 (pdftex.def)             Requested size: 430.52583pt x 231.4055pt.
- <images/chapt_5/pi_contr_chr.pdf, id=843, 1264.725pt x 679.78969pt>
+
+
+LaTeX Warning: Reference `eq_kp_zn' on page 36 undefined on input line 39.
+
+[36 <./images/chapt_5/dyn_measure.pdf>] <images/chapt_5/pi_contr_chr.pdf, id=858, 1264.725pt x 679.78969pt>
 File: images/chapt_5/pi_contr_chr.pdf Graphic file (type pdf)
  <use images/chapt_5/pi_contr_chr.pdf>
-Package pdftex.def Info: images/chapt_5/pi_contr_chr.pdf used on input line 50.
+Package pdftex.def Info: images/chapt_5/pi_contr_chr.pdf used on input line 63.
 (pdftex.def)             Requested size: 430.52583pt x 231.4055pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [36 <./images/chapt_5/dyn_measure.pdf>] <images/chapt_5/pi_contr_zn_40.pdf, id=854, 1264.725pt x 679.78969pt>
+ <images/chapt_5/pi_contr_zn_40.pdf, id=859, 1264.725pt x 679.78969pt>
 File: images/chapt_5/pi_contr_zn_40.pdf Graphic file (type pdf)
  <use images/chapt_5/pi_contr_zn_40.pdf>
-Package pdftex.def Info: images/chapt_5/pi_contr_zn_40.pdf used on input line 75.
+Package pdftex.def Info: images/chapt_5/pi_contr_zn_40.pdf used on input line 88.
 (pdftex.def)             Requested size: 430.52583pt x 231.4055pt.
-)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [37 <./images/chapt_5/dyn_meas_40.pdf>] [38 <./images/chapt_5/param_calc_PI.pdf>] [39 <./images/chapt_5/pi_contr_chr.pdf> <./images/chapt_5/pi_contr_zn_40.pdf
+) [37 <./images/chapt_5/dyn_meas_40.pdf>] [38 <./images/chapt_5/param_calc_PI.pdf>] [39 <./images/chapt_5/pi_contr_chr.pdf> <./images/chapt_5/pi_contr_zn_40.pdf
 
 pdfTeX warning: pdflatex (file ./images/chapt_5/pi_contr_zn_40.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
@@ -1630,27 +1628,27 @@ chapter 6.
 
  (./anhang.tex
 chapter A.
-<images/chapt_4/100w_tube_length_new.pdf, id=900, 1927.2pt x 973.38657pt>
+<images/chapt_4/100w_tube_length_new.pdf, id=905, 1927.2pt x 973.38657pt>
 File: images/chapt_4/100w_tube_length_new.pdf Graphic file (type pdf)
  <use images/chapt_4/100w_tube_length_new.pdf>
 Package pdftex.def Info: images/chapt_4/100w_tube_length_new.pdf used on input line 4.
 (pdftex.def)             Requested size: 430.52583pt x 217.443pt.
- <images/chapt_4/80w20g_tube_length_new.pdf, id=901, 1927.2pt x 973.38657pt>
+ <images/chapt_4/80w20g_tube_length_new.pdf, id=906, 1927.2pt x 973.38657pt>
 File: images/chapt_4/80w20g_tube_length_new.pdf Graphic file (type pdf)
  <use images/chapt_4/80w20g_tube_length_new.pdf>
 Package pdftex.def Info: images/chapt_4/80w20g_tube_length_new.pdf used on input line 10.
 (pdftex.def)             Requested size: 430.52583pt x 217.443pt.
- <images/chapt_4/40w60g_tube_length_new.pdf, id=902, 1927.2pt x 973.38657pt>
+ <images/chapt_4/40w60g_tube_length_new.pdf, id=907, 1927.2pt x 973.38657pt>
 File: images/chapt_4/40w60g_tube_length_new.pdf Graphic file (type pdf)
  <use images/chapt_4/40w60g_tube_length_new.pdf>
 Package pdftex.def Info: images/chapt_4/40w60g_tube_length_new.pdf used on input line 16.
 (pdftex.def)             Requested size: 430.52583pt x 217.443pt.
- <images/chapt_4/medium_liquid_change_new.pdf, id=903, 1927.2pt x 973.38657pt>
+ <images/chapt_4/medium_liquid_change_new.pdf, id=908, 1927.2pt x 973.38657pt>
 File: images/chapt_4/medium_liquid_change_new.pdf Graphic file (type pdf)
  <use images/chapt_4/medium_liquid_change_new.pdf>
 Package pdftex.def Info: images/chapt_4/medium_liquid_change_new.pdf used on input line 22.
 (pdftex.def)             Requested size: 430.52583pt x 217.443pt.
- <images/chapt_4/short_liquid_change_new.pdf, id=904, 1927.2pt x 973.38657pt>
+ <images/chapt_4/short_liquid_change_new.pdf, id=909, 1927.2pt x 973.38657pt>
 File: images/chapt_4/short_liquid_change_new.pdf Graphic file (type pdf)
  <use images/chapt_4/short_liquid_change_new.pdf>
 Package pdftex.def Info: images/chapt_4/short_liquid_change_new.pdf used on input line 28.
@@ -1706,22 +1704,26 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 185.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 185.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 185.
 Package rerunfilecheck Info: File `MAIN.out' has not changed.
-(rerunfilecheck)             Checksum: AE0FD72E0D5B1B73C2B89BA6E5004667;2280.
+(rerunfilecheck)             Checksum: 74CF5DE1330A970FB9E56FF358CB6DF5;2280.
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 32376 strings out of 492995
- 604375 string characters out of 6132703
- 747719 words of memory out of 5000000
- 35081 multiletter control sequences out of 15000+600000
- 69179 words of font info for 62 fonts, out of 8000000 for 9000
+ 32387 strings out of 492995
+ 604505 string characters out of 6132703
+ 747893 words of memory out of 5000000
+ 35089 multiletter control sequences out of 15000+600000
+ 72177 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,18n,66p,10510b,760s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1
-/public/lm/lmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on MAIN.pdf (64 pages, 41719997 bytes).
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
+1/public/lm/lmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on MAIN.pdf (64 pages, 41740793 bytes).
 PDF statistics:
- 1088 PDF objects out of 1200 (max. 8388607)
- 893 compressed objects within 9 object streams
- 186 named destinations out of 1000 (max. 500000)
+ 1098 PDF objects out of 1200 (max. 8388607)
+ 901 compressed objects within 10 object streams
+ 188 named destinations out of 1000 (max. 500000)
  481 words of extra memory for PDF output out of 10000 (max. 10000000)
 

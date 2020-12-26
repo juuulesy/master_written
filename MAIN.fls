@@ -534,6 +534,7 @@ INPUT ./images/chapt_5/dyn_meas_40.pdf
 INPUT images/chapt_5/param_calc_PI.pdf
 INPUT ./images/chapt_5/param_calc_PI.pdf
 INPUT ./images/chapt_5/param_calc_PI.pdf
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT images/chapt_5/pi_contr_chr.pdf
 INPUT ./images/chapt_5/pi_contr_chr.pdf
 INPUT ./images/chapt_5/pi_contr_chr.pdf
@@ -601,6 +602,7 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx10.pfb
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmex10.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi10.pfb
