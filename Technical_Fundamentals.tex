@@ -93,7 +93,7 @@ The step response of the PI-controller, illustrated in \figurename~\ref{fig:step
 \subsection{Tuning rules}
 Tuning the controller parameters, i.e adjusting their values depending on the system, is of great importance. Incorrectly chosen parameters can lead to poor performance or unstable system behaviour, which may result in system damage. There are many different approaches to tune a PI-Controller in order to achieve optimal system performance. These range from heuristic methods over analysis of pole-zero plots to computer-aided numerical parameter optimization. \cite{Reg_10} At this point the tuning rules according to Ziegler Nichols (ZN) and the rules according to Chien Hrones Reswick (CHR) will be discussed, as these are used for the implementation of flow control in the practical work.  Information on other approaches can be found in \cite{Reg_11}.
 
-\subsubsection{Tuning rules according to Ziegler Nichols}
+\subsubsection{Tuning rules according to Ziegler Nichols} \label{chap:ZN}
 The tuning rules according to Ziegler Nichols are one of the most commonly used heuristic methods in tuning controller parameters for PI-controllers. They are used especially if a mathematical model of the plant is not available but the plant can be approximated as a PT$_{n}$-element. \cite{Reg_17}
 A necessary condition is the possibility to experimentally identify the step response of the plant without risk of damage to the system. After the step response has been determined, it is displayed graphically. Then the inflection tangent is drawn into the step response as shown in \figurename~\ref{fig:param_zn}. The blue line represents the step response, the red line the inflection tangent, respectively.
 \begin{figure}
@@ -137,7 +137,7 @@ with
 
 
 
-\subsubsection{Tuning rules according to Chien Hrones Reswick}
+\subsubsection{Tuning rules according to Chien Hrones Reswick}\label{chap:CHR}
 The tuning method according to Chien Hrones Reswick is very similar to the one by Ziegler Nichols. However, this method provides the ability to adjust the transient response of the control loop. The tuning parameters can either be chosen in a way to provide an over damped behavior or a course providing $20\, \%$ overshoot. \cite{Reg_11}
 For both options the step response and its inflection tangent are graphically displayed, as for the Ziegler Nichols approach in \figurename~\ref{fig:param_zn}.
 The values for $K_{S}$, $T_{v}$ and $T_{g}$ can be read from the plot. The parameter value $K_{I}$ again is calculated following (\ref{eq:K_I}). The formulas for calculating  $K_{P}$,  $T_{N}$ and $T_{D}$ are given in \tablename~\ref{tab:param_chr}.
