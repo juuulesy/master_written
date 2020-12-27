@@ -60,40 +60,46 @@ This in turn leads to the transfer function
   G_{PI,CHR}(s)=260.6742+\frac{2172.2853}{s}.
 \end{equation}
 \subsection{Evaluation}
-% gesamt:
-% rms pi total chr = 0.3705
-% rms pi total zn = 0.5396
-% \begin{figure}[ht]
-%   \centering
-%   \includegraphics[width=\textwidth]{images/chapt_5/pi_contr_chr.pdf}
-%   \caption[Step response for determination of PI controller tuning parameters]{Step response for a step in rotational speed of $400\,rpm$ for determination of PI controller tuning parameters.}
-%   \label{fig:pi_contr_chr}
-% \end{figure}
+The main purpose of the PI controller, in this work, is to stabilize the closed loop signal behavior in preparation for an ILC implementation.
+The two controllers are therefore tested under the same conditions and their performance is compared.
 
-% \begin{figure}[ht]
-%   \centering
-%   \includegraphics[width=\textwidth]{images/chapt_5/pi_contr_zn.pdf}
-%   \caption[Step response for determination of PI controller tuning parameters]{Step response for a step in rotational speed of $400\,rpm$ for determination of PI controller tuning parameters.}
-%   \label{fig:pi_contr_zn}
-% \end{figure}
 
-% Bereich der Auslegung: 40mmHg
-% RMS PI CHR = 0.2753
-% RMS PI ZN = 0.4013
+GRAFIK NUR p ref und q ref für Beschreibung welcher Testverlauf
 
-% \begin{figure}[ht]
-%   \centering
-%   \includegraphics[width=\textwidth]{images/chapt_5/pi_contr_chr_40.pdf}
-%   \caption[Step response for determination of PI controller tuning parameters]{Step response for a step in rotational speed of $400\,rpm$ for determination of PI controller tuning parameters.}
-%   \label{fig:pi_contr_chr_40}
-% \end{figure}
+gesamt:
+rms pi total chr = 0.3705
+rms pi total zn = 0.5396
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=\textwidth]{images/chapt_5/pi_contr_chr.pdf}
+  \caption[Step response for determination of PI controller tuning parameters]{Step response for a step in rotational speed of $400\,rpm$ for determination of PI controller tuning parameters.}
+  \label{fig:pi_contr_chr}
+\end{figure}
 
-% \begin{figure}[ht]
-%   \centering
-%   \includegraphics[width=\textwidth]{images/chapt_5/pi_contr_zn_40.pdf}
-%   \caption[Step response for determination of PI controller tuning parameters]{Step response for a step in rotational speed of $400\,rpm$ for determination of PI controller tuning parameters.}
-%   \label{fig:pi_contr_zn_40}
-% \end{figure}
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=\textwidth]{images/chapt_5/pi_contr_zn.pdf}
+  \caption[Step response for determination of PI controller tuning parameters]{Step response for a step in rotational speed of $400\,rpm$ for determination of PI controller tuning parameters.}
+  \label{fig:pi_contr_zn}
+\end{figure}
+
+Bereich der Auslegung: 40mmHg
+RMS PI CHR = 0.2753
+RMS PI ZN = 0.4013
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=\textwidth]{images/chapt_5/pi_contr_chr_40.pdf}
+  \caption[Step response for determination of PI controller tuning parameters]{Step response for a step in rotational speed of $400\,rpm$ for determination of PI controller tuning parameters.}
+  \label{fig:pi_contr_chr_40}
+\end{figure}
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=\textwidth]{images/chapt_5/pi_contr_zn_40.pdf}
+  \caption[Step response for determination of PI controller tuning parameters]{Step response for a step in rotational speed of $400\,rpm$ for determination of PI controller tuning parameters.}
+  \label{fig:pi_contr_zn_40}
+\end{figure}
 
 % Dynamische Messung nutzen
 % Werte an Sprungstellen
@@ -106,16 +112,14 @@ Trigger signal aus simulink generiert
 \subsection{Evaluation}
 
 \section{Iterative Learning Control with repeating disturbance}
-trigger von Störung
+trigger von Stoerung
 \subsection{Design and Implementation}
 
 \subsection{Evaluation}
-Q-Filter optimierung f_c vergleich
+Q Filter optimierung f c vergleich
 Test auf verschiedenen Arbeitsbereichen
-
-
 \section{Iterative Learning Control with varying disturbance length}
-trigger von Störung
+trigger von Stoerung
 \subsection{Design and Implementation}
 \subsection{Evaluation}
 % \section{Evaluation}
