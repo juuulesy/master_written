@@ -12,32 +12,30 @@
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{9}{subfigure.5.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{9}{subfigure.5.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces General structure of a control loop}}{15}{figure.caption.14}
-\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Transfer function of a PT$_{1}$-element}}{17}{figure.caption.15}
-\contentsline {figure}{\numberline {\relax 3.3}{\ignorespaces Step response of a PI-Controller}}{18}{figure.caption.16}
-\contentsline {figure}{\numberline {\relax 3.4}{\ignorespaces Inflection tangent method for Ziegler Nichols and Chien Hrones Reswick}}{20}{figure.caption.18}
-\contentsline {figure}{\numberline {\relax 3.5}{\ignorespaces Standard ILC control loop}}{21}{figure.caption.21}
-\contentsline {figure}{\numberline {\relax 3.6}{\ignorespaces Parallel architecture of ILC with feedback controller}}{22}{figure.caption.22}
+\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces General structure of a control loop}}{13}{figure.caption.14}
+\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Transfer function of a PT$_{1}$-element}}{15}{figure.caption.15}
+\contentsline {figure}{\numberline {\relax 3.3}{\ignorespaces Step response of a PI-Controller}}{16}{figure.caption.16}
+\contentsline {figure}{\numberline {\relax 3.4}{\ignorespaces Inflection tangent method for Ziegler Nichols and Chien Hrones Reswick}}{18}{figure.caption.18}
+\contentsline {figure}{\numberline {\relax 3.5}{\ignorespaces Standard ILC control loop}}{19}{figure.caption.21}
+\contentsline {figure}{\numberline {\relax 3.6}{\ignorespaces Parallel architecture of ILC with feedback controller}}{20}{figure.caption.22}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Cross-section of Sputnik VAD \cite {Sputnik6}}}{26}{figure.caption.24}
-\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces HiL test bench}}{27}{figure.caption.25}
-\contentsline {figure}{\numberline {\relax 4.3}{\ignorespaces Sputnik VAD and flowmeter in HiL setup}}{28}{figure.caption.26}
-\contentsline {figure}{\numberline {\relax 4.4}{\ignorespaces Signal curves for creation of the static map.}}{29}{figure.caption.27}
-\contentsline {figure}{\numberline {\relax 4.5}{\ignorespaces Static map for different tube length in 60 \% water 40 \% glycerin solution}}{30}{figure.caption.28}
-\contentsline {figure}{\numberline {\relax 4.6}{\ignorespaces Static map for varying fluid solution with $15\tmspace +\thinmuskip {.1667em}cm$ long tubes}}{31}{figure.caption.29}
-\contentsline {figure}{\numberline {\relax 4.7}{\ignorespaces Static map for solution of $60\tmspace +\thinmuskip {.1667em} \%$ water $40\tmspace +\thinmuskip {.1667em} \%$ glycerin with $15\tmspace +\thinmuskip {.1667em}cm$ long tubes}}{32}{figure.caption.30}
-\contentsline {figure}{\numberline {\relax 4.8}{\ignorespaces Transfer function of Sputnik VAD}}{33}{figure.caption.31}
+\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Cross-section of Sputnik VAD \cite {Sputnik6}}}{24}{figure.caption.24}
+\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces HiL test bench}}{25}{figure.caption.25}
+\contentsline {figure}{\numberline {\relax 4.3}{\ignorespaces Sputnik VAD and flowmeter in HiL setup}}{26}{figure.caption.26}
+\contentsline {figure}{\numberline {\relax 4.4}{\ignorespaces Signal curves for creation of the static map.}}{27}{figure.caption.27}
+\contentsline {figure}{\numberline {\relax 4.5}{\ignorespaces Static map for different tube length in 60 \% water 40 \% glycerin solution}}{28}{figure.caption.28}
+\contentsline {figure}{\numberline {\relax 4.6}{\ignorespaces Static map for varying fluid solution with $15\tmspace +\thinmuskip {.1667em}cm$ long tubes}}{29}{figure.caption.29}
+\contentsline {figure}{\numberline {\relax 4.7}{\ignorespaces Static map for solution of $60\tmspace +\thinmuskip {.1667em} \%$ water $40\tmspace +\thinmuskip {.1667em} \%$ glycerin with $15\tmspace +\thinmuskip {.1667em}cm$ long tubes}}{30}{figure.caption.30}
+\contentsline {figure}{\numberline {\relax 4.8}{\ignorespaces Transfer function of Sputnik VAD}}{31}{figure.caption.31}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 5.1}{\ignorespaces Signal curves for determination of PI controller parameters}}{36}{figure.caption.32}
-\contentsline {figure}{\numberline {\relax 5.2}{\ignorespaces Signal curves for determination of PI controller parameters at $\Delta {p}=40\tmspace +\thinmuskip {.1667em}mmHg$}}{37}{figure.caption.33}
-\contentsline {figure}{\numberline {\relax 5.3}{\ignorespaces Step response for determination of PI controller tuning parameters}}{38}{figure.caption.34}
-\contentsline {figure}{\numberline {\relax 5.4}{\ignorespaces Step response for determination of PI controller tuning parameters}}{39}{figure.caption.35}
-\contentsline {figure}{\numberline {\relax 5.5}{\ignorespaces Step response for determination of PI controller tuning parameters}}{39}{figure.caption.36}
+\contentsline {figure}{\numberline {\relax 5.1}{\ignorespaces Signal curves for determination of PI controller parameters}}{34}{figure.caption.32}
+\contentsline {figure}{\numberline {\relax 5.2}{\ignorespaces Signal curves for determination of PI controller parameters at $\Delta {p}=40\tmspace +\thinmuskip {.1667em}mmHg$}}{35}{figure.caption.33}
+\contentsline {figure}{\numberline {\relax 5.3}{\ignorespaces Step response for determination of PI controller tuning parameters}}{36}{figure.caption.34}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax A.1}{\ignorespaces Static map for different tube length in 100 \% water}}{43}{figure.caption.37}
-\contentsline {figure}{\numberline {\relax A.2}{\ignorespaces Static map for different tube length in 80 \% water 20 \% glycerin solution}}{44}{figure.caption.38}
-\contentsline {figure}{\numberline {\relax A.3}{\ignorespaces Static map for different tube length in 40 \% water 60 \% glycerin solution}}{44}{figure.caption.39}
-\contentsline {figure}{\numberline {\relax A.4}{\ignorespaces Static map for varying liquid solutions with medium tubes}}{45}{figure.caption.40}
-\contentsline {figure}{\numberline {\relax A.5}{\ignorespaces Static map for varying liquid solutions with short tubes}}{45}{figure.caption.41}
+\contentsline {figure}{\numberline {\relax A.1}{\ignorespaces Static map for different tube length in 100 \% water}}{41}{figure.caption.35}
+\contentsline {figure}{\numberline {\relax A.2}{\ignorespaces Static map for different tube length in 80 \% water 20 \% glycerin solution}}{42}{figure.caption.36}
+\contentsline {figure}{\numberline {\relax A.3}{\ignorespaces Static map for different tube length in 40 \% water 60 \% glycerin solution}}{42}{figure.caption.37}
+\contentsline {figure}{\numberline {\relax A.4}{\ignorespaces Static map for varying liquid solutions with $10\tmspace +\thinmuskip {.1667em}cm$ tube length}}{43}{figure.caption.38}
+\contentsline {figure}{\numberline {\relax A.5}{\ignorespaces Static map for varying liquid solutions with $5\tmspace +\thinmuskip {.1667em}cm$ tube length}}{43}{figure.caption.39}
 \addvspace {10\p@ }

@@ -31,20 +31,18 @@ The plant $G(s)$ corresponds to the part of the system in which the physical qua
     G(s) = \frac{k_{s}}{1+sT}.
  \label{eq:tf_pt1}
 \end{equation}
-
+The value $k_{s}$ describes the static gain, which for a unit step and $h(t=0)=0$ is defined as
+\begin{equation}
+  k_s = h(t\rightarrow \infty).
+\end{equation}
+ The time constant T gives an impression of the speed with which the system can react to changes at the input. It is defined as the time at which the transfer function reaches $63\, \%$ of its static gain. \cite{Reg_10}
+\figurename~\ref{fig:tf_pt1} shows the transfer function of a PT$_{1}$-element (blue curve) and its significant parameters.
 \begin{figure}[ht]
    \centering
    \includegraphics[width=\textwidth]{images/chapt_3/tf_pt1.pdf}
    \caption[Transfer function of a PT$_{1}$-element]{Transfer function of a PT$_{1}$-element \cite{Reg_10}.}
    \label{fig:tf_pt1}
  \end{figure}
-The value $k_{s}$ describes the static gain, which for a unit step and $h(t=0)=0$ is defined as
-\begin{equation}
-  k_s = h(t\rightarrow \infty).
-\end{equation}
- The time constant T enables an impression of the speed with which the system can react to changes at the input. It is defined as the time at which the transfer function reaches $63\, \%$ of its static gain. \cite{Reg_10}
-\figurename~\ref{fig:tf_pt1} shows the transfer function of a PT$_{1}$-element (blue curve) and its significant parameters.
-
 
 \section{PI-controller}
 A PI-controller is a control structure commonly used for linear systems. This structure consists of both a proportional (P) and an integral (I) control element.
@@ -58,7 +56,7 @@ Using Laplace transformation, the transfer function for a P-controller can be de
     G(s) = \frac{u(s)}{e(s)} = K_{P}.
  \label{eq:p_contr_2}
 \end{equation}
-Therefore, the step response of this controller equals a step weighted with the Parameter $K_{P}$.
+Therefore, the step response of this controller equals a step weighted with the parameter $K_{P}$.
 \\The relationship between input and output value of an I-controller is described through
 \begin{equation}
     u(t) = K_{I}\int e(t) dt.
@@ -81,7 +79,7 @@ The Laplace transformation can be used again to compute the transfer function
     G(s) = \frac{u(s)}{e(s)} =  K_{P} + \frac{K_{I}}{s}.
  \label{eq:pi_contr_2}
 \end{equation}
-The step response of the PI-controller, illustrated in \figurename~\ref{fig:step_resp_pi}, shows both the weigthed step from the P-controller and the ramp from the I-controller.
+The step response of the PI-controller, illustrated in \figurename~\ref{fig:step_resp_pi}, shows both the weighted step from the P-controller and the ramp from the I-controller.
 
 \begin{figure}[h]
    \centering
@@ -91,7 +89,7 @@ The step response of the PI-controller, illustrated in \figurename~\ref{fig:step
  \end{figure}
 
 \subsection{Tuning rules}
-Tuning the controller parameters, i.e adjusting their values depending on the system, is of great importance. Incorrectly chosen parameters can lead to poor performance or unstable system behaviour, which may result in system damage. There are many different approaches to tune a PI-Controller in order to achieve optimal system performance. These range from heuristic methods over analysis of pole-zero plots to computer-aided numerical parameter optimization. \cite{Reg_10} At this point the tuning rules according to Ziegler Nichols (ZN) and the rules according to Chien Hrones Reswick (CHR) will be discussed, as these are used for the implementation of flow control in the practical work.  Information on other approaches can be found in \cite{Reg_11}.
+Tuning the controller parameters, i.e adjusting their values depending on the system, is of great importance. Incorrectly chosen parameters can lead to poor performance or unstable system behavior, which may result in system damage. There are many different approaches to tune a PI-Controller in order to achieve optimal system performance. These range from heuristic methods over analysis of pole-zero plots to computer-aided numerical parameter optimization. \cite{Reg_10} At this point, the tuning rules according to Ziegler Nichols (ZN) and the rules according to Chien Hrones Reswick (CHR) will be discussed, as these are used for the implementation of flow control in the practical work. Information on other approaches can be found in \cite{Reg_11}.
 
 \subsubsection{Tuning rules according to Ziegler Nichols} \label{chap:ZN}
 The tuning rules according to Ziegler Nichols are one of the most commonly used heuristic methods in tuning controller parameters for PI-controllers. They are used especially if a mathematical model of the plant is not available but the plant can be approximated as a PT$_{n}$-element. \cite{Reg_17}
@@ -116,7 +114,7 @@ The factor $K_{I}$ is calculated according to:
 \end{equation}
 with
 \begin{equation}
-    T_{N}  = 3.33T_{v}.
+    T_{N}  = 3.3T_{v}.
  \label{eq:T_N_zn}
 \end{equation}
 % \begin{table}
@@ -136,18 +134,16 @@ with
 %   \label{tab:param_zn}
 % \end{table}
 
-
-
 \subsubsection{Tuning rules according to Chien Hrones Reswick}\label{chap:CHR}
-The tuning method according to Chien Hrones Reswick is very similar to the one by Ziegler Nichols. However, this method provides the ability to adjust the transient response of the control loop. The tuning parameters can either be chosen in a way to provide an over damped behavior or a course providing $20\, \%$ overshoot. \cite{Reg_11}
-For both options the step response and its inflection tangent are graphically displayed, as for the Ziegler Nichols approach in \figurename~\ref{fig:param_zn}.
+The tuning method according to Chien Hrones Reswick is very similar to the one by Ziegler Nichols. However, this method provides the ability to adjust the transient response of the control loop. The tuning parameters can either be chosen in a way to provide an overdamped behavior or a course providing $20\, \%$ overshoot. \cite{Reg_11}
+For both options, the step response and its inflection tangent are graphically displayed, as for the Ziegler Nichols approach in \figurename~\ref{fig:param_zn}.
 The values for $K_{S}$, $T_{v}$ and $T_{g}$ can be read from the plot. The parameter value $K_{I}$ again is calculated following (\ref{eq:K_I}). The formulas for calculating  $K_{P}$,  $T_{N}$ and $T_{D}$ are given in \tablename~\ref{tab:param_chr}.
 
 \begin{table}[h]
   \centering
   \begin{tabular}{cc|cc}
     \toprule
-     \multicolumn{2}{c|}{over damped} & \multicolumn{2}{c}{20\% overshoot} \\
+     \multicolumn{2}{c|}{overdamped} & \multicolumn{2}{c}{20\% overshoot} \\
     \midrule
     $K_{P}$ &  $T_{N}$ & $K_{P}$ &  $T_{N}$ \\
     \midrule
@@ -159,7 +155,7 @@ The values for $K_{S}$, $T_{v}$ and $T_{g}$ can be read from the plot. The param
 \end{table}
 
 \section{Iterative Learning Control}
-The use of iterative learning control aims to improve control performance for systems which execute the same task repeatedly under constant operation conditions. This improvement is based on the idea that it is possible to include error information from previous iterations into the adjustment of the actuation variable during the current iteration.
+The use of iterative learning control aims to improve control performance for systems which execute the same task repeatedly under constant operating conditions. This improvement is based on the idea that it is possible to include error information from previous iterations into the adjustment of the actuation variable during the current iteration.
 The standard control structure of an ILC algorithm is presented in \figurename~\ref{fig:ILC_only}.
 \begin{figure}[h]
    \centering
@@ -178,7 +174,7 @@ where $k$ is the time index, $j$ is the iteration index, $Q(q)$ is defined as th
  \label{eq:perf_error}
 \end{equation}
 
- Feedback controllers such as PI-controllers are only able to consider the current changes in control error. By taking into account the information from previous iterations, low tracking errors are achievable through an ILC. This results in excenptional performance with convergence during the first few iterations. This can be achieved even for systems prone to repeating disturbances and model uncertainties. While feedback control shows a lag in transient tracking due to reacting to inputs and disturbances, ILC, as a feedforward controller, does not. Another advantage of ILC use is that there is no need for disturbances to be known or measured, as long as these signals show repeating behavior during each iteration. Furthermore, by storing signal information during each iteration, ILC enables advanced filtering and signal processing of the control error. However, ILC utilization holds some issues in regard to non-repeating disturbances or noise influences. In these cases it may be useful to combine ILC approaches with a feeback controller. A combination of the systems is also recommended if the behavior of the plant is not stable. \cite{ILC2} A parallel architecture of a feedback controller in combination with an ILC is illustrated in \figurename~\ref{fig:ILC_parallel}.
+ Feedback controllers such as PI-controllers are only able to consider the current changes in control error. By taking into account the information from previous iterations, low tracking errors are achievable through an ILC. This results in exceptional performance with convergence during the first few iterations. This can be achieved even for systems prone to repeating disturbances and model uncertainties. While feedback control shows a lag in transient tracking due to reacting to inputs and disturbances, ILC, as a feedforward controller, does not. Another advantage of ILC use is that there is no need for disturbances to be known or measured, as long as these signals show repeating behavior during each iteration. Furthermore, by storing signal information during each iteration, ILC enables advanced filtering and signal processing of the control error. However, ILC utilization holds some issues in regard to non-repeating disturbances or noise influences. In these cases it may be useful to combine ILC approaches with a feeback controller. A combination of the systems is also recommended if the behavior of the plant is not stable. \cite{ILC2} A parallel architecture of a feedback controller in combination with an ILC is illustrated in \figurename~\ref{fig:ILC_parallel}.
  \begin{figure}[h]
     \centering
     \includegraphics[width=0.9\textwidth]{images/chapt_3/ILC_parallel.pdf}
@@ -197,5 +193,5 @@ where $k$ is the time index, $j$ is the iteration index, $Q(q)$ is defined as th
   \label{eq:PD_type_2}
   \end{equation}
 $k_{p}$ represents the proportional gain while $k_{d}$ is the derivative gain. In case a P-type learning function is implemented, the derivation gain is set to $k_{d}=0$. For a D-type learning function, $k_{p}=0$ is used, respectively.
-\\The performance of these ILC types depends mainly on accurate parameter tuning and does not require an accurate mathematical model of the plant. Despite these approaches being frequently used, there are no tuning guidelines similar to the ones mentioned for PI-controller tuning. However, a commonly used way to influence the process behavior is to modify the learning algorithm to include a Q-Filter. This filter can be used to disable learning at high frequencies in order to filter noise at these frequencies. It furthermore increases robustness. First, a filter type such as Butterworth or Chebyshev is specified. The bandwidth can then be interpreted as a tuning parameter in addition to the proportional gain $k_{p}$. Initially, learning gain and filter bandwidth are set to low values. When a steady baseline behavior and error performance is achieved, the parameter values can be increased to improve performance. The learning gain influences the rate of error convergence while the Q-Filter influences the error performance. Performance increases proportionally with filter bandwidth. However, this includes a trade-off with robustness. For lower filter bandwidth high robustness can be achieved in a trade-off with performance.
+\\The performance of these ILC types depends mainly on accurate parameter tuning and does not require an accurate mathematical model of the plant. Despite these approaches being frequently used, there are no tuning guidelines similar to the ones mentioned for PI-controller tuning. However, a commonly used way to influence the process behavior is to modify the learning algorithm to include a Q-Filter. This filter can be used to disable learning at high frequencies in order to filter noise at these frequencies. It furthermore increases robustness. First, a filter type such as Butterworth or Chebyshev is specified. The bandwidth can then be interpreted as a tuning parameter in addition to the proportional gain $k_{p}$. Initially, learning gain and filter bandwidth are set to low values. When a steady baseline behavior and error performance is achieved, the parameter values can be increased to improve performance. The learning gain influences the rate of error convergence while the Q-Filter influences the error performance. Performance increases proportionally with filter bandwidth. However, this includes a trade-off with robustness. For lower filter bandwidth, high robustness can be achieved in a trade-off with performance.
 \\Besides the P-,D- and PD-type ILC there are other design approaches. The $H_{\infty}$ method can be used to design a robustly convergent ILC controller, with a trade-off in performance. A quickly converging ILC approach can be achieved by using the plant inversion method. This however depends on accurate modeling of the plant. The quadratically optimal ILC approach uses quadratic performance criteria to design an optimal ILC. Further information on these alternative design methods is provided in \cite{ILC2}.
