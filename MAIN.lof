@@ -31,15 +31,19 @@
 \contentsline {figure}{\numberline {\relax 5.1}{\ignorespaces Signal curves for determination of PI controller parameters}}{34}{figure.caption.32}
 \contentsline {figure}{\numberline {\relax 5.2}{\ignorespaces Signal curves for determination of PI controller parameters at $\Delta {p}=40\tmspace +\thinmuskip {.1667em}mmHg$}}{35}{figure.caption.33}
 \contentsline {figure}{\numberline {\relax 5.3}{\ignorespaces Step response for determination of PI controller tuning parameters}}{36}{figure.caption.34}
-\contentsline {figure}{\numberline {\relax 5.4}{\ignorespaces Step response for determination of PI controller tuning parameters}}{37}{figure.caption.35}
-\contentsline {figure}{\numberline {\relax 5.5}{\ignorespaces Step response for determination of PI controller tuning parameters}}{38}{figure.caption.36}
-\contentsline {figure}{\numberline {\relax 5.6}{\ignorespaces Step response for determination of PI controller tuning parameters}}{39}{figure.caption.37}
-\contentsline {figure}{\numberline {\relax 5.7}{\ignorespaces Step response for determination of PI controller tuning parameters}}{40}{figure.caption.38}
+\contentsline {figure}{\numberline {\relax 5.4}{\ignorespaces Reference signals for PI controller performance evaluation}}{37}{figure.caption.35}
+\contentsline {figure}{\numberline {\relax 5.5}{\ignorespaces Test measurement for PI controller tuned according to Chien Hrones Reswick at $\Delta {p}=40\tmspace +\thinmuskip {.1667em}mmHg$}}{38}{figure.caption.36}
+\contentsline {figure}{\numberline {\relax 5.6}{\ignorespaces Controll error for PI Controllers}}{39}{figure.caption.37}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{39}{subfigure.6.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{39}{subfigure.6.2}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax A.1}{\ignorespaces Static map for different tube length in 100 \% water}}{43}{figure.caption.39}
-\contentsline {figure}{\numberline {\relax A.2}{\ignorespaces Static map for different tube length in 80 \% water 20 \% glycerin solution}}{44}{figure.caption.40}
-\contentsline {figure}{\numberline {\relax A.3}{\ignorespaces Static map for different tube length in 40 \% water 60 \% glycerin solution}}{44}{figure.caption.41}
-\contentsline {figure}{\numberline {\relax A.4}{\ignorespaces Static map for varying liquid solutions with $10\tmspace +\thinmuskip {.1667em}cm$ tube length}}{45}{figure.caption.42}
-\contentsline {figure}{\numberline {\relax A.5}{\ignorespaces Static map for varying liquid solutions with $5\tmspace +\thinmuskip {.1667em}cm$ tube length}}{45}{figure.caption.43}
+\contentsline {figure}{\numberline {\relax A.1}{\ignorespaces Static map for different tube length in 100 \% water}}{43}{figure.caption.38}
+\contentsline {figure}{\numberline {\relax A.2}{\ignorespaces Static map for different tube length in 80 \% water 20 \% glycerin solution}}{44}{figure.caption.39}
+\contentsline {figure}{\numberline {\relax A.3}{\ignorespaces Static map for different tube length in 40 \% water 60 \% glycerin solution}}{44}{figure.caption.40}
+\contentsline {figure}{\numberline {\relax A.4}{\ignorespaces Static map for varying liquid solutions with $10\tmspace +\thinmuskip {.1667em}cm$ tube length}}{45}{figure.caption.41}
+\contentsline {figure}{\numberline {\relax A.5}{\ignorespaces Static map for varying liquid solutions with $5\tmspace +\thinmuskip {.1667em}cm$ tube length}}{45}{figure.caption.42}
+\contentsline {figure}{\numberline {\relax A.6}{\ignorespaces Test measurement for PI controller tuned according to Chien Hrones Reswick}}{46}{figure.caption.43}
+\contentsline {figure}{\numberline {\relax A.7}{\ignorespaces Test measurement for PI controller tuned according to Ziegler Nichols}}{46}{figure.caption.44}
+\contentsline {figure}{\numberline {\relax A.8}{\ignorespaces Test measurement for PI controller tuned according to Ziegler Nichols at $\Delta {p}=40\tmspace +\thinmuskip {.1667em}mmHg$}}{47}{figure.caption.45}
 \addvspace {10\p@ }
