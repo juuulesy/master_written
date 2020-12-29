@@ -546,6 +546,12 @@ INPUT ./images/chapt_5/error_PI_zn.pdf
 INPUT images/chapt_5/error_PI_chr.pdf
 INPUT ./images/chapt_5/error_PI_chr.pdf
 INPUT ./images/chapt_5/error_PI_chr.pdf
+INPUT images/chapt_5/ILC/ref_signal_ILC3.pdf
+INPUT ./images/chapt_5/ILC/ref_signal_ILC3.pdf
+INPUT ./images/chapt_5/ILC/ref_signal_ILC3.pdf
+INPUT images/chapt_5/ILC/RMSE_compare_ILC3_fc.pdf
+INPUT ./images/chapt_5/ILC/RMSE_compare_ILC3_fc.pdf
+INPUT ./images/chapt_5/ILC/RMSE_compare_ILC3_fc.pdf
 OUTPUT Conclusion.aux
 INPUT Conclusion.tex
 INPUT Conclusion.tex

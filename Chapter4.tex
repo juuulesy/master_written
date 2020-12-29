@@ -40,14 +40,14 @@ For all measurements and tests performed during this thesis, a hardware in the l
 \end{figure}
 \\The structure of the mock circulatory loop (MCL) is depicted in \figurename~\ref{fig:mock_loop}. The boxes marked $V_{1}$ and $V_{2}$ are pressure compartments simulating the volume of the left ventricle and the aorta, respectively. Therefore, the pressure values of these compartments, referred to as $p_{1}$ and $p_{2}$, can be physiologically compared to the pressure values of the left ventricle and aorta. The MCL is actuated by three gear pumps ($GP_{1}$, $GP_{12}$ and $GP_{2}$) and two voice coil actuators ($VCA_{1}$ and $VCA_{2}$). The Sputnik VAD is connected to the pressure chambers in parallel, enabling tests similar to real use cases. This way, the VAD can be subjected to comparable pressure changes in the differential pressure between the aorta and ventricle as would be the case when used on the beating heart.
 \\By controlling the MCL through a dSpace system (DS1103), pressure in the chambers can be adjusted in real time to simulate different cardiac dysfunctions. The dSpace system furthermore enables recording of reference signals presented to the MCL, as well as real time measurements. All recorded data can be exported formatted as Matlab matrices.
-\\As the Sputnik VAD is not usually included into the MCL setup, flow through the device can not be measured without further equipment. For this purpose the Transonic Systems Inc. T110 flowmeter is included in the setup. The flow sensor measurement is based on ultrasonic technology. The sensor probe, as presented in \figurename~\ref{fig:flow_meter_tube}, is mounted onto the tube leading from the pressure chamber representing the left ventricle to the VAD. The flowmeter also is connected to the dSpace system, enabling recording of the measured flow values. In \figurename~\ref{fig:mock_loop} the measurement of the device is represented by $\dot{V}_{DUT}$.
+\\As the Sputnik VAD is not usually included into the MCL setup, flow through the device can not be measured without further equipment. For this purpose the Transonic Systems Inc. T110 flowmeter is included in the setup. The flow sensor measurement is based on ultrasonic technology. The sensor probe, as presented in \figurename~\ref{fig:flow_meter_tube}, is mounted onto the tube leading from the pressure chamber representing the left ventricle to the VAD. The flowmeter too is connected to the dSpace system, enabling recording of the measured flow values. In \figurename~\ref{fig:mock_loop} the measurement of the device is represented by $\dot{V}_{DUT}$.
 \begin{figure}[ht]
   \centering
   \includegraphics[width=0.8\textwidth]{images/chapt_4/flow_meter.pdf}
   \caption[Sputnik VAD and flowmeter in HiL setup]{Sputnik VAD and flowmeter in HiL setup.}
   \label{fig:flow_meter_tube}
 \end{figure}
-\\The ESCON servo controller mentioned in chapter \ref{Sputnik}, as well as the other devices, is connected to the dSpace system. Using the digital input port of the controller, a set value for regulation of the rotational speed can be transferred to the controller after setting the value in the system.
+\\The ESCON servo controller mentioned in chapter \ref{Sputnik}, as well as the other devices, is connected to the dSpace system. Using the digital input port of the controller, a set value for regulation of the rotational speed can be transferred to the controller after defining the value in the system.
 \\The dSpace system itself is controlled with the use of the program ControlDesk. This software provides the opportunity to include Matlab and Simulink source code. By this, controllers designed with the use of Simulink can directly be tested at the HiL test bench.
 
 \section{System Identification}
@@ -55,8 +55,8 @@ For the implementation of flow control algorithms for the Sputnik VAD, knowledge
 \begin{equation}
   \Delta{p} = p_{ao} - p_{lv} = p_2 - p_1,
 \end{equation}
-with $p_{ao}$ depicting the pressure of the aorta and $p_{lv}$ the left ventricular pressure.
-\\Using the HiL test rig, the differential pressure was increased in steps of $20\, mmHg$ starting at $0\,mmHg$ and ending at $140\,mmHg$. For each differential pressure step, the reference speed of the pump was increased from $4000\, rpm$ in steps of $1000\, rpm$ to $9000\, rpm$. Flow for each reference speed was measured for $5\, s$. In order to eliminate inaccuracies due to transient processes, solely the last quarter each mesurement stage was considered for the evaluation using Matlab. \figurename~\ref{fig:test_60w40g_long} depicts the signal curves for the measurement described above. The upper graph shows the course of the reference differential pressure ($\Delta{p_{ref}}$) and the differential pressure measured at the HiL test stand ($\Delta{p_{HiL}}$).
+with $p_{ao}$ depicting the pressure of the aorta and $p_{lv}$ corresponding to the left ventricular pressure.
+\\Using the HiL test rig, the differential pressure was increased in steps of $20\, mmHg$ starting at $0\,mmHg$ and ending at $140\,mmHg$. For each differential pressure step, the reference speed of the pump was increased from $4000\, rpm$ in steps of $1000\, rpm$ to $9000\, rpm$. Flow for each reference speed was measured for $5\, s$. In order to eliminate inaccuracies due to transient processes, solely the last quarter of each mesurement stage was considered for the evaluation using Matlab. \figurename~\ref{fig:test_60w40g_long} depicts the signal curves for the measurement described above. The upper graph shows the course of the reference differential pressure ($\Delta{p_{ref}}$) and the differential pressure measured at the HiL test stand ($\Delta{p_{HiL}}$).
 In the middle, the curves of the reference velocity ($v_{ref}$) and the measured velocity of the Sputnik VAD ($v_{vad}$) are shown. The lower graph shows the resulting flow through the blood pump ($q_{vad}$).
 
 
@@ -114,6 +114,6 @@ According to equation (\ref{eq:tf_pt1}) the transfer function for the plant resu
 \begin{figure}[t]
   \centering
   \includegraphics[width=\textwidth]{images/chapt_4/plant_generation.pdf}
-  \caption[Transfer function of Sputnik VAD]{Step in flow, triggered by a step in reference speed by 1000 rpm with identification of the variables for determining the transfer function of a $PT_1$ element.}
+  \caption[Transfer function of Sputnik VAD]{Step in flow, triggered by a step in reference speed by $1000\,rpm$ with identification of the variables for determining the transfer function of a $PT_1$ element.}
   \label{fig:plant}
 \end{figure}
