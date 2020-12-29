@@ -126,8 +126,10 @@ This expansion results in the learning function being described by
 \begin{equation}
   u_{j+1}(k) = Q(q)[u_{j}(k)+k_{p}e_{j}(k)].
 \end{equation}
-The Q-Filter is implemented as a $2^{nd}$-order butterworth filter, with sampling frequency $f_s=1000\,Hz$. The cut off frequency $f_c$ is set to several values in order to compare and thus optimize performance and robustness of the iterative learnig control system.
-\\An additional part of the implementation is the generation of a repeating reference signal. 
+The Q-Filter is implemented as a $2^{nd}$-order butterworth filter, with sampling frequency $f_s=1000\,Hz$. The cut off frequency $f_c$ is set to several values in order to compare and thus optimize performance and robustness of the iterative learning control system.
+\\An additional part of the implementation is the generation of a repeating reference and a trigger signal. The trigger signal indicates the beginning of each new iteration and thus initiates calculation of the new values $u_{j+1}(k)$ in the ILC block.
+\figurename~\ref{fig:ref_signal_ILC3} depicts three iterations of the reference signal for this ILC.
+\\The signal is created by first generating a square wave signal with the upper stage at $6\, l/min$ and the lower stage at 4 l/min. Thus, the signal encloses the average value of $5\, l/min$ of the cardiac output of a healthy heart. The reference values are each held for $0.5\, s$, which would correspond to a frequency of $60\, beats\, per\, minute\, (bpm)$ when compared to the heart rate. To avoid abrupt transitions in the flow, which could lead to problems on the part of the pump, the reference signal was filtered with a first order Butterworth filter with cut off frequency $f_c=20\,Hz$ and sampling frequency $f_s=1000\,Hz$. Afterwards the signal is shifted by $0.25\, s$ to avoid placing the beginning of the signal at a jump point. The trigger signal is set from 0 to 1 at the beginning of each iteration for one sample. 
 
 \begin{figure}[ht]
   \centering
