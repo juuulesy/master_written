@@ -14,7 +14,7 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces General structure of a control loop}}{15}{figure.caption.14}
 \contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Transfer function of a PT$_{1}$-element}}{17}{figure.caption.15}
-\contentsline {figure}{\numberline {\relax 3.3}{\ignorespaces Step response of a PI-Controller}}{19}{figure.caption.16}
+\contentsline {figure}{\numberline {\relax 3.3}{\ignorespaces Step response of a PI-Controller}}{18}{figure.caption.16}
 \contentsline {figure}{\numberline {\relax 3.4}{\ignorespaces Inflection tangent method for Ziegler Nichols and Chien Hrones Reswick}}{20}{figure.caption.18}
 \contentsline {figure}{\numberline {\relax 3.5}{\ignorespaces Standard ILC control loop}}{21}{figure.caption.21}
 \contentsline {figure}{\numberline {\relax 3.6}{\ignorespaces Parallel architecture of ILC with feedback controller}}{22}{figure.caption.22}

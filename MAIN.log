@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.14)  30 DEC 2020 02:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.14)  30 DEC 2020 15:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1337,10 +1337,7 @@ chapter without number
 ] [6
 
 
-]) (./MAIN.toc
-Underfull \vbox (badness 6078) has occurred while \output is active []
-
- [7
+]) (./MAIN.toc [7
 
 
 
@@ -1351,7 +1348,7 @@ Underfull \vbox (badness 6078) has occurred while \output is active []
 \openout6 = `MAIN.toc'.
 
 
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
  [8] (./MAIN.lof [9
 
@@ -1363,7 +1360,7 @@ Overfull \vbox (1.17493pt too high) has occurred while \output is active []
 \openout7 = `MAIN.lof'.
 
 
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
  [10] (./MAIN.lot)
 \tf@lot=\write8
@@ -1396,10 +1393,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-Overfull \vbox (56.92075pt too high) has occurred while \output is active []
+Overfull \vbox (46.23218pt too high) has occurred while \output is active []
 
 
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
  [14]
 \openout2 = `introduction.aux'.
@@ -1454,26 +1451,20 @@ Package pdftex.def Info: images/chapt_2/pv_2_.jpg used on input line 39.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
  [4]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
  [5 <./images/chapt_2/heart_1.jpg>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
-
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
-
- [6 <./images/chapt_2/cardiac_cycle.jpg>] <images/chapt_2/sys_dys.jpg, id=472, 387.4475pt x 323.2075pt>
+ [6 <./images/chapt_2/cardiac_cycle.jpg>] <images/chapt_2/sys_dys.jpg, id=473, 387.4475pt x 323.2075pt>
 File: images/chapt_2/sys_dys.jpg Graphic file (type jpg)
  <use images/chapt_2/sys_dys.jpg>
 Package pdftex.def Info: images/chapt_2/sys_dys.jpg used on input line 59.
 (pdftex.def)             Requested size: 215.26291pt x 179.57462pt.
- <images/chapt_2/dias_dys.jpg, id=473, 383.4325pt x 332.24126pt>
+ <images/chapt_2/dias_dys.jpg, id=474, 383.4325pt x 332.24126pt>
 File: images/chapt_2/dias_dys.jpg Graphic file (type jpg)
  <use images/chapt_2/dias_dys.jpg>
 Package pdftex.def Info: images/chapt_2/dias_dys.jpg used on input line 61.
@@ -1482,13 +1473,13 @@ Package pdftex.def Info: images/chapt_2/dias_dys.jpg used on input line 61.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
  [7 <./images/chapt_2/pv_1.jpg> <./images/chapt_2/pv_2_.jpg>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
  [8]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
@@ -1499,19 +1490,19 @@ Overfull \hbox (12.06401pt too wide) in alignment at lines 88--88
  []
 
 
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
  [9 <./images/chapt_2/sys_dys.jpg> <./images/chapt_2/dias_dys.jpg>]
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
  [10])
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
  [11]
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
  [12]
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
  [13]
 \openout2 = `Technical_Fundamentals.aux'.
@@ -1528,7 +1519,7 @@ File: images/chapt_3/control_loop.pdf Graphic file (type pdf)
  <use images/chapt_3/control_loop.pdf>
 Package pdftex.def Info: images/chapt_3/control_loop.pdf used on input line 11.
 (pdftex.def)             Requested size: 387.47061pt x 82.38634pt.
- [15 <./images/chapt_3/control_loop.pdf>] <images/chapt_3/tf_pt1.pdf, id=582, 963.6pt x 542.025pt>
+ [15 <./images/chapt_3/control_loop.pdf>] <images/chapt_3/tf_pt1.pdf, id=583, 963.6pt x 542.025pt>
 File: images/chapt_3/tf_pt1.pdf Graphic file (type pdf)
  <use images/chapt_3/tf_pt1.pdf>
 Package pdftex.def Info: images/chapt_3/tf_pt1.pdf used on input line 42.
@@ -1539,61 +1530,54 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
  [16]
-Underfull \vbox (badness 3168) has occurred while \output is active []
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
-
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
-
- [17 <./images/chapt_3/tf_pt1.pdf>] <images/chapt_3/step_resp_pi.pdf, id=621, 374.1544pt x 252.40117pt>
+ [17 <./images/chapt_3/tf_pt1.pdf>] <images/chapt_3/step_resp_pi.pdf, id=622, 374.1544pt x 252.40117pt>
 File: images/chapt_3/step_resp_pi.pdf Graphic file (type pdf)
  <use images/chapt_3/step_resp_pi.pdf>
 Package pdftex.def Info: images/chapt_3/step_resp_pi.pdf used on input line 86.
 (pdftex.def)             Requested size: 258.31812pt x 174.26868pt.
 
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18] <images/chapt_3/param_zn.pdf, id=638, 626.34pt x 370.38374pt>
+
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
+
+ [18 <./images/chapt_3/step_resp_pi.pdf>] <images/chapt_3/param_zn.pdf, id=646, 626.34pt x 370.38374pt>
 File: images/chapt_3/param_zn.pdf Graphic file (type pdf)
  <use images/chapt_3/param_zn.pdf>
 Package pdftex.def Info: images/chapt_3/param_zn.pdf used on input line 99.
 (pdftex.def)             Requested size: 344.42197pt x 203.67776pt.
 
-Underfull \vbox (badness 2671) has occurred while \output is active []
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
-
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
-
- [19 <./images/chapt_3/step_resp_pi.pdf>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/chapt_3/ILC_only.pdf, id=664, 876.08623pt x 337.28043pt>
+ [19] <images/chapt_3/ILC_only.pdf, id=666, 876.08623pt x 337.28043pt>
 File: images/chapt_3/ILC_only.pdf Graphic file (type pdf)
  <use images/chapt_3/ILC_only.pdf>
 Package pdftex.def Info: images/chapt_3/ILC_only.pdf used on input line 162.
 (pdftex.def)             Requested size: 387.47061pt x 149.17067pt.
 
-Underfull \vbox (badness 2158) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
- [20 <./images/chapt_3/param_zn.pdf>] <images/chapt_3/ILC_parallel.pdf, id=693, 876.08623pt x 337.28043pt>
+ [20 <./images/chapt_3/param_zn.pdf>] <images/chapt_3/ILC_parallel.pdf, id=694, 876.08623pt x 337.28043pt>
 File: images/chapt_3/ILC_parallel.pdf Graphic file (type pdf)
  <use images/chapt_3/ILC_parallel.pdf>
 Package pdftex.def Info: images/chapt_3/ILC_parallel.pdf used on input line 180.
 (pdftex.def)             Requested size: 387.47061pt x 149.17067pt.
 
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
- [21 <./images/chapt_3/ILC_only.pdf>]
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+ [21 <./images/chapt_3/ILC_only.pdf>])
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
- [22 <./images/chapt_3/ILC_parallel.pdf>])
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+ [22 <./images/chapt_3/ILC_parallel.pdf>]
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
  [23]
 \openout2 = `Chapter4.aux'.
@@ -1605,78 +1589,78 @@ Overfull \vbox (1.17493pt too high) has occurred while \output is active []
 
 ]
 chapter 4.
-<images/chapt_4/sputnik_cross.png, id=753, 515.9275pt x 231.86626pt>
+<images/chapt_4/sputnik_cross.png, id=752, 515.9275pt x 231.86626pt>
 File: images/chapt_4/sputnik_cross.png Graphic file (type png)
  <use images/chapt_4/sputnik_cross.png>
 Package pdftex.def Info: images/chapt_4/sputnik_cross.png used on input line 25.
 (pdftex.def)             Requested size: 258.31812pt x 116.09558pt.
- [25] <images/chapt_4/mock_loop.jpg, id=762, 630.355pt x 395.4775pt>
+ [25] <images/chapt_4/mock_loop.jpg, id=761, 630.355pt x 395.4775pt>
 File: images/chapt_4/mock_loop.jpg Graphic file (type jpg)
  <use images/chapt_4/mock_loop.jpg>
 Package pdftex.def Info: images/chapt_4/mock_loop.jpg used on input line 37.
 (pdftex.def)             Requested size: 430.52583pt x 270.10994pt.
- <images/chapt_4/flow_meter.pdf, id=768, 4047.12pt x 3035.34pt>
+ <images/chapt_4/flow_meter.pdf, id=767, 4047.12pt x 3035.34pt>
 File: images/chapt_4/flow_meter.pdf Graphic file (type pdf)
  <use images/chapt_4/flow_meter.pdf>
 Package pdftex.def Info: images/chapt_4/flow_meter.pdf used on input line 46.
 (pdftex.def)             Requested size: 344.42197pt x 258.30154pt.
 
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
  [26 <./images/chapt_4/sputnik_cross.png>]
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Underfull \vbox (badness 4341) has occurred while \output is active []
+
+
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
  [27 <./images/chapt_4/mock_loop.jpg>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
-
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
-
- [28 <./images/chapt_4/flow_meter.pdf>] <images/chapt_4/Test_60w40g_long.pdf, id=798, 1927.2pt x 973.38657pt>
+ [28 <./images/chapt_4/flow_meter.pdf>] <images/chapt_4/Test_60w40g_long.pdf, id=797, 1927.2pt x 973.38657pt>
 File: images/chapt_4/Test_60w40g_long.pdf Graphic file (type pdf)
  <use images/chapt_4/Test_60w40g_long.pdf>
 Package pdftex.def Info: images/chapt_4/Test_60w40g_long.pdf used on input line 65.
 (pdftex.def)             Requested size: 430.52583pt x 217.443pt.
- <images/chapt_4/60w40g_tube_length_new.pdf, id=800, 1927.2pt x 973.38657pt>
+ <images/chapt_4/60w40g_tube_length_new.pdf, id=799, 1927.2pt x 973.38657pt>
 File: images/chapt_4/60w40g_tube_length_new.pdf Graphic file (type pdf)
  <use images/chapt_4/60w40g_tube_length_new.pdf>
 Package pdftex.def Info: images/chapt_4/60w40g_tube_length_new.pdf used on input line 73.
 (pdftex.def)             Requested size: 430.52583pt x 217.443pt.
- <images/chapt_4/long_liquid_change_new.pdf, id=804, 1927.2pt x 973.38657pt>
+ <images/chapt_4/long_liquid_change_new.pdf, id=801, 1927.2pt x 973.38657pt>
 File: images/chapt_4/long_liquid_change_new.pdf Graphic file (type pdf)
  <use images/chapt_4/long_liquid_change_new.pdf>
 Package pdftex.def Info: images/chapt_4/long_liquid_change_new.pdf used on input line 81.
 (pdftex.def)             Requested size: 430.52583pt x 217.443pt.
 
-Underfull \vbox (badness 2856) has occurred while \output is active []
-
-
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
  [29]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
- [30 <./images/chapt_4/Test_60w40g_long.pdf>] <images/chapt_4/60w40g_long.pdf, id=825, 1927.2pt x 760.34062pt>
+ [30 <./images/chapt_4/Test_60w40g_long.pdf>] <images/chapt_4/60w40g_long.pdf, id=824, 1927.2pt x 760.34062pt>
 File: images/chapt_4/60w40g_long.pdf Graphic file (type pdf)
  <use images/chapt_4/60w40g_long.pdf>
 Package pdftex.def Info: images/chapt_4/60w40g_long.pdf used on input line 91.
 (pdftex.def)             Requested size: 430.52583pt x 169.85106pt.
 
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Underfull \vbox (badness 1142) has occurred while \output is active []
 
- [31 <./images/chapt_4/60w40g_tube_length_new.pdf>] <images/chapt_4/plant_generation.pdf, id=839, 1264.725pt x 679.78969pt>
+
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
+
+ [31 <./images/chapt_4/60w40g_tube_length_new.pdf>] <images/chapt_4/plant_generation.pdf, id=838, 1264.725pt x 679.78969pt>
 File: images/chapt_4/plant_generation.pdf Graphic file (type pdf)
  <use images/chapt_4/plant_generation.pdf>
 Package pdftex.def Info: images/chapt_4/plant_generation.pdf used on input line 116.
 (pdftex.def)             Requested size: 430.52583pt x 231.4055pt.
 )
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
  [32 <./images/chapt_4/long_liquid_change_new.pdf>]
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
  [33 <./images/chapt_4/60w40g_long.pdf> <./images/chapt_4/plant_generation.pdf
 
@@ -1691,32 +1675,32 @@ pdfTeX warning: pdflatex (file ./images/chapt_4/plant_generation.pdf): PDF inclu
 
 ]
 chapter 5.
-<images/chapt_5/dyn_measure.pdf, id=871, 1264.725pt x 679.78969pt>
+<images/chapt_5/dyn_measure.pdf, id=870, 1264.725pt x 679.78969pt>
 File: images/chapt_5/dyn_measure.pdf Graphic file (type pdf)
  <use images/chapt_5/dyn_measure.pdf>
 Package pdftex.def Info: images/chapt_5/dyn_measure.pdf used on input line 10.
-(pdftex.def)             Requested size: 430.52583pt x 231.4055pt.
- <images/chapt_5/dyn_meas_40.pdf, id=873, 1264.725pt x 679.78969pt>
+(pdftex.def)             Requested size: 408.99821pt x 219.82951pt.
+ <images/chapt_5/dyn_meas_40.pdf, id=872, 1264.725pt x 679.78969pt>
 File: images/chapt_5/dyn_meas_40.pdf Graphic file (type pdf)
  <use images/chapt_5/dyn_meas_40.pdf>
 Package pdftex.def Info: images/chapt_5/dyn_meas_40.pdf used on input line 17.
 (pdftex.def)             Requested size: 430.52583pt x 231.4055pt.
- <images/chapt_5/param_calc_PI.pdf, id=874, 1264.725pt x 679.78969pt>
+ <images/chapt_5/param_calc_PI.pdf, id=873, 1264.725pt x 679.78969pt>
 File: images/chapt_5/param_calc_PI.pdf Graphic file (type pdf)
  <use images/chapt_5/param_calc_PI.pdf>
 Package pdftex.def Info: images/chapt_5/param_calc_PI.pdf used on input line 25.
-(pdftex.def)             Requested size: 430.52583pt x 231.4055pt.
+(pdftex.def)             Requested size: 408.99821pt x 219.82951pt.
  [35]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
  [36 <./images/chapt_5/dyn_measure.pdf>] <images/chapt_5/PI_control_ref_signals.pdf, id=898, 1264.725pt x 679.78969pt>
 File: images/chapt_5/PI_control_ref_signals.pdf Graphic file (type pdf)
  <use images/chapt_5/PI_control_ref_signals.pdf>
 Package pdftex.def Info: images/chapt_5/PI_control_ref_signals.pdf used on input line 66.
-(pdftex.def)             Requested size: 430.52583pt x 231.4055pt.
+(pdftex.def)             Requested size: 408.99821pt x 219.82951pt.
  <images/chapt_5/pi_contr_chr_40.pdf, id=900, 1264.725pt x 679.78969pt>
 File: images/chapt_5/pi_contr_chr_40.pdf Graphic file (type pdf)
  <use images/chapt_5/pi_contr_chr_40.pdf>
@@ -1733,19 +1717,22 @@ File: images/chapt_5/error_PI_chr.pdf Graphic file (type pdf)
 Package pdftex.def Info: images/chapt_5/error_PI_chr.pdf used on input line 84.
 (pdftex.def)             Requested size: 215.26291pt x 90.71304pt.
 
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
  [37 <./images/chapt_5/dyn_meas_40.pdf>]
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
  [38 <./images/chapt_5/param_calc_PI.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
  [39 <./images/chapt_5/PI_control_ref_signals.pdf>]
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
  [40 <./images/chapt_5/pi_contr_chr_40.pdf> <./images/chapt_5/error_PI_zn.pdf
 
@@ -1754,46 +1741,49 @@ pdfTeX warning: pdflatex (file ./images/chapt_5/error_PI_zn.pdf): PDF inclusion:
 
 pdfTeX warning: pdflatex (file ./images/chapt_5/error_PI_chr.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
- [41] <images/chapt_5/ILC/ref_signal_ILC3.pdf, id=971, 1264.725pt x 539.76656pt>
+ [41] <images/chapt_5/ILC/ref_signal_ILC3.pdf, id=970, 1264.725pt x 539.76656pt>
 File: images/chapt_5/ILC/ref_signal_ILC3.pdf Graphic file (type pdf)
  <use images/chapt_5/ILC/ref_signal_ILC3.pdf>
 Package pdftex.def Info: images/chapt_5/ILC/ref_signal_ILC3.pdf used on input line 135.
-(pdftex.def)             Requested size: 387.47061pt x 165.36569pt.
+(pdftex.def)             Requested size: 408.99821pt x 174.54901pt.
 
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
- [42 <./images/chapt_5/ILC/ref_signal_ILC3.pdf>] <images/chapt_5/ILC/pi_to_ilc_fc_20.pdf, id=985, 1264.725pt x 539.01375pt>
+ [42 <./images/chapt_5/ILC/ref_signal_ILC3.pdf>] <images/chapt_5/ILC/pi_to_ilc_fc_20.pdf, id=984, 1264.725pt x 539.01375pt>
 File: images/chapt_5/ILC/pi_to_ilc_fc_20.pdf Graphic file (type pdf)
  <use images/chapt_5/ILC/pi_to_ilc_fc_20.pdf>
 Package pdftex.def Info: images/chapt_5/ILC/pi_to_ilc_fc_20.pdf used on input line 145.
-(pdftex.def)             Requested size: 430.52583pt x 183.48431pt.
- <images/chapt_5/ILC/pi_to_ilc_fc_34.pdf, id=988, 1264.725pt x 679.78969pt>
+(pdftex.def)             Requested size: 408.99821pt x 174.30557pt.
+ <images/chapt_5/ILC/pi_to_ilc_fc_34.pdf, id=987, 1264.725pt x 679.78969pt>
 File: images/chapt_5/ILC/pi_to_ilc_fc_34.pdf Graphic file (type pdf)
  <use images/chapt_5/ILC/pi_to_ilc_fc_34.pdf>
 Package pdftex.def Info: images/chapt_5/ILC/pi_to_ilc_fc_34.pdf used on input line 153.
-(pdftex.def)             Requested size: 430.52583pt x 231.4055pt.
- <images/chapt_5/ILC/pi_to_ilc_fc_25.pdf, id=991, 1264.725pt x 539.01375pt>
+(pdftex.def)             Requested size: 408.99821pt x 219.82951pt.
+ <images/chapt_5/ILC/pi_to_ilc_fc_25.pdf, id=990, 1264.725pt x 539.01375pt>
 File: images/chapt_5/ILC/pi_to_ilc_fc_25.pdf Graphic file (type pdf)
  <use images/chapt_5/ILC/pi_to_ilc_fc_25.pdf>
 Package pdftex.def Info: images/chapt_5/ILC/pi_to_ilc_fc_25.pdf used on input line 161.
-(pdftex.def)             Requested size: 430.52583pt x 183.48431pt.
+(pdftex.def)             Requested size: 408.99821pt x 174.30557pt.
 
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
  [43 <./images/chapt_5/ILC/pi_to_ilc_fc_20.pdf>]
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
- [44 <./images/chapt_5/ILC/pi_to_ilc_fc_34.pdf>] <images/chapt_5/ILC/RMSE_compare_ILC3_fc.pdf, id=1008, 1264.725pt x 679.78969pt>
+ [44 <./images/chapt_5/ILC/pi_to_ilc_fc_34.pdf>] <images/chapt_5/ILC/RMSE_compare_ILC3_fc.pdf, id=1007, 1264.725pt x 679.78969pt>
 File: images/chapt_5/ILC/RMSE_compare_ILC3_fc.pdf Graphic file (type pdf)
  <use images/chapt_5/ILC/RMSE_compare_ILC3_fc.pdf>
 Package pdftex.def Info: images/chapt_5/ILC/RMSE_compare_ILC3_fc.pdf used on input line 173.
 (pdftex.def)             Requested size: 430.52583pt x 231.4055pt.
 
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Underfull \vbox (badness 3312) has occurred while \output is active []
 
- [45 <./images/chapt_5/ILC/pi_to_ilc_fc_25.pdf>] <images/chapt_5/ILC/RMSE_compare_operating_points.pdf, id=1018, 1264.725pt x 679.78969pt>
+
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
+
+ [45 <./images/chapt_5/ILC/pi_to_ilc_fc_25.pdf>] <images/chapt_5/ILC/RMSE_compare_operating_points.pdf, id=1017, 1264.725pt x 679.78969pt>
 File: images/chapt_5/ILC/RMSE_compare_operating_points.pdf Graphic file (type pdf)
  <use images/chapt_5/ILC/RMSE_compare_operating_points.pdf>
 Package pdftex.def Info: images/chapt_5/ILC/RMSE_compare_operating_points.pdf used on input line 192.
@@ -1802,10 +1792,10 @@ Package pdftex.def Info: images/chapt_5/ILC/RMSE_compare_operating_points.pdf us
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
  [46 <./images/chapt_5/ILC/RMSE_compare_ILC3_fc.pdf>]
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
  [47 <./images/chapt_5/ILC/RMSE_compare_operating_points.pdf>]
 \openout2 = `Conclusion.aux'.
@@ -1826,42 +1816,42 @@ chapter 6.
 
  (./anhang.tex
 chapter A.
-<images/chapt_4/100w_tube_length_new.pdf, id=1051, 1927.2pt x 973.38657pt>
+<images/chapt_4/100w_tube_length_new.pdf, id=1050, 1927.2pt x 973.38657pt>
 File: images/chapt_4/100w_tube_length_new.pdf Graphic file (type pdf)
  <use images/chapt_4/100w_tube_length_new.pdf>
 Package pdftex.def Info: images/chapt_4/100w_tube_length_new.pdf used on input line 4.
 (pdftex.def)             Requested size: 430.52583pt x 217.443pt.
- <images/chapt_4/80w20g_tube_length_new.pdf, id=1052, 1927.2pt x 973.38657pt>
+ <images/chapt_4/80w20g_tube_length_new.pdf, id=1051, 1927.2pt x 973.38657pt>
 File: images/chapt_4/80w20g_tube_length_new.pdf Graphic file (type pdf)
  <use images/chapt_4/80w20g_tube_length_new.pdf>
 Package pdftex.def Info: images/chapt_4/80w20g_tube_length_new.pdf used on input line 10.
 (pdftex.def)             Requested size: 430.52583pt x 217.443pt.
- <images/chapt_4/40w60g_tube_length_new.pdf, id=1053, 1927.2pt x 973.38657pt>
+ <images/chapt_4/40w60g_tube_length_new.pdf, id=1052, 1927.2pt x 973.38657pt>
 File: images/chapt_4/40w60g_tube_length_new.pdf Graphic file (type pdf)
  <use images/chapt_4/40w60g_tube_length_new.pdf>
 Package pdftex.def Info: images/chapt_4/40w60g_tube_length_new.pdf used on input line 16.
 (pdftex.def)             Requested size: 430.52583pt x 217.443pt.
- <images/chapt_4/medium_liquid_change_new.pdf, id=1054, 1927.2pt x 973.38657pt>
+ <images/chapt_4/medium_liquid_change_new.pdf, id=1053, 1927.2pt x 973.38657pt>
 File: images/chapt_4/medium_liquid_change_new.pdf Graphic file (type pdf)
  <use images/chapt_4/medium_liquid_change_new.pdf>
 Package pdftex.def Info: images/chapt_4/medium_liquid_change_new.pdf used on input line 22.
 (pdftex.def)             Requested size: 430.52583pt x 217.443pt.
- <images/chapt_4/short_liquid_change_new.pdf, id=1055, 1927.2pt x 973.38657pt>
+ <images/chapt_4/short_liquid_change_new.pdf, id=1054, 1927.2pt x 973.38657pt>
 File: images/chapt_4/short_liquid_change_new.pdf Graphic file (type pdf)
  <use images/chapt_4/short_liquid_change_new.pdf>
 Package pdftex.def Info: images/chapt_4/short_liquid_change_new.pdf used on input line 28.
 (pdftex.def)             Requested size: 430.52583pt x 217.443pt.
- <images/chapt_5/pi_contr_chr.pdf, id=1056, 1264.725pt x 679.78969pt>
+ <images/chapt_5/pi_contr_chr.pdf, id=1055, 1264.725pt x 679.78969pt>
 File: images/chapt_5/pi_contr_chr.pdf Graphic file (type pdf)
  <use images/chapt_5/pi_contr_chr.pdf>
 Package pdftex.def Info: images/chapt_5/pi_contr_chr.pdf used on input line 37.
 (pdftex.def)             Requested size: 430.52583pt x 231.4055pt.
- <images/chapt_5/pi_contr_zn.pdf, id=1057, 1264.725pt x 679.78969pt>
+ <images/chapt_5/pi_contr_zn.pdf, id=1056, 1264.725pt x 679.78969pt>
 File: images/chapt_5/pi_contr_zn.pdf Graphic file (type pdf)
  <use images/chapt_5/pi_contr_zn.pdf>
 Package pdftex.def Info: images/chapt_5/pi_contr_zn.pdf used on input line 44.
 (pdftex.def)             Requested size: 430.52583pt x 231.4055pt.
- <images/chapt_5/pi_contr_zn_40.pdf, id=1058, 1264.725pt x 679.78969pt>
+ <images/chapt_5/pi_contr_zn_40.pdf, id=1057, 1264.725pt x 679.78969pt>
 File: images/chapt_5/pi_contr_zn_40.pdf Graphic file (type pdf)
  <use images/chapt_5/pi_contr_zn_40.pdf>
 Package pdftex.def Info: images/chapt_5/pi_contr_zn_40.pdf used on input line 51.
@@ -1871,25 +1861,25 @@ Package pdftex.def Info: images/chapt_5/pi_contr_zn_40.pdf used on input line 51
 
 
  <./images/chapt_4/100w_tube_length_new.pdf>]
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
  [52 <./images/chapt_4/80w20g_tube_length_new.pdf> <./images/chapt_4/40w60g_tube_length_new.pdf
 
 pdfTeX warning: pdflatex (file ./images/chapt_4/40w60g_tube_length_new.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
  [53 <./images/chapt_4/medium_liquid_change_new.pdf> <./images/chapt_4/short_liquid_change_new.pdf
 
 pdfTeX warning: pdflatex (file ./images/chapt_4/short_liquid_change_new.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
  [54 <./images/chapt_5/pi_contr_chr.pdf> <./images/chapt_5/pi_contr_zn.pdf
 
 pdfTeX warning: pdflatex (file ./images/chapt_5/pi_contr_zn.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
  [55 <./images/chapt_5/pi_contr_zn_40.pdf>] (./MAIN.bbl [56
 
@@ -1916,10 +1906,16 @@ Underfull \hbox (badness 3746) in paragraph at lines 100--107
  []
 
 
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Underfull \vbox (badness 4254) has occurred while \output is active []
+
+
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
  [58]
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Underfull \vbox (badness 1546) has occurred while \output is active []
+
+
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
  [59]
 Underfull \hbox (badness 10000) in paragraph at lines 178--183
@@ -1932,7 +1928,7 @@ Underfull \hbox (badness 4366) in paragraph at lines 178--183
  []
 
 )
-Overfull \vbox (1.17493pt too high) has occurred while \output is active []
+Overfull \vbox (0.88487pt too high) has occurred while \output is active []
 
  [60]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 185.
@@ -1944,19 +1940,19 @@ Package rerunfilecheck Info: File `MAIN.out' has not changed.
 (rerunfilecheck)             Checksum: 068AA7D3A4DDD9318CA497516FCFCF6C;2486.
  ) 
 Here is how much of TeX's memory you used:
- 32516 strings out of 492995
- 607758 string characters out of 6132703
- 750179 words of memory out of 5000000
- 35166 multiletter control sequences out of 15000+600000
+ 32513 strings out of 492995
+ 607719 string characters out of 6132703
+ 750121 words of memory out of 5000000
+ 35164 multiletter control sequences out of 15000+600000
  69179 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,18n,66p,10510b,760s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1
 /public/lm/lmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on MAIN.pdf (74 pages, 42765650 bytes).
+Output written on MAIN.pdf (74 pages, 42766466 bytes).
 PDF statistics:
- 1276 PDF objects out of 1440 (max. 8388607)
- 1051 compressed objects within 11 object streams
- 229 named destinations out of 1000 (max. 500000)
+ 1274 PDF objects out of 1440 (max. 8388607)
+ 1049 compressed objects within 11 object streams
+ 228 named destinations out of 1000 (max. 500000)
  560 words of extra memory for PDF output out of 10000 (max. 10000000)
 

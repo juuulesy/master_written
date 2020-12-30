@@ -7,7 +7,7 @@ PI control implementation is performed on the basis of the tuning rules accordin
 As a preparation for utilization of the inflection tangent method for these tuning approaches, a measurement similar to the one for determining the static map is performed. \figurename~\ref{fig:dyn_meas} depicts the signal curves for determination of the tuning parameters.
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=\textwidth]{images/chapt_5/dyn_measure.pdf}
+  \includegraphics[width=0.95\textwidth]{images/chapt_5/dyn_measure.pdf}
   \caption[Signal curves for determination of PI controller parameters]{Signal curves for determination of PI controller parameters. Top: differential pressure as reference and measured signal, middle: reference and measured rotational speed, bottom: measured flow through Sputnik VAD.}
   \label{fig:dyn_meas}
 \end{figure}
@@ -22,7 +22,7 @@ For determination of the parameters for controller design the step from $v_{ref,
 Since the flow signal is affected by high measurement noise, the signal is preprocessed using an $8^{th}$-order butterworth filter with cut off frequency $f_c=5\,Hz$ and sampling frequency $f_s=1000\,Hz$.
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=\textwidth]{images/chapt_5/param_calc_PI.pdf}
+  \includegraphics[width=0.95\textwidth]{images/chapt_5/param_calc_PI.pdf}
   \caption[Step response for determination of PI controller tuning parameters]{Step response for a step in rotational speed of $400\,rpm$ for determination of PI controller tuning parameters.}
   \label{fig:param_calc_PI}
 \end{figure}
@@ -34,11 +34,11 @@ The resulting signal and the characteristic parameters needed for parameter tuni
 The time constants amount to $T_g=0.193$ and $T_v=0.1$.
 \\For determination of a PI controller tuned according to Ziegler Nichols equations (\ref{eq:kp_zn}) to (\ref{eq:T_N_zn}) are used. By this $K_{P}$ is determined as
 \begin{equation}
-  K_{P} = 0.9*\frac{0.193}{0.0026*0.1}=670.3052
+  K_{P} = 0.9\cdot\frac{0.193}{0.0026\cdot0.1}=670.3052
 \end{equation}
 and $K_I$ as
 \begin{equation}
-  K_{I}  = \frac{670.3052}{3.3*0.1}=2031.2278.
+  K_{I}  = \frac{670.3052}{3.3\cdot0.1}=2031.2278.
 \end{equation}
 Substituting these values in equation (\ref{eq:pi_contr_2}) results in the transfer function
 \begin{equation}
@@ -46,24 +46,24 @@ Substituting these values in equation (\ref{eq:pi_contr_2}) results in the trans
 \end{equation}
 \\Calculation for overdamped controller behavior was chosen for controller tuning using Chien Hrones Reswick. Determination of the parameters $K_P$ and $K_I$ is performed following the equations presented in \tablename~\ref{tab:param_chr}, resulting in
 \begin{equation}
-  K_P = 0.35*\frac{0.193}{0.0026*0.1}=260.6742
+  K_P = 0.35\cdot\frac{0.193}{0.0026\cdot0.1}=260.6742
 \end{equation}
 and
 \begin{equation}
-  K_I = \frac{260.6742}{1.2*0.1}=2172.2853.
+  K_I = \frac{260.6742}{1.2\cdot0.1}=2172.2853.
 \end{equation}
 This in turn leads to the transfer function
 \begin{equation}
   G_{PI,CHR}(s)=260.6742+\frac{2172.2853}{s}.
 \end{equation}
 \subsection{Evaluation}
-The main purpose for utilization of a PI controller, in this work, is to stabilize the closed loop signal behavior in preparation for an ILC implementation.
-Both controllers are therefore tested under the same operating conditions and their performance is compared.
+The main purpose for utilization of a PI controller, in this work, is to stabilize the closed loop system behavior in preparation for an ILC implementation.
+Both controllers are tested under the same operating conditions and their performance is compared.
 \\Even though the controllers are tuned at $\Delta{p}=40\,mmHg$, both of them  are tested in the differential pressure operating range from $\Delta{p}=0\,mmHg$ to $\Delta{p}=100\,mmHg$ to ensure sufficient performance in all use cases.
 For each differential pressure level three consecutive steps up and down throughout the operating range of flow are performed. Each reference flow is targeted for $5\,s$ and flow through the VAD is measured. A graphical representation of the reference signal curves is depicted in \figurename~\ref{fig:PI_control_ref_signals}.
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=\textwidth]{images/chapt_5/PI_control_ref_signals.pdf}
+  \includegraphics[width=0.95\textwidth]{images/chapt_5/PI_control_ref_signals.pdf}
   \caption[Reference signals for PI controller performance evaluation]{Reference signals for PI controller performance evaluation. Top: differential pressure reference value. Bottom: targeted flow trajectory.}
   \label{fig:PI_control_ref_signals}
 \end{figure}
@@ -93,7 +93,7 @@ is used. The RMSE for the differential pressure level of $\Delta{p}=40\,mmHg$ fo
 \begin{equation}
   RMSE_{ZN,40}=0.4013\,l/min
 \end{equation}
-while RMSE of the second controller amounts to
+while RMSE of the Chien Hrones Reswick tuned controller amounts to
 \begin{equation}
   RMSE_{CHR,40}=0.2753\,l/min.
 \end{equation}
@@ -129,43 +129,43 @@ This expansion results in the learning function being described by
 The Q-Filter is implemented as a $2^{nd}$-order butterworth filter, with sampling frequency $f_s=1000\,Hz$. The cut off frequency $f_c$ is set to several values in order to compare and thus optimize performance and robustness of the iterative learning control system.
 \\An additional part of the implementation is the generation of a repeating reference and a trigger signal. The trigger signal indicates the beginning of each new iteration and thus initiates calculation of the new values $u_{j+1}(k)$ in the ILC block.
 \figurename~\ref{fig:ref_signal_ILC3} depicts three iterations of the reference signal for this ILC.
-\\The signal is created by first generating a square wave signal with the upper stage at $6\, l/min$ and the lower stage at 4 l/min. Thus, the signal encloses the average value of $5\, l/min$ of the cardiac output of a healthy heart. The reference values are each held for $0.5\, s$, so that a complete iteration would correspond to a frequency of $60\, beats\, per\, minute\, (bpm)$ when compared to the heart rate. To avoid abrupt transitions in the flow, which could lead to problems on the part of the pump, the reference signal was filtered with a first order Butterworth filter with cut off frequency $f_c=20\,Hz$ and sampling frequency $f_s=1000\,Hz$, resulting in radiused transitions. Afterwards, the signal is shifted by $0.25\, s$ to avoid placing the beginning of the signal at a jump point. The trigger signal is set from 0 to 1 at the beginning of each iteration for the duration of one sample.
+\\The signal is created by first generating a square wave signal with the upper stage at $6\, l/min$ and the lower stage at $4\, l/min$. Thus, the signal encloses the average value of $5\, l/min$ of the cardiac output of a healthy heart. The reference values are each held for $0.5\, s$, so that a complete iteration would correspond to a frequency of $60\, beats\, per\, minute\, (bpm)$ when compared to the heart rate. To avoid abrupt transitions in the flow, which could lead to problems on the part of the pump, the reference signal was filtered with a first order Butterworth filter with cut off frequency $f_c=20\,Hz$ and sampling frequency $f_s=1000\,Hz$, resulting in radiused transitions. Afterwards, the signal is shifted by $0.25\, s$ to avoid placing the beginning of the signal at a jump point. The trigger signal is set from 0 to 1 at the beginning of each iteration for the duration of one sample.
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=0.9\textwidth]{images/chapt_5/ILC/ref_signal_ILC3.pdf}
+  \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/ref_signal_ILC3.pdf}
   \caption[Smoothed reference signal for ILC tuning.]{Three iterations of smoothed reference signal for ILC tuning.}
   \label{fig:ref_signal_ILC3}
 \end{figure}
 \subsection{Evaluation}
-As mentioned above, various cut off frequencies for the Q-Filter of the ILC are tested with the aim of optimizing the ILC's performance and robustness.  \\The test signal for this purpose, is given by repeatedly presenting the reference signal from \figurename~\ref{fig:ref_signal_ILC3} to the system over a duration of $600\,s$. During the first $60\,s$ exclusively PI control is activated. By this, stable system performance at the beginning of ILC control can be ensured. Once the $60\,s$ are up, the trigger signal will set off indications for beginnings of new iterations. From this point, ILC and PI controller are working simultaneously. During the complete test measurement differential pressure is set to $\Delta{p}=40\,mmHg$. This setup is repeated for cut off frequencies $f_{c}=20\,Hz$, $f_{c}=25\,Hz$, $f_{c}=8\,Hz$ and $f_{c}=34\,Hz$.
-\\\figurename~\ref{fig:pi_to_ilc} exemplifies a sequence of the measurement performed for the Q-Filter set to a cut off frequency of $f_c=20\,Hz$. The section shows the change from exclusive PI control to the parallel controller structure with PI control and ILC. The upper graph depicts the measured differential pressure at the MCL. The spikes in this curve occur due to varying flow through the blood pump resulting in changing volumes inside the pressure chambers. The graph in the middle represents the rotational speed values for the acuating varibale $v_{act}$ and the actual velocity of the pump's rotor $v_{vad}$.
+As mentioned above, various cut off frequencies for the Q-Filter of the ILC are tested with the aim of optimizing the ILC's performance and robustness.  \\The test signal for this purpose, is given by repeatedly presenting the reference signal from \figurename~\ref{fig:ref_signal_ILC3} to the system over a duration of $600\,s$. During the first $60\,s$ exclusively PI control is activated. By this, stable system performance at the beginning of ILC control can be ensured. Once the $60\,s$ are up, the trigger signal will set off indications for beginnings of new iterations. From this point, ILC and PI controller are working simultaneously. During the complete test measurement differential pressure is set to $\Delta{p}=40\,mmHg$. Measurements with this setup are performed for cut off frequencies $f_{c}=20\,Hz$, $f_{c}=25\,Hz$, $f_{c}=8\,Hz$ and $f_{c}=34\,Hz$.
+\\\figurename~\ref{fig:pi_to_ilc} exemplifies a sequence of the measurement performed for the Q-Filter set to a cut off frequency of $f_c=20\,Hz$. The segment shows the transition from exclusive PI control to the parallel control structure of PI control and ILC. The upper graph depicts the measured differential pressure at the MCL. The spikes in this curve occur due to varying flow through the blood pump resulting in changing volumes inside the pressure chambers. The graph in the middle represents the rotational speed values for the acuating varibale $v_{act}$ and the actual velocity of the pump's rotor $v_{vad}$.
 
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=\textwidth]{images/chapt_5/ILC/pi_to_ilc_fc_20.pdf}
+  \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/pi_to_ilc_fc_20.pdf}
   \caption[Test measurement for ILC at cut off frequency $f_c=20\,Hz$]{Test measurement for ILC at cut off frequency $f_c=20\,Hz$.  Top: differential pressure value of the MCL. Middle: actuating variable and measured rotational speed of the VAD. Bottom: targeted flow trajectory and measured flow through the VAD.}
   \label{fig:pi_to_ilc}
 \end{figure}
-The bottom graph of \figurename~\ref{fig:pi_to_ilc} depicts the reference flow trajectory $q_{ref}$ and the measured flow that is conveyed by the VAD. Looking at this curve, it can be seen that by solely using the PI controller (corresponding to $55\,s$ to $60\,s$ of the graph), the flow through the VAD cannot be adjusted fast enough and thus the reference trajectory cannot be followed successfully. However, from the onset of the ILC at about $60\,s$, it can be seen that the measured flow continues to adapt to the given reference flow within a few iterations.
+The bottom graph of \figurename~\ref{fig:pi_to_ilc} depicts the reference flow trajectory $q_{ref}$ and the measured flow $q_{vad}$ that is conveyed by the VAD. Looking at this curve, it can be seen that by solely using the PI controller (corresponding to $55\,s$ to $60\,s$ of the graph), the flow through the VAD cannot be adjusted fast enough and thus the reference trajectory cannot be followed successfully. However, from the onset of the ILC at about $60\,s$, it can be seen that the measured flow continues to adapt to the given reference flow within a few iterations.
 \\While the system shows stable behavior over the complete measurement time for a cut off frequency of $f_c=20\,Hz$, in case of $f_c=34\,Hz$ the system shows oscillatory behavior. \figurename~\ref{fig:pi_to_ilc_fc_34} depicts part of the measurement for a cut off frequency set to $f_c=34\,Hz$.
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=\textwidth]{images/chapt_5/ILC/pi_to_ilc_fc_34.pdf}
+  \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/pi_to_ilc_fc_34.pdf}
   \caption[Test measurement for ILC at cut off frequency $f_c=34\,Hz$]{Test measurement for ILC at cut off frequency $f_c=34\,Hz$. Top: differential pressure value of the MCL. Middle: actuating variable and measured rotational speed of the VAD. Bottom: targeted flow trajectory and measured flow through the VAD.}
   \label{fig:pi_to_ilc_fc_34}
 \end{figure}
 \\The structure is the same as for \figurename~\ref{fig:pi_to_ilc}. However, in this case, looking at the middle graph it is evident that with each additional ILC iteration the actuation variable $v_{act}$ rises further towards its saturation values $4000\,rpm$ and $9000\,rpm$. This ultimately leads to the pump's rotor to stop, due to abrupt changes in speed and flow at approximately $98\,s$ measurement time.
-\\Behavior of the system for a cut off frequency set to $f_c=25\,Hz$ is similar to behavior with $f_c=34\,Hz$, as shown in \figurename~\ref{fig:pi_to_ilc_fc_25}.
+\\Behavior of the system for a cut off frequency set to $f_c=25\,Hz$ ,as shown in \figurename~\ref{fig:pi_to_ilc_fc_25}, is similar to behavior with $f_c=34\,Hz$. The oscillatory system behavior again results in the pump's to stop at approximately $96\,s$.
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=\textwidth]{images/chapt_5/ILC/pi_to_ilc_fc_25.pdf}
+  \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/pi_to_ilc_fc_25.pdf}
   \caption[Test measurement for ILC at cut off frequency $f_c=25\,Hz$]{Test measurement for ILC at cut off frequency $f_c=25\,Hz$. Top: differential pressure value of the MCL. Middle: actuating variable and measured rotational speed of the VAD. Bottom: targeted flow trajectory and measured flow through the VAD.}
   \label{fig:pi_to_ilc_fc_25}
 \end{figure}
 \\The measurement with $f_c=8\,Hz$ as cut off frequency of the Q-Filter shows stable behavior over the complete measurement time, similar to the measurement performed with $f_c=20\,Hz$.
 \\In order to determine which cut off frequency is most suited for the ILC implementation the RMSE values of the iterations for each of the measurements are compared to another. \figurename~\ref{fig:RMSE_compare_ILC3_fc} depicts the RMSE of each measurement as a function of the iteration for the first 39 iterations of the ILC. The figure also represents the RMSE value of the exclusive performining PI controller in form of the first iteration value:
 \begin{equation}
-  RMSE_{PI}=RMSE(1)\approx 0.8882\,l/min
+  RMSE_{PI}=RMSE(1)\approx 0.85\,l/min
 \end{equation}
 It is evident that the curves for $f_c=25\,Hz$ and $f_c=35\,Hz$ show abrupt increases in RMSE for the iterations when the pump stopped. Due to this instable behavior these cut off frequencies are not suitable for ILC implementation.
 \begin{figure}[ht]
@@ -174,18 +174,18 @@ It is evident that the curves for $f_c=25\,Hz$ and $f_c=35\,Hz$ show abrupt incr
   \caption[Comparison of RMSE values for different cut off frequency of ILC Q-Filter]{Comparison of RMSE values for different cut off frequency of ILC Q-Filter.}
   \label{fig:RMSE_compare_ILC3_fc}
 \end{figure}
-\\Comparing the RMSE values of the $39^{th}$ iteration it is obvious that performance of the ILC with Q-filter cut off frequency at $f_c=20\,Hz$ with
+\\Comparing the RMSE values of the $39^{th}$ iteration of the other two frequencies it is obvious that performance of the ILC with Q-filter cut off frequency at $f_c=20\,Hz$ with
 \begin{equation}
   RMSE_{f_c=20\,Hz}(39)=0.1984
 \end{equation}
-is higher than for $f_c=34\,Hz$ with
+is higher than for $f_c=8\,Hz$ with
 \begin{equation}
-  RMSE_{f_c=20\,Hz}(39)=0.3951.
+  RMSE_{f_c=8\,Hz}(39)=0.3951.
 \end{equation}
 Therefore, the cut off frequency of the Q-Filter in all following measurements will be set to $f_c=20\,Hz$.
 
-As these measurements only took into account a differential pressure value of $\Delta{p}=40mmHg$ the ILC with the optimized Q-Filter cut off frequency is tested at pressure levels in in equal steps of $20\,mmHg$ between $\Delta{p}=20mmHg$ and $\Delta{p}=80\,mmHg$ to ensure stable system behavior in all operating points. For this the same measurement as before has been executed.
-\\A comparison of the RMSE values over all iterations of the ILC for the four differential pressure levels is depicted in \figurename~\ref{fig:RMSE_compare_operating_points}. The course of the RMSE values of all four measurements indicate stable system behavior. With values of approximately $0.3\, l/min$ the RMSE of the other operating points is only slightly higher than of the $40\,mmHg$ operating point with an RMSE of approximately $0.2\,l/min$. Therefore, the ILC implemented is suitable for all of the tested operating points. 
+As these measurements only took into account a differential pressure value of $\Delta{p}=40mmHg$ the ILC with the optimized Q-Filter cut off frequency is tested at pressure levels in in equal steps of $20\,mmHg$ between $\Delta{p}=20mmHg$ and $\Delta{p}=80\,mmHg$ to ensure stable system behavior in all operating points. For this the same measurement as before is executed.
+\\A comparison of the RMSE values over all iterations of the ILC for the four differential pressure levels is depicted in \figurename~\ref{fig:RMSE_compare_operating_points}. The course of the RMSE values of all four measurements indicate stable system behavior. With values of approximately $0.3\, l/min$ the RMSE of the other operating points is only slightly higher than of the $40\,mmHg$ operating point with an RMSE of approximately $0.2\,l/min$. Therefore, the implemented ILC is suitable for all of the tested operating points.
 
 \begin{figure}[ht]
   \centering
