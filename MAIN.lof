@@ -36,16 +36,20 @@
 \contentsline {figure}{\numberline {\relax 5.6}{\ignorespaces Controll error for PI Controllers}}{40}{figure.caption.37}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{40}{subfigure.6.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{40}{subfigure.6.2}
-\contentsline {figure}{\numberline {\relax 5.7}{\ignorespaces Comparison of RMSE values for different cut off frequency of ILC Q-Filter}}{42}{figure.caption.38}
-\contentsline {figure}{\numberline {\relax 5.8}{\ignorespaces Comparison of RMSE values for different cut off frequency of ILC Q-Filter}}{43}{figure.caption.39}
+\contentsline {figure}{\numberline {\relax 5.7}{\ignorespaces Smoothed reference signal for ILC tuning.}}{42}{figure.caption.38}
+\contentsline {figure}{\numberline {\relax 5.8}{\ignorespaces Test measurement for ILC at cut off frequency $f_c=20\tmspace +\thinmuskip {.1667em}Hz$}}{43}{figure.caption.39}
+\contentsline {figure}{\numberline {\relax 5.9}{\ignorespaces Test measurement for ILC at cut off frequency $f_c=34\tmspace +\thinmuskip {.1667em}Hz$}}{44}{figure.caption.40}
+\contentsline {figure}{\numberline {\relax 5.10}{\ignorespaces Test measurement for ILC at cut off frequency $f_c=25\tmspace +\thinmuskip {.1667em}Hz$}}{45}{figure.caption.41}
+\contentsline {figure}{\numberline {\relax 5.11}{\ignorespaces Comparison of RMSE values for different cut off frequency of ILC Q-Filter}}{46}{figure.caption.42}
+\contentsline {figure}{\numberline {\relax 5.12}{\ignorespaces Comparison of RMSE values for different cut off frequency of ILC Q-Filter}}{47}{figure.caption.43}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax A.1}{\ignorespaces Static map for different tube length in 100 \% water}}{47}{figure.caption.40}
-\contentsline {figure}{\numberline {\relax A.2}{\ignorespaces Static map for different tube length in 80 \% water 20 \% glycerin solution}}{48}{figure.caption.41}
-\contentsline {figure}{\numberline {\relax A.3}{\ignorespaces Static map for different tube length in 40 \% water 60 \% glycerin solution}}{48}{figure.caption.42}
-\contentsline {figure}{\numberline {\relax A.4}{\ignorespaces Static map for varying liquid solutions with $10\tmspace +\thinmuskip {.1667em}cm$ tube length}}{49}{figure.caption.43}
-\contentsline {figure}{\numberline {\relax A.5}{\ignorespaces Static map for varying liquid solutions with $5\tmspace +\thinmuskip {.1667em}cm$ tube length}}{49}{figure.caption.44}
-\contentsline {figure}{\numberline {\relax A.6}{\ignorespaces Test measurement for PI controller tuned according to Chien Hrones Reswick}}{50}{figure.caption.45}
-\contentsline {figure}{\numberline {\relax A.7}{\ignorespaces Test measurement for PI controller tuned according to Ziegler Nichols}}{50}{figure.caption.46}
-\contentsline {figure}{\numberline {\relax A.8}{\ignorespaces Test measurement for PI controller tuned according to Ziegler Nichols at $\Delta {p}=40\tmspace +\thinmuskip {.1667em}mmHg$}}{51}{figure.caption.47}
+\contentsline {figure}{\numberline {\relax A.1}{\ignorespaces Static map for different tube length in 100 \% water}}{51}{figure.caption.44}
+\contentsline {figure}{\numberline {\relax A.2}{\ignorespaces Static map for different tube length in 80 \% water 20 \% glycerin solution}}{52}{figure.caption.45}
+\contentsline {figure}{\numberline {\relax A.3}{\ignorespaces Static map for different tube length in 40 \% water 60 \% glycerin solution}}{52}{figure.caption.46}
+\contentsline {figure}{\numberline {\relax A.4}{\ignorespaces Static map for varying liquid solutions with $10\tmspace +\thinmuskip {.1667em}cm$ tube length}}{53}{figure.caption.47}
+\contentsline {figure}{\numberline {\relax A.5}{\ignorespaces Static map for varying liquid solutions with $5\tmspace +\thinmuskip {.1667em}cm$ tube length}}{53}{figure.caption.48}
+\contentsline {figure}{\numberline {\relax A.6}{\ignorespaces Test measurement for PI controller tuned according to Chien Hrones Reswick}}{54}{figure.caption.49}
+\contentsline {figure}{\numberline {\relax A.7}{\ignorespaces Test measurement for PI controller tuned according to Ziegler Nichols}}{54}{figure.caption.50}
+\contentsline {figure}{\numberline {\relax A.8}{\ignorespaces Test measurement for PI controller tuned according to Ziegler Nichols at $\Delta {p}=40\tmspace +\thinmuskip {.1667em}mmHg$}}{55}{figure.caption.51}
 \addvspace {10\p@ }
