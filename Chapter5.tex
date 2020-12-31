@@ -82,7 +82,7 @@ For each differential pressure level three consecutive steps up and down through
   {\includegraphics[width=0.5\textwidth]{images/chapt_5/error_PI_zn.pdf}\label{fig:PI_error_a}}
   \subfloat[]
   {\includegraphics[width=0.5\textwidth]{images/chapt_5/error_PI_chr.pdf}\label{fig:PI_error_b}}
-  \caption[Controll error for PI Controllers]{Controll error for PI controllers tuned according to (a) Ziegler Nichols, (b) Chien Hrones Reswick}
+  \caption[Control error for PI Controllers]{Control error for PI controllers tuned according to (a) Ziegler Nichols, (b) Chien Hrones Reswick}
   \label{fig:PI_error}
 \end{figure}
 \\Throughout this work, for evaluation of controller performance the root mean square error (RMSE), according to \cite{RMSE}, defined as
@@ -138,7 +138,7 @@ The Q-Filter is implemented as a $2^{nd}$-order butterworth filter, with samplin
 \end{figure}
 \subsection{Evaluation}
 As mentioned above, various cut off frequencies for the Q-Filter of the ILC are tested with the aim of optimizing the ILC's performance and robustness.  \\The test signal for this purpose, is given by repeatedly presenting the reference signal from \figurename~\ref{fig:ref_signal_ILC3} to the system over a duration of $600\,s$. During the first $60\,s$ exclusively PI control is activated. By this, stable system performance at the beginning of ILC control can be ensured. Once the $60\,s$ are up, the trigger signal will set off indications for beginnings of new iterations. From this point, ILC and PI controller are working simultaneously. During the complete test measurement differential pressure is set to $\Delta{p}=40\,mmHg$. Measurements with this setup are performed for cut off frequencies $f_{c}=20\,Hz$, $f_{c}=25\,Hz$, $f_{c}=8\,Hz$ and $f_{c}=34\,Hz$.
-\\\figurename~\ref{fig:pi_to_ilc} exemplifies a sequence of the measurement performed for the Q-Filter set to a cut off frequency of $f_c=20\,Hz$. The segment shows the transition from exclusive PI control to the parallel control structure of PI control and ILC. The upper graph depicts the measured differential pressure at the MCL. The spikes in this curve occur due to varying flow through the blood pump resulting in changing volumes inside the pressure chambers. The graph in the middle represents the rotational speed values for the acuating varibale $v_{act}$ and the actual velocity of the pump's rotor $v_{vad}$.
+\\\figurename~\ref{fig:pi_to_ilc} exemplifies a sequence of the measurement performed for the Q-Filter set to a cut off frequency of $f_c=20\,Hz$. The segment shows the transition from exclusive PI control to the parallel control structure of PI control and ILC. The upper graph depicts the measured differential pressure at the MCL. The spikes in this curve occur due to varying flow through the blood pump resulting in changing volumes inside the pressure chambers. The middle graph represents the rotational speed values for the actuating variable $v_{act}$ and the actual velocity of the pump's rotor $v_{vad}$.
 
 \begin{figure}[ht]
   \centering
@@ -218,15 +218,15 @@ As a first reference, the flow is set to a constant value of $q_{ref}=5\,l/min$.
   {\includegraphics[width=0.5\textwidth]{images/chapt_5/ILC/ref_sine.pdf}\label{fig:ref_sine}}
   \subfloat[]
   {\includegraphics[width=0.5\textwidth]{images/chapt_5/ILC/ref_triang.pdf}\label{fig:ref_triang}}
-  \caption[Controll error for PI Controllers]{Controll error for PI controllers tuned according to (a) Ziegler Nichols, (b) Chien Hrones Reswick}
+  \caption[Control error for PI Controllers]{Control error for PI controllers tuned according to (a) Ziegler Nichols, (b) Chien Hrones Reswick}
   \label{fig:ref_signals}
 \end{figure}
 The third reference trajectory is given in form of a a triangular signal. As for the sinusoidal signal, the maximum value is set to $q_{ref}=5\,l/min$ and the minimum to $3\, l/min$. Again the full signal length is set to $1\,s$ to match a $60\,bpm$ heart rate. \figurename~\ref{fig:ref_triang} depicts one iterations of the reference trajectory.
-\\As a last trajectory a step signal similar to the one used in chapter \ref{ILC_1} is chosen. The upper step is set to $q_{ref}=5\,l/min$ and the lower one to $q_{ref}=3\,l/min$. Both are hold for $0.5\,s$. Again the signal is filtered using a $1^{st}$ order butterworth filter with cut off frequency $f_c=20\,Hz$ and sampling frequency $f_s=1000\,Hz$. \figurename~\ref{fig:ref_square} depicts one iteration of the reference.
+\\As a last trajectory a rectangular signal similar to the one used in chapter \ref{ILC_1} is chosen. The upper step is set to $q_{ref}=5\,l/min$ and the lower one to $q_{ref}=3\,l/min$. Both are hold for $0.5\,s$. Again the signal is filtered using a $1^{st}$ order butterworth filter with cut off frequency $f_c=20\,Hz$ and sampling frequency $f_s=1000\,Hz$. \figurename~\ref{fig:ref_square} depicts one iteration of the reference.
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/ref_square.pdf}
-  \caption[Reference step signal.]{Reference step signal.}
+  \includegraphics[width=\textwidth]{images/chapt_5/ILC/ref_square.pdf}
+  \caption[Rectangular reference signal]{Rectangular reference signal.}
   \label{fig:ref_square}
 \end{figure}
 %
@@ -238,77 +238,110 @@ The third reference trajectory is given in form of a a triangular signal. As for
 % \end{figure}
 
 \subsection{Evaluation}
-\begin{figure}[ht]
-  \centering
-  \includegraphics[width=\textwidth]{images/chapt_5/ILC/pi_to_ilc_dist_const_cf1.pdf}
-  \caption[]{Segment of measurement for ILC with disturbance of $HR=60\,bpm$ with $cf_{Lv}=1$ for constant reference flow. Top:  pressure values of the MCL. Middle: actuating variable and measured rotational speed of the VAD. Bottom: targeted flow trajectory and measured flow through the VAD.}
-  \label{fig:ref_triang}
-\end{figure}
+Using the reference trajectories described above, several measurements are performed and evaluated to determine performance of the ILC subjected to repeating disturbances. Measurements were performed for varying levels of contractility of the left ventricle for all reference trajectories. The performance results of the contractility levels are compared to each other. Contractility is decreased in steps of $0.25$ from $cf_{Lv}=1$ representing contractility of a healthy heart to $cf_{LV}=0.25$ correlating to a severe impairment of heart functionality.
+\\During all measurements for the first $120\,s$, exclusively PI control is activated to ensure stable system behavior at the beginning of additional ILC control.
 
+In a first step, measurements are performed using the constant reference flow of $q_{ref}=5\,l/min$. \figurename~\ref{fig:pi_to_ilc_dist_const_cf1} depicts the transition from exclusive PI control \\($115 \-- 120\,s$) to use of the parallel control structure ($120\--130\,s$) for a contractility of $cf_{LV}=1$. It is evident that the PI controller alone is not able to suppress the disturbance's influence on the flow. As soon as ILC control sets in the flow settles further towards the constant reference flow with each ILC iteration.
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/pi_to_ilc_dist_const_cf1.pdf}
+  \caption[Segment of measurement for ILC with disturbance of $HR=60\,bpm$ with $cf_{Lv}=1$ for constant reference flow]{Segment of measurement for ILC with disturbance of $HR=60\,bpm$ with $cf_{Lv}=1$ for constant reference flow. Top:  pressure values of the MCL. Middle: actuating variable and measured rotational speed of the VAD. Bottom: targeted flow trajectory and measured flow through the VAD.}
+  \label{fig:pi_to_ilc_dist_const_cf1}
+\end{figure}
+\\Measurements for all contractility levels are running stable until the end of measurement time is reached at $600\,s$. A comparison of the RMSE values for each iteration is presented in \figurename~\ref{fig:RMSE_dist_const_5_var_cf}.
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=\textwidth]{images/chapt_5/ILC/RMSE_dist_const_5_var_cf.pdf}
+  \includegraphics[width=0.9\textwidth]{images/chapt_5/ILC/RMSE_dist_const_5_var_cf.pdf}
   \caption[RMSE Comparison of ILC at constant reference flow for varying left ventricular contractilities]{Comparison of RMSE values of the ILC for constant reference flow with disturbance of $HR=60\,bpm$ for varying contractility values of the left ventricle.}
-  \label{fig:ref_triang}
+  \label{fig:RMSE_dist_const_5_var_cf}
 \end{figure}
 
-\begin{figure}[ht]
-  \centering
-  \includegraphics[width=\textwidth]{images/chapt_5/ILC/pi_to_ilc_dist_sine_cf1.pdf}
-  \caption[]{Segment of measurement for ILC with disturbance of $HR=60\,bpm$ with $cf_{Lv}=1$ for sinusoidal reference flow. Top:  pressure values of the MCL. Middle: actuating variable and measured rotational speed of the VAD. Bottom: targeted flow trajectory and measured flow through the VAD}
-  \label{fig:ref_triang}
-\end{figure}
 
-\begin{figure}[ht]
+Up to iteration 120, the graph represents the RMSE of the PI controller. For this time, it is evident that with decreasing left ventricular contractility RMSE also decreases from $RMSE_{PI,const,cf_{Lv}=1}\approx 1.2\, l/min$ to $RMSE_{PI,const,cf_{Lv}=0.25}\approx 0.4\, l/min$. This can be explained with the lower influence of pressure changes due to weakened contractility. The RMSE values for all four contractility levels using combined PI and ILC control amount to
+\begin{equation}
+  RMSE_{ILC,const}\approx0.14\,l/min.
+\end{equation}
+It is evident that using the combined control approach results in significantly higher performance in all contractility ranges for a constant reference flow.
+
+The next measurements performed are the ones testing the controller's ability to follow the sinusoidal reference trajectory. The trajectory is placed synchronous to the heart beat. \figurename~\ref{fig:pi_to_ilc_dist_sine_cf1} illustrates the transition phase from PI to combined control for the sinusoidal reference at $cf_{Lv}=1$.
+\begin{figure}[ht!]
   \centering
-  \includegraphics[width=\textwidth]{images/chapt_5/ILC/RMSE_dist_sine_var_cf.pdf}
+  \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/pi_to_ilc_dist_sine_cf1.pdf}
+  \caption[Segment of measurement for ILC with disturbance of $HR=60\,bpm$ with $cf_{Lv}=1$ for sinusoidal reference flow]{Segment of measurement for ILC with disturbance of $HR=60\,bpm$ with $cf_{Lv}=1$ for sinusoidal reference flow. Top:  pressure values of the MCL. Middle: actuating variable and measured rotational speed of the VAD. Bottom: targeted flow trajectory and measured flow through the VAD}
+  \label{fig:pi_to_ilc_dist_sine_cf1}
+\end{figure}
+Similar to the constant reference flow, the PI controller alone is not able to follow the reference trajectory. The combination between PI controller and ILC, however, leads to a clearly recognizable improvement of the following behavior within some iterations.
+The comparison of RMSE values (see \figurename~\ref{fig:RMSE_dist_sine_var_cf}) leads similar conclusions as for the constant reference flow. During the first 120 iterations when only PI control is active RMSE decreases with decreasing contractility of the left ventricle. However, the decrease between contractility values from $cf_{LV}=1$ to $cf_{LV}=0.75$ and $cf_{LV}=0.5$ with $RMSE_{PI,sine,cf_{Lv}=1}\approx 1.85\, l/min$, $RMSE_{PI,sine,cf_{Lv}=0.75}\approx 1.75\, l/min$ and $RMSE_{PI,sine,cf_{Lv}=1}\approx 1.85\, l/min$, are less significant than the reduction of contractility to $cf_{Lv}=0.25$ with $RMSE_{PI,sine,cf_{Lv}=0.25}\approx 0.93\, l/min$.
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.9\textwidth]{images/chapt_5/ILC/RMSE_dist_sine_var_cf.pdf}
   \caption[RMSE Comparison of ILC at sinusoidal reference flow for varying left ventricular contractilities]{Comparison of RMSE values of the ILC for sinusoidal reference flow with disturbance of $HR=60\,bpm$ for varying contractility values of the left ventricle.}
-  \label{fig:ref_triang}
+  \label{fig:RMSE_dist_sine_var_cf}
 \end{figure}
+Performance for the combined control approach is almost equal for all contractility values with
+\begin{equation}
+  RMSE_{ILC,sine}\approx 0.09\, l/min
+\end{equation}
+and RMSE indicates an increased performance in all cases.
 
-\begin{figure}[ht]
+Measurement for the triangular reference trajectory shows slowly increasing instable behavior for left ventricular contractility at $cf_{LV}=1$ and $cf_{LV}=0.75$. \figurename~\ref{fig:pi_to_ilc_dist_triang_cf1}, representing the measurement at $cf_{LV}=1$, shows that from the onset of the ILC, a clear approximation to the reference signal is initially achieved, but the actuating variable $v_{act}$ (middle graph) continues to reach its saturation limits with each iteration. This ultimately leads to a stoppage of the pump.
+\begin{figure}[ht!]
   \centering
-  \includegraphics[width=\textwidth]{images/chapt_5/ILC/pi_to_ilc_dist_triang_cf1.pdf}
-  \caption[]{Measurement for ILC with disturbance of $HR=60\,bpm$ with $cf_{Lv}=1$ for triangular reference flow. Top:  pressure values of the MCL. Middle: actuating variable and measured rotational speed of the VAD. Bottom: targeted flow trajectory and measured flow through the VAD}
-  \label{fig:ref_triang}
+  \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/pi_to_ilc_dist_triang_cf1.pdf}
+  \caption[Measurement for ILC with disturbance of $HR=60\,bpm$ with $cf_{Lv}=1$ for triangular reference flow]{Measurement for ILC with disturbance of $HR=60\,bpm$ with $cf_{Lv}=1$ for triangular reference flow. Top:  pressure values of the MCL. Middle: actuating variable and measured rotational speed of the VAD. Bottom: targeted flow trajectory and measured flow through the VAD}
+  \label{fig:pi_to_ilc_dist_triang_cf1}
 \end{figure}
-
-\begin{figure}[ht]
+\\Measurements for contractility values $cf_{LV}=0.5$ and $cf_{LV}=0.25$ show stable behavior over the complete measurement time of $600\,s$. The transition segment for the measurement at $cf_{LV}=0.5$ shown in \figurename~\ref{fig:pi_to_ilc_dist_triang_cf50} again indicates an improved performance for the ILC.
+\begin{figure}[ht!]
   \centering
-  \includegraphics[width=\textwidth]{images/chapt_5/ILC/pi_to_ilc_dist_triang_cf50.pdf}
+  \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/pi_to_ilc_dist_triang_cf50.pdf}
   \caption[]{Segment of measurement for ILC with disturbance of $HR=60\,bpm$ with $cf_{Lv}=0.5$ for triangular reference flow. Top:  pressure values of the MCL. Middle: actuating variable and measured rotational speed of the VAD. Bottom: targeted flow trajectory and measured flow through the VAD}
-  \label{fig:ref_triang}
+  \label{fig:pi_to_ilc_dist_triang_cf50}
 \end{figure}
-
-\begin{figure}[ht]
+This is endorsed by comparison of the RMSE values as shown in \figurename~\ref{fig:RMSE_dist_triang_var_cf}. While RMSE for the PI controller segments lie at $RMSE_{PI,traing,cf_{Lv}=0.5}\approx 1.9\, l/min$ and $RMSE_{PI,triang,cf_{Lv}=0.25}\approx 1.2\, l/min$, the RMSE for the combined control structure amounts to
+\begin{equation}
+  RMSE_{ILC,triang}\approx 0.11\, l/min.
+\end{equation}
+\begin{figure}[ht!]
   \centering
-  \includegraphics[width=\textwidth]{images/chapt_5/ILC/RMSE_dist_triang_var_cf.pdf}
+  \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/RMSE_dist_triang_var_cf.pdf}
   \caption[RMSE Comparison of ILC at triangular reference flow for varying left ventricular contractilities]{Comparison of RMSE values of the ILC for triangular reference flow with disturbance of $HR=60\,bpm$ for varying contractility values of the left ventricle.}
-  \label{fig:ref_triang}
+  \label{fig:RMSE_dist_triang_var_cf}
 \end{figure}
 
-\begin{figure}[ht]
+The last measurements for analysis of controller performance of the ILC subjected to a repeating disturbance are performed using the rectangular reference trajectory. As in all previous measurements, the exclusive use of the PI controller is not suitable to track the reference. Combined control however, once more shows adjustment to the reference in a few iterations. \figurename~\ref{fig:pi_to_ilc_dist_square_60_cf1} depicts the course of pressure in the aorta and left ventricle, the actuating variable and the rotational speed of the VAD as well as the reference trajectory and the actually achieve flow through the VAD for the transitional segment of the measurement at $cf_{Lv}=1$.
+\begin{figure}[ht!]
   \centering
-  \includegraphics[width=\textwidth]{images/chapt_5/ILC/pi_to_ilc_dist_square_60_cf1.pdf}
-  \caption[]{Segment of measurement for ILC with disturbance of $HR=60\,bpm$ with $cf_{Lv}=1$ for step reference flow. Top:  pressure values of the MCL. Middle: actuating variable and measured rotational speed of the VAD. Bottom: targeted flow trajectory and measured flow through the VAD}
-  \label{fig:ref_triang}
+  \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/pi_to_ilc_dist_square_60_cf1.pdf}
+  \caption[Segment of measurement for ILC with disturbance of $HR=60\,bpm$ with $cf_{Lv}=1$ for rectangular reference flow]{Segment of measurement for ILC with disturbance of $HR=60\,bpm$ with $cf_{Lv}=1$ for rectangular reference flow. Top:  pressure values of the MCL. Middle: actuating variable and measured rotational speed of the VAD. Bottom: targeted flow trajectory and measured flow through the VAD}
+  \label{fig:pi_to_ilc_dist_square_60_cf1}
 \end{figure}
-
-\begin{figure}[ht]
+\\The comparison of RMSE courses for all four left ventricular contractility levels is depicted in \figurename~\ref{fig:RMSE_dist_square_60_var_cf}. Once more, contractility decrease directly influences the performance of the PI controller while the end value for RMSE of the ILC for all contractility levels amounts to
+\begin{equation}
+  RMSE_{ILC,rect}\approx 0.22\,l/min.
+\end{equation}
+\begin{figure}[ht!]
   \centering
-  \includegraphics[width=\textwidth]{images/chapt_5/ILC/RMSE_dist_square_60_var_cf.pdf}
-  \caption[RMSE Comparison of ILC at step reference flow for varying left ventricular contractilities]{Comparison of RMSE values of the ILC for step reference flow with disturbance of $HR=60\,bpm$ for varying contractility values of the left ventricle.}
-  \label{fig:ref_triang}
+  \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/RMSE_dist_square_60_var_cf.pdf}
+  \caption[RMSE Comparison of ILC for a rectangular reference flow for varying left ventricular contractilities]{Comparison of RMSE values of the ILC for rectangular reference flow with disturbance of $HR=60\,bpm$ for varying contractility values of the left ventricle.}
+  \label{fig:RMSE_dist_square_60_var_cf}
 \end{figure}
-
-\begin{figure}[ht]
+\\To prepare measurements considering different disturbances, in addition to measurements considering different contractility values for the left ventricle, measurements are performed at several heart rates for the rectangular reference. Heart rate is defined in four steps of $20\,bpm$ from $HR=40\,bpm$ to $HR=100\,bpm$. All of these measurements show stable behavior throughout the complete measurement time of $500\,s$.
+Looking at \figurename~\ref{fig:RMSE_dist_square_const_var_hr}, it can be concluded that the performance of the PI controller improves only for the slowest heart rate of $HR=40\,bpm$ compared to the rest. Also the results for the RMSE of the ILC control show that the control for a disturbance with $HR=40\,bpm$ with
+\begin{equation}
+  RMSE_{ILC,40bpm}\approx 0.16
+\end{equation}
+succeeds the results for the other three heart rates with
+\begin{equation}
+  RMSE_{ILC,60/80/100bpm}\approx 0.22.
+\end{equation}
+\begin{figure}[ht!]
   \centering
-  \includegraphics[width=\textwidth]{images/chapt_5/ILC/RMSE_dist_square_const_var_hr.pdf}
-  \caption[RMSE Comparison of ILC at step reference flow for varying heart rates]{Comparison of RMSE values of the ILC for constant reference flow with disturbance of $HR=60\,bpm$ with $cf_{Lv}=1$ for varying heart rates.}
-  \label{fig:ref_triang}
+  \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/RMSE_dist_square_const_var_hr.pdf}
+  \caption[RMSE Comparison of ILC at rectangular reference flow for varying heart rates]{Comparison of RMSE values of the ILC for rectangular reference flow with $cf_{Lv}=1$ for varying heart rates.}
+  \label{fig:RMSE_dist_square_const_var_hr}
 \end{figure}
-
-
+\\However, the results indicate that using ILC control is a suitable option for all of these heart rates.
 \section{Iterative Learning Control with varying disturbance}
 
 \subsection{}

@@ -2,8 +2,8 @@
 \contentsline {chapter}{\nonumberline Abstract}{v}{chapter*.1}
 \contentsline {chapter}{Contents}{vii}{chapter*.1}
 \contentsline {chapter}{\nonumberline List of Figures}{ix}{chapter*.3}
-\contentsline {chapter}{\nonumberline List of Tables}{xi}{chapter*.4}
-\contentsline {chapter}{List of Symbols}{xiii}{chapter*.5}
+\contentsline {chapter}{\nonumberline List of Tables}{xiii}{chapter*.4}
+\contentsline {chapter}{List of Symbols}{xv}{chapter*.5}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Motivation and goal}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Thesis structure}{1}{section.1.2}
@@ -34,8 +34,8 @@
 \contentsline {section}{\numberline {5.3}Iterative Learning Control with repeating disturbance}{47}{section.5.3}
 \contentsline {subsection}{\numberline {5.3.1}Reference trajectories}{48}{subsection.5.3.1}
 \contentsline {subsection}{\numberline {5.3.2}Evaluation}{49}{subsection.5.3.2}
-\contentsline {section}{\numberline {5.4}Iterative Learning Control with varying disturbance}{50}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.2}Evaluation}{50}{subsection.5.4.2}
-\contentsline {chapter}{\numberline {6}Conclusion and future work}{55}{chapter.6}
-\contentsline {chapter}{\numberline {A}Appendix}{57}{appendix.A}
-\contentsline {chapter}{\nonumberline Bibliography}{63}{chapter*.64}
+\contentsline {section}{\numberline {5.4}Iterative Learning Control with varying disturbance}{56}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.2}Evaluation}{56}{subsection.5.4.2}
+\contentsline {chapter}{\numberline {6}Conclusion and future work}{57}{chapter.6}
+\contentsline {chapter}{\numberline {A}Appendix}{59}{appendix.A}
+\contentsline {chapter}{\nonumberline Bibliography}{65}{chapter*.64}
