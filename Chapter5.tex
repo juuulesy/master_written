@@ -205,24 +205,31 @@ Testing of the ILC subjected to repeating disturbances is performed for several 
 
 As a first reference, the flow is set to a constant value of $q_{ref}=5\,l/min$. By this, the controller's ability to balance out the pressure fluctuations during a heart beat is tested.
 \\The second signal, which is used as a reference trajectory, is a sinusoidal signal that oscillates around a value of $4\, l/min$, has a maximum value of $5\, l/min$ and a minimum value of $3\, l/min$. One iteration of this signal is set to $1\,s$, matching a $60\,bpm$ heart rate. The signal course is depicted in \figurename~\ref{fig:ref_sine}.
-% \begin{figure}[ht]
-%   \centering
-%   \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/ref_sine.pdf}
-%   \caption[Sinusoidal reference signal]{Sinusoidal reference signal.}
-%   \label{fig:ref_sine}
-% \end{figure}
-
 \begin{figure}[ht]
   \centering
-  \subfloat[]
-  {\includegraphics[width=0.5\textwidth]{images/chapt_5/ILC/ref_sine.pdf}\label{fig:ref_sine}}
-  \subfloat[]
-  {\includegraphics[width=0.5\textwidth]{images/chapt_5/ILC/ref_triang.pdf}\label{fig:ref_triang}}
-  \caption[Control error for PI Controllers]{Control error for PI controllers tuned according to (a) Ziegler Nichols, (b) Chien Hrones Reswick}
-  \label{fig:ref_signals}
+  \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/ref_sine.pdf}
+  \caption[Sinusoidal reference signal]{Sinusoidal reference signal.}
+  \label{fig:ref_sine}
 \end{figure}
+
+% \begin{figure}[ht]
+%   \centering
+%   \subfloat[]
+%   {\includegraphics[width=0.5\textwidth]{images/chapt_5/ILC/ref_sine.pdf}\label{fig:ref_sine}}
+%   \subfloat[]
+%   {\includegraphics[width=0.5\textwidth]{images/chapt_5/ILC/ref_triang.pdf}\label{fig:ref_triang}}
+%   \caption[Control error for PI Controllers]{Control error for PI controllers tuned according to (a) Ziegler Nichols, (b) Chien Hrones Reswick}
+%   \label{fig:ref_signals}
+% \end{figure}
 The third reference trajectory is given in form of a a triangular signal. As for the sinusoidal signal, the maximum value is set to $q_{ref}=5\,l/min$ and the minimum to $3\, l/min$. Again the full signal length is set to $1\,s$ to match a $60\,bpm$ heart rate. \figurename~\ref{fig:ref_triang} depicts one iterations of the reference trajectory.
-\\As a last trajectory a rectangular signal similar to the one used in chapter \ref{ILC_1} is chosen. The upper step is set to $q_{ref}=5\,l/min$ and the lower one to $q_{ref}=3\,l/min$. Both are hold for $0.5\,s$. Again the signal is filtered using a $1^{st}$ order butterworth filter with cut off frequency $f_c=20\,Hz$ and sampling frequency $f_s=1000\,Hz$. \figurename~\ref{fig:ref_square} depicts one iteration of the reference.
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/ref_triang.pdf}
+  \caption[Triangular reference signal]{Triangular reference signal.}
+  \label{fig:ref_triang}
+\end{figure}
+\\As a last trajectory a rectangular signal similar to the one used in chapter \ref{ILC_1} is chosen. The upper step is set to $q_{ref}=5\,l/min$ and the lower one to $q_{ref}=3\,l/min$. Both are hold for $0.5\,s$. Again the signal is filtered using a $1^{st}$ order butterworth filter with cut off frequency $f_c=20\,Hz$ and sampling frequency $f_s=1000\,Hz$.
+\\\figurename~\ref{fig:ref_square} depicts one iteration of the reference.
 \begin{figure}[ht]
   \centering
   \includegraphics[width=\textwidth]{images/chapt_5/ILC/ref_square.pdf}
@@ -230,12 +237,7 @@ The third reference trajectory is given in form of a a triangular signal. As for
   \label{fig:ref_square}
 \end{figure}
 %
-% \begin{figure}[ht]
-%   \centering
-%   \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/ref_triang.pdf}
-%   \caption[Triangular reference signal]{Triangular reference signal.}
-%   \label{fig:ref_triang}
-% \end{figure}
+
 
 \subsection{Evaluation}
 Using the reference trajectories described above, several measurements are performed and evaluated to determine performance of the ILC subjected to repeating disturbances. Measurements were performed for varying levels of contractility of the left ventricle for all reference trajectories. The performance results of the contractility levels are compared to each other. Contractility is decreased in steps of $0.25$ from $cf_{Lv}=1$ representing contractility of a healthy heart to $cf_{LV}=0.25$ correlating to a severe impairment of heart functionality.
@@ -298,7 +300,7 @@ Measurement for the triangular reference trajectory shows slowly increasing inst
   \caption[]{Segment of measurement for ILC with disturbance of $HR=60\,bpm$ with $cf_{Lv}=0.5$ for triangular reference flow. Top:  pressure values of the MCL. Middle: actuating variable and measured rotational speed of the VAD. Bottom: targeted flow trajectory and measured flow through the VAD}
   \label{fig:pi_to_ilc_dist_triang_cf50}
 \end{figure}
-This is endorsed by comparison of the RMSE values as shown in \figurename~\ref{fig:RMSE_dist_triang_var_cf}. While RMSE for the PI controller segments lie at $RMSE_{PI,traing,cf_{Lv}=0.5}\approx 1.9\, l/min$ and $RMSE_{PI,triang,cf_{Lv}=0.25}\approx 1.2\, l/min$, the RMSE for the combined control structure amounts to
+This is endorsed by comparison of the RMSE values as shown in \figurename~\ref{fig:RMSE_dist_triang_var_cf}. While RMSE for the PI controller segments lie at $RMSE_{PI,triang,cf_{Lv}=0.5}\approx 1.9\, l/min$ and $RMSE_{PI,triang,cf_{Lv}=0.25}\approx 1.2\, l/min$, the RMSE for the combined control structure amounts to
 \begin{equation}
   RMSE_{ILC,triang}\approx 0.11\, l/min.
 \end{equation}
@@ -343,7 +345,47 @@ succeeds the results for the other three heart rates with
 \end{figure}
 \\However, the results indicate that using ILC control is a suitable option for all of these heart rates.
 \section{Iterative Learning Control with varying disturbance}
+Due to the fact that a person's heartbeat does not always occur at a uniform heart rate, but is subject to fluctuations, the ILC is tested for use in suppressing varying disturbances.
 
-\subsection{}
+\subsection{Design and Implementation}
+As the standard P-type ILC is not set up for use under the influence of non repeating disturbances some changes have to be implemented.
+\\To perform the tests under the influence of changing disturbances, an additional function programmed in Matlab is added to the Simulink model. This allows a constant variation of the heart rate. The function is designed in such a way that by receiving the trigger signal of a new heartbeat, a new heart rate is determined and passed on to the mock circulatory loop and the ILC. In addition to the trigger signal, the function has three more inputs in the form of an upper and lower limit of the heart rate and a step size for a variation of the heart rate. These variables can be set via ControlDesk before starting the measurement.
+Starting at the lower limit, the heart rate is increased by the defined step size with each heartbeat until the upper limit of the heart rate is reached. Then, with each heartbeat, the heart rate is decreased by the step size until the lower limit is reached. This is repeated until the measurement is stopped. An example of this sequence with a lower limit of $60\, bpm$, a step size of $1\, bpm$ and an upper limit of $100\, bpm$ is shown in \figurename~\ref{fig:hr_increase}.
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/hr_increase.pdf}
+  \caption[Illustration of HR change]{Illustration of HR change.}
+  \label{fig:hr_increase}
+\end{figure}
+
+
+Since the variation of the heart rate leads to changing iteration duration an additional preprocessing step is implemented within the ILC function. This introduces a functionality which allows to resample the stored data of the previous iteration and adapt it to the duration of the current iteration. This process is performed after the data filtering step of the ILC, before the data is output to the control loop.
+\\To adjust the resampling of the data to the length of the iterations knowledge of the heart rates is required. Within the tests at the MCL this requirement is fulfilled. For an application on the patient, an additional use of an ECG would be necessary.
+The resampling function calculates the iteration length according to
+\begin{equation}
+  it\_len = \lfloor\frac{60}{HR}\cdot1000\rfloor
+\end{equation}
+with $HR$ being the heart rate. The duration of the last iteration is stored in the variable $it\_len\_prev$. Using this variable and the current iteration length an index factor is calculated to
+\begin{equation}
+  idx = \frac{it\_len\_prev}{it\_len}.
+\end{equation}
+This factor is required to determine the indices of the stored actuating variable values which are to be used to calculate the new values.
+In the next step, the lengths of the last and current iteration are compared. In case the iteration times correspond to each other, the stored data are used unchanged for the output to the control loop
+\begin{equation}
+  \mathbf{u}_{j,ILC}(i) = \mathbf{u}_{j,ILC,prev}(i)
+\end{equation} for all entries $i$. $\mathbf{u}_{j,ILC,prev}$ corresponds to the filtered data stored the actuating variable memory during the last iteration while $\mathbf{u}_{j,ILC}$ represents the data output during the current iteration.
+\\Calculation steps for different iteration durations differ only for the first entry. In case the current iteration length is shorter than the last ($it\_len<it\_len\_prev$)
+\begin{equation}
+  \mathbf{u}_{j,ILC}(1) = \mathbf{u}_{j,ILC,prev}(1)
+\end{equation} is always valid for the first entry of the actuating variable.
+A weighting factor is required for all other entries $i$ of the actuating variable vector to determine resampled data. This is calculated as
+\begin{equation}
+  weight= i \cdot idx - \lfloor i \cdot idx\rfloor.
+\end{equation}
+The value for the current entry $i$ is than determined as
+\begin{equation}
+  \mathbf{u}_{j,ILC}(i) = (1-weight) \cdot \mathbf{u}_{j,ILC,prev}(\lfloor i \cdot idx\rfloor) + weight\cdot \mathbf{u}_{j,ILC,prev}(\lceil i \cdot idx\rceil).
+\end{equation}
+By using this calculation, the data from the previous iteration is compressed or stretched to the current iteration length accordingly. 
 
 \subsection{Evaluation}
