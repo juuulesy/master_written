@@ -200,7 +200,7 @@ The ILC implemented in the previous section was tested and optimized under ideal
 
 Initially, only repeating disturbances are taken into account as the standard P-type ILC used is only setup to compensate these.
 The MCL will be used to introduce the setup to a disturbance in form of heart beats at a constant heart rate. Including the influence of the heart beat as a disturbance requires changing the trigger signal from a manually programmed one to using the start of each heart beat as the trigger of new iterations.
-\subsection{Reference trajectories}
+\subsection{Reference trajectories}\label{ref_traject}
 Testing of the ILC subjected to repeating disturbances is performed for several reference flow trajectories. These are generated using Matlab and are selectable during runtime via ControlDesk through the use of an indicator variable.
 
 As a first reference, the flow is set to a constant value of $q_{ref}=5\,l/min$. By this, the controller's ability to balance out the pressure fluctuations during a heart beat is tested.
@@ -386,6 +386,126 @@ The value for the current entry $i$ is than determined as
 \begin{equation}
   \mathbf{u}_{j,ILC}(i) = (1-weight) \cdot \mathbf{u}_{j,ILC,prev}(\lfloor i \cdot idx\rfloor) + weight\cdot \mathbf{u}_{j,ILC,prev}(\lceil i \cdot idx\rceil).
 \end{equation}
-By using this calculation, the data from the previous iteration is compressed or stretched to the current iteration length accordingly. 
+By using this calculation, the data from the previous iteration is compressed or stretched to the current iteration length accordingly.
 
 \subsection{Evaluation}
+In order to determine whether resampling of data improves the ILC performance under varying disturbances, two sets of tests are performed. One without resampling the data under variable disturbances and one using the resampling function described above. The results of the tests are compared with each other.
+The reference trajectories described in section \ref{ref_traject} are used to perform the measurements. All measurements considered here are performed assuming a left ventricular contractility of $cf_{LV}=1$.
+
+
+At first, a constant reference flow of $4\,l/min$ is presented to the system. \figurename~\ref{fig:ilc_var_dist_unfix_const} depicts a segment of the measurement without resampling of the actuating variable data representing the transition form exclusive PI control to the combined control approach at $120\,s$. At about $152\,s$ the pump stops due to the steadily increasing instable behavior of the actuating variable.
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/ilc_var_dist_unfix_const.pdf}
+  \caption[Segment of measurement for ILC with varying disturbance with $cf_{Lv}=1$ for constant reference flow without data resampling]{Segment of measurement for ILC with varying disturbance with $cf_{Lv}=1$ for constant reference flow without data resampling. Top:  pressure values of the MCL. Middle: actuating variable and measured rotational speed of the VAD. Bottom: targeted flow trajectory and measured flow through the VAD}
+  \label{fig:ilc_var_dist_unfix_const}
+\end{figure}
+As can be seen in \figurename~\ref{fig:ilc_var_dist_fix_const}, similar behavior is observed for the measurement with the resampled actuating variable data.
+However, looking at the lower graphs of the two figures, it can be seen that for the unchanged actuating variable data in \figurename~\ref{fig:ilc_var_dist_unfix_const} the measured flow $q_{vad}$ first approaches the reference, but then moves further away from it again, while the flow through the VAD for the measurement with resampling of the actuating variable data in \figurename~\ref{fig:ilc_var_dist_fix_const} continuously approaches the reference.
+\\This suggests a higher performance of the ILC using the resampling functionality.
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/ilc_var_dist_fix_const.pdf}
+  \caption[Segment of measurement for ILC with varying disturbance with $cf_{Lv}=1$ for constant reference flow with data resampling]{Segment of measurement for ILC with varying disturbance with $cf_{Lv}=1$ for constant reference flow with data resampling. Top:  pressure values of the MCL. Middle: actuating variable and measured rotational speed of the VAD. Bottom: targeted flow trajectory and measured flow through the VAD}
+  \label{fig:ilc_var_dist_fix_const}
+\end{figure}
+This assumption can be confirmed when comparing the RMSE values of the two measurements.
+While at the beginning of the combined control both measurements decrease to an average error value of
+\begin{equation}
+  RMSE_{const,low}=RMSE_{resampled,const}\approx0.05\,l/min
+\end{equation}
+ the value of the measurement without resampling the data afterwards increases continuously to a value of
+\begin{equation}
+  RMSE_{const,high}\approx1.13\,l/min.
+\end{equation}
+The value of the measurement with resampled data remains at about $0.05\,l/min$. Thus, for a constant reference flow, a significant improvement in performance can be achieved by resampling the data of the actuating variable before the output to the control loop.
+\figurename~\ref{fig:RMSE_ilc_var_dist_comp_const} depicts a graphical comparison of the RMSE courses of the two measurements.
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/RMSE_ilc_var_dist_comp_const.pdf}
+  \caption[Comparison of RMSE values for ILC measurement using a constant reference flow for unchanged and resampled data]{Comparison of RMSE values for ILC measurement using a constant reference flow for unchanged and resampled data.}
+  \label{fig:RMSE_ilc_var_dist_comp_const}
+\end{figure}
+
+
+The second set of measurements is performed using the sinusoidal reference signal. Other than for the constant reference flow for which both the unchanged ILC and the resampling measurement result in a pump failure after approximately $155\,s$, the measurements following a sinusoidal trajectory run stable over the full measurement time of $600\,s$.
+Looking at the graphical comparison of the RMSE values of the two measurements, which is shown in \figurename~\ref{fig:RMSE_ilc_var_dist_comp_sine}, significantly lower error values can be seen for the complete measurement period in the measurement using the resampling functionality. For this, the RMSE is about
+\begin{equation}
+RMSE_{resampled,sine}\approx0.3\,l/min
+\end{equation}
+from the onset of the ILC. For the measurement with the standard P-type ILC, permanent fluctuations of the RMSE between
+\begin{equation}
+ RMSE_{sine,low}\approx0.3\,l/min
+\end{equation}
+and
+\begin{equation}
+ RMSE_{sine,high}\approx0.9\,l/min
+\end{equation}
+can be seen.
+Thus, an increased performance of the revised ILC can also be concluded for this reference trajectory.
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/RMSE_ilc_var_dist_comp_sine.pdf}
+  \caption[Comparison of RMSE values for ILC measurement using a sinusoidal reference flow for unchanged and resampled data]{Comparison of RMSE values for ILC measurement using a sinusoidal reference flow for unchanged and resampled data.}
+  \label{fig:RMSE_ilc_var_dist_comp_sine}
+\end{figure}
+
+The measurements using the triangular reference trajectory show very similar system behavior to those using the constant reference flow.
+Both when using the standard ILC and the revised ILC, the pump stops due to oscillating system behavior. This occurs slightly earlier for the measurement using the revised ILC than for the standard ILC. However, when comparing the RMSE values in \figurename~\ref{fig:RMSE_ilc_var_dist_comp_triang} it is clear that the performance of the revised ILC exceeds that of the unmodified ILC. While the revised ILC has average error values of about
+\begin{equation}
+  RMSE_{resampled,triang}\approx0.38\,l/min,
+\end{equation}
+the value for the standard ILC initially drops to about
+\begin{equation}
+  RMSE_{triang,low}\approx0.46\,l/min
+\end{equation}
+but then rises continuously to a value of
+\begin{equation}
+  RMSE_{triang,high}\approx0.79\,l/min.
+\end{equation}
+Thus, even though the pump stops earlier, the use of the revised ILC would be advisable.
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/RMSE_ilc_var_dist_comp_triang.pdf}
+  \caption[Comparison of RMSE values for ILC measurement using a triangular reference flow for unchanged and resampled data]{Comparison of RMSE values for ILC measurement using a triangular reference flow for unchanged and resampled data.}
+  \label{fig:RMSE_ilc_var_dist_comp_triang}
+\end{figure}
+
+
+Lastly, the tests of the two ILC species were performed using the rectangular reference trajectory.  As with the constant reference flow and the triangular trajectory, the actuating variable again oscillates, resulting in the pump rotor stopping.
+Unlike the previous measurements, however, the evaluation of the error values for both measurements is similar in this case. At the beginning of the combined control, the averaged error values for both tests drop sharply compared to the PI control. However, a fluctuation of the average error values can be observed for both measurements. This occurs somewhat more slowly for the revised ILC than for the standard ILC. Nevertheless, both measurements have best values of about
+\begin{equation}
+  RMSE_{resampled,rect,low}=RMSE_{rect,low}\approx0.4\,l/min,
+\end{equation}
+but in the worst case they are both about
+\begin{equation}
+  RMSE_{resampled,rect,high}=RMSE_{rect,high}\approx0.77\,l/min.
+\end{equation}
+A graphical comparison is presented in \figurename~\ref{fig:RMSE_ilc_var_dist_comp_rect}.
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/RMSE_ilc_var_dist_comp_rect.pdf}
+  \caption[Comparison of RMSE values for ILC measurement using a rectangular reference flow for unchanged and resampled data]{Comparison of RMSE values for ILC measurement using a rectangular reference flow for unchanged and resampled data.}
+  \label{fig:RMSE_ilc_var_dist_comp_rect}
+\end{figure}
+Due to this perception, no clear statement can be made for the reference tracking of this trajectory as to which of the ILC approaches is more suited.
+\\Graphical representations of the transitional segments for the performed measurements using sinusoidal, triangular and rectangular reference trajectories can be found in \figurename~\ref{fig:anh_9} to \figurename~\ref{fig:anh_14} of the appendix.
+
+\tablename~\ref{tab:compare_ILC} depicts an overview on the worst case RMSE values of the standard ILC and the RMSE values for the revised ILC for all reference trajectories. It furthermore gives the difference between these error values as $\Delta{RMSE}$.
+\begin{table}[h]
+  \centering
+  \begin{tabular}{c|c|c|c}
+    \toprule
+     reference trajectory & $RMSE_{std\_ILC,high}$ & $RMSE_{resampled}$ & $\Delta{RMSE}$\\
+    \midrule
+    constant flow & $1.13\,l/min$ & $0.05\,l/min$ & $1.08\,l/min$ \\
+    sinusoidal & $0.9\,l/min$ & $0.3\,l/min$ & $0.6\,l/min$ \\
+    triangular & $0.79\,l/min$ & $0.38\,l/min$ & $0.41\,l/min$ \\
+    rectangular & $0.77\,l/min$ & $0.77\,l/min$ & - \\
+    \bottomrule
+\end{tabular}
+  \caption[RMSE values for different reference trajectories of standard ILC and revised ILC]{RMSE values for different reference trajectories of standard ILC and revised ILC.}
+  \label{tab:compare_ILC}
+\end{table}
+\\The highest improvement is achieved for the constant reference flow with $\Delta{RMSE}=1.08\,l/min$. Also for constant reference flow the highest overall performance is achieved with an RMSE of only $0.05\,l/min$. This can be explained by the fact that the length of the reference signal does not change for a constant flow, while this is the case for all other signals.
