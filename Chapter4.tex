@@ -38,9 +38,9 @@ For all measurements and tests performed during this thesis, a hardware in the l
   \caption[HiL test bench]{Structure of the HiL human circulatory system simulator based on \cite{MCL}.}
   \label{fig:mock_loop}
 \end{figure}
-\\The structure of the mock circulatory loop (MCL) is depicted in \figurename~\ref{fig:mock_loop}. The boxes marked $V_{1}$ and $V_{2}$ are pressure compartments simulating the volume of the left ventricle and the aorta, respectively. Therefore, the pressure values of these compartments, referred to as $p_{1}$ and $p_{2}$, can be physiologically compared to the pressure values of the left ventricle and aorta. The MCL is actuated by three gear pumps ($GP_{1}$, $GP_{12}$ and $GP_{2}$) and two voice coil actuators ($VCA_{1}$ and $VCA_{2}$). The Sputnik VAD is connected to the pressure chambers in parallel, enabling tests similar to real use cases. This way, the VAD can be subjected to comparable pressure changes in the differential pressure between the aorta and ventricle as would be the case when used on the beating heart.
+\\The structure of the mock circulatory loop (MCL) is depicted in \figurename~\ref{fig:mock_loop}. The boxes marked $V_{\mathrm{1}}$ and $V_{\mathrm{2}}$ are pressure compartments simulating the volume of the left ventricle and the aorta, respectively. Therefore, the pressure values of these compartments, referred to as $p_{\mathrm{1}}$ and $p_{\mathrm{2}}$, can be physiologically compared to the pressure values of the left ventricle and aorta. The MCL is actuated by three gear pumps ($GP_{\mathrm{1}}$, $GP_{\mathrm{12}}$ and $GP_{\mathrm{2}}$) and two voice coil actuators ($VCA_{\mathrm{1}}$ and $VCA_{\mathrm{2}}$). The Sputnik VAD is connected to the pressure chambers in parallel, enabling tests similar to real use cases. This way, the VAD can be subjected to comparable pressure changes in the differential pressure between the aorta and ventricle as would be the case when used on the beating heart.
 \\By controlling the MCL through a dSpace system (DS1103), pressure in the chambers can be adjusted in real time to simulate different cardiac dysfunctions. The dSpace system furthermore enables recording of reference signals presented to the MCL, as well as real time measurements.
-\\As the Sputnik VAD is not usually included into the MCL setup, flow through the device can not be measured without further equipment. For this purpose the Transonic Systems Inc. T110 flowmeter is included in the setup. The flow sensor measurement is based on ultrasonic technology. The sensor probe, as presented in \figurename~\ref{fig:flow_meter_tube}, is mounted onto the tube leading from the pressure chamber representing the left ventricle to the VAD. The flowmeter too is connected to the dSpace system, enabling recording of the measured flow values. In \figurename~\ref{fig:mock_loop} the measurement of the device is represented by $\dot{V}_{DUT}$.
+\\As the Sputnik VAD is not usually included into the MCL setup, flow through the device can not be measured without further equipment. For this purpose the Transonic Systems Inc. T110 flowmeter is included in the setup. The flow sensor measurement is based on ultrasonic technology. The sensor probe, as presented in \figurename~\ref{fig:flow_meter_tube}, is mounted onto the tube leading from the pressure chamber representing the left ventricle to the VAD. The flowmeter too is connected to the dSpace system, enabling recording of the measured flow values. In \figurename~\ref{fig:mock_loop} the measurement of the device is represented by $\dot{V}_{\mathrm{DUT}}$.
 \begin{figure}[ht]
   \centering
   \includegraphics[width=0.8\textwidth]{images/chapt_4/flow_meter.pdf}
@@ -53,11 +53,11 @@ For all measurements and tests performed during this thesis, a hardware in the l
 \section{System Identification}
 For the implementation of flow control algorithms for the Sputnik VAD, knowledge of the system behavior is required. In order to gain this information, various tests have been performed to determine a static map for the system. For this purpose, a multiple-input-single-output (MISO) system with input variables differential pressure $\Delta{p}$ in $mmHg$, rotational speed $v$ in $rpm$ and output variable blood flow $q$ in $l/min$ is assumed. The differential pressure is defined as
 \begin{equation}
-  \Delta{p} = p_{ao} - p_{lv} = p_2 - p_1,
+  \Delta{p} = p_{\mathrm{ao}} - p_{\mathrm{lv}} = p_{\mathrm{2}} - p_{\mathrm{1}},
 \end{equation}
-with $p_{ao}$ depicting the pressure of the aorta and $p_{lv}$ corresponding to the left ventricular pressure.
-\\Using the HiL test rig, the differential pressure is increased in steps of $20\, mmHg$ starting at $0\,mmHg$ and ending at $140\,mmHg$. For each differential pressure step, the reference speed of the pump is increased from $4000\, rpm$ in steps of $1000\, rpm$ to $9000\, rpm$. Flow for each reference speed is measured for $5\, s$. In order to eliminate inaccuracies due to transient processes, solely the last quarter of each mesurement stage is considered for the evaluation using Matlab. \figurename~\ref{fig:test_60w40g_long} depicts the signal curves for the measurement described above. The upper graph shows the course of the reference differential pressure ($\Delta{p_{ref}}$) and the differential pressure measured at the HiL test stand ($\Delta{p_{HiL}}$).
-In the middle, the curves of the reference velocity ($v_{ref}$) and the measured velocity of the Sputnik VAD ($v_{vad}$) are shown. The lower graph shows the resulting flow through the blood pump ($q_{vad}$).
+with $p_{\mathrm{ao}}$ depicting the pressure of the aorta and $p_{\mathrm{lv}}$ corresponding to the left ventricular pressure.
+\\Using the HiL test rig, the differential pressure is increased in steps of $20\, mmHg$ starting at $0\,mmHg$ and ending at $140\,mmHg$. For each differential pressure step, the reference speed of the pump is increased from $4000\, rpm$ in steps of $1000\, rpm$ to $9000\, rpm$. Flow for each reference speed is measured for $5\, s$. In order to eliminate inaccuracies due to transient processes, solely the last quarter of each mesurement stage is considered for the evaluation using Matlab. \figurename~\ref{fig:test_60w40g_long} depicts the signal curves for the measurement described above. The upper graph shows the course of the reference differential pressure ($\Delta{p_{\mathrm{ref}}}$) and the differential pressure measured at the HiL test stand ($\Delta{p_{\mathrm{HiL}}}$).
+In the middle, the curves of the reference velocity ($v_{\mathrm{ref}}$) and the measured velocity of the Sputnik VAD ($v_{\mathrm{vad}}$) are shown. The lower graph shows the resulting flow through the blood pump ($q_{\mathrm{vad}}$).
 
 
 \begin{figure}[ht]
@@ -96,16 +96,16 @@ The resulting static map for the chosen final setup of the MCL is depicted in \f
 %% close up von einem 1k Sprung zur Auslegung der Plant im durch 4.7 definitierten positiven Fluss Bereich.
 %% Vergleich des gemessenen Signals mit simuliertem Signal.
 As part of the system identification, the transfer function of the Sputnik VAD is determined. For this purpose, the step response of the pump to a $1000\,rpm$ step in reference speed is analyzed.
-\\Initially, the measured flow values from the static map determination measurement are prepossessed by using a $2^{nd}$-order butterworth filter with a cut-off frequency of $f_c = 5\,Hz$ and sampling frequency $f_s=1000 \, Hz$. For determination of the transfer function, filtered flow for an increase from $v_{ref,low}=5000\,rpm$ to $v_{ref,high}=6000\,rpm$ in reference speed at a differential pressure of $\Delta{p}=40\,mmHg$ is analyzed. The blue line in \figurename~\ref{fig:plant} depicts the filtered flow for this measurement. It is evident that the system's behavior can be approximated by a $PT_1$-element.
- The characteristic parameters of the transfer function according to equation (\ref{eq:tf_pt1}) are represented in \figurename~\ref{fig:plant}. The static gain $k_s$ is determined as
+\\Initially, the measured flow values from the static map determination measurement are prepossessed by using a $2^{nd}$-order butterworth filter with a cut-off frequency of $f_{\mathrm{c}} = 5\,Hz$ and sampling frequency $f_{\mathrm{s}}=1000 \, Hz$. For determination of the transfer function, filtered flow for an increase from $v_{\mathrm{ref,low}}=5000\,rpm$ to $v_{\mathrm{ref,high}}=6000\,rpm$ in reference speed at a differential pressure of $\Delta{p}=40\,mmHg$ is analyzed. The blue line in \figurename~\ref{fig:plant} depicts the filtered flow for this measurement. It is evident that the system's behavior can be approximated by a $PT_1$-element.
+ The characteristic parameters of the transfer function according to equation (\ref{eq:tf_pt1}) are represented in \figurename~\ref{fig:plant}. The static gain $k_{\mathrm{s}}$ is determined as
 \begin{equation}
 %  \begin{split}
-  k_s = \frac{k_{high}-k_{low}}{v_{ref,high}-v_{ref,low}}=0.0018
+  k_{\mathrm{s}} = \frac{k_{\mathrm{high}}-k_{\mathrm{low}}}{v_{\mathrm{ref,high}}-v_{\mathrm{ref,low}}}=0.0018
   %\\ = \frac{2.3008 - 0.4672}{6000 - 5000} = 0.0018.
 %  \end{split}
 \label{eq:k_s_1}
 \end{equation}
-with $k_{high}=2.3008$ and $k_{low}=0.4672$. The time constant $T$, defined as the time span between initialization of the jump and reaching $0.63 \cdot k_s$, is determinded to $T=0.081$.
+with $k_{\mathrm{high}}=2.3008$ and $k_{\mathrm{low}}=0.4672$. The time constant $T$, defined as the time span between initialization of the jump and reaching $0.63 \cdot k_s$, is determinded to $T=0.081$.
 According to equation (\ref{eq:tf_pt1}) the transfer function for the plant results in
 \begin{equation}
     G(s) = \frac{0.0018}{1+0.081s}.
@@ -114,15 +114,15 @@ According to equation (\ref{eq:tf_pt1}) the transfer function for the plant resu
 \begin{figure}[ht!]
   \centering
   \includegraphics[width=\textwidth]{images/chapt_4/plant_generation.pdf}
-  \caption[Transfer function of Sputnik VAD]{Step in flow, triggered by a step in reference speed by $1000\,rpm$ with identification of the variables for determining the transfer function of a $PT_1$ element.}
+  \caption[Transfer function of Sputnik VAD]{Step in flow, triggered by a step in reference speed by $1000\,rpm$ with identification of the variables for determining the transfer function of a $PT_{\mathrm{1}}$ element.}
   \label{fig:plant}
 \end{figure}
-\\In order to gain knowledge on the linearity of the system the same analysis performed for differential pressure at $\Delta{p}=40\,mmHg$ is performed for various differential pressure levels increased in steps of $20\,mmHg$ starting at $\Delta{p}=0\,mmHg$ ending at $\Delta{p}=120\,mmHg$. An overview on the characteristic values $T$, $k_{high}$, $k_{low}$ and $k_s$ is given in \tablename~\ref{tab:linearity}.
+\\In order to gain knowledge on the linearity of the system the same analysis performed for differential pressure at $\Delta{p}=40\,mmHg$ is performed for various differential pressure levels increased in steps of $20\,mmHg$ starting at $\Delta{p}=0\,mmHg$ ending at $\Delta{p}=120\,mmHg$. An overview on the characteristic values $T$, $k_{\mathrm{high}}$, $k_{\mathrm{low}}$ and $k_{\mathrm{s}}$ is given in \tablename~\ref{tab:linearity}.
 \begin{table}[h]
   \centering
   \begin{tabular}{c|c|c|c|c}
     \toprule
-    $\Delta{p} [mmHg]$  & $T [s]$ & $k_{high} [l/min]$ & $k_{low} [l/min]$ & $k_s [l/min]$\\
+    $\Delta{p} [mmHg]$  & $T [s]$ & $k_{\mathrm{high}} [l/min]$ & $k_{\mathrm{low}} [l/min]$ & $k_{\mathrm{s}} [l/min]$\\
     \midrule
     0 & 0.139 & 6.7068 & 5.3303 & 0.0014\\
     20 & 0.104 & 2.877 & 2.0198 & 8.5786$\cdot10^{-4}$\\

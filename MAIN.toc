@@ -38,5 +38,7 @@
 \contentsline {subsection}{\numberline {5.4.1}Design and Implementation}{57}{subsection.5.4.1}
 \contentsline {subsection}{\numberline {5.4.2}Evaluation}{59}{subsection.5.4.2}
 \contentsline {chapter}{\numberline {6}Conclusion and future work}{67}{chapter.6}
+\contentsline {section}{\numberline {6.1}Conclusion}{67}{section.6.1}
+\contentsline {section}{\numberline {6.2}Future work}{68}{section.6.2}
 \contentsline {chapter}{\numberline {A}Appendix}{69}{appendix.A}
 \contentsline {chapter}{\nonumberline Bibliography}{77}{chapter*.80}
