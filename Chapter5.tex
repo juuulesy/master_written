@@ -109,7 +109,7 @@ Comparing these results it is evident that both controllers perform more precise
 Performance of the controller tuned according to Chien Hrones Reswick surpasses the Ziegler Nichols tuned one in both ranges. RMSE values for full range CHR control even indicate a higher performance in comparison to the Ziegler Nichols tuned controller in the range of $\Delta{p}=40\,mmHg$.
 \\ Due to its higher performance, for all following measurements the PI controller tuned in reference to Chien Hrones Reswick is used.
 \section{Iterative Learning Control}\label{ILC_1}
-As shown in \figurename~\ref{fig:pi_contr_chr_40}, the exclusive use of a PI controller for flow control leads to necessity of long measurement times to allow the flow to settle at a new reference value. However, one goal of this thesis is to enable flow control following different reference trajectories which may imply the need for faster reference tracking. By implementing an ILC approach, the necessary reduction of the settling time, by gaining information from error values of the preceding iteration, should be made possible.
+As shown in \figurename~\ref{fig:pi_contr_chr_40}, the exclusive use of a PI controller for flow control leads to necessity of long measurement times to allow the flow to settle at a new reference value. However, one goal of this thesis is to enable flow control following different reference trajectories which may imply the need for faster reference tracking. By implementing an ILC approach, the necessary reduction of settling time, by gaining information from error values of the preceding iteration, should be made possible.
 \subsection{Design and Implementation}
 During this work a P-type ILC is implemented and optimized.
 \\The implementation is based on a parallel architecture as depicted in \figurename~\ref{fig:ILC_parallel}. This leads to the basic learning function for this ILC being represented by
@@ -129,11 +129,11 @@ This expansion results in the learning function being described by
 The Q-Filter is implemented as a $2^{nd}$-order butterworth filter, with sampling frequency $f_s=1000\,Hz$. The cut off frequency $f_c$ is set to several values in order to compare and thus optimize performance and robustness of the iterative learning control system.
 \\An additional part of the implementation is the generation of a repeating reference and a trigger signal. The trigger signal indicates the beginning of each new iteration and thus initiates calculation of the new values $u_{j+1}(k)$ in the ILC block.
 \figurename~\ref{fig:ref_signal_ILC3} depicts three iterations of the reference signal for this ILC.
-\\The signal is created by first generating a square wave signal with the upper stage at $6\, l/min$ and the lower stage at $4\, l/min$. Thus, the signal encloses the average value of $5\, l/min$ of the cardiac output of a healthy heart. The reference values are each held for $0.5\, s$, so that a complete iteration would correspond to a frequency of $60\, beats\, per\, minute\, (bpm)$ when compared to the heart rate. To avoid abrupt transitions in the flow, which could lead to problems on the part of the pump, the reference signal was filtered with a first order Butterworth filter with cut off frequency $f_c=20\,Hz$ and sampling frequency $f_s=1000\,Hz$, resulting in radiused transitions. Afterwards, the signal is shifted by $0.25\, s$ to avoid placing the beginning of the signal at a jump point. The trigger signal is set from 0 to 1 at the beginning of each iteration for the duration of one sample.
+\\The signal is created by first generating a square wave signal with the upper stage at $6\, l/min$ and the lower stage at $4\, l/min$. Thus, the signal encloses the average value of $5\, l/min$ of the cardiac output of a healthy heart. The reference values are each held for $0.5\, s$, so that a complete iteration would correspond to a frequency of $60\, beats\, per\, minute\, (bpm)$ when compared to the heart rate. To avoid abrupt transitions in flow, which could lead to problems on the part of the pump, the reference signal was filtered with a first order Butterworth filter with cut off frequency $f_c=20\,Hz$ and sampling frequency $f_s=1000\,Hz$, resulting in radiused transitions. Afterwards, the signal is shifted by $0.25\, s$ to avoid placing the beginning of the signal at a jump point. The trigger signal is set from 0 to 1 at the beginning of each iteration for the duration of one sample.
 \begin{figure}[ht]
   \centering
   \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/ref_signal_ILC3.pdf}
-  \caption[Smoothed reference signal for ILC tuning.]{Three iterations of smoothed reference signal for ILC tuning.}
+  \caption[Smoothed reference signal for ILC tuning]{Three iterations of smoothed reference signal for ILC tuning.}
   \label{fig:ref_signal_ILC3}
 \end{figure}
 \subsection{Evaluation}
@@ -155,7 +155,7 @@ The bottom graph of \figurename~\ref{fig:pi_to_ilc} depicts the reference flow t
   \label{fig:pi_to_ilc_fc_34}
 \end{figure}
 \\The structure is the same as for \figurename~\ref{fig:pi_to_ilc}. However, in this case, looking at the middle graph it is evident that with each additional ILC iteration the actuation variable $v_{act}$ rises further towards its saturation values $4000\,rpm$ and $9000\,rpm$. This ultimately leads to the pump's rotor to stop, due to abrupt changes in speed and flow at approximately $98\,s$ measurement time.
-\\Behavior of the system for a cut off frequency set to $f_c=25\,Hz$ ,as shown in \figurename~\ref{fig:pi_to_ilc_fc_25}, is similar to behavior with $f_c=34\,Hz$. The oscillatory system behavior again results in the pump's to stop at approximately $96\,s$.
+\\Behavior of the system for a cut off frequency set to $f_c=25\,Hz$ ,as shown in \figurename~\ref{fig:pi_to_ilc_fc_25}, is similar to behavior with $f_c=34\,Hz$. The oscillatory system behavior again results in the pump's rotor to stop at approximately $96\,s$.
 \begin{figure}[ht]
   \centering
   \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/pi_to_ilc_fc_25.pdf}
@@ -171,16 +171,16 @@ It is evident that the curves for $f_c=25\,Hz$ and $f_c=35\,Hz$ show abrupt incr
 \begin{figure}[ht]
   \centering
   \includegraphics[width=\textwidth]{images/chapt_5/ILC/RMSE_compare_ILC3_fc.pdf}
-  \caption[Comparison of RMSE values for different cut off frequency of ILC Q-Filter]{Comparison of RMSE values for different cut off frequency of ILC Q-Filter.}
+  \caption[Comparison of RMSE values for different cut off frequencies of ILC Q-Filter]{Comparison of RMSE values for different cut off frequencies of ILC Q-Filter.}
   \label{fig:RMSE_compare_ILC3_fc}
 \end{figure}
 \\Comparing the RMSE values of the $39^{th}$ iteration of the other two frequencies it is obvious that performance of the ILC with Q-filter cut off frequency at $f_c=20\,Hz$ with
 \begin{equation}
-  RMSE_{f_c=20\,Hz}(39)=0.1984
+  RMSE_{f_c=20\,Hz}(39)=0.1984\,l/min
 \end{equation}
 is higher than for $f_c=8\,Hz$ with
 \begin{equation}
-  RMSE_{f_c=8\,Hz}(39)=0.3951.
+  RMSE_{f_c=8\,Hz}(39)=0.3951\,l/min.
 \end{equation}
 Therefore, the cut off frequency of the Q-Filter in all following measurements will be set to $f_c=20\,Hz$.
 
@@ -221,7 +221,7 @@ As a first reference, the flow is set to a constant value of $q_{ref}=5\,l/min$.
 %   \caption[Control error for PI Controllers]{Control error for PI controllers tuned according to (a) Ziegler Nichols, (b) Chien Hrones Reswick}
 %   \label{fig:ref_signals}
 % \end{figure}
-The third reference trajectory is given in form of a a triangular signal. As for the sinusoidal signal, the maximum value is set to $q_{ref}=5\,l/min$ and the minimum to $3\, l/min$. Again the full signal length is set to $1\,s$ to match a $60\,bpm$ heart rate. \figurename~\ref{fig:ref_triang} depicts one iterations of the reference trajectory.
+The third reference trajectory is given in form of a triangular signal. As for the sinusoidal signal, the maximum value is set to $q_{ref}=5\,l/min$ and the minimum to $3\, l/min$. Again the full signal length is set to $1\,s$ to match a $60\,bpm$ heart rate. \figurename~\ref{fig:ref_triang} depicts one iterations of the reference trajectory.
 \begin{figure}[ht]
   \centering
   \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/ref_triang.pdf}
@@ -240,7 +240,7 @@ The third reference trajectory is given in form of a a triangular signal. As for
 
 
 \subsection{Evaluation}
-Using the reference trajectories described above, several measurements are performed and evaluated to determine performance of the ILC subjected to repeating disturbances. Measurements were performed for varying levels of contractility of the left ventricle for all reference trajectories. The performance results of the contractility levels are compared to each other. Contractility is decreased in steps of $0.25$ from $cf_{Lv}=1$ representing contractility of a healthy heart to $cf_{LV}=0.25$ correlating to a severe impairment of heart functionality.
+Using the reference trajectories described above, several measurements are performed and evaluated to determine performance of the ILC subjected to repeating disturbances. Measurements are performed for varying levels of contractility of the left ventricle for all reference trajectories. The performance results of the contractility levels are compared to each other. Contractility is decreased in steps of $0.25$ from $cf_{Lv}=1$ representing contractility of a healthy heart to $cf_{LV}=0.25$ correlating to a severe impairment of heart functionality.
 \\During all measurements for the first $120\,s$, exclusively PI control is activated to ensure stable system behavior at the beginning of additional ILC control.
 
 In a first step, measurements are performed using the constant reference flow of $q_{ref}=5\,l/min$. \figurename~\ref{fig:pi_to_ilc_dist_const_cf1} depicts the transition from exclusive PI control \\($115 \-- 120\,s$) to use of the parallel control structure ($120\--130\,s$) for a contractility of $cf_{LV}=1$. It is evident that the PI controller alone is not able to suppress the disturbance's influence on the flow. As soon as ILC control sets in the flow settles further towards the constant reference flow with each ILC iteration.
@@ -273,7 +273,7 @@ The next measurements performed are the ones testing the controller's ability to
   \label{fig:pi_to_ilc_dist_sine_cf1}
 \end{figure}
 Similar to the constant reference flow, the PI controller alone is not able to follow the reference trajectory. The combination between PI controller and ILC, however, leads to a clearly recognizable improvement of the following behavior within some iterations.
-The comparison of RMSE values (see \figurename~\ref{fig:RMSE_dist_sine_var_cf}) leads similar conclusions as for the constant reference flow. During the first 120 iterations when only PI control is active RMSE decreases with decreasing contractility of the left ventricle. However, the decrease between contractility values from $cf_{LV}=1$ to $cf_{LV}=0.75$ and $cf_{LV}=0.5$ with $RMSE_{PI,sine,cf_{Lv}=1}\approx 1.85\, l/min$, $RMSE_{PI,sine,cf_{Lv}=0.75}\approx 1.75\, l/min$ and $RMSE_{PI,sine,cf_{Lv}=1}\approx 1.85\, l/min$, are less significant than the reduction of contractility to $cf_{Lv}=0.25$ with $RMSE_{PI,sine,cf_{Lv}=0.25}\approx 0.93\, l/min$.
+The comparison of RMSE values (see \figurename~\ref{fig:RMSE_dist_sine_var_cf}) leads to similar conclusions as for the constant reference flow. During the first 120 iterations when only PI control is active RMSE decreases with decreasing contractility of the left ventricle. However, the decrease between contractility values from $cf_{LV}=1$ to $cf_{LV}=0.75$ and $cf_{LV}=0.5$ with $RMSE_{PI,sine,cf_{Lv}=1}\approx 1.85\, l/min$, $RMSE_{PI,sine,cf_{Lv}=0.75}\approx 1.75\, l/min$ and $RMSE_{PI,sine,cf_{Lv}=1}\approx 1.85\, l/min$, are less significant than the reduction of contractility to $cf_{Lv}=0.25$ with $RMSE_{PI,sine,cf_{Lv}=0.25}\approx 0.93\, l/min$.
 \begin{figure}[ht!]
   \centering
   \includegraphics[width=0.9\textwidth]{images/chapt_5/ILC/RMSE_dist_sine_var_cf.pdf}
@@ -286,7 +286,7 @@ Performance for the combined control approach is almost equal for all contractil
 \end{equation}
 and RMSE indicates an increased performance in all cases.
 
-Measurement for the triangular reference trajectory shows slowly increasing instable behavior for left ventricular contractility at $cf_{LV}=1$ and $cf_{LV}=0.75$. \figurename~\ref{fig:pi_to_ilc_dist_triang_cf1}, representing the measurement at $cf_{LV}=1$, shows that from the onset of the ILC, a clear approximation to the reference signal is initially achieved, but the actuating variable $v_{act}$ (middle graph) continues to reach its saturation limits with each iteration. This ultimately leads to a stoppage of the pump.
+Measurement for the triangular reference trajectory shows slowly oscillating behavior for left ventricular contractility at $cf_{LV}=1$ and $cf_{LV}=0.75$. \figurename~\ref{fig:pi_to_ilc_dist_triang_cf1}, representing the measurement at $cf_{LV}=1$, shows that from the onset of the ILC, initially, a clear approximation to the reference signal is achieved, but the actuating variable $v_{act}$ (middle graph) continues to reach its saturation limits with each iteration. This ultimately leads to a stoppage of the pump.
 \begin{figure}[ht!]
   \centering
   \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/pi_to_ilc_dist_triang_cf1.pdf}
@@ -331,11 +331,11 @@ The last measurements for analysis of controller performance of the ILC subjecte
 \\To prepare measurements considering different disturbances, in addition to measurements considering different contractility values for the left ventricle, measurements are performed at several heart rates for the rectangular reference. Heart rate is defined in four steps of $20\,bpm$ from $HR=40\,bpm$ to $HR=100\,bpm$. All of these measurements show stable behavior throughout the complete measurement time of $500\,s$.
 Looking at \figurename~\ref{fig:RMSE_dist_square_const_var_hr}, it can be concluded that the performance of the PI controller improves only for the slowest heart rate of $HR=40\,bpm$ compared to the rest. Also the results for the RMSE of the ILC control show that the control for a disturbance with $HR=40\,bpm$ with
 \begin{equation}
-  RMSE_{ILC,40bpm}\approx 0.16
+  RMSE_{ILC,40bpm}\approx 0.16\,l/min
 \end{equation}
 succeeds the results for the other three heart rates with
 \begin{equation}
-  RMSE_{ILC,60/80/100bpm}\approx 0.22.
+  RMSE_{ILC,60/80/100bpm}\approx 0.22\,l/min.
 \end{equation}
 \begin{figure}[ht!]
   \centering
@@ -360,7 +360,7 @@ Starting at the lower limit, the heart rate is increased by the defined step siz
 
 
 Since the variation of the heart rate leads to changing iteration duration an additional preprocessing step is implemented within the ILC function. This introduces a functionality which allows to resample the stored data of the previous iteration and adapt it to the duration of the current iteration. This process is performed after the data filtering step of the ILC, before the data is output to the control loop.
-\\To adjust the resampling of the data to the length of the iterations knowledge of the heart rates is required. Within the tests at the MCL this requirement is fulfilled. For an application on the patient, an additional use of an ECG would be necessary.
+\\To adjust resampling of the data to the length of the , knowledge of the heart rates is required. Within the tests at the MCL this requirement is fulfilled. For an application on the patient, an additional use of an ECG would be necessary.
 The resampling function calculates the iteration length according to
 \begin{equation}
   it\_len = \lfloor\frac{60}{HR}\cdot1000\rfloor
@@ -393,7 +393,7 @@ In order to determine whether resampling of data improves the ILC performance un
 The reference trajectories described in section \ref{ref_traject} are used to perform the measurements. All measurements considered here are performed assuming a left ventricular contractility of $cf_{LV}=1$.
 
 
-At first, a constant reference flow of $4\,l/min$ is presented to the system. \figurename~\ref{fig:ilc_var_dist_unfix_const} depicts a segment of the measurement without resampling of the actuating variable data representing the transition form exclusive PI control to the combined control approach at $120\,s$. At about $152\,s$ the pump stops due to the steadily increasing instable behavior of the actuating variable.
+At first, a constant reference flow of $4\,l/min$ is presented to the system. \figurename~\ref{fig:ilc_var_dist_unfix_const} depicts a segment of the measurement without resampling of the actuating variable data representing the transition from exclusive PI control to the combined control approach at $120\,s$. At about $152\,s$ the pump stops due to the steadily oscillating behavior of the actuating variable.
 \begin{figure}[ht!]
   \centering
   \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/ilc_var_dist_unfix_const.pdf}
@@ -410,7 +410,7 @@ However, looking at the lower graphs of the two figures, it can be seen that for
   \label{fig:ilc_var_dist_fix_const}
 \end{figure}
 This assumption can be confirmed when comparing the RMSE values of the two measurements.
-While at the beginning of the combined control both measurements decrease to an average error value of
+While at the beginning of combined control both measurements decrease to an average error value of
 \begin{equation}
   RMSE_{const,low}=RMSE_{resampled,const}\approx0.05\,l/min
 \end{equation}
@@ -473,12 +473,12 @@ Thus, even though the pump stops earlier, the use of the revised ILC would be ad
 \end{figure}
 
 
-Lastly, the tests of the two ILC species were performed using the rectangular reference trajectory.  As with the constant reference flow and the triangular trajectory, the actuating variable again oscillates, resulting in the pump rotor stopping.
-Unlike the previous measurements, however, the evaluation of the error values for both measurements is similar in this case. At the beginning of the combined control, the averaged error values for both tests drop sharply compared to the PI control. However, a fluctuation of the average error values can be observed for both measurements. This occurs somewhat more slowly for the revised ILC than for the standard ILC. Nevertheless, both measurements have best values of about
+Lastly, the tests of the two ILC implementations are performed using the rectangular reference trajectory.  As with the constant reference flow and the triangular trajectory, the actuating variable again oscillates, resulting in the pump rotor stopping.
+Unlike the previous measurements, however, the evaluation of the error values for both measurements is similar in this case. At the beginning of the combined control, the averaged error values for both tests drop sharply compared to the PI control. However, a fluctuation of the average error values can be observed for both measurements. This occurs somewhat more slowly for the revised ILC than for the standard ILC. Nevertheless, both measurements show best case values of about
 \begin{equation}
   RMSE_{resampled,rect,low}=RMSE_{rect,low}\approx0.4\,l/min,
 \end{equation}
-but in the worst case they are both about
+and worst case values of about
 \begin{equation}
   RMSE_{resampled,rect,high}=RMSE_{rect,high}\approx0.77\,l/min.
 \end{equation}
@@ -497,12 +497,13 @@ Due to this perception, no clear statement can be made for the reference trackin
   \centering
   \begin{tabular}{c|c|c|c}
     \toprule
-     reference trajectory & $RMSE_{std\_ILC,high}$ & $RMSE_{resampled}$ & $\Delta{RMSE}$\\
+     reference trajectory & $RMSE_{std\_ILC,high}$ & $RMSE_{resampled} $ & $\Delta{RMSE} $\\
+     & $[l/min]$ & $[l/min]$ & $[l/min]$\\
     \midrule
-    constant flow & $1.13\,l/min$ & $0.05\,l/min$ & $1.08\,l/min$ \\
-    sinusoidal & $0.9\,l/min$ & $0.3\,l/min$ & $0.6\,l/min$ \\
-    triangular & $0.79\,l/min$ & $0.38\,l/min$ & $0.41\,l/min$ \\
-    rectangular & $0.77\,l/min$ & $0.77\,l/min$ & - \\
+    constant flow & $1.13$ & $0.05$ & $1.08$ \\
+    sinusoidal & $0.9$ & $0.3$ & $0.6$ \\
+    triangular & $0.79$ & $0.38$ & $0.41$ \\
+    rectangular & $0.77$ & $0.77$ & - \\
     \bottomrule
 \end{tabular}
   \caption[RMSE values for different reference trajectories of standard ILC and revised ILC]{RMSE values for different reference trajectories of standard ILC and revised ILC.}

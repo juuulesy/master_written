@@ -25,7 +25,7 @@ The controller $G_{c}(s)$ then transforms the control error to the actuating var
 \end{equation}
 Another requirement is that the dynamic relationship between the reference variable $w(t)$ and the controlled variable $y(t)$ must satisfy specified quality requirements.  Finally, these three requirements must be satisfied despite uncertainties in the plant, forming the robustness requirement. More detailed information on these requirements can be found in \cite{Reg_10}.
 
-The plant $G(s)$ corresponds to the part of the system in which the physical quantity to be controlled is influenced by the controller. The calculation of the plant by setting up and solving differential equations is possible only in a few cases. Furthermore, calculation in many cases is very time consuming. Due to this, the determination of the plant's characteristic values is usually carried out experimentally. There are several basic types of plants, classified according to their dynamic behavior. As only the PT$_{1}$-element is used in the practical part of this thesis, all other variations will not be discussed at this point. Detailed information on this topic can, once more, be found in \cite{Reg_10}.
+The plant $G(s)$ corresponds to the part of the system in which the physical quantity to be controlled is influenced by the controller. The calculation of the plant by setting up and solving differential equations is possible only in a few cases. Furthermore, calculation in many cases is very time consuming. Due to this, the determination of the plant's characteristic values is usually carried out experimentally. There are several basic types of plants, classified according to their dynamic behavior. As only the PT$_{1}$-element is used in the practical part of this thesis, all other variations will not be discussed at this point. Detailed information on this topic can be found in \cite{Reg_10}.
 \\The PT$_{1}$-element is the plant type which is most common in technical equipment. A PT$_{n}$-element in its steady state reacts proportionally to the input value and has a distinct transition behavior. The index n describes the order of the system. Therefore, a PT$_{1}$-element is a proportional delay element of first order. The mathematical formulation of the transfer function of a PT$_{1}$-element is
 \begin{equation}
     G(s) = \frac{k_{s}}{1+sT}.
@@ -74,7 +74,7 @@ In order to generate a PI-controller, the elements from (\ref{eq:p_contr_1}) and
     u(t) = K_{P}e(t) + K_{I}\cdot\int e(t) dt.
  \label{eq:pi_contr_1}
 \end{equation}
-The Laplace transformation can be used again to compute the transfer function
+Laplace transformation can be used again to compute the transfer function
 \begin{equation}
     G(s) = \frac{u(s)}{e(s)} =  K_{P} + \frac{K_{I}}{s}.
  \label{eq:pi_contr_2}
@@ -139,7 +139,7 @@ The tuning method according to Chien Hrones Reswick is very similar to the one b
 For both options, the step response and its inflection tangent are graphically displayed, as for the Ziegler Nichols approach in \figurename~\ref{fig:param_zn}.
 The values for $K_{S}$, $T_{v}$ and $T_{g}$ can be read from the plot. The parameter value $K_{I}$ again is calculated following (\ref{eq:K_I}). The formulas for calculating  $K_{P}$,  $T_{N}$ and $T_{D}$ are given in \tablename~\ref{tab:param_chr}.
 
-\begin{table}[h]
+\begin{table}[ht]
   \centering
   \begin{tabular}{cc|cc}
     \toprule
@@ -150,14 +150,14 @@ The values for $K_{S}$, $T_{v}$ and $T_{g}$ can be read from the plot. The param
      $0.35 \cdot \frac{T_{g}}{K_{S}T_{v}}$ & $1.2 \cdot T_{v}$  & $0.6 \cdot \frac{T_{g}}{K_{S}T_{v}}$ & $T_{v}$ \\
     \bottomrule
 \end{tabular}
-  \caption[Tuning parameters Chien Hrones Reswick]{Tuning parameters according to Chien Hrones Reswick based on \cite{Reg_17}.}
+  \caption[Tuning parameters according to Chien Hrones Reswick]{Tuning parameters according to Chien Hrones Reswick based on \cite{Reg_17}.}
   \label{tab:param_chr}
 \end{table}
 
 \section{Iterative Learning Control}\label{ILC}
 The use of iterative learning control aims to improve control performance for systems which execute the same task repeatedly under constant operating conditions. This improvement is based on the idea that it is possible to include error information from previous iterations into the adjustment of the actuation variable during the current iteration.
 The standard control structure of an ILC algorithm is presented in \figurename~\ref{fig:ILC_only}.
-\begin{figure}[h]
+\begin{figure}[ht]
    \centering
    \includegraphics[width=0.9\textwidth]{images/chapt_3/ILC_only.pdf}
    \caption[Standard ILC control loop]{Standard ILC control loop based on \cite{ILC2}.}
@@ -175,14 +175,14 @@ where $k$ is the time index, $j$ is the iteration index, $q$ is the forward time
 \end{equation}
 
  Feedback controllers such as PI-controllers are only able to consider the current changes in control error. By taking into account the information from previous iterations, low tracking errors are achievable through an ILC. This results in exceptional performance with convergence during the first few iterations. This can be achieved even for systems prone to repeating disturbances and model uncertainties. While feedback control shows a lag in transient tracking due to reacting to inputs and disturbances, ILC, as a feedforward controller, does not. Another advantage of ILC use is that there is no need for disturbances to be known or measured, as long as these signals show repeating behavior during each iteration. Furthermore, by storing signal information during each iteration, ILC enables advanced filtering and signal processing of the control error. However, ILC utilization holds some issues in regard to non-repeating disturbances or noise influences. In these cases it may be useful to combine ILC approaches with a feeback controller. A combination of the systems is furthermore required if the behavior of the plant is not stable. \cite{ILC2} A parallel architecture of a feedback controller in combination with an ILC is illustrated in \figurename~\ref{fig:ILC_parallel}.
- \begin{figure}[h]
+ \begin{figure}[ht]
     \centering
     \includegraphics[width=0.9\textwidth]{images/chapt_3/ILC_parallel.pdf}
     \caption[Parallel architecture of ILC with feedback controller]{Parallel architecture of ILC with feedback controller based on \cite{ILC2}.}
     \label{fig:ILC_parallel}
   \end{figure}
 \\There are several approaches to design an ILC. In general, an ILC ideally learns only the repeating disturbance patterns without being influenced by noise. The most common types of ILC learning functions are the P-, D- and PD-type learning functions. As an ILC does have a natural integrator action from one iteration to the next, I-type learning functions are rarely used.
-\\The discrete-time learning function for a standard PD-type ILC is given as 
+\\The discrete-time learning function for a standard PD-type ILC is given as
  \begin{equation}
      u_{j+1}(k) = u_{j}(k)+k_{p}e_{j}(k)+k_{d}[e_{j}(k+1)-e_{j}(k)].
   \label{eq:PD_type_2}
