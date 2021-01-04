@@ -114,9 +114,9 @@
 \newblock ISBN 978--3--642--41239--4, S. 107--144
 
 \bibitem[MRS{\etalchar{+}}15]{MCL}
-\textsc{Misgeld}, Berno~J. ; \textsc{Rüschen}, Daniel ; \textsc{Schwandtner},
-  Sebastian ; \textsc{Heinke}, Stefanie ; \textsc{Walter}, Marian  ;
-  \textsc{Leonhardt}, Steffen:
+\textsc{Misgeld}, Berno~J. ; \textsc{R{\"u}schen}, Daniel ;
+  \textsc{Schwandtner}, Sebastian ; \textsc{Heinke}, Stefanie ;
+  \textsc{Walter}, Marian  ; \textsc{Leonhardt}, Steffen:
 \newblock Robust decentralised control of a hydrodynamic human circulatory
   system simulator.
 \newblock {In: }\emph{Biomedical Signal Processing and Control} 20 (2015), 35 -

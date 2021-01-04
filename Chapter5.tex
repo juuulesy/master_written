@@ -60,7 +60,7 @@ This in turn leads to the transfer function
 \end{equation}
 \newpage
 \subsection{Evaluation}
-The main purpose for employing a PI controller, is to stabilize the closed loop system behavior in preparation for an ILC implementation.
+The main purpose for employing a PI controller is to help improve the system's ability to suppress non repeating disturbances.
 Both controllers are tested under the same operating conditions and their performance is compared.
 \\Even though the controllers are tuned at $\Delta{p}=40\,mmHg$, both of them  are tested in the differential pressure operating range from $\Delta{p}=0\,mmHg$ to $\Delta{p}=100\,mmHg$ to ensure sufficient performance in all use cases.
 For each differential pressure level, three consecutive steps up and down throughout the operating range of flow are performed. Each reference flow is targeted for $5\,s$ and flow through the VAD is measured. A graphical representation of the reference signal curves is depicted in \figurename~\ref{fig:PI_control_ref_signals}.
@@ -130,7 +130,7 @@ This expansion results in the learning function being described by
 \begin{equation}
   u_{\mathrm{j+1}}(k) = Q(q)[u_{\mathrm{j}}(k)+k_{\mathrm{p}}e_{\mathrm{j}}(k)].
 \end{equation}
-The Q-Filter is implemented as a $2^{nd}$-order butterworth filter, with sampling frequency $f_{\mathrm{s}}=1000\,Hz$. The cut off frequency $f_{\mathrm{c}}$ is set to several values in order to compare and thus optimize performance and robustness of the iterative learning control system.
+The Q-Filter is implemented as a $2^{nd}$-order butterworth filter with sampling frequency $f_{\mathrm{s}}=1000\,Hz$. The cut off frequency $f_{\mathrm{c}}$ is set to several values in order to compare and thus optimize performance and robustness of the iterative learning control system.
 \\An additional part of the implementation is the generation of a repeating reference and a trigger signal. The trigger signal indicates the beginning of each new iteration and thus initiates calculation of the new values $u_{\mathrm{j+1}}(k)$ in the ILC block.
 \figurename~\ref{fig:ref_signal_ILC3} depicts three iterations of the reference signal for this ILC.
 \\The signal is created by first generating a square wave signal with the upper stage at $6\, l/min$ and the lower stage at $4\, l/min$. Thus, the signal encloses the average value of $5\, l/min$ of the cardiac output of a healthy heart. The reference values are each held for $0.5\, s$, so that a complete iteration would correspond to a heart rate of $60\, beats\, per\, minute\, (bpm)$. To avoid abrupt transitions in flow, possibly resulting in pump malfunctions, the reference signal was filtered with a $1^{st}$-order Butterworth filter with cut off frequency $f_{\mathrm{c}}=20\,Hz$ and sampling frequency $f_{\mathrm{s}}=1000\,Hz$, resulting in radiused transitions. Afterwards, the signal is shifted by $0.25\, s$ to avoid placing the beginning of the signal at a jump point. The trigger signal is set from 0 to 1 at the beginning of each iteration for the duration of one sample.
@@ -159,13 +159,14 @@ The bottom graph of \figurename~\ref{fig:pi_to_ilc} depicts the reference flow t
   \label{fig:pi_to_ilc_fc_34}
 \end{figure}
 \\The structure is the same as for \figurename~\ref{fig:pi_to_ilc}. However, in this case, looking at the middle graph, it is evident that with each additional ILC iteration the actuation variable $v_{\mathrm{act}}$ rises further towards its saturation values $4000\,rpm$ and $9000\,rpm$. This ultimately leads to the pump's rotor to stop, due to abrupt changes in speed and flow at approximately $98\,s$ measurement time.
-\\Behavior of the system for a cut off frequency set to $f_{\mathrm{c}}=25\,Hz$, as shown in \figurename~\ref{fig:pi_to_ilc_fc_25}, is similar to behavior with $f_{\mathrm{c}}=34\,Hz$. The oscillatory system behavior again results in the pump's rotor to stop at approximately $96\,s$.
-\begin{figure}[ht]
-  \centering
-  \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/pi_to_ilc_fc_25.pdf}
-  \caption[Test measurement for ILC at cut off frequency $f_{\mathrm{c}}=25\,Hz$]{Test measurement for ILC at cut off frequency $f_{\mathrm{c}}=25\,Hz$. Top: differential pressure value of the MCL. Middle: actuating variable and measured rotational speed of the VAD. Bottom: targeted flow trajectory and measured flow through the VAD.}
-  \label{fig:pi_to_ilc_fc_25}
-\end{figure}
+\\Behavior of the system for a cut off frequency set to $f_{\mathrm{c}}=25\,Hz$ is similar to behavior with $f_{\mathrm{c}}=34\,Hz$. The oscillatory system behavior again results in the pump's rotor to stop at approximately $96\,s$.
+% \\Behavior of the system for a cut off frequency set to $f_{\mathrm{c}}=25\,Hz$, as shown in \figurename~\ref{fig:pi_to_ilc_fc_25}, is similar to behavior with $f_{\mathrm{c}}=34\,Hz$. The oscillatory system behavior again results in the pump's rotor to stop at approximately $96\,s$.
+% \begin{figure}[ht]
+%   \centering
+%   \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/pi_to_ilc_fc_25.pdf}
+%   \caption[Test measurement for ILC at cut off frequency $f_{\mathrm{c}}=25\,Hz$]{Test measurement for ILC at cut off frequency $f_{\mathrm{c}}=25\,Hz$. Top: differential pressure value of the MCL. Middle: actuating variable and measured rotational speed of the VAD. Bottom: targeted flow trajectory and measured flow through the VAD.}
+%   \label{fig:pi_to_ilc_fc_25}
+% \end{figure}
 \\The measurement with $f_{\mathrm{c}}=8\,Hz$ as cut off frequency of the Q-Filter shows stable behavior over the complete measurement time, similar to the measurement performed with $f_{\mathrm{c}}=20\,Hz$.
 \\In order to determine which cut off frequency is most suited for the ILC implementation, the RMSE values of the iterations for each of the measurements are compared to another. \figurename~\ref{fig:RMSE_compare_ILC3_fc} depicts the RMSE of each measurement as a function of the iteration for the first 39 iterations of the ILC. The figure also represents the RMSE value of exclusive PI control in form of the first iteration value:
 \begin{equation}
@@ -199,11 +200,11 @@ As these measurements only took into account a differential pressure value of $\
 \end{figure}
 \section{Iterative Learning Control with repeating disturbance}
 
-The ILC implemented in the previous section was tested and optimized under idealized conditions without being influenced by any disturbances. Since in real use, the VAD is exposed to disturbances by pressure changes due to the beating of the heart, this section aims to include this influence into the measurements through usage of the circulatory system simulator's functionality to simulate the heart beat including anticipated pressure changes.
+The ILC implemented in the previous section was tested and optimized under idealized conditions without being influenced by any disturbances. Since in real use, the VAD is exposed to disturbances by pressure changes due to the beating of the heart, this section aims to include this influence into the measurements by use of the circulatory system simulator's functionality to simulate the heart beat including anticipated pressure changes.
 %\subsection{Design and Implementation}
 
 Initially, only repeating disturbances are taken into account as the standard P-type ILC used is only setup to compensate these.
-The MCL will be used to introduce the setup to a disturbance in form of heart beats at a constant heart rate. Including the influence of the heart beat as a disturbance requires changing the trigger signal from a manually programmed one to using the start of each heart beat as the trigger of new iterations.
+The MCL is used to introduce the setup to a disturbance in form of heart beats at a constant heart rate. Including the influence of the heart beat as a disturbance requires changing the trigger signal from a manually programmed one to using the start of each heart beat as the trigger of new iterations.
 \subsection{Reference trajectories}\label{ref_traject}
 Testing of the ILC subjected to repeating disturbances is performed for several reference flow trajectories. These are generated using Matlab and are selectable during runtime via ControlDesk through the use of an indicator variable.
 
@@ -225,7 +226,7 @@ As a first reference, the flow is set to a constant value of $q_{\mathrm{ref}}=5
 %   \caption[Control error for PI Controllers]{Control error for PI controllers tuned according to (a) Ziegler Nichols, (b) Chien Hrones Reswick}
 %   \label{fig:ref_signals}
 % \end{figure}
-The third reference trajectory is given in form of a triangular signal. As for the sinusoidal signal, the maximum value is set to $q_{\mathrm{ref}}=5\,l/min$ and the minimum to $3\, l/min$. Again the full signal length is set to $1\,s$ to match a $60\,bpm$ heart rate. \figurename~\ref{fig:ref_triang} depicts one iterations of the reference trajectory.
+The third reference trajectory is given in form of a triangular signal. As for the sinusoidal signal, the maximum value is set to $q_{\mathrm{ref}}=5\,l/min$ and the minimum to $3\, l/min$. Again the full signal length is set to $1\,s$ to match a $60\,bpm$ heart rate. \figurename~\ref{fig:ref_triang} depicts one iteration of the reference trajectory.
 \begin{figure}[!ht]
   \centering
   \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/ref_triang.pdf}
@@ -245,7 +246,7 @@ The third reference trajectory is given in form of a triangular signal. As for t
 
 \subsection{Evaluation}
 Using the reference trajectories described above, several measurements are performed and evaluated to determine performance of the ILC subjected to repeating disturbances. Measurements are performed for varying levels of contractility of the left ventricle for all reference trajectories. The performance results of the contractility levels are compared to each other. Contractility is decreased in steps of $0.25$ from $cf_{\mathrm{Lv}}=1$ representing contractility of a healthy heart to $cf_{\mathrm{LV}}=0.25$ correlating to a severe impairment of heart functionality.
-\\During all measurements for the first $120\,s$, exclusively PI control is activated to ensure stable system behavior at the beginning of additional ILC control.
+\\During all measurements for the first $120\,s$, PI control is activated exclusively to ensure stable system behavior at the beginning of additional ILC control.
 
 In a first step, measurements are performed using the constant reference flow of $q_{\mathrm{ref}}=5\,l/min$. \figurename~\ref{fig:pi_to_ilc_dist_const_cf1} depicts the transition from exclusive PI control \\($115 \-- 120\,s$) to use of the parallel control structure ($120\--130\,s$) for a contractility of $cf_{\mathrm{LV}}=1$. It is evident that the PI controller alone is not able to suppress the disturbance's influence on the flow. As soon as ILC control sets in, the flow settles further towards the constant reference flow with each ILC iteration.
 \begin{figure}[ht!]
@@ -255,19 +256,17 @@ In a first step, measurements are performed using the constant reference flow of
   \label{fig:pi_to_ilc_dist_const_cf1}
 \end{figure}
 \\Measurements for all contractility levels are running stable until the end of measurement time is reached at $600\,s$. A comparison of the RMSE values for each iteration is presented in \figurename~\ref{fig:RMSE_dist_const_5_var_cf}.
+Up to iteration 120, the graph represents the RMSE of the PI controller. For this time, it is evident that with decreasing left ventricular contractility, RMSE also decreases from $RMSE_{\mathrm{PI,const,cf_{Lv}=1}}\approx 1.2\, l/min$ to $RMSE_{\mathrm{PI,const,cf_{Lv}=0.25}}\approx 0.4\, l/min$. This can be explained by the lower influence of pressure changes due to weakened contractility. The RMSE values for all four contractility levels using combined PI and ILC control amount to
+\begin{equation}
+  RMSE_{\mathrm{ILC,const}}\approx0.14\,l/min.
+\end{equation}
+It is evident that using the combined control approach results in significantly higher performance in all contractility ranges for a constant reference flow.
 \begin{figure}[ht!]
   \centering
   \includegraphics[width=0.9\textwidth]{images/chapt_5/ILC/RMSE_dist_const_5_var_cf.pdf}
   \caption[RMSE Comparison of ILC at constant reference flow for varying left ventricular contractilities]{Comparison of RMSE values of the ILC for constant reference flow with disturbance of $HR=60\,bpm$ for varying contractility values of the left ventricle.}
   \label{fig:RMSE_dist_const_5_var_cf}
 \end{figure}
-
-
-Up to iteration 120, the graph represents the RMSE of the PI controller. For this time, it is evident that with decreasing left ventricular contractility, RMSE also decreases from $RMSE_{\mathrm{PI,const,cf_{Lv}=1}}\approx 1.2\, l/min$ to $RMSE_{\mathrm{PI,const,cf_{Lv}=0.25}}\approx 0.4\, l/min$. This can be explained by the lower influence of pressure changes due to weakened contractility. The RMSE values for all four contractility levels using combined PI and ILC control amount to
-\begin{equation}
-  RMSE_{\mathrm{ILC,const}}\approx0.14\,l/min.
-\end{equation}
-It is evident that using the combined control approach results in significantly higher performance in all contractility ranges for a constant reference flow.
 
 The next measurements performed are the ones testing the controller's ability to follow the sinusoidal reference trajectory. The trajectory is placed synchronous to the heart beat. \figurename~\ref{fig:pi_to_ilc_dist_sine_cf1} illustrates the transition phase from PI to combined control for the sinusoidal reference at $cf_{\mathrm{Lv}}=1$.
 \begin{figure}[ht!]
@@ -326,13 +325,15 @@ The last measurements for analysis of controller performance of the ILC subjecte
 \begin{equation}
   RMSE_{\mathrm{ILC,rect}}\approx 0.22\,l/min.
 \end{equation}
+\newpage
 \begin{figure}[ht!]
   \centering
   \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/RMSE_dist_square_60_var_cf.pdf}
   \caption[RMSE Comparison of ILC for a rectangular reference flow for varying left ventricular contractilities]{Comparison of RMSE values of the ILC for rectangular reference flow with disturbance of $HR=60\,bpm$ for varying contractility values of the left ventricle.}
   \label{fig:RMSE_dist_square_60_var_cf}
 \end{figure}
-\\To prepare measurements considering different disturbances, in addition to measurements considering different contractility values for the left ventricle, measurements are performed at several heart rates for the rectangular reference. Heart rate is defined in four steps of $20\,bpm$ from $HR=40\,bpm$ to $HR=100\,bpm$. All of these measurements show stable behavior throughout the complete measurement time of $500\,s$.
+%\\
+To prepare measurements considering different disturbances, in addition to measurements considering different contractility values for the left ventricle, measurements are performed at several heart rates for the rectangular reference. Heart rate is defined in four steps of $20\,bpm$ from $HR=40\,bpm$ to $HR=100\,bpm$. All of these measurements show stable behavior throughout the complete measurement time of $500\,s$.
 Looking at \figurename~\ref{fig:RMSE_dist_square_const_var_hr}, it can be concluded that the performance of the PI controller improves only for the slowest heart rate of $HR=40\,bpm$ compared to the rest. Also, the results for the RMSE of the ILC control show that the control for a disturbance with $HR=40\,bpm$ with
 \begin{equation}
   RMSE_{\mathrm{ILC,40bpm}}\approx 0.16\,l/min
@@ -376,7 +377,7 @@ This factor is required to determine the indices of the stored actuating variabl
 In the next step, the lengths of the last and current iteration are compared. In case the iteration times correspond to each other, the stored data are used unchanged for the output to the control loop
 \begin{equation}
   \mathbf{u}_{\mathrm{j,ILC}}(i) = \mathbf{u}_{\mathrm{j,ILC,prev}}(i)
-\end{equation} for all entries $i$. $\mathbf{u}_{\mathrm{j,ILC,prev}}$ corresponds to the filtered data stored the actuating variable memory during the last iteration while $\mathbf{u}_{\mathrm{j,ILC}}$ represents the data output during the current iteration.
+\end{equation} for all entries $i$. $\mathbf{u}_{\mathrm{j,ILC,prev}}$ corresponds to the filtered data stored in the actuating variable memory during the last iteration while $\mathbf{u}_{\mathrm{j,ILC}}$ represents the data output during the current iteration.
 \\Calculation steps for different iteration durations differ only for the first entry. In case the current iteration length is shorter than the last ($it\_len<it\_len\_prev$)
 \begin{equation}
   \mathbf{u}_{\mathrm{j,ILC}}(1) = \mathbf{u}_{\mathrm{j,ILC,prev}}(1)

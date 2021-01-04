@@ -502,9 +502,9 @@ INPUT Chapter4.tex
 INPUT images/chapt_4/sputnik_cross.png
 INPUT ./images/chapt_4/sputnik_cross.png
 INPUT ./images/chapt_4/sputnik_cross.png
-INPUT images/chapt_4/mock_loop.jpg
-INPUT ./images/chapt_4/mock_loop.jpg
-INPUT ./images/chapt_4/mock_loop.jpg
+INPUT images/chapt_4/mock_loop_1.pdf
+INPUT ./images/chapt_4/mock_loop_1.pdf
+INPUT ./images/chapt_4/mock_loop_1.pdf
 INPUT images/chapt_4/flow_meter.pdf
 INPUT ./images/chapt_4/flow_meter.pdf
 INPUT ./images/chapt_4/flow_meter.pdf
@@ -556,9 +556,6 @@ INPUT ./images/chapt_5/ILC/pi_to_ilc_fc_20.pdf
 INPUT images/chapt_5/ILC/pi_to_ilc_fc_34.pdf
 INPUT ./images/chapt_5/ILC/pi_to_ilc_fc_34.pdf
 INPUT ./images/chapt_5/ILC/pi_to_ilc_fc_34.pdf
-INPUT images/chapt_5/ILC/pi_to_ilc_fc_25.pdf
-INPUT ./images/chapt_5/ILC/pi_to_ilc_fc_25.pdf
-INPUT ./images/chapt_5/ILC/pi_to_ilc_fc_25.pdf
 INPUT images/chapt_5/ILC/RMSE_compare_ILC3_fc.pdf
 INPUT ./images/chapt_5/ILC/RMSE_compare_ILC3_fc.pdf
 INPUT ./images/chapt_5/ILC/RMSE_compare_ILC3_fc.pdf

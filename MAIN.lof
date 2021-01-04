@@ -14,7 +14,7 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces General structure of a control loop}}{15}{figure.caption.14}
 \contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Transfer function of a PT$_{\mathrm {1}}$-element}}{17}{figure.caption.15}
-\contentsline {figure}{\numberline {\relax 3.3}{\ignorespaces Step response of a PI-Controller}}{18}{figure.caption.16}
+\contentsline {figure}{\numberline {\relax 3.3}{\ignorespaces Step response of a PI-Controller}}{19}{figure.caption.16}
 \contentsline {figure}{\numberline {\relax 3.4}{\ignorespaces Inflection tangent method for Ziegler Nichols and Chien Hrones Reswick}}{20}{figure.caption.18}
 \contentsline {figure}{\numberline {\relax 3.5}{\ignorespaces Standard ILC control loop}}{21}{figure.caption.21}
 \contentsline {figure}{\numberline {\relax 3.6}{\ignorespaces Parallel architecture of ILC with feedback controller}}{22}{figure.caption.22}
@@ -39,42 +39,41 @@
 \contentsline {figure}{\numberline {\relax 5.7}{\ignorespaces Smoothed reference signal for ILC tuning}}{42}{figure.caption.39}
 \contentsline {figure}{\numberline {\relax 5.8}{\ignorespaces Test measurement for ILC at cut off frequency $f_{\mathrm {c}}=20\tmspace +\thinmuskip {.1667em}Hz$}}{43}{figure.caption.40}
 \contentsline {figure}{\numberline {\relax 5.9}{\ignorespaces Test measurement for ILC at cut off frequency $f_{\mathrm {c}}=34\tmspace +\thinmuskip {.1667em}Hz$}}{44}{figure.caption.41}
-\contentsline {figure}{\numberline {\relax 5.10}{\ignorespaces Test measurement for ILC at cut off frequency $f_{\mathrm {c}}=25\tmspace +\thinmuskip {.1667em}Hz$}}{45}{figure.caption.42}
-\contentsline {figure}{\numberline {\relax 5.11}{\ignorespaces Comparison of RMSE values for different cut off frequencies of ILC Q-Filter}}{46}{figure.caption.43}
-\contentsline {figure}{\numberline {\relax 5.12}{\ignorespaces Comparison of RMSE values of the ILC at different differential pressure operating points}}{47}{figure.caption.44}
-\contentsline {figure}{\numberline {\relax 5.13}{\ignorespaces Sinusoidal reference signal}}{48}{figure.caption.45}
-\contentsline {figure}{\numberline {\relax 5.14}{\ignorespaces Triangular reference signal}}{49}{figure.caption.46}
-\contentsline {figure}{\numberline {\relax 5.15}{\ignorespaces Rectangular reference signal}}{49}{figure.caption.47}
-\contentsline {figure}{\numberline {\relax 5.16}{\ignorespaces Segment of measurement for ILC with disturbance of $HR=60\tmspace +\thinmuskip {.1667em}bpm$ with $cf_{\mathrm {Lv}}=1$ for constant reference flow}}{51}{figure.caption.48}
-\contentsline {figure}{\numberline {\relax 5.17}{\ignorespaces RMSE Comparison of ILC at constant reference flow for varying left ventricular contractilities}}{51}{figure.caption.49}
-\contentsline {figure}{\numberline {\relax 5.18}{\ignorespaces Segment of measurement for ILC with disturbance of $HR=60\tmspace +\thinmuskip {.1667em}bpm$ with $cf_{\mathrm {Lv}}=1$ for sinusoidal reference flow}}{52}{figure.caption.50}
-\contentsline {figure}{\numberline {\relax 5.19}{\ignorespaces RMSE Comparison of ILC at sinusoidal reference flow for varying left ventricular contractilities}}{53}{figure.caption.51}
-\contentsline {figure}{\numberline {\relax 5.20}{\ignorespaces Measurement for ILC with disturbance of $HR=60\tmspace +\thinmuskip {.1667em}bpm$ with $cf_{\mathrm {Lv}}=1$ for triangular reference flow}}{54}{figure.caption.52}
-\contentsline {figure}{\numberline {\relax 5.22}{\ignorespaces RMSE Comparison of ILC at triangular reference flow for varying left ventricular contractilities}}{55}{figure.caption.54}
-\contentsline {figure}{\numberline {\relax 5.23}{\ignorespaces Segment of measurement for ILC with disturbance of $HR=60\tmspace +\thinmuskip {.1667em}bpm$ with $cf_{\mathrm {Lv}}=1$ for rectangular reference flow}}{56}{figure.caption.55}
-\contentsline {figure}{\numberline {\relax 5.24}{\ignorespaces RMSE Comparison of ILC for a rectangular reference flow for varying left ventricular contractilities}}{56}{figure.caption.56}
-\contentsline {figure}{\numberline {\relax 5.25}{\ignorespaces RMSE Comparison of ILC at rectangular reference flow for varying heart rates}}{57}{figure.caption.57}
-\contentsline {figure}{\numberline {\relax 5.26}{\ignorespaces Illustration of HR change}}{59}{figure.caption.58}
-\contentsline {figure}{\numberline {\relax 5.27}{\ignorespaces Segment of measurement for ILC with varying disturbance with $cf_{\mathrm {Lv}}=1$ for constant reference flow without data resampling}}{61}{figure.caption.59}
-\contentsline {figure}{\numberline {\relax 5.28}{\ignorespaces Segment of measurement for ILC with varying disturbance with $cf_{\mathrm {Lv}}=1$ for constant reference flow with data resampling}}{62}{figure.caption.60}
-\contentsline {figure}{\numberline {\relax 5.29}{\ignorespaces Comparison of RMSE values for ILC measurement using a constant reference flow for unchanged and resampled data}}{62}{figure.caption.61}
-\contentsline {figure}{\numberline {\relax 5.30}{\ignorespaces Comparison of RMSE values for ILC measurement using a sinusoidal reference flow for unchanged and resampled data}}{63}{figure.caption.62}
-\contentsline {figure}{\numberline {\relax 5.31}{\ignorespaces Comparison of RMSE values for ILC measurement using a triangular reference flow for unchanged and resampled data}}{64}{figure.caption.63}
-\contentsline {figure}{\numberline {\relax 5.32}{\ignorespaces Comparison of RMSE values for ILC measurement using a rectangular reference flow for unchanged and resampled data}}{65}{figure.caption.64}
+\contentsline {figure}{\numberline {\relax 5.10}{\ignorespaces Comparison of RMSE values for different cut off frequencies of ILC Q-Filter}}{45}{figure.caption.42}
+\contentsline {figure}{\numberline {\relax 5.11}{\ignorespaces Comparison of RMSE values of the ILC at different differential pressure operating points}}{46}{figure.caption.43}
+\contentsline {figure}{\numberline {\relax 5.12}{\ignorespaces Sinusoidal reference signal}}{48}{figure.caption.44}
+\contentsline {figure}{\numberline {\relax 5.13}{\ignorespaces Triangular reference signal}}{48}{figure.caption.45}
+\contentsline {figure}{\numberline {\relax 5.14}{\ignorespaces Rectangular reference signal}}{49}{figure.caption.46}
+\contentsline {figure}{\numberline {\relax 5.15}{\ignorespaces Segment of measurement for ILC with disturbance of $HR=60\tmspace +\thinmuskip {.1667em}bpm$ with $cf_{\mathrm {Lv}}=1$ for constant reference flow}}{50}{figure.caption.47}
+\contentsline {figure}{\numberline {\relax 5.16}{\ignorespaces RMSE Comparison of ILC at constant reference flow for varying left ventricular contractilities}}{51}{figure.caption.48}
+\contentsline {figure}{\numberline {\relax 5.17}{\ignorespaces Segment of measurement for ILC with disturbance of $HR=60\tmspace +\thinmuskip {.1667em}bpm$ with $cf_{\mathrm {Lv}}=1$ for sinusoidal reference flow}}{52}{figure.caption.49}
+\contentsline {figure}{\numberline {\relax 5.18}{\ignorespaces RMSE Comparison of ILC at sinusoidal reference flow for varying left ventricular contractilities}}{52}{figure.caption.50}
+\contentsline {figure}{\numberline {\relax 5.19}{\ignorespaces Measurement for ILC with disturbance of $HR=60\tmspace +\thinmuskip {.1667em}bpm$ with $cf_{\mathrm {Lv}}=1$ for triangular reference flow}}{53}{figure.caption.51}
+\contentsline {figure}{\numberline {\relax 5.21}{\ignorespaces RMSE Comparison of ILC at triangular reference flow for varying left ventricular contractilities}}{54}{figure.caption.53}
+\contentsline {figure}{\numberline {\relax 5.22}{\ignorespaces Segment of measurement for ILC with disturbance of $HR=60\tmspace +\thinmuskip {.1667em}bpm$ with $cf_{\mathrm {Lv}}=1$ for rectangular reference flow}}{55}{figure.caption.54}
+\contentsline {figure}{\numberline {\relax 5.23}{\ignorespaces RMSE Comparison of ILC for a rectangular reference flow for varying left ventricular contractilities}}{56}{figure.caption.55}
+\contentsline {figure}{\numberline {\relax 5.24}{\ignorespaces RMSE Comparison of ILC at rectangular reference flow for varying heart rates}}{57}{figure.caption.56}
+\contentsline {figure}{\numberline {\relax 5.25}{\ignorespaces Illustration of HR change}}{58}{figure.caption.57}
+\contentsline {figure}{\numberline {\relax 5.26}{\ignorespaces Segment of measurement for ILC with varying disturbance with $cf_{\mathrm {Lv}}=1$ for constant reference flow without data resampling}}{60}{figure.caption.58}
+\contentsline {figure}{\numberline {\relax 5.27}{\ignorespaces Segment of measurement for ILC with varying disturbance with $cf_{\mathrm {Lv}}=1$ for constant reference flow with data resampling}}{61}{figure.caption.59}
+\contentsline {figure}{\numberline {\relax 5.28}{\ignorespaces Comparison of RMSE values for ILC measurement using a constant reference flow for unchanged and resampled data}}{62}{figure.caption.60}
+\contentsline {figure}{\numberline {\relax 5.29}{\ignorespaces Comparison of RMSE values for ILC measurement using a sinusoidal reference flow for unchanged and resampled data}}{63}{figure.caption.61}
+\contentsline {figure}{\numberline {\relax 5.30}{\ignorespaces Comparison of RMSE values for ILC measurement using a triangular reference flow for unchanged and resampled data}}{64}{figure.caption.62}
+\contentsline {figure}{\numberline {\relax 5.31}{\ignorespaces Comparison of RMSE values for ILC measurement using a rectangular reference flow for unchanged and resampled data}}{65}{figure.caption.63}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax A.1}{\ignorespaces Static map for different tube length in 100 \% water}}{69}{figure.caption.66}
-\contentsline {figure}{\numberline {\relax A.2}{\ignorespaces Static map for different tube length in 80 \% water 20 \% glycerin solution}}{69}{figure.caption.67}
-\contentsline {figure}{\numberline {\relax A.3}{\ignorespaces Static map for different tube length in 40 \% water 60 \% glycerin solution}}{70}{figure.caption.68}
-\contentsline {figure}{\numberline {\relax A.4}{\ignorespaces Static map for varying liquid solutions with $10\tmspace +\thinmuskip {.1667em}cm$ tube length}}{70}{figure.caption.69}
-\contentsline {figure}{\numberline {\relax A.5}{\ignorespaces Static map for varying liquid solutions with $5\tmspace +\thinmuskip {.1667em}cm$ tube length}}{71}{figure.caption.70}
-\contentsline {figure}{\numberline {\relax A.6}{\ignorespaces Test measurement for PI controller tuned according to Chien Hrones Reswick}}{71}{figure.caption.71}
-\contentsline {figure}{\numberline {\relax A.7}{\ignorespaces Test measurement for PI controller tuned according to Ziegler Nichols}}{72}{figure.caption.72}
-\contentsline {figure}{\numberline {\relax A.8}{\ignorespaces Test measurement for PI controller tuned according to Ziegler Nichols at $\Delta {p}=40\tmspace +\thinmuskip {.1667em}mmHg$}}{72}{figure.caption.73}
-\contentsline {figure}{\numberline {\relax A.9}{\ignorespaces Segment of measurement for ILC with varying disturbance with $cf_{\mathrm {Lv}}=1$ for sinusoidal reference flow without data resampling}}{73}{figure.caption.74}
-\contentsline {figure}{\numberline {\relax A.10}{\ignorespaces Segment of measurement for ILC with varying disturbance with $cf_{\mathrm {Lv}}=1$ for sinusoidal reference flow with data resampling}}{73}{figure.caption.75}
-\contentsline {figure}{\numberline {\relax A.11}{\ignorespaces Segment of measurement for ILC with varying disturbance with $cf_{\mathrm {Lv}}=1$ for triangular reference flow without data resampling}}{74}{figure.caption.76}
-\contentsline {figure}{\numberline {\relax A.12}{\ignorespaces Segment of measurement for ILC with varying disturbance with $cf_{\mathrm {Lv}}=1$ for triangular reference flow with data resampling}}{74}{figure.caption.77}
-\contentsline {figure}{\numberline {\relax A.13}{\ignorespaces Segment of measurement for ILC with varying disturbance with $cf_{\mathrm {Lv}}=1$ for rectangular reference flow without data resampling}}{75}{figure.caption.78}
-\contentsline {figure}{\numberline {\relax A.14}{\ignorespaces Segment of measurement for ILC with varying disturbance with $cf_{\mathrm {Lv}}=1$ for rectangular reference flow with data resampling}}{75}{figure.caption.79}
+\contentsline {figure}{\numberline {\relax A.1}{\ignorespaces Static map for different tube length in 100 \% water}}{69}{figure.caption.65}
+\contentsline {figure}{\numberline {\relax A.2}{\ignorespaces Static map for different tube length in 80 \% water 20 \% glycerin solution}}{69}{figure.caption.66}
+\contentsline {figure}{\numberline {\relax A.3}{\ignorespaces Static map for different tube length in 40 \% water 60 \% glycerin solution}}{70}{figure.caption.67}
+\contentsline {figure}{\numberline {\relax A.4}{\ignorespaces Static map for varying liquid solutions with $10\tmspace +\thinmuskip {.1667em}cm$ tube length}}{70}{figure.caption.68}
+\contentsline {figure}{\numberline {\relax A.5}{\ignorespaces Static map for varying liquid solutions with $5\tmspace +\thinmuskip {.1667em}cm$ tube length}}{71}{figure.caption.69}
+\contentsline {figure}{\numberline {\relax A.6}{\ignorespaces Test measurement for PI controller tuned according to Chien Hrones Reswick}}{71}{figure.caption.70}
+\contentsline {figure}{\numberline {\relax A.7}{\ignorespaces Test measurement for PI controller tuned according to Ziegler Nichols}}{72}{figure.caption.71}
+\contentsline {figure}{\numberline {\relax A.8}{\ignorespaces Test measurement for PI controller tuned according to Ziegler Nichols at $\Delta {p}=40\tmspace +\thinmuskip {.1667em}mmHg$}}{72}{figure.caption.72}
+\contentsline {figure}{\numberline {\relax A.9}{\ignorespaces Segment of measurement for ILC with varying disturbance with $cf_{\mathrm {Lv}}=1$ for sinusoidal reference flow without data resampling}}{73}{figure.caption.73}
+\contentsline {figure}{\numberline {\relax A.10}{\ignorespaces Segment of measurement for ILC with varying disturbance with $cf_{\mathrm {Lv}}=1$ for sinusoidal reference flow with data resampling}}{73}{figure.caption.74}
+\contentsline {figure}{\numberline {\relax A.11}{\ignorespaces Segment of measurement for ILC with varying disturbance with $cf_{\mathrm {Lv}}=1$ for triangular reference flow without data resampling}}{74}{figure.caption.75}
+\contentsline {figure}{\numberline {\relax A.12}{\ignorespaces Segment of measurement for ILC with varying disturbance with $cf_{\mathrm {Lv}}=1$ for triangular reference flow with data resampling}}{74}{figure.caption.76}
+\contentsline {figure}{\numberline {\relax A.13}{\ignorespaces Segment of measurement for ILC with varying disturbance with $cf_{\mathrm {Lv}}=1$ for rectangular reference flow without data resampling}}{75}{figure.caption.77}
+\contentsline {figure}{\numberline {\relax A.14}{\ignorespaces Segment of measurement for ILC with varying disturbance with $cf_{\mathrm {Lv}}=1$ for rectangular reference flow with data resampling}}{75}{figure.caption.78}
 \addvspace {10\p@ }

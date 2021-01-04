@@ -19,7 +19,7 @@ The Sputnik VAD is an axial-flow blood pump, developed in a cooperative project 
 \end{table}
 \\The stator is located inside a titanium housing with a diameter of $16\, mm$. The stationary part of the pump consists of a flow straightener with three stationary blades and a flow diffusor with three twisted blades. The flow straightener is located in front of the rotor and straightens the incoming blood flow into the rotor. Behind the rotor, blood is directed into the diffusor. %\cite{Sputnik1}
 \figurename~ \ref{fig:sput_cross} depicts a cross-section of the Sputnik VAD and identifies its individual components.
-The connection between the pump and the cardiovascular system is performed using in- and outflow cannulas, a felt ferule and vascular prosthesis which is sewed to the aorta. \cite{Sputnik1}
+The connection between the pump and the cardiovascular system is realized by using in- and outflow cannulas, a felt ferule and vascular prosthesis which is sewed to the aorta. \cite{Sputnik1}
 \begin{figure}[ht]
   \centering
   \includegraphics[width=0.6\textwidth]{images/chapt_4/sputnik_cross.png}
@@ -31,16 +31,16 @@ The connection between the pump and the cardiovascular system is performed using
 %%%% ANSTEUERUNG ÜBER ESCON ERKLÄREN!!!
 
 \section{Hardware in the Loop Test Bench}
-For all measurements and tests performed during this thesis, a hardware in the loop (HiL) test bench of the Chair of Medical Information Technology at RWTH Aachen University is used. The test bench is set up as a feedback controlled human circulatory system simulator. With the aid of the test rig, it is possible to test MCS systems under various physiological and pathological conditions of the cardiovascular system.
+For all measurements and tests performed during this thesis, a hardware in the loop (HiL) test bench of the Chair of Medical Information Technology at RWTH Aachen University is used. The test bench is set up as a feedback controlled human circulatory system simulator. With the aid of the test rig it is possible to test MCS systems under various physiological and pathological conditions of the cardiovascular system.
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=\textwidth]{images/chapt_4/mock_loop.jpg}
-  \caption[HiL test bench]{Structure of the HiL human circulatory system simulator based on \cite{MCL}.}
+  \includegraphics[width=\textwidth]{images/chapt_4/mock_loop_1.pdf}
+  \caption[HiL test bench]{Structure of the HiL human circulatory system simulator based on \cite{MCL}. Pressure chambers: $V_{\mathrm{1}}$ and $V_{\mathrm{2}}$, gear pumps: $GP_{\mathrm{1}}$,$GP_{\mathrm{1,2}}$ and $GP_{\mathrm{1}}$, left ventricular pressure: $p_{\mathrm{1}}$, pressure in aorta: $p_{\mathrm{1}}$, flow measured by flowmeter: $\dot{V}_{\mathrm{DUT}}$.}
   \label{fig:mock_loop}
 \end{figure}
 \\The structure of the mock circulatory loop (MCL) is depicted in \figurename~\ref{fig:mock_loop}. The boxes marked $V_{\mathrm{1}}$ and $V_{\mathrm{2}}$ are pressure compartments simulating the volume of the left ventricle and the aorta, respectively. Therefore, the pressure values of these compartments, referred to as $p_{\mathrm{1}}$ and $p_{\mathrm{2}}$, can be physiologically compared to the pressure values of the left ventricle and aorta. The MCL is actuated by three gear pumps ($GP_{\mathrm{1}}$, $GP_{\mathrm{12}}$ and $GP_{\mathrm{2}}$) and two voice coil actuators ($VCA_{\mathrm{1}}$ and $VCA_{\mathrm{2}}$). The Sputnik VAD is connected to the pressure chambers in parallel, enabling tests similar to real use cases. This way, the VAD can be subjected to comparable pressure changes in the differential pressure between the aorta and ventricle as would be the case when used on the beating heart.
 \\By controlling the MCL through a dSpace system (DS1103), pressure in the chambers can be adjusted in real time to simulate different cardiac dysfunctions. The dSpace system furthermore enables recording of reference signals presented to the MCL, as well as real time measurements.
-\\As the Sputnik VAD is not usually included into the MCL setup, flow through the device can not be measured without further equipment. For this purpose the Transonic Systems Inc. T110 flowmeter is included in the setup. The flow sensor measurement is based on ultrasonic technology. The sensor probe, as presented in \figurename~\ref{fig:flow_meter_tube}, is mounted onto the tube leading from the pressure chamber representing the left ventricle to the VAD. The flowmeter too is connected to the dSpace system, enabling recording of the measured flow values. In \figurename~\ref{fig:mock_loop} the measurement of the device is represented by $\dot{V}_{\mathrm{DUT}}$.
+\\As the Sputnik VAD is not usually included into the MCL setup, flow through the device can not be measured without further equipment. For this purpose the Transonic Systems Inc. T110 flowmeter is included in the setup. The flow sensor measurement is based on ultrasonic technology. The sensor probe, as presented in \figurename~\ref{fig:flow_meter_tube}, is mounted onto the tube representing the connection between left ventricle and the VAD. The flowmeter too is connected to the dSpace system, enabling recording of the measured flow values. In \figurename~\ref{fig:mock_loop} the measurement of the device is represented by $\dot{V}_{\mathrm{DUT}}$.
 \begin{figure}[ht]
   \centering
   \includegraphics[width=0.8\textwidth]{images/chapt_4/flow_meter.pdf}
@@ -51,7 +51,7 @@ For all measurements and tests performed during this thesis, a hardware in the l
 \\The dSpace system itself is controlled with the use of the program ControlDesk. This software provides the opportunity to include Matlab and Simulink source code. By this, controllers designed with the use of Simulink can directly be tested at the HiL test bench. It furthermore enables exporting all measured data in form of Matlab matrices.
 
 \section{System Identification}
-For the implementation of flow control algorithms for the Sputnik VAD, knowledge of the system behavior is required. In order to gain this information, various tests have been performed to determine a static map for the system. For this purpose, a multiple-input-single-output (MISO) system with input variables differential pressure $\Delta{p}$ in $mmHg$, rotational speed $v$ in $rpm$ and output variable blood flow $q$ in $l/min$ is assumed. The differential pressure is defined as
+For the implementation of flow control algorithms for the Sputnik VAD, knowledge of the system behavior is required. In order to gain this information, various tests are performed to determine a static map for the system. For this purpose, a multiple-input-single-output (MISO) system with input variables differential pressure $\Delta{p}$ in $mmHg$, rotational speed $v$ in $rpm$ and output variable blood flow $q$ in $l/min$ is assumed. The differential pressure is defined as
 \begin{equation}
   \Delta{p} = p_{\mathrm{ao}} - p_{\mathrm{lv}} = p_{\mathrm{2}} - p_{\mathrm{1}},
 \end{equation}
@@ -74,7 +74,7 @@ To determine the static map, flow data is first broken down into individual part
   \caption[Static map for different tube length in 60 \% water 40 \% glycerin solution]{Static map for varying tube length in 60 \% water 40 \% glycerin solution.}
   \label{fig:60w_40g}
 \end{figure}
-\\Under inspection of the blue curves corresponding to a tube length of $5\, cm$ it is evident that measurements in this case were only performed up to a differential pressure of $\Delta{p}=100 \, mmHg$. This is a result of the abrupt change in differential pressure and reference speed which lead to spontaneous reduction of the flow and possibly high backflow values through the pump. As a result, the pump's rotor comes to a stop. For longer tubes ($10\, cm$ and $15\, cm$ length) and therefore, higher flow resistance, this phenomenon occurs at a differential pressure $\Delta{p}=140\, mmHg$. However, the deviation of the curves is insignificant when comparing all three cases. Due to this the tubes of $15\, cm$ length were chosen for reasons of improved handling of the MCL.
+\\Under inspection of the blue curves corresponding to a tube length of $5\, cm$ it is evident that measurements in this case were only performed up to a differential pressure of $\Delta{p}=100 \, mmHg$. This is a result of the abrupt change in differential pressure and reference speed which leads to spontaneous reduction of the flow and possibly high backflow values through the pump. As a result, the pump's rotor stops. For longer tubes ($10\, cm$ and $15\, cm$ length) and therefore higher flow resistance, this phenomenon occurs at a differential pressure of $\Delta{p}=140\, mmHg$. However, the deviation of the curves is insignificant when comparing all three cases. Due to this the tubes of $15\, cm$ length were chosen for reasons of improved handling of the MCL.
 \\In addition to different tube lengths, another preliminary investigation is carried out with regard to the influence of the test liquid used. Since blood viscosity varies between patients and also with fluid intake, knowledge on the effect a change in liquid condition has on the control performance is required. The same measurements for determining the static map are performed in pure water, a solution of $80\, \%$ water $20\, \%$ glycerin, a solution of $60\, \%$ water $40\, \%$ glycerin and a solution of $40\, \%$ water $60\, \%$ glycerin. Representing the static maps for all four solutions measured, \figurename~\ref{fig:long_tubes} discloses significant deviations between the fluids.
 \begin{figure}[ht]
   \centering
@@ -105,7 +105,7 @@ As part of the system identification, the transfer function of the Sputnik VAD i
 %  \end{split}
 \label{eq:k_s_1}
 \end{equation}
-with $k_{\mathrm{high}}=2.3008$ and $k_{\mathrm{low}}=0.4672$. The time constant $T$, defined as the time span between initialization of the jump and reaching $0.63 \cdot k_s$, is determinded to $T=0.081$.
+with $k_{\mathrm{high}}=2.3008$ and $k_{\mathrm{low}}=0.4672$. The time constant $T$, defined as the time span between initialization of the jump and reaching $0.63 \cdot k_s$, is determinded to $T=0.081\,s$.
 According to equation (\ref{eq:tf_pt1}) the transfer function for the plant results in
 \begin{equation}
     G(s) = \frac{0.0018}{1+0.081s}.
@@ -136,4 +136,4 @@ According to equation (\ref{eq:tf_pt1}) the transfer function for the plant resu
   \caption[Characteristic parameters for jumps of $1000\,rpm$ through the operating range of differential pressure.]{Characteristic parameters for jumps of $1000\,rpm$ through the operating range of differential pressure.}
 \label{tab:linearity}
 \end{table}
-Comparing the values of the differential pressure levels with each other, it can be seen that they are close to each other with the exception of three values. Deviations such as the static gain in the range $\Delta{p}=20\,mmHg$ can be attributed at least in part to the high noise content in the signal and the filtering that is therefore necessary before determining the parameters. An assumption of linearity of the system is therefore to be regarded as admissible for the entire operating range.
+\\Comparing the values of the differential pressure levels with each other, it can be seen that they are close to each other with the exception of three values: the static gain in the range of $\Delta{p}=20\,mmHg$ and the time constants for $\Delta{p}=0\,mmHg$ and $\Delta{p}=100\,mmHg$. These deviations can be attributed at least in part to the high noise content in the signal and the filtering that is therefore necessary before determining the parameters. An assumption of linearity of the system is therefore regarded as admissible for the entire operating range.
