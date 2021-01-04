@@ -16,7 +16,7 @@
 \contentsline {chapter}{\numberline {3}Control Theory}{15}{chapter.3}
 \contentsline {section}{\numberline {3.1}Fundamentals}{15}{section.3.1}
 \contentsline {section}{\numberline {3.2}PI-controller}{17}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Tuning rules}{18}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.1}Tuning rules}{19}{subsection.3.2.1}
 \contentsline {subsubsection}{\nonumberline Tuning rules according to Ziegler Nichols}{19}{section*.17}
 \contentsline {subsubsection}{\nonumberline Tuning rules according to Chien Hrones Reswick}{20}{section*.19}
 \contentsline {section}{\numberline {3.3}Iterative Learning Control}{21}{section.3.3}
@@ -33,10 +33,10 @@
 \contentsline {subsection}{\numberline {5.2.2}Evaluation}{43}{subsection.5.2.2}
 \contentsline {section}{\numberline {5.3}Iterative Learning Control with repeating disturbance}{47}{section.5.3}
 \contentsline {subsection}{\numberline {5.3.1}Reference trajectories}{48}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Evaluation}{49}{subsection.5.3.2}
-\contentsline {section}{\numberline {5.4}Iterative Learning Control with varying disturbance}{57}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Design and Implementation}{57}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Evaluation}{59}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.3.2}Evaluation}{50}{subsection.5.3.2}
+\contentsline {section}{\numberline {5.4}Iterative Learning Control with varying disturbance}{58}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Design and Implementation}{58}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Evaluation}{60}{subsection.5.4.2}
 \contentsline {chapter}{\numberline {6}Conclusion and future work}{67}{chapter.6}
 \contentsline {section}{\numberline {6.1}Conclusion}{67}{section.6.1}
 \contentsline {section}{\numberline {6.2}Future work}{68}{section.6.2}

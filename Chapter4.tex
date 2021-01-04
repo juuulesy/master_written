@@ -96,7 +96,7 @@ The resulting static map for the chosen final setup of the MCL is depicted in \f
 %% close up von einem 1k Sprung zur Auslegung der Plant im durch 4.7 definitierten positiven Fluss Bereich.
 %% Vergleich des gemessenen Signals mit simuliertem Signal.
 As part of the system identification, the transfer function of the Sputnik VAD is determined. For this purpose, the step response of the pump to a $1000\,rpm$ step in reference speed is analyzed.
-\\Initially, the measured flow values from the static map determination measurement are prepossessed by using a $2^{nd}$-order butterworth filter with a cut-off frequency of $f_{\mathrm{c}} = 5\,Hz$ and sampling frequency $f_{\mathrm{s}}=1000 \, Hz$. For determination of the transfer function, filtered flow for an increase from $v_{\mathrm{ref,low}}=5000\,rpm$ to $v_{\mathrm{ref,high}}=6000\,rpm$ in reference speed at a differential pressure of $\Delta{p}=40\,mmHg$ is analyzed. The blue line in \figurename~\ref{fig:plant} depicts the filtered flow for this measurement. It is evident that the system's behavior can be approximated by a $PT_1$-element.
+\\Initially, the measured flow values from the static map determination measurement are prepossessed by using a $2^{nd}$-order butterworth filter with a cut off frequency of $f_{\mathrm{c}} = 5\,Hz$ and sampling frequency $f_{\mathrm{s}}=1000 \, Hz$. For determination of the transfer function, filtered flow for an increase from $v_{\mathrm{ref,low}}=5000\,rpm$ to $v_{\mathrm{ref,high}}=6000\,rpm$ in reference speed at a differential pressure of $\Delta{p}=40\,mmHg$ is analyzed. The blue line in \figurename~\ref{fig:plant} depicts the filtered flow for this measurement. It is evident that the system's behavior can be approximated by a $PT_1$-element.
  The characteristic parameters of the transfer function according to equation (\ref{eq:tf_pt1}) are represented in \figurename~\ref{fig:plant}. The static gain $k_{\mathrm{s}}$ is determined as
 \begin{equation}
 %  \begin{split}
@@ -117,7 +117,7 @@ According to equation (\ref{eq:tf_pt1}) the transfer function for the plant resu
   \caption[Transfer function of Sputnik VAD]{Step in flow, triggered by a step in reference speed by $1000\,rpm$ with identification of the variables for determining the transfer function of a $PT_{\mathrm{1}}$ element.}
   \label{fig:plant}
 \end{figure}
-\\In order to gain knowledge on the linearity of the system the same analysis performed for differential pressure at $\Delta{p}=40\,mmHg$ is performed for various differential pressure levels increased in steps of $20\,mmHg$ starting at $\Delta{p}=0\,mmHg$ ending at $\Delta{p}=120\,mmHg$. An overview on the characteristic values $T$, $k_{\mathrm{high}}$, $k_{\mathrm{low}}$ and $k_{\mathrm{s}}$ is given in \tablename~\ref{tab:linearity}.
+\\In order to gain knowledge on the linearity of the system, the same analysis performed for differential pressure at $\Delta{p}=40\,mmHg$ is performed for various differential pressure levels increased in steps of $20\,mmHg$ starting at $\Delta{p}=0\,mmHg$ ending at $\Delta{p}=120\,mmHg$. An overview on the characteristic values $T$, $k_{\mathrm{high}}$, $k_{\mathrm{low}}$ and $k_{\mathrm{s}}$ is given in \tablename~\ref{tab:linearity}.
 \begin{table}[h]
   \centering
   \begin{tabular}{c|c|c|c|c}
