@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.14)  5 JAN 2021 01:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.14)  5 JAN 2021 01:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1727,9 +1727,6 @@ Underfull \vbox (badness 3396) has occurred while \output is active []
 Overfull \vbox (1.03001pt too high) has occurred while \output is active []
 
  [39 <./images/chapt_5/PI_control_ref_signals.pdf>]
-Underfull \vbox (badness 1838) has occurred while \output is active []
-
-
 Overfull \vbox (1.03001pt too high) has occurred while \output is active []
 
  [40 <./images/chapt_5/pi_contr_zn_40.pdf> <./images/chapt_5/pi_contr_chr_40.pdf
@@ -1744,7 +1741,7 @@ pdfTeX warning: pdflatex (file ./images/chapt_5/error_PI_chr.pdf): PDF inclusion
 >] <images/chapt_5/ILC/ref_signal_ILC3.pdf, id=1084, 1264.725pt x 539.76656pt>
 File: images/chapt_5/ILC/ref_signal_ILC3.pdf Graphic file (type pdf)
  <use images/chapt_5/ILC/ref_signal_ILC3.pdf>
-Package pdftex.def Info: images/chapt_5/ILC/ref_signal_ILC3.pdf used on input line 148.
+Package pdftex.def Info: images/chapt_5/ILC/ref_signal_ILC3.pdf used on input line 150.
 (pdftex.def)             Requested size: 408.99821pt x 174.54901pt.
 
 Overfull \vbox (1.03001pt too high) has occurred while \output is active []
@@ -1752,16 +1749,22 @@ Overfull \vbox (1.03001pt too high) has occurred while \output is active []
  [41] <images/chapt_5/ILC/pi_to_ilc_fc_8.pdf, id=1094, 1264.725pt x 539.01375pt>
 File: images/chapt_5/ILC/pi_to_ilc_fc_8.pdf Graphic file (type pdf)
  <use images/chapt_5/ILC/pi_to_ilc_fc_8.pdf>
-Package pdftex.def Info: images/chapt_5/ILC/pi_to_ilc_fc_8.pdf used on input line 157.
+Package pdftex.def Info: images/chapt_5/ILC/pi_to_ilc_fc_8.pdf used on input line 159.
 (pdftex.def)             Requested size: 408.99821pt x 174.30557pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 Overfull \vbox (1.03001pt too high) has occurred while \output is active []
 
  [42 <./images/chapt_5/ILC/ref_signal_ILC3.pdf>] <images/chapt_5/ILC/pi_to_ilc_fc_25.pdf, id=1106, 1927.2pt x 973.38657pt>
 File: images/chapt_5/ILC/pi_to_ilc_fc_25.pdf Graphic file (type pdf)
  <use images/chapt_5/ILC/pi_to_ilc_fc_25.pdf>
-Package pdftex.def Info: images/chapt_5/ILC/pi_to_ilc_fc_25.pdf used on input line 173.
+Package pdftex.def Info: images/chapt_5/ILC/pi_to_ilc_fc_25.pdf used on input line 175.
 (pdftex.def)             Requested size: 408.99821pt x 206.57085pt.
+
+Underfull \vbox (badness 3049) has occurred while \output is active []
+
 
 Overfull \vbox (1.03001pt too high) has occurred while \output is active []
 
@@ -1771,21 +1774,18 @@ Overfull \vbox (1.03001pt too high) has occurred while \output is active []
  [44 <./images/chapt_5/ILC/pi_to_ilc_fc_25.pdf>] <images/chapt_5/ILC/RMSE_compare_ILC3_fc.pdf, id=1125, 1264.725pt x 679.78969pt>
 File: images/chapt_5/ILC/RMSE_compare_ILC3_fc.pdf Graphic file (type pdf)
  <use images/chapt_5/ILC/RMSE_compare_ILC3_fc.pdf>
-Package pdftex.def Info: images/chapt_5/ILC/RMSE_compare_ILC3_fc.pdf used on input line 199.
+Package pdftex.def Info: images/chapt_5/ILC/RMSE_compare_ILC3_fc.pdf used on input line 201.
 (pdftex.def)             Requested size: 430.52583pt x 231.4055pt.
-
-Underfull \vbox (badness 1412) has occurred while \output is active []
-
 
 Overfull \vbox (1.03001pt too high) has occurred while \output is active []
 
- [45 <./images/chapt_5/ILC/RMSE_compare_ILC3_fc.pdf>] <images/chapt_5/ILC/RMSE_compare_operating_points.pdf, id=1140, 1264.725pt x 679.78969pt>
+ [45 <./images/chapt_5/ILC/RMSE_compare_ILC3_fc.pdf>] <images/chapt_5/ILC/RMSE_compare_operating_points.pdf, id=1139, 1264.725pt x 679.78969pt>
 File: images/chapt_5/ILC/RMSE_compare_operating_points.pdf Graphic file (type pdf)
  <use images/chapt_5/ILC/RMSE_compare_operating_points.pdf>
-Package pdftex.def Info: images/chapt_5/ILC/RMSE_compare_operating_points.pdf used on input line 218.
+Package pdftex.def Info: images/chapt_5/ILC/RMSE_compare_operating_points.pdf used on input line 220.
 (pdftex.def)             Requested size: 430.52583pt x 231.4055pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 3209) has occurred while \output is active []
 
 
 Overfull \vbox (1.03001pt too high) has occurred while \output is active []
@@ -1793,17 +1793,17 @@ Overfull \vbox (1.03001pt too high) has occurred while \output is active []
  [46 <./images/chapt_5/ILC/RMSE_compare_operating_points.pdf>] <images/chapt_5/ILC/ref_sine.pdf, id=1151, 1264.725pt x 679.78969pt>
 File: images/chapt_5/ILC/ref_sine.pdf Graphic file (type pdf)
  <use images/chapt_5/ILC/ref_sine.pdf>
-Package pdftex.def Info: images/chapt_5/ILC/ref_sine.pdf used on input line 236.
+Package pdftex.def Info: images/chapt_5/ILC/ref_sine.pdf used on input line 238.
 (pdftex.def)             Requested size: 408.99821pt x 219.82951pt.
  <images/chapt_5/ILC/ref_triang.pdf, id=1153, 1264.725pt x 679.78969pt>
 File: images/chapt_5/ILC/ref_triang.pdf Graphic file (type pdf)
  <use images/chapt_5/ILC/ref_triang.pdf>
-Package pdftex.def Info: images/chapt_5/ILC/ref_triang.pdf used on input line 253.
+Package pdftex.def Info: images/chapt_5/ILC/ref_triang.pdf used on input line 255.
 (pdftex.def)             Requested size: 408.99821pt x 219.82951pt.
  <images/chapt_5/ILC/ref_square.pdf, id=1156, 1264.725pt x 679.78969pt>
 File: images/chapt_5/ILC/ref_square.pdf Graphic file (type pdf)
  <use images/chapt_5/ILC/ref_square.pdf>
-Package pdftex.def Info: images/chapt_5/ILC/ref_square.pdf used on input line 261.
+Package pdftex.def Info: images/chapt_5/ILC/ref_square.pdf used on input line 263.
 (pdftex.def)             Requested size: 430.52583pt x 231.4055pt.
 
 Overfull \vbox (1.03001pt too high) has occurred while \output is active []
@@ -1817,7 +1817,7 @@ pdfTeX warning: pdflatex (file ./images/chapt_5/ILC/ref_triang.pdf): PDF inclusi
 >] <images/chapt_5/ILC/pi_to_ilc_dist_const_cf1.pdf, id=1175, 1264.725pt x 679.78969pt>
 File: images/chapt_5/ILC/pi_to_ilc_dist_const_cf1.pdf Graphic file (type pdf)
  <use images/chapt_5/ILC/pi_to_ilc_dist_const_cf1.pdf>
-Package pdftex.def Info: images/chapt_5/ILC/pi_to_ilc_dist_const_cf1.pdf used on input line 275.
+Package pdftex.def Info: images/chapt_5/ILC/pi_to_ilc_dist_const_cf1.pdf used on input line 277.
 (pdftex.def)             Requested size: 408.99821pt x 219.82951pt.
 
 Overfull \vbox (1.03001pt too high) has occurred while \output is active []
@@ -1828,17 +1828,17 @@ Overfull \vbox (1.03001pt too high) has occurred while \output is active []
  [50 <./images/chapt_5/ILC/pi_to_ilc_dist_const_cf1.pdf>] <images/chapt_5/ILC/RMSE_dist_const_5_var_cf.pdf, id=1196, 1264.725pt x 679.78969pt>
 File: images/chapt_5/ILC/RMSE_dist_const_5_var_cf.pdf Graphic file (type pdf)
  <use images/chapt_5/ILC/RMSE_dist_const_5_var_cf.pdf>
-Package pdftex.def Info: images/chapt_5/ILC/RMSE_dist_const_5_var_cf.pdf used on input line 288.
+Package pdftex.def Info: images/chapt_5/ILC/RMSE_dist_const_5_var_cf.pdf used on input line 290.
 (pdftex.def)             Requested size: 387.47061pt x 208.2639pt.
  <images/chapt_5/ILC/pi_to_ilc_dist_sine_cf1.pdf, id=1198, 1264.725pt x 679.78969pt>
 File: images/chapt_5/ILC/pi_to_ilc_dist_sine_cf1.pdf Graphic file (type pdf)
  <use images/chapt_5/ILC/pi_to_ilc_dist_sine_cf1.pdf>
-Package pdftex.def Info: images/chapt_5/ILC/pi_to_ilc_dist_sine_cf1.pdf used on input line 296.
+Package pdftex.def Info: images/chapt_5/ILC/pi_to_ilc_dist_sine_cf1.pdf used on input line 298.
 (pdftex.def)             Requested size: 408.99821pt x 219.82951pt.
  <images/chapt_5/ILC/RMSE_dist_sine_var_cf.pdf, id=1200, 1264.725pt x 679.78969pt>
 File: images/chapt_5/ILC/RMSE_dist_sine_var_cf.pdf Graphic file (type pdf)
  <use images/chapt_5/ILC/RMSE_dist_sine_var_cf.pdf>
-Package pdftex.def Info: images/chapt_5/ILC/RMSE_dist_sine_var_cf.pdf used on input line 304.
+Package pdftex.def Info: images/chapt_5/ILC/RMSE_dist_sine_var_cf.pdf used on input line 306.
 (pdftex.def)             Requested size: 387.47061pt x 208.2639pt.
 
 Underfull \vbox (badness 3343) has occurred while \output is active []
@@ -1858,17 +1858,17 @@ pdfTeX warning: pdflatex (file ./images/chapt_5/ILC/RMSE_dist_sine_var_cf.pdf): 
 >] <images/chapt_5/ILC/pi_to_ilc_dist_triang_cf1.pdf, id=1226, 1264.725pt x 679.78969pt>
 File: images/chapt_5/ILC/pi_to_ilc_dist_triang_cf1.pdf Graphic file (type pdf)
  <use images/chapt_5/ILC/pi_to_ilc_dist_triang_cf1.pdf>
-Package pdftex.def Info: images/chapt_5/ILC/pi_to_ilc_dist_triang_cf1.pdf used on input line 317.
+Package pdftex.def Info: images/chapt_5/ILC/pi_to_ilc_dist_triang_cf1.pdf used on input line 319.
 (pdftex.def)             Requested size: 408.99821pt x 219.82951pt.
  <images/chapt_5/ILC/pi_to_ilc_dist_triang_cf50.pdf, id=1228, 1264.725pt x 679.78969pt>
 File: images/chapt_5/ILC/pi_to_ilc_dist_triang_cf50.pdf Graphic file (type pdf)
  <use images/chapt_5/ILC/pi_to_ilc_dist_triang_cf50.pdf>
-Package pdftex.def Info: images/chapt_5/ILC/pi_to_ilc_dist_triang_cf50.pdf used on input line 324.
+Package pdftex.def Info: images/chapt_5/ILC/pi_to_ilc_dist_triang_cf50.pdf used on input line 326.
 (pdftex.def)             Requested size: 408.99821pt x 219.82951pt.
  <images/chapt_5/ILC/RMSE_dist_triang_var_cf.pdf, id=1230, 1264.725pt x 679.78969pt>
 File: images/chapt_5/ILC/RMSE_dist_triang_var_cf.pdf Graphic file (type pdf)
  <use images/chapt_5/ILC/RMSE_dist_triang_var_cf.pdf>
-Package pdftex.def Info: images/chapt_5/ILC/RMSE_dist_triang_var_cf.pdf used on input line 334.
+Package pdftex.def Info: images/chapt_5/ILC/RMSE_dist_triang_var_cf.pdf used on input line 336.
 (pdftex.def)             Requested size: 408.99821pt x 219.82951pt.
 
 Overfull \vbox (1.03001pt too high) has occurred while \output is active []
@@ -1876,7 +1876,7 @@ Overfull \vbox (1.03001pt too high) has occurred while \output is active []
  [53 <./images/chapt_5/ILC/pi_to_ilc_dist_triang_cf1.pdf>] <images/chapt_5/ILC/pi_to_ilc_dist_square_60_cf1.pdf, id=1243, 1264.725pt x 679.78969pt>
 File: images/chapt_5/ILC/pi_to_ilc_dist_square_60_cf1.pdf Graphic file (type pdf)
  <use images/chapt_5/ILC/pi_to_ilc_dist_square_60_cf1.pdf>
-Package pdftex.def Info: images/chapt_5/ILC/pi_to_ilc_dist_square_60_cf1.pdf used on input line 342.
+Package pdftex.def Info: images/chapt_5/ILC/pi_to_ilc_dist_square_60_cf1.pdf used on input line 344.
 (pdftex.def)             Requested size: 408.99821pt x 219.82951pt.
 
 Overfull \vbox (1.03001pt too high) has occurred while \output is active []
@@ -1890,12 +1890,12 @@ Overfull \vbox (1.03001pt too high) has occurred while \output is active []
  [55 <./images/chapt_5/ILC/pi_to_ilc_dist_square_60_cf1.pdf>] <images/chapt_5/ILC/RMSE_dist_square_60_var_cf.pdf, id=1269, 1264.725pt x 679.78969pt>
 File: images/chapt_5/ILC/RMSE_dist_square_60_var_cf.pdf Graphic file (type pdf)
  <use images/chapt_5/ILC/RMSE_dist_square_60_var_cf.pdf>
-Package pdftex.def Info: images/chapt_5/ILC/RMSE_dist_square_60_var_cf.pdf used on input line 353.
+Package pdftex.def Info: images/chapt_5/ILC/RMSE_dist_square_60_var_cf.pdf used on input line 355.
 (pdftex.def)             Requested size: 408.99821pt x 219.82951pt.
  <images/chapt_5/ILC/RMSE_dist_square_const_var_hr.pdf, id=1271, 1264.725pt x 679.78969pt>
 File: images/chapt_5/ILC/RMSE_dist_square_const_var_hr.pdf Graphic file (type pdf)
  <use images/chapt_5/ILC/RMSE_dist_square_const_var_hr.pdf>
-Package pdftex.def Info: images/chapt_5/ILC/RMSE_dist_square_const_var_hr.pdf used on input line 379.
+Package pdftex.def Info: images/chapt_5/ILC/RMSE_dist_square_const_var_hr.pdf used on input line 381.
 (pdftex.def)             Requested size: 408.99821pt x 219.82951pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1906,7 +1906,7 @@ Overfull \vbox (1.03001pt too high) has occurred while \output is active []
  [56 <./images/chapt_5/ILC/RMSE_dist_square_60_var_cf.pdf>] <images/chapt_5/ILC/hr_increase.pdf, id=1284, 1264.725pt x 679.78969pt>
 File: images/chapt_5/ILC/hr_increase.pdf Graphic file (type pdf)
  <use images/chapt_5/ILC/hr_increase.pdf>
-Package pdftex.def Info: images/chapt_5/ILC/hr_increase.pdf used on input line 393.
+Package pdftex.def Info: images/chapt_5/ILC/hr_increase.pdf used on input line 395.
 (pdftex.def)             Requested size: 408.99821pt x 219.82951pt.
 
 Overfull \vbox (1.03001pt too high) has occurred while \output is active []
@@ -1926,12 +1926,12 @@ Overfull \vbox (1.03001pt too high) has occurred while \output is active []
  [59] <images/chapt_5/ILC/ilc_var_dist_unfix_const.pdf, id=1317, 1264.725pt x 679.78969pt>
 File: images/chapt_5/ILC/ilc_var_dist_unfix_const.pdf Graphic file (type pdf)
  <use images/chapt_5/ILC/ilc_var_dist_unfix_const.pdf>
-Package pdftex.def Info: images/chapt_5/ILC/ilc_var_dist_unfix_const.pdf used on input line 435.
+Package pdftex.def Info: images/chapt_5/ILC/ilc_var_dist_unfix_const.pdf used on input line 437.
 (pdftex.def)             Requested size: 408.99821pt x 219.82951pt.
  <images/chapt_5/ILC/ilc_var_dist_fix_const.pdf, id=1321, 1264.725pt x 679.78969pt>
 File: images/chapt_5/ILC/ilc_var_dist_fix_const.pdf Graphic file (type pdf)
  <use images/chapt_5/ILC/ilc_var_dist_fix_const.pdf>
-Package pdftex.def Info: images/chapt_5/ILC/ilc_var_dist_fix_const.pdf used on input line 444.
+Package pdftex.def Info: images/chapt_5/ILC/ilc_var_dist_fix_const.pdf used on input line 446.
 (pdftex.def)             Requested size: 408.99821pt x 219.82951pt.
 
 Overfull \vbox (1.03001pt too high) has occurred while \output is active []
@@ -1939,7 +1939,7 @@ Overfull \vbox (1.03001pt too high) has occurred while \output is active []
  [60 <./images/chapt_5/ILC/ilc_var_dist_unfix_const.pdf>] <images/chapt_5/ILC/RMSE_ilc_var_dist_comp_const.pdf, id=1332, 1264.725pt x 679.78969pt>
 File: images/chapt_5/ILC/RMSE_ilc_var_dist_comp_const.pdf Graphic file (type pdf)
  <use images/chapt_5/ILC/RMSE_ilc_var_dist_comp_const.pdf>
-Package pdftex.def Info: images/chapt_5/ILC/RMSE_ilc_var_dist_comp_const.pdf used on input line 461.
+Package pdftex.def Info: images/chapt_5/ILC/RMSE_ilc_var_dist_comp_const.pdf used on input line 463.
 (pdftex.def)             Requested size: 408.99821pt x 219.82951pt.
 
 Overfull \vbox (1.03001pt too high) has occurred while \output is active []
@@ -1953,7 +1953,7 @@ Overfull \vbox (1.03001pt too high) has occurred while \output is active []
  [62 <./images/chapt_5/ILC/RMSE_ilc_var_dist_comp_const.pdf>] <images/chapt_5/ILC/RMSE_ilc_var_dist_comp_sine.pdf, id=1356, 1264.725pt x 679.78969pt>
 File: images/chapt_5/ILC/RMSE_ilc_var_dist_comp_sine.pdf Graphic file (type pdf)
  <use images/chapt_5/ILC/RMSE_ilc_var_dist_comp_sine.pdf>
-Package pdftex.def Info: images/chapt_5/ILC/RMSE_ilc_var_dist_comp_sine.pdf used on input line 484.
+Package pdftex.def Info: images/chapt_5/ILC/RMSE_ilc_var_dist_comp_sine.pdf used on input line 486.
 (pdftex.def)             Requested size: 408.99821pt x 219.82951pt.
 
 Overfull \vbox (1.03001pt too high) has occurred while \output is active []
@@ -1961,7 +1961,7 @@ Overfull \vbox (1.03001pt too high) has occurred while \output is active []
  [63 <./images/chapt_5/ILC/RMSE_ilc_var_dist_comp_sine.pdf>] <images/chapt_5/ILC/RMSE_ilc_var_dist_comp_triang.pdf, id=1372, 1264.725pt x 679.78969pt>
 File: images/chapt_5/ILC/RMSE_ilc_var_dist_comp_triang.pdf Graphic file (type pdf)
  <use images/chapt_5/ILC/RMSE_ilc_var_dist_comp_triang.pdf>
-Package pdftex.def Info: images/chapt_5/ILC/RMSE_ilc_var_dist_comp_triang.pdf used on input line 506.
+Package pdftex.def Info: images/chapt_5/ILC/RMSE_ilc_var_dist_comp_triang.pdf used on input line 508.
 (pdftex.def)             Requested size: 408.99821pt x 219.82951pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1972,7 +1972,7 @@ Overfull \vbox (1.03001pt too high) has occurred while \output is active []
  [64 <./images/chapt_5/ILC/RMSE_ilc_var_dist_comp_triang.pdf>] <images/chapt_5/ILC/RMSE_ilc_var_dist_comp_rect.pdf, id=1385, 1264.725pt x 679.78969pt>
 File: images/chapt_5/ILC/RMSE_ilc_var_dist_comp_rect.pdf Graphic file (type pdf)
  <use images/chapt_5/ILC/RMSE_ilc_var_dist_comp_rect.pdf>
-Package pdftex.def Info: images/chapt_5/ILC/RMSE_ilc_var_dist_comp_rect.pdf used on input line 524.
+Package pdftex.def Info: images/chapt_5/ILC/RMSE_ilc_var_dist_comp_rect.pdf used on input line 526.
 (pdftex.def)             Requested size: 408.99821pt x 219.82951pt.
 )
 
@@ -2180,7 +2180,7 @@ Here is how much of TeX's memory you used:
  69i,18n,66p,10510b,760s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
 1/public/lm/lmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on MAIN.pdf (96 pages, 45413407 bytes).
+Output written on MAIN.pdf (96 pages, 45413490 bytes).
 PDF statistics:
  1691 PDF objects out of 1728 (max. 8388607)
  1383 compressed objects within 14 object streams

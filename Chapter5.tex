@@ -120,7 +120,9 @@ and
 \end{equation}
 Comparing these results, it is evident that both controllers perform more precisely in the range of $\Delta{p}=40\,mmHg$ for which tuning has been performed.
 Performance of the controller tuned according to Chien Hrones Reswick surpasses the Ziegler Nichols tuned one in both ranges. RMSE values for full range CHR control even indicate a higher performance in comparison to the Ziegler Nichols tuned controller in the range of $\Delta{p}=40\,mmHg$.
-\\ Due to its higher performance, for all following measurements the PI controller tuned in accordance to Chien Hrones Reswick is used.
+%\\
+\newpage
+Due to its higher performance, for all following measurements the PI controller tuned in accordance to Chien Hrones Reswick is used.
 \section{Iterative Learning Control}\label{ILC_1}
 As shown in \figurename~\ref{fig:pi_contr_chr_40}, the exclusive use of a PI controller for flow control leads to necessity of long measurement times to allow the flow to settle at a new reference value. However, one goal of this thesis is to enable flow control following different reference trajectories which may imply the need for faster reference tracking. By implementing an ILC approach, the necessary reduction of settling time, by gaining information from error values of the preceding iteration, will be made possible.
 \subsection{Design and Implementation}
