@@ -19,8 +19,8 @@ This sequential behavior is repeated up to a start value of $v_{\mathrm{ref}}=80
   \caption[Signal curves for determination of PI controller parameters at $\Delta{p}=40\,mmHg$]{Signal curves for determination of PI controller parameters at $\Delta{p}=40\,mmHg$.}
   \label{fig:dyn_meas_40}
 \end{figure}
-To determine the parameters for controller design, the step from $v_{\mathrm{ref,low}}=5000\, rpm$ to $v_{\mathrm{ref,high}}=5400\, rpm$ at $\Delta{p}=40\,mmHg$, which is located in the center of the pump's operating range, is used.
-Since the flow signal is affected by high measurement noise, the signal is preprocessed using an $8^{th}$-order butterworth filter with cut off frequency $f_{\mathrm{c}}=5\,Hz$ and sampling frequency $f_{\mathrm{s}}=1000\,Hz$.
+To determine the parameters for controller design, the step from $v_{\mathrm{ref,low}}=5000\, rpm$ to $v_{\mathrm{ref,high}}=5400\, rpm$ at $\Delta{p}=40\,mmHg$, which is located in the center of the pump's operating range, is used. This step is chosen for controller tuning as it allows for clear determination of the characteristic parameters $k_{\mathrm{s}}$, $T_{\mathrm{g}}$ and $T_{\mathrm{v}}$.
+Since the flow signal, however, is affected by high measurement noise, the signal is preprocessed using an $8^{th}$-order butterworth filter with cut off frequency $f_{\mathrm{c}}=5\,Hz$ and sampling frequency $f_{\mathrm{s}}=1000\,Hz$.
 \begin{figure}[ht]
   \centering
   \includegraphics[width=0.95\textwidth]{images/chapt_5/param_calc_PI.pdf}
@@ -86,7 +86,8 @@ For each differential pressure level, three consecutive steps up and down throug
   \caption[Test measurements for PI controller at $\Delta{p}=40\,mmHg$]{Test measurements for PI controller at $\Delta{p}=40\,mmHg$ tuned according to (a) Ziegler Nichols, (b) Chien Hrones Reswick.}
   \label{fig:pi_contr_chr_zn}
 \end{figure}
-\\The complete signal curves for the tests of the controllers are depicted in \figurename~\ref{fig:anh_6} and \figurename~\ref{fig:anh_7} in the appendix. Furthermore, the graphical representation of the test measurement at $\Delta{p}=40\,mmHg$ for the controller tuned according to Ziegler Nichols is depicted in \figurename~\ref{fig:anh_8} of the appendix.
+\newpage
+The complete signal curves for the tests of the controllers are depicted in \figurename~\ref{fig:anh_6} and \figurename~\ref{fig:anh_7} in the appendix. Furthermore, the graphical representation of the test measurement at $\Delta{p}=40\,mmHg$ for the controller tuned according to Ziegler Nichols is depicted in \figurename~\ref{fig:anh_8} of the appendix.
 \\The course of the control error throughout the test measurements of the controller tuned according to Ziegler Nichols and the controller tuned according to Chien Hrones Reswick are depicted in \figurename~\ref{fig:PI_error_a} and \figurename~\ref{fig:PI_error_b}, respectively.
 \begin{figure}[ht]
   \centering
@@ -109,7 +110,7 @@ while the RMSE of the Chien Hrones Reswick tuned controller amounts to
 \begin{equation}
   RMSE_{\mathrm{CHR,40}}=0.2753\,l/min.
 \end{equation}
-\newpage
+%\newpage
 Taking into account the full differential pressure operating range for RMSE calculation, these values amount to
 \begin{equation}
   RMSE_{\mathrm{ZN}}=0.5396\,l/min
@@ -121,10 +122,10 @@ and
 Comparing these results, it is evident that both controllers perform more precisely in the range of $\Delta{p}=40\,mmHg$ for which tuning has been performed.
 Performance of the controller tuned according to Chien Hrones Reswick surpasses the Ziegler Nichols tuned one in both ranges. RMSE values for full range CHR control even indicate a higher performance in comparison to the Ziegler Nichols tuned controller in the range of $\Delta{p}=40\,mmHg$.
 %\\
-\newpage
+%\newpage
 Due to its higher performance, for all following measurements the PI controller tuned in accordance to Chien Hrones Reswick is used.
 \section{Iterative Learning Control}\label{ILC_1}
-As shown in \figurename~\ref{fig:pi_contr_chr_40}, the exclusive use of a PI controller for flow control leads to necessity of long measurement times to allow the flow to settle at a new reference value. However, one goal of this thesis is to enable flow control following different reference trajectories which may imply the need for faster reference tracking. By implementing an ILC approach, the necessary reduction of settling time, by gaining information from error values of the preceding iteration, will be made possible.
+As shown in \figurename~\ref{fig:pi_contr_chr_40}, the exclusive use of a PI controller for flow control leads to necessity of measurement times of at least $1.5\,s$ to allow the flow to settle at a new reference value. However, one goal of this thesis is to enable flow control following different reference trajectories which may imply the need for faster reference tracking. By implementing an ILC approach, the necessary reduction of settling time, by gaining information from error values of the preceding iteration, will be made possible.
 \subsection{Design and Implementation}
 During this work a P-type ILC is implemented and optimized.
 \\The implementation is based on a parallel architecture as depicted in \figurename~\ref{fig:ILC_parallel}. This leads to the basic learning function for this ILC being given by
@@ -232,13 +233,19 @@ The MCL is used to introduce the setup to a disturbance in form of heart beats a
 Testing of the ILC subjected to repeating disturbances is performed for several reference flow trajectories. These trajectories are generated using Matlab and are selectable during runtime via ControlDesk through the use of an indicator variable.
 
 As a first reference, the flow is set to a constant value of $q_{\mathrm{ref}}=5\,l/min$. By this, the controller's ability to balance out the pressure fluctuations during a heart beat is tested.
-\\The second signal, which is used as a reference trajectory, is a sinusoidal signal that oscillates around a value of $4\, l/min$, has a maximum value of $5\, l/min$ and a minimum value of $3\, l/min$. One iteration of this signal is set to $1\,s$, matching a $60\,bpm$ heart rate. The signal course is depicted in \figurename~\ref{fig:ref_sine}.
+\\The second signal, which is used as a reference trajectory, is a sinusoidal signal that oscillates around a value of $4\, l/min$, has a maximum value of $5\, l/min$ and a minimum value of $3\, l/min$. One iteration of this signal is set to $1\,s$, matching a $60\,bpm$ heart rate. The signal course is depicted as a blue line in \figurename~\ref{fig:ref_all}.
 \begin{figure}[!ht]
   \centering
-  \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/ref_sine.pdf}
+  \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/ref_all.pdf}
   \caption[Sinusoidal reference signal]{Sinusoidal reference signal.}
-  \label{fig:ref_sine}
+  \label{fig:ref_all}
 \end{figure}
+% \begin{figure}[!ht]
+%   \centering
+%   \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/ref_sine.pdf}
+%   \caption[Sinusoidal reference signal]{Sinusoidal reference signal.}
+%   \label{fig:ref_sine}
+% \end{figure}
 
 % \begin{figure}[ht]
 %   \centering
@@ -249,21 +256,22 @@ As a first reference, the flow is set to a constant value of $q_{\mathrm{ref}}=5
 %   \caption[Control error for PI Controllers]{Control error for PI controllers tuned according to (a) Ziegler Nichols, (b) Chien Hrones Reswick}
 %   \label{fig:ref_signals}
 % \end{figure}
-The third reference trajectory is given in form of a triangular signal. As for the sinusoidal signal, the maximum value is set to $q_{\mathrm{ref}}=5\,l/min$ and the minimum to $3\, l/min$. Again the full signal length is set to $1\,s$ to match a $60\,bpm$ heart rate. \figurename~\ref{fig:ref_triang} depicts one iteration of the reference trajectory.
-\begin{figure}[!ht]
-  \centering
-  \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/ref_triang.pdf}
-  \caption[Triangular reference signal]{Triangular reference signal.}
-  \label{fig:ref_triang}
-\end{figure}
+\newpage
+The third reference trajectory is given in form of a triangular signal. As for the sinusoidal signal, the maximum value is set to $q_{\mathrm{ref}}=5\,l/min$ and the minimum to $3\, l/min$. Again the full signal length is set to $1\,s$ to match a $60\,bpm$ heart rate. The red line of \figurename~\ref{fig:ref_all} depicts one iteration of the reference trajectory.
+% \begin{figure}[!ht]
+%   \centering
+%   \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/ref_triang.pdf}
+%   \caption[Triangular reference signal]{Triangular reference signal.}
+%   \label{fig:ref_triang}
+% \end{figure}
 \\As a last trajectory, a rectangular signal similar to the one used in chapter \ref{ILC_1} is chosen. The upper step is set to $q_{\mathrm{ref}}=5\,l/min$ and the lower one to $q_{\mathrm{ref}}=3\,l/min$. Both are held for $0.5\,s$. Again, the signal is filtered using a $1^{st}$ order butterworth filter with cut off frequency $f_{\mathrm{c}}=20\,Hz$ and sampling frequency $f_{\mathrm{s}}=1000\,Hz$.
-\\\figurename~\ref{fig:ref_square} depicts one iteration of the reference.
-\begin{figure}[!ht]
-  \centering
-  \includegraphics[width=\textwidth]{images/chapt_5/ILC/ref_square.pdf}
-  \caption[Rectangular reference signal]{Rectangular reference signal.}
-  \label{fig:ref_square}
-\end{figure}
+\\The yellow line in \figurename~\ref{fig:ref_all} depicts one iteration of the reference.
+% \begin{figure}[!ht]
+%   \centering
+%   \includegraphics[width=\textwidth]{images/chapt_5/ILC/ref_square.pdf}
+%   \caption[Rectangular reference signal]{Rectangular reference signal.}
+%   \label{fig:ref_square}
+% \end{figure}
 %
 
 
@@ -283,8 +291,7 @@ Up to iteration 120, the graph represents the RMSE of the PI controller. For thi
 \begin{equation}
   RMSE_{\mathrm{ILC,const}}\approx0.14\,l/min.
 \end{equation}
-\newpage
-It is evident that using the combined control approach results in significantly higher performance in all contractility ranges for a constant reference flow.
+\\It is evident that using the combined control approach results in significantly higher performance in all contractility ranges for a constant reference flow.
 \begin{figure}[ht!]
   \centering
   \includegraphics[width=0.9\textwidth]{images/chapt_5/ILC/RMSE_dist_const_5_var_cf.pdf}
@@ -300,13 +307,16 @@ The next measurements performed are the ones testing the controller's ability to
   \label{fig:pi_to_ilc_dist_sine_cf1}
 \end{figure}
 Similar to the constant reference flow, the PI controller alone is not able to follow the reference trajectory. The combination between PI controller and ILC, however, leads to a clearly recognizable improvement of the following behavior within some iterations.
-The comparison of RMSE values (see \figurename~\ref{fig:RMSE_dist_sine_var_cf}) leads to similar conclusions as for the constant reference flow. During the first 120 iterations when only PI control is active, the RMSE reduces with decreasing contractility of the left ventricle. However, the decrease between contractility values from $cf_{\mathrm{LV}}=1$ to $cf_{\mathrm{LV}}=0.75$ and $cf_{\mathrm{LV}}=0.5$ with $RMSE_{\mathrm{PI,sine,cf_{\mathrm{Lv}}=1}}\approx 1.85\, l/min$, $RMSE_{\mathrm{PI,sine,cf_{\mathrm{Lv}}=0.75}}\approx 1.75\, l/min$ and $RMSE_{\mathrm{PI,sine,cf_{\mathrm{Lv}}=1}}\approx 1.85\, l/min$, are less significant than the reduction of contractility to $cf_{\mathrm{Lv}}=0.25$ with $RMSE_{\mathrm{PI,sine,cf_{\mathrm{Lv}}=0.25}}\approx 0.93\, l/min$.
+The comparison of RMSE values (see \figurename~\ref{fig:RMSE_dist_sine_var_cf}) leads to similar conclusions as for the constant reference flow.
 \begin{figure}[ht!]
   \centering
   \includegraphics[width=0.9\textwidth]{images/chapt_5/ILC/RMSE_dist_sine_var_cf.pdf}
   \caption[RMSE Comparison of ILC at sinusoidal reference flow for varying left ventricular contractilities]{Comparison of RMSE values of the ILC for sinusoidal reference flow with disturbance of $HR=60\,bpm$ for varying contractility values of the left ventricle.}
   \label{fig:RMSE_dist_sine_var_cf}
 \end{figure}
+During the first 120 iterations when only PI control is active, the RMSE reduces with decreasing contractility of the left ventricle.
+\newpage
+However, the decrease between contractility values from $cf_{\mathrm{LV}}=1$ to $cf_{\mathrm{LV}}=0.75$ and $cf_{\mathrm{LV}}=0.5$ with $RMSE_{\mathrm{PI,sine,cf_{\mathrm{Lv}}=1}}\approx 1.85\, l/min$, $RMSE_{\mathrm{PI,sine,cf_{\mathrm{Lv}}=0.75}}\approx 1.75\, l/min$ and $RMSE_{\mathrm{PI,sine,cf_{\mathrm{Lv}}=1}}\approx 1.85\, l/min$, are less significant than the reduction of contractility to $cf_{\mathrm{Lv}}=0.25$ with $RMSE_{\mathrm{PI,sine,cf_{\mathrm{Lv}}=0.25}}\approx 0.93\, l/min$.
 Performance for the combined control approach is almost equal for all contractility values with
 \begin{equation}
   RMSE_{\mathrm{ILC,sine}}\approx 0.09\, l/min.
@@ -327,6 +337,7 @@ Measurement for the triangular reference trajectory shows slowly oscillating beh
   \caption[]{Segment of measurement for ILC with disturbance of $HR=60\,bpm$ with $cf_{\mathrm{Lv}}=0.5$ for triangular reference flow. Top:  pressure values of the MCL. Middle: actuating variable and measured rotational speed of the VAD. Bottom: targeted flow trajectory and measured flow through the VAD.}
   \label{fig:pi_to_ilc_dist_triang_cf50}
 \end{figure}
+\newpage
 This is endorsed by comparison of the RMSE values as shown in \figurename~\ref{fig:RMSE_dist_triang_var_cf}. While RMSE for the PI controller segments lie at $RMSE_{\mathrm{PI,triang,cf_{\mathrm{Lv}}=0.5}}\approx 1.9\, l/min$ and $RMSE_{\mathrm{PI,triang,cf_{\mathrm{Lv}}=0.25}}\approx 1.2\, l/min$, the RMSE for the combined control structure amounts to
 \begin{equation}
   RMSE_{\mathrm{ILC,triang}}\approx 0.11\, l/min.
@@ -345,11 +356,13 @@ The last measurements for analysis of controller performance of the ILC subjecte
   \caption[Segment of measurement for ILC with disturbance of $HR=60\,bpm$ with $cf_{\mathrm{Lv}}=1$ for rectangular reference flow]{Segment of measurement for ILC with disturbance of $HR=60\,bpm$ with $cf_{\mathrm{Lv}}=1$ for rectangular reference flow. Top:  pressure values of the MCL. Middle: actuating variable and measured rotational speed of the VAD. Bottom: targeted flow trajectory and measured flow through the VAD.}
   \label{fig:pi_to_ilc_dist_square_60_cf1}
 \end{figure}
-\\The comparison of RMSE courses for all four left ventricular contractility levels is depicted in \figurename~\ref{fig:RMSE_dist_square_60_var_cf}. Once more, contractility decrease directly influences the performance of the PI controller while the end value for RMSE of the ILC for all contractility levels amounts to
+%\\
+\newpage
+The comparison of RMSE courses for all four left ventricular contractility levels is depicted in \figurename~\ref{fig:RMSE_dist_square_60_var_cf}. Once more, contractility decrease directly influences the performance of the PI controller while the end value for RMSE of the ILC for all contractility levels amounts to
 \begin{equation}
   RMSE_{\mathrm{ILC,rect}}\approx 0.22\,l/min.
 \end{equation}
-\newpage
+%\newpage
 \begin{figure}[ht!]
   \centering
   \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/RMSE_dist_square_60_var_cf.pdf}
@@ -422,8 +435,9 @@ A weighting factor is required for all other entries $i$ of the actuating variab
 \end{equation}
 The value for the current entry $i$ is then determined as
 \begin{equation}
-  \mathbf{u}_{\mathrm{j,ILC}}(i) = (1-weight) \cdot \mathbf{u}_{\mathrm{j,ILC,prev}}(\lfloor i \cdot idx\rfloor) + weight\cdot \mathbf{u}_{\mathrm{j,ILC,prev}}(\lceil i \cdot idx\rceil).
+  \mathbf{u}_{\mathrm{j,ILC}}(i) = (1-weight) \cdot \mathbf{u}_{\mathrm{j,ILC,prev}}(\lfloor i \cdot idx\rfloor) + weight\cdot \mathbf{u}_{\mathrm{j,ILC,prev}}(\lceil i \cdot idx\rceil)
 \end{equation}
+with $\lfloor\, \rfloor$ indicating rounding off the value and $\lceil\, \rceil$ indicating rounding up.
 Through this calculation, the data from the previous iteration is compressed or stretched to the current iteration length accordingly.
 
 \subsection{Evaluation}
@@ -434,19 +448,20 @@ The reference trajectories described in section \ref{ref_traject} are used to pe
 At first, a constant reference flow of $4\,l/min$ is presented to the system. \figurename~\ref{fig:ilc_var_dist_unfix_const} depicts a segment of the measurement without resampling of the actuating variable data representing the transition from exclusive PI control to the combined control approach at $120\,s$. At about $152\,s$, the pump stops due to the steadily oscillating behavior of the actuating variable.
 \begin{figure}[ht!]
   \centering
-  \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/ilc_var_dist_unfix_const.pdf}
+  \includegraphics[width=0.925\textwidth]{images/chapt_5/ILC/ilc_var_dist_unfix_const.pdf}
   \caption[Segment of measurement for ILC with varying disturbance with $cf_{\mathrm{Lv}}=1$ for constant reference flow without data resampling]{Segment of measurement for ILC with varying disturbance with $cf_{\mathrm{Lv}}=1$ for constant reference flow without data resampling. Top:  pressure values of the MCL. Middle: actuating variable and measured rotational speed of the VAD. Bottom: targeted flow trajectory and measured flow through the VAD.}
   \label{fig:ilc_var_dist_unfix_const}
 \end{figure}
 As can be seen in \figurename~\ref{fig:ilc_var_dist_fix_const}, similar behavior is observed for the measurement with the resampled actuating variable data.
 However, looking at the lower graphs of the two figures, it can be seen that for the unchanged actuating variable data in \figurename~\ref{fig:ilc_var_dist_unfix_const}, the measured flow $q_{\mathrm{vad}}$ first approaches the reference, but then moves further away from it again, while the flow through the VAD for the measurement with resampling of the actuating variable data in \figurename~\ref{fig:ilc_var_dist_fix_const} continuously approaches the reference.
-\\This suggests a higher performance of the ILC using the resampling functionality.
 \begin{figure}[ht!]
   \centering
-  \includegraphics[width=0.95\textwidth]{images/chapt_5/ILC/ilc_var_dist_fix_const.pdf}
+  \includegraphics[width=0.925\textwidth]{images/chapt_5/ILC/ilc_var_dist_fix_const.pdf}
   \caption[Segment of measurement for ILC with varying disturbance with $cf_{\mathrm{Lv}}=1$ for constant reference flow with data resampling]{Segment of measurement for ILC with varying disturbance with $cf_{\mathrm{Lv}}=1$ for constant reference flow with data resampling. Top:  pressure values of the MCL. Middle: actuating variable and measured rotational speed of the VAD. Bottom: targeted flow trajectory and measured flow through the VAD.}
   \label{fig:ilc_var_dist_fix_const}
 \end{figure}
+\newpage
+This suggests a higher performance of the ILC using the resampling functionality.
 This assumption can be confirmed when comparing the RMSE values of the two measurements.
 While at the beginning of combined control both measurements decrease to an average error value of
 \begin{equation}
@@ -465,7 +480,7 @@ The value of the measurement with resampled data remains at about $0.05\,l/min$.
   \label{fig:RMSE_ilc_var_dist_comp_const}
 \end{figure}
 
-
+\pagebreak
 The second set of measurements is performed using the sinusoidal reference signal. Other than for the constant reference flow for which both the unchanged ILC and the resampling measurement result in a pump failure after approximately $155\,s$, the measurements following a sinusoidal trajectory ran stable over the full measurement time of $600\,s$.
 Looking at the graphical comparison of the RMSE values of the two measurements, shown in \figurename~\ref{fig:RMSE_ilc_var_dist_comp_sine}, significantly lower error values can be seen for the complete measurement period using the resampling functionality. For this, the RMSE is about
 \begin{equation}
@@ -488,6 +503,7 @@ Thus, an increased performance of the revised ILC can also be concluded for this
   \label{fig:RMSE_ilc_var_dist_comp_sine}
 \end{figure}
 
+\newpage
 The measurements using the triangular reference trajectory show very similar system behavior to those using the constant reference flow.
 Both when using the standard ILC and the revised ILC, the pump stops due to oscillating system behavior. This occurs slightly earlier for the measurement using the revised ILC than for the standard ILC. However, when comparing the RMSE values in \figurename~\ref{fig:RMSE_ilc_var_dist_comp_triang} it is clear that the performance of the revised ILC exceeds that of the unmodified ILC. While the revised ILC has average error values of about
 \begin{equation}
@@ -510,7 +526,7 @@ Thus, even though the pump stops earlier, the use of the revised ILC would be ad
   \label{fig:RMSE_ilc_var_dist_comp_triang}
 \end{figure}
 
-
+\newpage
 Lastly, the tests of the two ILC implementations are performed using the rectangular reference trajectory.  As with the constant reference flow and the triangular trajectory, the actuating variable again oscillates, resulting in the pump rotor stopping.
 Unlike the previous measurements, however, the evaluation of the error values for both measurements is similar in this case. At the beginning of the combined control, the averaged error values for both tests drop sharply compared to the PI control. However, a fluctuation of the average error values can be observed for both measurements. This occurs somewhat more slowly for the revised ILC than for the standard ILC. Nevertheless, both measurements show best case values of about
 \begin{equation}
@@ -527,8 +543,9 @@ A graphical comparison is presented in \figurename~\ref{fig:RMSE_ilc_var_dist_co
   \caption[Comparison of RMSE values for ILC measurement using a rectangular reference flow for unchanged and resampled data]{Comparison of RMSE values for ILC measurement using a rectangular reference flow for unchanged and resampled data.}
   \label{fig:RMSE_ilc_var_dist_comp_rect}
 \end{figure}
-These results do not give a clear indication as to which ILC approach is more suitable for reference tracking of this trajectory.
-\\Graphical representations of the transitional segments for the performed measurements using sinusoidal, triangular and rectangular reference trajectories can be found in \figurename~\ref{fig:anh_9} to \figurename~\ref{fig:anh_14} of the appendix.
+\\These results do not give a clear indication as to which ILC approach is more suitable for reference tracking of this trajectory.
+\newpage
+Graphical representations of the transitional segments for the performed measurements using sinusoidal, triangular and rectangular reference trajectories can be found in \figurename~\ref{fig:anh_9} to \figurename~\ref{fig:anh_14} of the appendix.
 
 \tablename~\ref{tab:compare_ILC} depicts an overview on the worst case RMSE values of the standard ILC and for the revised ILC for all reference trajectories. It furthermore gives the difference between these error values as $\Delta{RMSE}$.
 \begin{table}[h]
