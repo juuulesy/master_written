@@ -538,6 +538,9 @@ INPUT ./images/chapt_5/param_calc_PI.pdf
 INPUT images/chapt_5/PI_control_ref_signals.pdf
 INPUT ./images/chapt_5/PI_control_ref_signals.pdf
 INPUT ./images/chapt_5/PI_control_ref_signals.pdf
+INPUT images/chapt_5/pi_contr_zn_40.pdf
+INPUT ./images/chapt_5/pi_contr_zn_40.pdf
+INPUT ./images/chapt_5/pi_contr_zn_40.pdf
 INPUT images/chapt_5/pi_contr_chr_40.pdf
 INPUT ./images/chapt_5/pi_contr_chr_40.pdf
 INPUT ./images/chapt_5/pi_contr_chr_40.pdf
@@ -550,12 +553,12 @@ INPUT ./images/chapt_5/error_PI_chr.pdf
 INPUT images/chapt_5/ILC/ref_signal_ILC3.pdf
 INPUT ./images/chapt_5/ILC/ref_signal_ILC3.pdf
 INPUT ./images/chapt_5/ILC/ref_signal_ILC3.pdf
-INPUT images/chapt_5/ILC/pi_to_ilc_fc_20.pdf
-INPUT ./images/chapt_5/ILC/pi_to_ilc_fc_20.pdf
-INPUT ./images/chapt_5/ILC/pi_to_ilc_fc_20.pdf
-INPUT images/chapt_5/ILC/pi_to_ilc_fc_34.pdf
-INPUT ./images/chapt_5/ILC/pi_to_ilc_fc_34.pdf
-INPUT ./images/chapt_5/ILC/pi_to_ilc_fc_34.pdf
+INPUT images/chapt_5/ILC/pi_to_ilc_fc_8.pdf
+INPUT ./images/chapt_5/ILC/pi_to_ilc_fc_8.pdf
+INPUT ./images/chapt_5/ILC/pi_to_ilc_fc_8.pdf
+INPUT images/chapt_5/ILC/pi_to_ilc_fc_25.pdf
+INPUT ./images/chapt_5/ILC/pi_to_ilc_fc_25.pdf
+INPUT ./images/chapt_5/ILC/pi_to_ilc_fc_25.pdf
 INPUT images/chapt_5/ILC/RMSE_compare_ILC3_fc.pdf
 INPUT ./images/chapt_5/ILC/RMSE_compare_ILC3_fc.pdf
 INPUT ./images/chapt_5/ILC/RMSE_compare_ILC3_fc.pdf
@@ -656,7 +659,6 @@ INPUT images/chapt_5/pi_contr_zn.pdf
 INPUT ./images/chapt_5/pi_contr_zn.pdf
 INPUT ./images/chapt_5/pi_contr_zn.pdf
 INPUT images/chapt_5/pi_contr_zn_40.pdf
-INPUT ./images/chapt_5/pi_contr_zn_40.pdf
 INPUT ./images/chapt_5/pi_contr_zn_40.pdf
 INPUT images/chapt_5/ILC/ilc_var_dist_unfix_sine.pdf
 INPUT ./images/chapt_5/ILC/ilc_var_dist_unfix_sine.pdf

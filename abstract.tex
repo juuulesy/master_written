@@ -4,7 +4,7 @@ Acute heart failure is one of the most common reasons for hospitalization due to
 \\
 The Sputnik VAD is an axial flow pump for left ventricular assistance, recently developed in Russia. Within the scope of this work, a system identification will be performed and different approaches for flow control will be implemented. For the controller implementation, PI controllers are designed according to different methods. Furthermore, the control loop is extended by including various iterative learning controllers. Initially, the goal is to enable regulating the flow to a constant reference. Eventually, however, reference tracking of a variety of reference trajectories is to be enabled. All controller implementations will be tested on a cardiovascular simulator developed at MedIT and their performance will be evaluated afterwards.
 \\
-For the implementation of the ILCs, the approach of a parallel architecture with a stabilizing PI controller is chosen.
+For the implementation of the ILCs, the approach of a parallel architecture with a PI controller is chosen.
 First, a standard ILC is designed and optimized under optimal, disturbance-free conditions. Based on this ILC, a disturbance in the form of the beating heart, simulated using the cardiovascular system simulator, is included in the control loop. A consideration of the ILC's ability to suppress non-repetitive disturbances revealed potential for improvement. Therefore, an attempt to optimize this capability was implemented in the form of a resampling functionality integrated into the ILC. The evaluation of the measurements showed an increased controller performance.
 
 % VAD6 for abstract/introduction input
